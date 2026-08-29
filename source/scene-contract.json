@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "version": "0.1.0",
+  "status": "review",
+  "humanAcceptance": "pending-human-acceptance",
+  "renderMode": "clean",
+  "productPurpose": {
+    "roomType": "presentation-audience-room",
+    "joinMuted": true,
+    "mediaUses": [
+      "pdf",
+      "screen-share"
+    ]
+  },
+  "toolchain": {
+    "blenderVersion": "4.5.12 LTS",
+    "blenderBuildHash": "84afd5f785f7",
+    "cwebpVersion": "1.6.0",
+    "reviewImageQuality": 90,
+    "platformValidatorCommit": "9153bb9818a2907fb33ba96375f7b31c1641f12f"
+  },
+  "coordinateAdapter": {
+    "authoringSpace": "semantic-y-up",
+    "runtimeSpace": "gltf-y-up",
+    "positionTransform": {
+      "x": "x",
+      "y": "y",
+      "z": "-z"
+    },
+    "blenderAuthoringTransform": {
+      "x": "x",
+      "y": "z",
+      "z": "y"
+    }
+  },
+  "room": {
+    "widthM": 10.8,
+    "depthM": 11.8,
+    "heightM": 4.4,
+    "stage": {
+      "widthM": 8.8,
+      "depthM": 1.8,
+      "heightM": 0.24,
+      "center": {
+        "x": 0,
+        "y": 0.12,
+        "z": -4.25
+      }
+    }
+  },
+  "visualDirection": {
+    "palette": [
+      "warm-ash-wood",
+      "light-mineral-shell",
+      "deep-desaturated-blue",
+      "restrained-rust",
+      "charcoal-ceiling"
+    ],
+    "functionalDetails": [
+      "recessed-center-aisle-markers",
+      "presenter-monitor-and-control",
+      "compact-stage-av-credenza",
+      "acoustic-wall-wash"
+    ],
+    "composition": "presentation-stage-and-audience"
+  },
+  "spawn": {
+    "id": "main",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 4.95
+    },
+    "yaw": 0,
+    "openRadiusM": 1.1,
+    "outsideAudienceRows": true
+  },
+  "seats": [
+    {
+      "id": "seat-01",
+      "row": 1,
+      "position": { "x": -2.65, "y": 0, "z": 0.35 },
+      "yaw": 0,
+      "seatHeight": 0.47,
+      "radius": 0.42,
+      "visible": true,
+      "aimTargetSurfaceId": "debug-main"
+    },
+    {
+      "id": "seat-02",
+      "row": 1,
+      "position": { "x": -1.55, "y": 0, "z": 0.35 },
+      "yaw": 0,
+      "seatHeight": 0.47,
+      "radius": 0.42,
+      "visible": true,
+      "aimTargetSurfaceId": "debug-main"
+    },
+    {
+      "id": "seat-03",
+      "row": 1,
+      "position": { "x": 1.55, "y": 0, "z": 0.35 },
+      "yaw": 0,
+      "seatHeight": 0.47,
+      "radius": 0.42,
+      "visible": true,
+      "aimTargetSurfaceId": "debug-main"
+    },
+    {
+      "id": "seat-04",
+      "row": 1,
+      "position": { "x": 2.65, "y": 0, "z": 0.35 },
+      "yaw": 0,
+      "seatHeight": 0.47,
+      "radius": 0.42,
+      "visible": true,
+      "aimTargetSurfaceId": "debug-main"
+    },
+    {
+      "id": "seat-05",
+      "row": 2,
+      "position": { "x": -2.9, "y": 0, "z": 2.35 },
+      "yaw": 0,
+      "seatHeight": 0.47,
+      "radius": 0.42,
+      "visible": true,
+      "aimTargetSurfaceId": "debug-main"
+    },
+    {
+      "id": "seat-06",
+      "row": 2,
+      "position": { "x": -1.8, "y": 0, "z": 2.35 },
+      "yaw": 0,
+      "seatHeight": 0.47,
+      "radius": 0.42,
+      "visible": true,
+      "aimTargetSurfaceId": "debug-main"
+    },
+    {
+      "id": "seat-07",
+      "row": 2,
+      "position": { "x": 1.8, "y": 0, "z": 2.35 },
+      "yaw": 0,
+      "seatHeight": 0.47,
+      "radius": 0.42,
+      "visible": true,
+      "aimTargetSurfaceId": "debug-main"
+    },
+    {
+      "id": "seat-08",
+      "row": 2,
+      "position": { "x": 2.9, "y": 0, "z": 2.35 },
+      "yaw": 0,
+      "seatHeight": 0.47,
+      "radius": 0.42,
+      "visible": true,
+      "aimTargetSurfaceId": "debug-main"
+    }
+  ],
+  "circulation": {
+    "minimumClearWidthM": 0.9,
+    "centerAisleWidthM": 2.25,
+    "leftSideAisleWidthM": 1.95,
+    "rightSideAisleWidthM": 1.95,
+    "entryToStageClear": true
+  },
+  "mediaSurfaces": [
+    {
+      "surfaceId": "debug-main",
+      "purpose": "pdf-and-screen-share",
+      "representation": "platform-runtime-plane",
+      "widthM": 5.12,
+      "heightM": 2.88,
+      "aspectRatio": "16:9",
+      "position": {
+        "x": 0,
+        "y": 2.48,
+        "z": -5.33
+      },
+      "yaw": 0,
+      "frontFace": "toward-audience",
+      "visible": true
+    }
+  ],
+  "reviewViews": [
+    {
+      "id": "entry",
+      "position": { "x": 0, "y": 1.65, "z": 5.1 },
+      "target": { "x": 0, "y": 1.65, "z": -3.5 },
+      "fovDegrees": 60
+    },
+    {
+      "id": "audience",
+      "position": { "x": -0.25, "y": 1.55, "z": 2.8 },
+      "target": { "x": 0, "y": 2.1, "z": -5.1 },
+      "fovDegrees": 58
+    },
+    {
+      "id": "presenter",
+      "position": { "x": 3.75, "y": 1.58, "z": -3.8 },
+      "target": { "x": 0, "y": 1.15, "z": 1.4 },
+      "fovDegrees": 64
+    },
+    {
+      "id": "diagonal-overview",
+      "position": { "x": -4.55, "y": 3.25, "z": 4.65 },
+      "target": { "x": 0, "y": 1.35, "z": -1.1 },
+      "fovDegrees": 68
+    }
+  ],
+  "budgets": {
+    "glbBytesMax": 15728640,
+    "trianglesMax": 90000,
+    "objectsMax": 500,
+    "meshesMax": 250,
+    "materialsMax": 96,
+    "texturesMax": 48
+  },
+  "rights": {
+    "status": "approved-for-public-staging-review",
+    "rightsApproved": true,
+    "rightsOwnerVerdict": {
+      "decision": "approved-for-public-staging-review",
+      "decisionMaker": "human-rights-owner",
+      "receivedOn": "2026-08-29"
+    },
+    "ownershipBasis": "entirely-project-authored",
+    "externalAssetsUsed": false,
+    "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
+    "licensePath": "provenance/LICENSES.review.md",
+    "allowedUses": [
+      "staging",
+      "public-web-runtime",
+      "screenshots",
+      "optimization",
+      "derivative-builds",
+      "redistribution-in-publicly-downloadable-scene-bundle"
+    ],
+    "notGrantedByThisVerdict": [
+      "production-activation",
+      "human-visual-acceptance"
+    ]
+  },
+  "releaseBoundary": {
+    "visualAccepted": false,
+    "rightsApproved": true,
+    "acceptedSource": false,
+    "immutableRelease": false,
+    "stagingVerified": false,
+    "publicationReady": false
+  }
+}

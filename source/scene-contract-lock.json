@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "status": "review",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "approved-for-public-staging-review",
+  "rightsApproved": true,
+  "rightsApprovalDate": "2026-08-29",
+  "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
+  "platformValidatorCommit": "9153bb9818a2907fb33ba96375f7b31c1641f12f",
+  "coordinateTransform": "x=x,y=y,z=-z",
+  "publicationReady": false,
+  "note": "Artifact hashes and measured metrics are derived into source/review-candidate-lock.json by the local build."
+}

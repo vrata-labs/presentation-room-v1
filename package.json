@@ -1,0 +1,29 @@
+{
+  "name": "@vrata/presentation-room-v1",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@10.34.1",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build-review-candidate.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "validate": "node scripts/validate-repository.mjs",
+    "inspect": "node scripts/inspect-release.mjs",
+    "verify:reproducibility": "node scripts/verify-reproducibility.mjs"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "4.4.2",
+    "@gltf-transform/core": "4.4.2",
+    "@gltf-transform/extensions": "4.4.2",
+    "gltf-validator": "2.0.0-dev.3.10",
+    "sharp": "0.34.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
+  }
+}

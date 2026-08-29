@@ -1,0 +1,73 @@
+name: Validate scene
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scene
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.34.1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install scene dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run scene unit tests
+        run: pnpm test
+
+      - name: Validate repository and review release
+        run: pnpm validate
+
+      - name: Inspect GLB release
+        run: pnpm inspect
+
+      - name: Read platform validator lock
+        id: platform-ref
+        shell: bash
+        run: |
+          sha="$(tr -d '\r\n' < platform-validator.lock)"
+          repository_sha="$(node -e 'process.stdout.write(require("./scene-repository.json").platformValidatorCommit)')"
+          if [[ ! "$sha" =~ ^[0-9a-f]{40}$ ]] || [[ "$sha" != "$repository_sha" ]]; then
+            echo "invalid_platform_validator_lock" >&2
+            exit 1
+          fi
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout pinned platform validator
+        uses: actions/checkout@v4
+        with:
+          repository: vrata-labs/platform
+          ref: ${{ steps.platform-ref.outputs.sha }}
+          path: .platform
+
+      - name: Install and build pinned platform validator
+        run: |
+          pnpm --dir .platform install --frozen-lockfile
+          pnpm --dir .platform --filter @vrata/shared-types build
+          pnpm --dir .platform --filter @vrata/templates build
+          pnpm --dir .platform --filter @vrata/asset-pipeline build
+
+      - name: Validate every scene bundle with pinned platform
+        shell: bash
+        run: |
+          for scene_manifest in assets/scenes/*/*/scene.json; do
+            node .platform/packages/asset-pipeline/dist/cli.js scenes validate "$(dirname "$scene_manifest")"
+          done

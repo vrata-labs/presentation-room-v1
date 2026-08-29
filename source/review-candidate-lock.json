@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "version": "0.1.0",
+  "status": "review",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "approved-for-public-staging-review",
+  "rightsApproved": true,
+  "rightsApprovalDate": "2026-08-29",
+  "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
+  "publicationReady": false,
+  "renderMode": "clean",
+  "toolchain": {
+    "blenderVersion": "4.5.12 LTS",
+    "blenderBuildHash": "84afd5f785f7",
+    "cwebpVersion": "1.6.0",
+    "reviewImageQuality": 90,
+    "platformValidatorCommit": "9153bb9818a2907fb33ba96375f7b31c1641f12f"
+  },
+  "coordinateTransform": "x=x,y=y,z=-z",
+  "source": {
+    "blendPath": "source/review-candidate.blend",
+    "blend": {
+      "sha256": "12afe2c438266db169922326f589a2e81478c9ef15111bbdb06a49ce71d7a89f",
+      "sizeBytes": 3100004
+    },
+    "authorScript": {
+      "sha256": "005a8e9018f36acecbe434972dcbf3dcd5cfb385b981843c5b09c834ecaec069",
+      "sizeBytes": 20879
+    },
+    "exportScript": {
+      "sha256": "4c5a51bd138cfb2dae03ba9ac5a55efc7b580c8488a9dd49d7cafde6b8357d9d",
+      "sizeBytes": 797
+    },
+    "renderScript": {
+      "sha256": "a069758fe18fedb851ca2ac30171acd892af8c7ddbc060d0a322f81ed9e9eb64",
+      "sizeBytes": 1241
+    }
+  },
+  "tooling": [
+    {
+      "repositoryPath": "scripts/lib.mjs",
+      "sha256": "e248635bb9a32d73fe1a4d652f05918319bcb37130e1bcb8e744b7052a55ae6f",
+      "sizeBytes": 3347
+    },
+    {
+      "repositoryPath": "scripts/build-review-candidate.mjs",
+      "sha256": "9fd1b968611057d56a23f710714a02819afae97282e46a11b895b967c5ff4d34",
+      "sizeBytes": 10768
+    },
+    {
+      "repositoryPath": "scripts/inspect-release.mjs",
+      "sha256": "8a3f42f02d352703a6867efd5282d6bbbf4cc88001ac8268ff4b7139b6d7c9de",
+      "sizeBytes": 1674
+    },
+    {
+      "repositoryPath": "scripts/validate-repository.mjs",
+      "sha256": "75cfd5ea4b2a7e4bc2465d8762193d60a12b48ffbb6ed5789a3d1d58a7487e18",
+      "sizeBytes": 24436
+    },
+    {
+      "repositoryPath": "scripts/verify-reproducibility.mjs",
+      "sha256": "18f5a1a9ab49b1309991a7b52c4dbcc43767f0bae3fc2afb60391c2f331ae356",
+      "sizeBytes": 1299
+    },
+    {
+      "repositoryPath": "tests/repository.test.mjs",
+      "sha256": "0469bcd06d55895e4d6e39d5d68cc41b9747f69df5cecb90b435a2a1d6c7cc13",
+      "sizeBytes": 10873
+    }
+  ],
+  "reviewViews": [
+    {
+      "id": "entry",
+      "path": "source/review/entry.webp",
+      "sha256": "2e5880e76d6ef1136aabdf8c8ef1eea999be0bad6415ab57997f2ec4ac61ff88",
+      "sizeBytes": 33512
+    },
+    {
+      "id": "audience",
+      "path": "source/review/audience.webp",
+      "sha256": "fedfd1103c7676cbe4c69c48aa61c66c5a66e611c7aa3af501ef73cb2f15f868",
+      "sizeBytes": 27552
+    },
+    {
+      "id": "presenter",
+      "path": "source/review/presenter.webp",
+      "sha256": "dac344863d61189ac6b7fb6a3d4cd3d55674e2fa7519581412fd80f251103fe6",
+      "sizeBytes": 46842
+    },
+    {
+      "id": "diagonal-overview",
+      "path": "source/review/diagonal-overview.webp",
+      "sha256": "b00c90a62bd5747e5d5e8651f54c132b415bfe6ebe57251b2bc5694309e32cdf",
+      "sizeBytes": 69082
+    }
+  ],
+  "release": {
+    "path": "assets/scenes/presentation-room-v1/0.1.0",
+    "files": {
+      "LICENSES.md": {
+        "sha256": "42a4d1ca687ca375f38db222e4fe7c3ed99af9dca4730f288cc910daf3df9d1b",
+        "sizeBytes": 836
+      },
+      "preview.webp": {
+        "sha256": "2e5880e76d6ef1136aabdf8c8ef1eea999be0bad6415ab57997f2ec4ac61ff88",
+        "sizeBytes": 33512
+      },
+      "scene.glb": {
+        "sha256": "1c44b52b9f70ecad9401b703176c460b6a909e3f22b2566a98caedb4a0c90a63",
+        "sizeBytes": 2142756
+      },
+      "scene.json": {
+        "sha256": "0bf3f15a068a1edf735f48d05c2bec17d1b1878aa75b2dd0e2847065857e0115",
+        "sizeBytes": 4947
+      }
+    },
+    "stats": {
+      "triangles": 32060,
+      "objects": 210,
+      "meshes": 193,
+      "primitives": 193,
+      "materials": 10,
+      "textures": 0,
+      "animations": 0
+    }
+  },
+  "reproducibility": {
+    "scope": "same-host-same-saved-blend-same-blender-binary-two-run",
+    "runs": 2,
+    "result": "byte-identical-glb",
+    "sha256": "1c44b52b9f70ecad9401b703176c460b6a909e3f22b2566a98caedb4a0c90a63"
+  },
+  "boundaries": {
+    "visualAccepted": false,
+    "rightsApproved": true,
+    "acceptedSource": false,
+    "immutableRelease": false,
+    "stagingVerified": false,
+    "publicationReady": false
+  }
+}

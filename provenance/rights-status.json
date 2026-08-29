@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "status": "approved-for-public-staging-review",
+  "visualApproval": "pending-human-acceptance",
+  "rightsApproval": "approved-for-public-staging-review",
+  "rightsApproved": true,
+  "rightsOwnerVerdict": {
+    "decision": "approved-for-public-staging-review",
+    "decisionMaker": "human-rights-owner",
+    "receivedOn": "2026-08-29"
+  },
+  "ownershipBasis": "entirely-project-authored",
+  "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
+  "licensePath": "provenance/LICENSES.review.md",
+  "allowedUses": [
+    "staging",
+    "public-web-runtime",
+    "screenshots",
+    "optimization",
+    "derivative-builds",
+    "redistribution-in-publicly-downloadable-scene-bundle"
+  ],
+  "notGrantedByThisVerdict": [
+    "production-activation",
+    "human-visual-acceptance"
+  ],
+  "externalAssetsUsed": false,
+  "downloadedAssetsUsed": false,
+  "privateSenseTowerMaterialsUsed": false,
+  "imageTo3dOutputUsed": false,
+  "brandingUsed": false,
+  "publicationReady": false
+}
