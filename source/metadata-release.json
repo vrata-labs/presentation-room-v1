@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "version": "0.1.1",
+  "baseVersion": "0.1.0",
+  "releaseKind": "metadata-only-review",
+  "status": "review",
+  "humanAcceptance": "pending-human-acceptance",
+  "isCurrent": false,
+  "publicationReady": false,
+  "renderMode": "clean",
+  "renderProfile": "neutral-pbr",
+  "runtimeSpawn": {
+    "id": "main",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": -4.95
+    },
+    "yaw": 3.141592653589793,
+    "lookAt": {
+      "x": 0,
+      "y": 2.48,
+      "z": 5.33
+    },
+    "forwardAxis": "-Z"
+  },
+  "unchangedFiles": [
+    "LICENSES.md",
+    "preview.webp",
+    "scene.glb"
+  ],
+  "historicalReproducibility": {
+    "blenderVersion": "4.5.12 LTS",
+    "blenderBuildHash": "84afd5f785f7",
+    "blenderBinarySha256": "33ac108ebce3c271f5357e5c664d0488717263bcf2145c80300edd0b12c31880"
+  },
+  "platformValidatorCommit": "61736f6289f941e290f4fe156f17efdd64ef876b"
+}

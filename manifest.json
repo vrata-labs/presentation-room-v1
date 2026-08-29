@@ -8,7 +8,7 @@
   "rightsApprovalDate": "2026-08-29",
   "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
   "publicationReady": false,
-  "platformValidatorCommit": "9153bb9818a2907fb33ba96375f7b31c1641f12f",
+  "platformValidatorCommit": "61736f6289f941e290f4fe156f17efdd64ef876b",
   "releases": [
     {
       "sceneId": "presentation-room-v1",
@@ -22,6 +22,7 @@
       "isCurrent": false,
       "publicationReady": false,
       "renderMode": "clean",
+      "platformValidatorCommit": "9153bb9818a2907fb33ba96375f7b31c1641f12f",
       "releasePath": "assets/scenes/presentation-room-v1/0.1.0",
       "files": {
         "LICENSES.md": {
@@ -55,6 +56,62 @@
         "runs": 2,
         "result": "byte-identical-glb",
         "sha256": "1c44b52b9f70ecad9401b703176c460b6a909e3f22b2566a98caedb4a0c90a63"
+      }
+    },
+    {
+      "sceneId": "presentation-room-v1",
+      "version": "0.1.1",
+      "baseVersion": "0.1.0",
+      "releaseKind": "metadata-only-review",
+      "status": "review",
+      "humanAcceptance": "pending-human-acceptance",
+      "rightsStatus": "approved-for-public-staging-review",
+      "rightsApproved": true,
+      "rightsApprovalDate": "2026-08-29",
+      "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
+      "isCurrent": false,
+      "publicationReady": false,
+      "renderMode": "clean",
+      "renderProfile": "neutral-pbr",
+      "platformValidatorCommit": "61736f6289f941e290f4fe156f17efdd64ef876b",
+      "releasePath": "assets/scenes/presentation-room-v1/0.1.1",
+      "files": {
+        "LICENSES.md": {
+          "sha256": "42a4d1ca687ca375f38db222e4fe7c3ed99af9dca4730f288cc910daf3df9d1b",
+          "sizeBytes": 836
+        },
+        "preview.webp": {
+          "sha256": "2e5880e76d6ef1136aabdf8c8ef1eea999be0bad6415ab57997f2ec4ac61ff88",
+          "sizeBytes": 33512
+        },
+        "scene.glb": {
+          "sha256": "1c44b52b9f70ecad9401b703176c460b6a909e3f22b2566a98caedb4a0c90a63",
+          "sizeBytes": 2142756
+        },
+        "scene.json": {
+          "sha256": "300f9d26bd2e583c2afcdd3f7d75c7f6a9b9a56a332fdaf9482b85c545cc7fc6",
+          "sizeBytes": 5019
+        }
+      },
+      "stats": {
+        "triangles": 32060,
+        "objects": 210,
+        "meshes": 193,
+        "primitives": 193,
+        "materials": 10,
+        "textures": 0,
+        "animations": 0
+      },
+      "reproducibility": {
+        "scope": "same-input-two-run-metadata-only-release",
+        "runs": 2,
+        "result": "byte-identical-release-files",
+        "sourceVersion": "0.1.0",
+        "unchangedPayloadSha256": {
+          "LICENSES.md": "42a4d1ca687ca375f38db222e4fe7c3ed99af9dca4730f288cc910daf3df9d1b",
+          "preview.webp": "2e5880e76d6ef1136aabdf8c8ef1eea999be0bad6415ab57997f2ec4ac61ff88",
+          "scene.glb": "1c44b52b9f70ecad9401b703176c460b6a909e3f22b2566a98caedb4a0c90a63"
+        }
       }
     }
   ]

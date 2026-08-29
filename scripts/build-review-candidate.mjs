@@ -1,87 +1,81 @@
-import { copyFile, mkdir, readFile, rm } from "node:fs/promises";
 import { join, resolve } from "node:path";
 
 import {
   assert,
   fileRecord,
   glbInspection,
+  materializeMetadataRelease,
   readJson,
-  resolveBlenderExecutable,
-  run,
-  sha256,
   toRuntimePosition,
-  verifyBlender,
   writeJson
 } from "./lib.mjs";
 
 const root = resolve(import.meta.dirname, "..");
-const blender = resolveBlenderExecutable();
+const requiredReleaseFiles = ["LICENSES.md", "preview.webp", "scene.glb", "scene.json"];
+const toolingPaths = [
+  "scripts/lib.mjs",
+  "scripts/build-review-candidate.mjs",
+  "scripts/inspect-release.mjs",
+  "scripts/validate-repository.mjs",
+  "scripts/verify-reproducibility.mjs",
+  "tests/repository.test.mjs"
+];
+const historicalEvidencePaths = [
+  "source/scene-contract.json",
+  "source/scene-contract-lock.json",
+  "source/review-candidate-lock.json",
+  "provenance/asset-ledger.json",
+  "provenance/generation-ledger.json"
+];
+
 const contract = await readJson(join(root, "source/scene-contract.json"));
+const releaseContract = await readJson(join(root, "source/metadata-release.json"));
+const historicalLock = await readJson(join(root, "source/review-candidate-lock.json"));
 const rights = contract.rights;
-const releasePath = join(root, "assets/scenes", contract.sceneId, contract.version);
-const buildPath = join(root, "build");
-const pngPath = join(buildPath, "review-png");
-const reviewPath = join(root, "source/review");
-const blendPath = join(root, "source/review-candidate.blend");
-const authorGlb = join(buildPath, "author.glb");
-const firstGlb = join(buildPath, "export-first.glb");
-const secondGlb = join(buildPath, "export-second.glb");
-const reviewViews = contract.reviewViews.map(({ id }) => id);
+const historicalPath = join(root, "assets/scenes", contract.sceneId, contract.version);
+const releasePath = join(root, "assets/scenes", contract.sceneId, releaseContract.version);
 
-verifyBlender(blender);
-await rm(buildPath, { recursive: true, force: true });
-await rm(releasePath, { recursive: true, force: true });
-await rm(reviewPath, { recursive: true, force: true });
-await mkdir(pngPath, { recursive: true });
-await mkdir(reviewPath, { recursive: true });
-await mkdir(releasePath, { recursive: true });
+assert(contract.version === "0.1.0", "historical_source_contract_mismatch");
+assert(contract.toolchain.platformValidatorCommit === "9153bb9818a2907fb33ba96375f7b31c1641f12f", "historical_validator_commit_mismatch");
+assert(releaseContract.version === "0.1.1" && releaseContract.baseVersion === contract.version, "metadata_release_version_mismatch");
+assert(releaseContract.releaseKind === "metadata-only-review", "metadata_release_kind_mismatch");
+assert(releaseContract.status === "review" && releaseContract.humanAcceptance === "pending-human-acceptance", "metadata_release_gate_mismatch");
+assert(releaseContract.isCurrent === false && releaseContract.publicationReady === false, "metadata_release_activation_claim");
+assert(releaseContract.renderProfile === "neutral-pbr", "metadata_release_render_profile_mismatch");
+assert(releaseContract.platformValidatorCommit === "61736f6289f941e290f4fe156f17efdd64ef876b", "metadata_validator_commit_mismatch");
+assert(JSON.stringify(releaseContract.unchangedFiles) === JSON.stringify(["LICENSES.md", "preview.webp", "scene.glb"]), "metadata_release_payload_contract_mismatch");
 
-run(blender, [
-  "--background",
-  "--factory-startup",
-  "--python",
-  join(root, "source/author_scene.py"),
-  "--",
-  "--blend",
-  blendPath,
-  "--glb",
-  authorGlb,
-  "--review-dir",
-  pngPath
-]);
-
-function exportSavedBlend(output) {
-  run(blender, [
-    "--background",
-    blendPath,
-    "--python",
-    join(root, "source/export_scene.py"),
-    "--",
-    "--output",
-    output
-  ]);
+const historicalFiles = {};
+for (const name of requiredReleaseFiles) {
+  historicalFiles[name] = await fileRecord(join(historicalPath, name));
+  assert(JSON.stringify(historicalFiles[name]) === JSON.stringify(historicalLock.release.files[name]), `historical_release_changed:${name}`);
 }
 
-exportSavedBlend(firstGlb);
-exportSavedBlend(secondGlb);
-const [authorBytes, firstBytes, secondBytes] = await Promise.all([
-  readFile(authorGlb),
-  readFile(firstGlb),
-  readFile(secondGlb)
-]);
-assert(authorBytes.equals(firstBytes), "author_and_saved_blend_export_differ");
-assert(firstBytes.equals(secondBytes), "same_host_two_run_glb_not_byte_identical");
-await copyFile(firstGlb, join(releasePath, "scene.glb"));
+const expectedRuntimeSpawn = toRuntimePosition(contract.spawn.position);
+const focalSurface = contract.mediaSurfaces.find(({ surfaceId }) => surfaceId === "debug-main");
+const expectedRuntimeTarget = toRuntimePosition(focalSurface.position);
+assert(JSON.stringify(releaseContract.runtimeSpawn.position) === JSON.stringify(expectedRuntimeSpawn), "metadata_runtime_spawn_position_mismatch");
+assert(JSON.stringify(releaseContract.runtimeSpawn.lookAt) === JSON.stringify(expectedRuntimeTarget), "metadata_runtime_spawn_target_mismatch");
+assert(releaseContract.runtimeSpawn.forwardAxis === "-Z" && releaseContract.runtimeSpawn.yaw === Math.PI, "metadata_runtime_spawn_heading_mismatch");
 
-for (const viewId of reviewViews) {
-  run("cwebp", ["-quiet", "-q", "90", join(pngPath, `${viewId}.png`), "-o", join(reviewPath, `${viewId}.webp`)]);
+const dx = expectedRuntimeTarget.x - expectedRuntimeSpawn.x;
+const dz = expectedRuntimeTarget.z - expectedRuntimeSpawn.z;
+const targetLength = Math.hypot(dx, dz);
+const forwardX = Math.sin(releaseContract.runtimeSpawn.yaw);
+const forwardZ = -Math.cos(releaseContract.runtimeSpawn.yaw);
+assert(Math.abs(forwardX - dx / targetLength) < 1e-12 && Math.abs(forwardZ - dz / targetLength) < 1e-12, "metadata_runtime_spawn_not_facing_screen");
+
+await materializeMetadataRelease(historicalPath, releasePath, releaseContract);
+
+const releaseFiles = {};
+for (const name of requiredReleaseFiles) {
+  releaseFiles[name] = await fileRecord(join(releasePath, name));
 }
-await copyFile(join(reviewPath, "entry.webp"), join(releasePath, "preview.webp"));
-await copyFile(join(root, "provenance/LICENSES.review.md"), join(releasePath, "LICENSES.md"));
+for (const name of releaseContract.unchangedFiles) {
+  assert(JSON.stringify(releaseFiles[name]) === JSON.stringify(historicalFiles[name]), `metadata_release_payload_changed:${name}`);
+}
 
-const glbPath = join(releasePath, "scene.glb");
-const glbRecord = await fileRecord(glbPath);
-const measured = await glbInspection(glbPath);
+const measured = await glbInspection(join(releasePath, "scene.glb"));
 const stats = {
   triangles: measured.triangles,
   objects: measured.objects,
@@ -91,76 +85,53 @@ const stats = {
   textures: measured.textures,
   animations: measured.animations
 };
+assert(JSON.stringify(stats) === JSON.stringify(historicalLock.release.stats), "metadata_release_glb_stats_changed");
 
-const sceneManifest = {
-  schemaVersion: 1,
+const historicalRelease = {
   sceneId: contract.sceneId,
   version: contract.version,
-  label: "Presentation Room",
   status: "review",
   humanAcceptance: "pending-human-acceptance",
+  rightsStatus: rights.status,
+  rightsApproved: rights.rightsApproved,
+  rightsApprovalDate: rights.rightsOwnerVerdict.receivedOn,
+  licenseRef: rights.licenseRef,
+  isCurrent: false,
   publicationReady: false,
   renderMode: contract.renderMode,
-  glbPath: "scene.glb",
-  glbSha256: glbRecord.sha256,
-  preview: "preview.webp",
-  source: "source/review-candidate.blend",
-  productPurpose: contract.productPurpose,
-  bounds: {
-    width: contract.room.widthM,
-    height: contract.room.heightM,
-    depth: contract.room.depthM
-  },
-  coordinateAdapter: contract.coordinateAdapter,
-  spawnPoints: [{
-    id: contract.spawn.id,
-    position: toRuntimePosition(contract.spawn.position),
-    yaw: contract.spawn.yaw,
-    openRadiusM: contract.spawn.openRadiusM
-  }],
-  anchors: {
-    seatAnchors: contract.seats.map((seat) => ({
-      id: seat.id,
-      row: seat.row,
-      position: toRuntimePosition(seat.position),
-      yaw: seat.yaw,
-      seatHeight: seat.seatHeight,
-      radius: seat.radius,
-      visible: seat.visible,
-      aimTargetSurfaceId: seat.aimTargetSurfaceId
-    }))
-  },
-  mediaSurfaces: contract.mediaSurfaces.map((surface) => ({
-    surfaceId: surface.surfaceId,
-    purpose: surface.purpose,
-    widthM: surface.widthM,
-    heightM: surface.heightM,
-    aspectRatio: surface.aspectRatio,
-    visible: surface.visible,
-    transform: { ...toRuntimePosition(surface.position), yaw: surface.yaw }
-  })),
-  circulation: contract.circulation,
+  platformValidatorCommit: contract.toolchain.platformValidatorCommit,
+  releasePath: `assets/scenes/${contract.sceneId}/${contract.version}`,
+  files: historicalFiles,
   stats,
-  rights: {
-    status: rights.status,
-    rightsApproved: rights.rightsApproved,
-    rightsOwnerVerdict: rights.rightsOwnerVerdict,
-    ownershipBasis: rights.ownershipBasis,
-    externalAssetsUsed: rights.externalAssetsUsed,
-    licenseRef: rights.licenseRef,
-    licenseFile: "LICENSES.md",
-    sourceLedger: "provenance/asset-ledger.json",
-    clearedFor: rights.allowedUses,
-    notGrantedByThisVerdict: rights.notGrantedByThisVerdict
+  reproducibility: historicalLock.reproducibility
+};
+const metadataRelease = {
+  sceneId: contract.sceneId,
+  version: releaseContract.version,
+  baseVersion: releaseContract.baseVersion,
+  releaseKind: releaseContract.releaseKind,
+  status: releaseContract.status,
+  humanAcceptance: releaseContract.humanAcceptance,
+  rightsStatus: rights.status,
+  rightsApproved: rights.rightsApproved,
+  rightsApprovalDate: rights.rightsOwnerVerdict.receivedOn,
+  licenseRef: rights.licenseRef,
+  isCurrent: releaseContract.isCurrent,
+  publicationReady: releaseContract.publicationReady,
+  renderMode: releaseContract.renderMode,
+  renderProfile: releaseContract.renderProfile,
+  platformValidatorCommit: releaseContract.platformValidatorCommit,
+  releasePath: `assets/scenes/${contract.sceneId}/${releaseContract.version}`,
+  files: releaseFiles,
+  stats,
+  reproducibility: {
+    scope: "same-input-two-run-metadata-only-release",
+    runs: 2,
+    result: "byte-identical-release-files",
+    sourceVersion: releaseContract.baseVersion,
+    unchangedPayloadSha256: Object.fromEntries(releaseContract.unchangedFiles.map((name) => [name, releaseFiles[name].sha256]))
   }
 };
-await writeJson(join(releasePath, "scene.json"), sceneManifest);
-
-const releaseFiles = {};
-for (const name of ["LICENSES.md", "preview.webp", "scene.glb", "scene.json"]) {
-  releaseFiles[name] = await fileRecord(join(releasePath, name));
-}
-
 const manifest = {
   schemaVersion: 1,
   sceneId: contract.sceneId,
@@ -171,147 +142,77 @@ const manifest = {
   rightsApprovalDate: rights.rightsOwnerVerdict.receivedOn,
   licenseRef: rights.licenseRef,
   publicationReady: false,
-  platformValidatorCommit: contract.toolchain.platformValidatorCommit,
-  releases: [{
-    sceneId: contract.sceneId,
-    version: contract.version,
-    status: "review",
-    humanAcceptance: "pending-human-acceptance",
-    rightsStatus: rights.status,
-    rightsApproved: rights.rightsApproved,
-    rightsApprovalDate: rights.rightsOwnerVerdict.receivedOn,
-    licenseRef: rights.licenseRef,
-    isCurrent: false,
-    publicationReady: false,
-    renderMode: contract.renderMode,
-    releasePath: `assets/scenes/${contract.sceneId}/${contract.version}`,
-    files: releaseFiles,
-    stats,
-    reproducibility: {
-      scope: "same-host-same-saved-blend-same-blender-binary-two-run",
-      runs: 2,
-      result: "byte-identical-glb",
-      sha256: glbRecord.sha256
-    }
-  }]
+  platformValidatorCommit: releaseContract.platformValidatorCommit,
+  releases: [historicalRelease, metadataRelease]
 };
 await writeJson(join(root, "manifest.json"), manifest);
 
-const toolingPaths = [
-  "scripts/lib.mjs",
-  "scripts/build-review-candidate.mjs",
-  "scripts/inspect-release.mjs",
-  "scripts/validate-repository.mjs",
-  "scripts/verify-reproducibility.mjs",
-  "tests/repository.test.mjs"
+const tooling = await Promise.all(toolingPaths.map(async (repositoryPath) => ({
+  repositoryPath,
+  ...await fileRecord(join(root, repositoryPath))
+})));
+const historicalEvidence = await Promise.all(historicalEvidencePaths.map(async (repositoryPath) => ({
+  repositoryPath,
+  ...await fileRecord(join(root, repositoryPath))
+})));
+const metadataOutputs = [
+  ...requiredReleaseFiles.map((name) => `${metadataRelease.releasePath}/${name}`),
+  "manifest.json"
 ];
-const sourceRecords = [
-  { repositoryPath: "source/scene-contract.json", kind: "project-authored-scene-source" },
-  { repositoryPath: "source/author_scene.py", kind: "project-authored-scene-source" },
-  { repositoryPath: "source/export_scene.py", kind: "project-authored-scene-source" },
-  { repositoryPath: "source/render_review.py", kind: "project-authored-scene-source" },
-  { repositoryPath: "provenance/rights-status.json", kind: "human-rights-owner-verdict" },
-  { repositoryPath: "provenance/LICENSES.review.md", kind: "license-notice" },
-  ...toolingPaths.map((repositoryPath) => ({ repositoryPath, kind: "repository-tooling" }))
-];
-const assetLedger = {
+const metadataReleaseLock = {
   schemaVersion: 1,
   sceneId: contract.sceneId,
-  status: "review",
-  humanAcceptance: "pending-human-acceptance",
-  rightsStatus: rights.status,
-  rightsApproved: rights.rightsApproved,
-  rightsOwnerVerdict: rights.rightsOwnerVerdict,
-  licenseRef: rights.licenseRef,
-  licensePath: rights.licensePath,
-  externalAssetsUsed: rights.externalAssetsUsed,
-  records: []
-};
-for (const { repositoryPath, kind } of sourceRecords) {
-  assetLedger.records.push({
-    id: `project-authored:${repositoryPath}`,
-    kind,
-    repositoryPath,
-    ...await fileRecord(join(root, repositoryPath)),
-    externalSource: null,
-    rightsStatus: rights.status,
-    licenseRef: rights.licenseRef
-  });
-}
-await writeJson(join(root, "provenance/asset-ledger.json"), assetLedger);
-
-const generatedPaths = [
-  "source/review-candidate.blend",
-  ...reviewViews.map((viewId) => `source/review/${viewId}.webp`),
-  `assets/scenes/${contract.sceneId}/${contract.version}/scene.glb`,
-  `assets/scenes/${contract.sceneId}/${contract.version}/scene.json`,
-  `assets/scenes/${contract.sceneId}/${contract.version}/preview.webp`,
-  `assets/scenes/${contract.sceneId}/${contract.version}/LICENSES.md`
-];
-const generationLedger = {
-  schemaVersion: 1,
-  sceneId: contract.sceneId,
-  status: "review",
-  humanAcceptance: "pending-human-acceptance",
-  rightsStatus: rights.status,
-  rightsApproved: rights.rightsApproved,
-  rightsOwnerVerdict: rights.rightsOwnerVerdict,
-  licenseRef: rights.licenseRef,
-  method: "scene-specific procedural Blender authoring from the product brief",
-  agent: "OpenCode",
-  externalAssetsUsed: false,
-  downloadedReferencesUsed: false,
-  tooling: await Promise.all(toolingPaths.map(async (repositoryPath) => ({
-    repositoryPath,
-    ...await fileRecord(join(root, repositoryPath))
-  }))),
-  outputs: []
-};
-for (const repositoryPath of generatedPaths) {
-  generationLedger.outputs.push({ repositoryPath, ...await fileRecord(join(root, repositoryPath)) });
-}
-await writeJson(join(root, "provenance/generation-ledger.json"), generationLedger);
-
-const sourceLock = {
-  schemaVersion: 1,
-  sceneId: contract.sceneId,
-  version: contract.version,
-  status: "review",
-  humanAcceptance: "pending-human-acceptance",
+  version: releaseContract.version,
+  baseVersion: releaseContract.baseVersion,
+  releaseKind: releaseContract.releaseKind,
+  status: releaseContract.status,
+  humanAcceptance: releaseContract.humanAcceptance,
   rightsStatus: rights.status,
   rightsApproved: rights.rightsApproved,
   rightsApprovalDate: rights.rightsOwnerVerdict.receivedOn,
   licenseRef: rights.licenseRef,
-  publicationReady: false,
-  renderMode: contract.renderMode,
-  toolchain: contract.toolchain,
-  coordinateTransform: "x=x,y=y,z=-z",
-  source: {
-    blendPath: "source/review-candidate.blend",
-    blend: await fileRecord(blendPath),
-    authorScript: await fileRecord(join(root, "source/author_scene.py")),
-    exportScript: await fileRecord(join(root, "source/export_scene.py")),
-    renderScript: await fileRecord(join(root, "source/render_review.py"))
+  isCurrent: releaseContract.isCurrent,
+  publicationReady: releaseContract.publicationReady,
+  renderMode: releaseContract.renderMode,
+  renderProfile: releaseContract.renderProfile,
+  historicalValidatorCommit: contract.toolchain.platformValidatorCommit,
+  platformValidatorCommit: releaseContract.platformValidatorCommit,
+  historicalReproducibility: releaseContract.historicalReproducibility,
+  sourceContract: {
+    path: "source/scene-contract.json",
+    version: contract.version,
+    role: "historical-authoring-source",
+    ...await fileRecord(join(root, "source/scene-contract.json"))
   },
-  tooling: await Promise.all(toolingPaths.map(async (repositoryPath) => ({
-    repositoryPath,
-    ...await fileRecord(join(root, repositoryPath))
-  }))),
-  reviewViews: await Promise.all(reviewViews.map(async (id) => ({
-    id,
-    path: `source/review/${id}.webp`,
-    ...await fileRecord(join(reviewPath, `${id}.webp`))
-  }))),
+  releaseContract: {
+    path: "source/metadata-release.json",
+    ...await fileRecord(join(root, "source/metadata-release.json"))
+  },
+  historicalEvidence,
+  tooling,
+  historicalRelease: {
+    path: historicalRelease.releasePath,
+    files: historicalFiles
+  },
   release: {
-    path: `assets/scenes/${contract.sceneId}/${contract.version}`,
+    path: metadataRelease.releasePath,
     files: releaseFiles,
     stats
   },
-  reproducibility: manifest.releases[0].reproducibility,
+  unchangedPayload: Object.fromEntries(releaseContract.unchangedFiles.map((name) => [name, {
+    historical: historicalFiles[name],
+    release: releaseFiles[name]
+  }])),
+  reproducibility: metadataRelease.reproducibility,
+  outputs: await Promise.all(metadataOutputs.map(async (repositoryPath) => ({
+    repositoryPath,
+    ...await fileRecord(join(root, repositoryPath))
+  }))),
   boundaries: contract.releaseBoundary
 };
-await writeJson(join(root, "source/review-candidate-lock.json"), sourceLock);
+await writeJson(join(root, "source/metadata-release-lock.json"), metadataReleaseLock);
 
-process.stdout.write(`Built ${contract.sceneId}@${contract.version} review candidate\n`);
-process.stdout.write(`GLB ${glbRecord.sizeBytes} bytes sha256=${glbRecord.sha256}\n`);
+const glbRecord = releaseFiles["scene.glb"];
+process.stdout.write(`Built ${contract.sceneId}@${releaseContract.version} metadata-only review release from ${contract.version}\n`);
+process.stdout.write(`GLB ${glbRecord.sizeBytes} bytes sha256=${glbRecord.sha256} (identical to ${contract.version})\n`);
 process.stdout.write(`Stats ${JSON.stringify(stats)}\n`);

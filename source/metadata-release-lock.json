@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "version": "0.1.1",
+  "baseVersion": "0.1.0",
+  "releaseKind": "metadata-only-review",
+  "status": "review",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "approved-for-public-staging-review",
+  "rightsApproved": true,
+  "rightsApprovalDate": "2026-08-29",
+  "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
+  "isCurrent": false,
+  "publicationReady": false,
+  "renderMode": "clean",
+  "renderProfile": "neutral-pbr",
+  "historicalValidatorCommit": "9153bb9818a2907fb33ba96375f7b31c1641f12f",
+  "platformValidatorCommit": "61736f6289f941e290f4fe156f17efdd64ef876b",
+  "historicalReproducibility": {
+    "blenderVersion": "4.5.12 LTS",
+    "blenderBuildHash": "84afd5f785f7",
+    "blenderBinarySha256": "33ac108ebce3c271f5357e5c664d0488717263bcf2145c80300edd0b12c31880"
+  },
+  "sourceContract": {
+    "path": "source/scene-contract.json",
+    "version": "0.1.0",
+    "role": "historical-authoring-source",
+    "sha256": "2a6b41e3de3e6821c2b8d34bec52c7847a5b78c6ff1f16b528078a450d3e5cd2",
+    "sizeBytes": 5957
+  },
+  "releaseContract": {
+    "path": "source/metadata-release.json",
+    "sha256": "3fdc02d742e3d17328f55389139a2eaf06fedddba4df64ef37ce4b07cb48cdfe",
+    "sizeBytes": 932
+  },
+  "historicalEvidence": [
+    {
+      "repositoryPath": "source/scene-contract.json",
+      "sha256": "2a6b41e3de3e6821c2b8d34bec52c7847a5b78c6ff1f16b528078a450d3e5cd2",
+      "sizeBytes": 5957
+    },
+    {
+      "repositoryPath": "source/scene-contract-lock.json",
+      "sha256": "8d33d5fa9a2d20c88886589b873e41de652a6104196e1b285441beb65a913e61",
+      "sizeBytes": 586
+    },
+    {
+      "repositoryPath": "source/review-candidate-lock.json",
+      "sha256": "a51706b416ce925750bd6918a96ce74bf9242167072daa513eff11538216ef0e",
+      "sizeBytes": 4451
+    },
+    {
+      "repositoryPath": "provenance/asset-ledger.json",
+      "sha256": "73db387dc2c90d3b109230adccac64b639ac810aa3be4b72022c520ed6d33ab0",
+      "sizeBytes": 5799
+    },
+    {
+      "repositoryPath": "provenance/generation-ledger.json",
+      "sha256": "d0ac8195d521007c385abbdcf5bedefe849afab035bfb859228a6c0c2ce1f36d",
+      "sizeBytes": 3418
+    }
+  ],
+  "tooling": [
+    {
+      "repositoryPath": "scripts/lib.mjs",
+      "sha256": "cc27b81826b6d44a73b0f1b44297bae605ced46cbf229dfad90e695dc7ba6a98",
+      "sizeBytes": 4370
+    },
+    {
+      "repositoryPath": "scripts/build-review-candidate.mjs",
+      "sha256": "b88057a30c83b824cd3ca0f887f99302af26e71d357f0dd33fe1bdd6a7a6676f",
+      "sizeBytes": 9589
+    },
+    {
+      "repositoryPath": "scripts/inspect-release.mjs",
+      "sha256": "58326d676ffaebe06c05a53ea3fea8a9cae9e928adb922fba84d788b15a4ad7e",
+      "sizeBytes": 2072
+    },
+    {
+      "repositoryPath": "scripts/validate-repository.mjs",
+      "sha256": "f5adfa6e7a96607332fae029c62cf3df7fce365d06e4cde4e1f381a5ada4fdf1",
+      "sizeBytes": 34256
+    },
+    {
+      "repositoryPath": "scripts/verify-reproducibility.mjs",
+      "sha256": "e91d476804db4cf6c2337b013db98629e29eb3c64ad385150c88585995585282",
+      "sizeBytes": 3880
+    },
+    {
+      "repositoryPath": "tests/repository.test.mjs",
+      "sha256": "e105ea7ddf3c880ed81f8e9f37fba8d802d29253679738e0b358b2b49d2ed5ef",
+      "sizeBytes": 15237
+    }
+  ],
+  "historicalRelease": {
+    "path": "assets/scenes/presentation-room-v1/0.1.0",
+    "files": {
+      "LICENSES.md": {
+        "sha256": "42a4d1ca687ca375f38db222e4fe7c3ed99af9dca4730f288cc910daf3df9d1b",
+        "sizeBytes": 836
+      },
+      "preview.webp": {
+        "sha256": "2e5880e76d6ef1136aabdf8c8ef1eea999be0bad6415ab57997f2ec4ac61ff88",
+        "sizeBytes": 33512
+      },
+      "scene.glb": {
+        "sha256": "1c44b52b9f70ecad9401b703176c460b6a909e3f22b2566a98caedb4a0c90a63",
+        "sizeBytes": 2142756
+      },
+      "scene.json": {
+        "sha256": "0bf3f15a068a1edf735f48d05c2bec17d1b1878aa75b2dd0e2847065857e0115",
+        "sizeBytes": 4947
+      }
+    }
+  },
+  "release": {
+    "path": "assets/scenes/presentation-room-v1/0.1.1",
+    "files": {
+      "LICENSES.md": {
+        "sha256": "42a4d1ca687ca375f38db222e4fe7c3ed99af9dca4730f288cc910daf3df9d1b",
+        "sizeBytes": 836
+      },
+      "preview.webp": {
+        "sha256": "2e5880e76d6ef1136aabdf8c8ef1eea999be0bad6415ab57997f2ec4ac61ff88",
+        "sizeBytes": 33512
+      },
+      "scene.glb": {
+        "sha256": "1c44b52b9f70ecad9401b703176c460b6a909e3f22b2566a98caedb4a0c90a63",
+        "sizeBytes": 2142756
+      },
+      "scene.json": {
+        "sha256": "300f9d26bd2e583c2afcdd3f7d75c7f6a9b9a56a332fdaf9482b85c545cc7fc6",
+        "sizeBytes": 5019
+      }
+    },
+    "stats": {
+      "triangles": 32060,
+      "objects": 210,
+      "meshes": 193,
+      "primitives": 193,
+      "materials": 10,
+      "textures": 0,
+      "animations": 0
+    }
+  },
+  "unchangedPayload": {
+    "LICENSES.md": {
+      "historical": {
+        "sha256": "42a4d1ca687ca375f38db222e4fe7c3ed99af9dca4730f288cc910daf3df9d1b",
+        "sizeBytes": 836
+      },
+      "release": {
+        "sha256": "42a4d1ca687ca375f38db222e4fe7c3ed99af9dca4730f288cc910daf3df9d1b",
+        "sizeBytes": 836
+      }
+    },
+    "preview.webp": {
+      "historical": {
+        "sha256": "2e5880e76d6ef1136aabdf8c8ef1eea999be0bad6415ab57997f2ec4ac61ff88",
+        "sizeBytes": 33512
+      },
+      "release": {
+        "sha256": "2e5880e76d6ef1136aabdf8c8ef1eea999be0bad6415ab57997f2ec4ac61ff88",
+        "sizeBytes": 33512
+      }
+    },
+    "scene.glb": {
+      "historical": {
+        "sha256": "1c44b52b9f70ecad9401b703176c460b6a909e3f22b2566a98caedb4a0c90a63",
+        "sizeBytes": 2142756
+      },
+      "release": {
+        "sha256": "1c44b52b9f70ecad9401b703176c460b6a909e3f22b2566a98caedb4a0c90a63",
+        "sizeBytes": 2142756
+      }
+    }
+  },
+  "reproducibility": {
+    "scope": "same-input-two-run-metadata-only-release",
+    "runs": 2,
+    "result": "byte-identical-release-files",
+    "sourceVersion": "0.1.0",
+    "unchangedPayloadSha256": {
+      "LICENSES.md": "42a4d1ca687ca375f38db222e4fe7c3ed99af9dca4730f288cc910daf3df9d1b",
+      "preview.webp": "2e5880e76d6ef1136aabdf8c8ef1eea999be0bad6415ab57997f2ec4ac61ff88",
+      "scene.glb": "1c44b52b9f70ecad9401b703176c460b6a909e3f22b2566a98caedb4a0c90a63"
+    }
+  },
+  "outputs": [
+    {
+      "repositoryPath": "assets/scenes/presentation-room-v1/0.1.1/LICENSES.md",
+      "sha256": "42a4d1ca687ca375f38db222e4fe7c3ed99af9dca4730f288cc910daf3df9d1b",
+      "sizeBytes": 836
+    },
+    {
+      "repositoryPath": "assets/scenes/presentation-room-v1/0.1.1/preview.webp",
+      "sha256": "2e5880e76d6ef1136aabdf8c8ef1eea999be0bad6415ab57997f2ec4ac61ff88",
+      "sizeBytes": 33512
+    },
+    {
+      "repositoryPath": "assets/scenes/presentation-room-v1/0.1.1/scene.glb",
+      "sha256": "1c44b52b9f70ecad9401b703176c460b6a909e3f22b2566a98caedb4a0c90a63",
+      "sizeBytes": 2142756
+    },
+    {
+      "repositoryPath": "assets/scenes/presentation-room-v1/0.1.1/scene.json",
+      "sha256": "300f9d26bd2e583c2afcdd3f7d75c7f6a9b9a56a332fdaf9482b85c545cc7fc6",
+      "sizeBytes": 5019
+    },
+    {
+      "repositoryPath": "manifest.json",
+      "sha256": "b3997841edbee5c93cc104885f2939e4723f86eea2251175dea029917651a1f1",
+      "sizeBytes": 4189
+    }
+  ],
+  "boundaries": {
+    "visualAccepted": false,
+    "rightsApproved": true,
+    "acceptedSource": false,
+    "immutableRelease": false,
+    "stagingVerified": false,
+    "publicationReady": false
+  }
+}
