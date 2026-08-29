@@ -1,6 +1,7 @@
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { readFile, stat, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
+import { join } from "node:path";
 
 import { NodeIO } from "@gltf-transform/core";
 import { ALL_EXTENSIONS } from "@gltf-transform/extensions";
@@ -28,6 +29,33 @@ export async function fileRecord(path) {
 
 export function toRuntimePosition(position) {
   return { x: position.x, y: position.y, z: -position.z };
+}
+
+export function createMetadataSceneManifest(baseScene, release) {
+  return {
+    ...baseScene,
+    version: release.version,
+    isCurrent: release.isCurrent,
+    publicationReady: release.publicationReady,
+    renderProfile: release.renderProfile,
+    spawnPoints: baseScene.spawnPoints.map((spawn) => spawn.id === release.runtimeSpawn.id
+      ? {
+          ...spawn,
+          position: release.runtimeSpawn.position,
+          yaw: release.runtimeSpawn.yaw
+        }
+      : spawn)
+  };
+}
+
+export async function materializeMetadataRelease(basePath, outputPath, release) {
+  const baseScene = await readJson(join(basePath, "scene.json"));
+  await rm(outputPath, { recursive: true, force: true });
+  await mkdir(outputPath, { recursive: true });
+  for (const name of release.unchangedFiles) {
+    await copyFile(join(basePath, name), join(outputPath, name));
+  }
+  await writeJson(join(outputPath, "scene.json"), createMetadataSceneManifest(baseScene, release));
 }
 
 function primitiveTriangles(primitive) {
