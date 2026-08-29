@@ -1,6 +1,7 @@
 name: Validate scene
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
