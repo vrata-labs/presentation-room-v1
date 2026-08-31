@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "version": "0.2.0",
+  "label": "Presentation Room",
+  "status": "review",
+  "humanAcceptance": "pending-human-acceptance",
+  "publicationReady": false,
+  "renderMode": "clean",
+  "glbPath": "scene.glb",
+  "glbSha256": "25dc4d0dad2039b7c533448c163490760ec8378187d82ed0b7a98214fc6acaec",
+  "preview": "preview.webp",
+  "source": "source/review-candidate.blend",
+  "productPurpose": {
+    "roomType": "presentation-audience-room",
+    "joinMuted": true,
+    "mediaUses": [
+      "pdf",
+      "screen-share"
+    ]
+  },
+  "bounds": {
+    "width": 10.8,
+    "height": 4.4,
+    "depth": 11.8
+  },
+  "coordinateAdapter": {
+    "authoringSpace": "semantic-y-up",
+    "runtimeSpace": "gltf-y-up",
+    "positionTransform": {
+      "x": "x",
+      "y": "y",
+      "z": "-z"
+    },
+    "blenderAuthoringTransform": {
+      "x": "x",
+      "y": "z",
+      "z": "y"
+    }
+  },
+  "spawnPoints": [
+    {
+      "id": "main",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -4.95
+      },
+      "yaw": 3.141592653589793,
+      "openRadiusM": 1.1
+    }
+  ],
+  "anchors": {
+    "seatAnchors": [
+      {
+        "id": "seat-01",
+        "row": 1,
+        "position": {
+          "x": -2.65,
+          "y": 0,
+          "z": -0.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-02",
+        "row": 1,
+        "position": {
+          "x": -1.55,
+          "y": 0,
+          "z": -0.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-03",
+        "row": 1,
+        "position": {
+          "x": 1.55,
+          "y": 0,
+          "z": -0.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-04",
+        "row": 1,
+        "position": {
+          "x": 2.65,
+          "y": 0,
+          "z": -0.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-05",
+        "row": 2,
+        "position": {
+          "x": -2.9,
+          "y": 0,
+          "z": -2.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-06",
+        "row": 2,
+        "position": {
+          "x": -1.8,
+          "y": 0,
+          "z": -2.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-07",
+        "row": 2,
+        "position": {
+          "x": 1.8,
+          "y": 0,
+          "z": -2.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-08",
+        "row": 2,
+        "position": {
+          "x": 2.9,
+          "y": 0,
+          "z": -2.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      }
+    ]
+  },
+  "mediaSurfaces": [
+    {
+      "surfaceId": "debug-main",
+      "purpose": "pdf-and-screen-share",
+      "widthM": 5.12,
+      "heightM": 2.88,
+      "aspectRatio": "16:9",
+      "visible": true,
+      "transform": {
+        "x": 0,
+        "y": 2.48,
+        "z": 5.33,
+        "yaw": 0
+      }
+    }
+  ],
+  "circulation": {
+    "minimumClearWidthM": 0.9,
+    "centerAisleWidthM": 2.25,
+    "leftSideAisleWidthM": 1.95,
+    "rightSideAisleWidthM": 1.95,
+    "entryToStageClear": true
+  },
+  "stats": {
+    "triangles": 32060,
+    "objects": 210,
+    "meshes": 193,
+    "primitives": 193,
+    "materials": 10,
+    "textures": 1,
+    "animations": 0
+  },
+  "rights": {
+    "status": "approved-for-public-staging-review",
+    "rightsApproved": true,
+    "rightsOwnerVerdict": {
+      "decision": "approved-for-public-staging-review",
+      "decisionMaker": "human-rights-owner",
+      "receivedOn": "2026-08-29"
+    },
+    "ownershipBasis": "entirely-project-authored",
+    "externalAssetsUsed": false,
+    "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
+    "licenseFile": "LICENSES.md",
+    "sourceLedger": "provenance/asset-ledger.json",
+    "clearedFor": [
+      "staging",
+      "public-web-runtime",
+      "screenshots",
+      "optimization",
+      "derivative-builds",
+      "redistribution-in-publicly-downloadable-scene-bundle"
+    ],
+    "notGrantedByThisVerdict": [
+      "production-activation",
+      "human-visual-acceptance"
+    ]
+  },
+  "isCurrent": false,
+  "renderProfile": "baked-pbr-v1"
+}

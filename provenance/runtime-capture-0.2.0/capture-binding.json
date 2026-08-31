@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "attestationType": "local-capture-attestation",
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.2.0",
+  "purpose": "Attests exact local capture inputs and diagnostics; does not record human acceptance.",
+  "humanAcceptanceRecorded": false,
+  "platformCaptureImplementationCommit": "c54edb2239d225a71e9b934316f70792b3faafb6",
+  "inputs": {
+    "sceneGlb": {
+      "path": "assets/scenes/presentation-room-v1/0.2.0/scene.glb",
+      "sha256": "25dc4d0dad2039b7c533448c163490760ec8378187d82ed0b7a98214fc6acaec",
+      "sizeBytes": 11990268
+    },
+    "sceneManifest": {
+      "path": "assets/scenes/presentation-room-v1/0.2.0/scene.json",
+      "sha256": "366c03557d69162ecb92a64fd8834434d7175d5248be46488d890dd62189cb9a",
+      "sizeBytes": 5020
+    },
+    "reviewConfig": {
+      "path": "source/scene-contract.json",
+      "sha256": "2a6b41e3de3e6821c2b8d34bec52c7847a5b78c6ff1f16b528078a450d3e5cd2",
+      "sizeBytes": 5957
+    }
+  },
+  "diagnostics": {
+    "status": "passed",
+    "state": "loaded",
+    "failureReason": null,
+    "missingAssets": [],
+    "loadMs": 764,
+    "renderProfileApplyMs": 109,
+    "renderProfile": "baked-pbr-v1",
+    "lightMappedMaterialCount": 10,
+    "materialCount": 10,
+    "triangleEstimate": 32060,
+    "darkPixelRatio": 0.046,
+    "assetBytesLoaded": 11990268,
+    "spawnApplied": true
+  },
+  "captureFiles": {
+    "entry.png": {
+      "path": "provenance/runtime-capture-0.2.0/entry.png",
+      "sha256": "15171026f3f360d5910d0fda867a657bd53dda64593fd4c710612188dcca7d9d",
+      "sizeBytes": 656059
+    },
+    "audience.png": {
+      "path": "provenance/runtime-capture-0.2.0/audience.png",
+      "sha256": "70ea3d57cb165a8b794c7c2bab6a4fb0f2d8014315f972748475402fa1442c73",
+      "sizeBytes": 643321
+    },
+    "presenter.png": {
+      "path": "provenance/runtime-capture-0.2.0/presenter.png",
+      "sha256": "9b12280658d1ebd47ceac396042e75e15ad23515b363b19c9590d79966dbf473",
+      "sizeBytes": 675524
+    },
+    "diagonal-overview.png": {
+      "path": "provenance/runtime-capture-0.2.0/diagonal-overview.png",
+      "sha256": "d035e40869415c6311fafd7f8361281a46d90762564d1787ab5eee0a8cfeb846",
+      "sizeBytes": 759834
+    },
+    "scene-debug.json": {
+      "path": "provenance/runtime-capture-0.2.0/scene-debug.json",
+      "sha256": "a1ea0856fdf2bb769b3c4a281c44cfafec2ae10fb79098aed967ab3f65ef6984",
+      "sizeBytes": 5723
+    },
+    "capture-settings.json": {
+      "path": "provenance/runtime-capture-0.2.0/capture-settings.json",
+      "sha256": "a4f53bb32e605d7ccce2178c26a99badb5d0eb39623cf99144d202ec4d61ad60",
+      "sizeBytes": 54
+    },
+    "preview.webp": {
+      "path": "provenance/runtime-capture-0.2.0/preview.webp",
+      "sha256": "22fc9f09b10913e54c3378be3d8be0dcde80340ad4bafdedf5f4c684f09aa720",
+      "sizeBytes": 269892
+    }
+  }
+}

@@ -3,12 +3,15 @@
   "repository": "vrata-labs/presentation-room-v1",
   "sceneId": "presentation-room-v1",
   "oneSceneOnly": true,
-  "releaseVersion": "0.1.1",
+  "releaseVersion": "0.2.0",
+  "releaseMaterialized": true,
   "status": "review",
   "humanAcceptance": "pending-human-acceptance",
+  "isCurrent": false,
+  "publicationReady": false,
   "rightsStatus": "approved-for-public-staging-review",
   "rightsApproved": true,
   "rightsApprovalDate": "2026-08-29",
   "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
-  "platformValidatorCommit": "61736f6289f941e290f4fe156f17efdd64ef876b"
+  "platformValidatorCommit": "c54edb2239d225a71e9b934316f70792b3faafb6"
 }

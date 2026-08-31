@@ -8,7 +8,7 @@
   "rightsApprovalDate": "2026-08-29",
   "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
   "publicationReady": false,
-  "platformValidatorCommit": "61736f6289f941e290f4fe156f17efdd64ef876b",
+  "platformValidatorCommit": "c54edb2239d225a71e9b934316f70792b3faafb6",
   "releases": [
     {
       "sceneId": "presentation-room-v1",
@@ -112,6 +112,58 @@
           "preview.webp": "2e5880e76d6ef1136aabdf8c8ef1eea999be0bad6415ab57997f2ec4ac61ff88",
           "scene.glb": "1c44b52b9f70ecad9401b703176c460b6a909e3f22b2566a98caedb4a0c90a63"
         }
+      }
+    },
+    {
+      "sceneId": "presentation-room-v1",
+      "version": "0.2.0",
+      "baseVersion": "0.1.1",
+      "releaseKind": "baked-lightmap-review",
+      "status": "review",
+      "humanAcceptance": "pending-human-acceptance",
+      "rightsStatus": "approved-for-public-staging-review",
+      "rightsApproved": true,
+      "rightsApprovalDate": "2026-08-29",
+      "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
+      "isCurrent": false,
+      "publicationReady": false,
+      "renderMode": "clean",
+      "renderProfile": "baked-pbr-v1",
+      "platformValidatorCommit": "c54edb2239d225a71e9b934316f70792b3faafb6",
+      "releasePath": "assets/scenes/presentation-room-v1/0.2.0",
+      "files": {
+        "LICENSES.md": {
+          "sha256": "42a4d1ca687ca375f38db222e4fe7c3ed99af9dca4730f288cc910daf3df9d1b",
+          "sizeBytes": 836
+        },
+        "preview.webp": {
+          "sha256": "22fc9f09b10913e54c3378be3d8be0dcde80340ad4bafdedf5f4c684f09aa720",
+          "sizeBytes": 269892
+        },
+        "scene.glb": {
+          "sha256": "25dc4d0dad2039b7c533448c163490760ec8378187d82ed0b7a98214fc6acaec",
+          "sizeBytes": 11990268
+        },
+        "scene.json": {
+          "sha256": "366c03557d69162ecb92a64fd8834434d7175d5248be46488d890dd62189cb9a",
+          "sizeBytes": 5020
+        }
+      },
+      "stats": {
+        "triangles": 32060,
+        "objects": 210,
+        "meshes": 193,
+        "primitives": 193,
+        "materials": 10,
+        "textures": 1,
+        "animations": 0
+      },
+      "reproducibility": {
+        "scope": "same-host-same-saved-blend-same-accepted-atlas-same-blender-binary-two-run",
+        "runs": 2,
+        "result": "byte-identical-glb",
+        "sha256": "25dc4d0dad2039b7c533448c163490760ec8378187d82ed0b7a98214fc6acaec",
+        "lightmapSha256": "cdeb7e52d539c17408acf6eaf39ac3a598ee06e731283f4d5b867ad45eb5fb66"
       }
     }
   ]
