@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.2.0",
+  "status": "review",
+  "humanAcceptance": "pending-human-acceptance",
+  "isCurrent": false,
+  "publicationReady": false,
+  "platformValidatorCommit": "c54edb2239d225a71e9b934316f70792b3faafb6",
+  "rights": {
+    "status": "approved-for-public-staging-review",
+    "rightsApproved": true,
+    "rightsApprovalDate": "2026-08-29",
+    "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
+    "rightsOwnerVerdict": {
+      "decision": "approved-for-public-staging-review",
+      "decisionMaker": "human-rights-owner",
+      "receivedOn": "2026-08-29"
+    },
+    "ownershipBasis": "entirely-project-authored",
+    "allowedUses": [
+      "staging",
+      "public-web-runtime",
+      "screenshots",
+      "optimization",
+      "derivative-builds",
+      "redistribution-in-publicly-downloadable-scene-bundle"
+    ],
+    "notGrantedByThisVerdict": [
+      "production-activation",
+      "human-visual-acceptance"
+    ],
+    "externalAssetsUsed": false,
+    "downloadedAssetsUsed": false,
+    "privateSenseTowerMaterialsUsed": false,
+    "imageTo3dOutputUsed": false,
+    "brandingUsed": false,
+    "publicationReady": false
+  },
+  "source": {
+    "blend": {
+      "path": "source/review-candidate.blend",
+      "sha256": "12afe2c438266db169922326f589a2e81478c9ef15111bbdb06a49ce71d7a89f",
+      "sizeBytes": 3100004
+    },
+    "exporter": {
+      "path": "source/export_baked_review.py",
+      "sha256": "c000d9d0e3e5c64b0a8853f6fbdd18d053f1247e83c25d82190f62a1a470dde7",
+      "sizeBytes": 8912
+    },
+    "atlas": {
+      "path": "source/baked-review-lightmap-0.2.0.png",
+      "sha256": "cdeb7e52d539c17408acf6eaf39ac3a598ee06e731283f4d5b867ad45eb5fb66",
+      "sizeBytes": 9273628,
+      "width": 2048,
+      "height": 2048
+    }
+  },
+  "toolchain": {
+    "blenderVersion": "4.5.12 LTS",
+    "blenderBuildHash": "84afd5f785f7",
+    "blenderBinarySha256": "33ac108ebce3c271f5357e5c664d0488717263bcf2145c80300edd0b12c31880",
+    "acceptedBakeAuthoringEvidence": {
+      "evidenceType": "recorded-authoring-evidence",
+      "materializationPerformedBake": false,
+      "acceptedAtlasSha256": "cdeb7e52d539c17408acf6eaf39ac3a598ee06e731283f4d5b867ad45eb5fb66",
+      "contract": {
+        "resolution": 2048,
+        "samples": 128,
+        "scale": 0.25,
+        "device": "CUDA",
+        "defaultIntensity": 4,
+        "transport": "emissiveTexture TEXCOORD_1 with baked-pbr-v1 metadata"
+      }
+    }
+  },
+  "runtimeEvidence": {
+    "basePath": "provenance/runtime-capture-0.2.0",
+    "files": {
+      "entry.png": {
+        "path": "provenance/runtime-capture-0.2.0/entry.png",
+        "sha256": "15171026f3f360d5910d0fda867a657bd53dda64593fd4c710612188dcca7d9d",
+        "sizeBytes": 656059
+      },
+      "audience.png": {
+        "path": "provenance/runtime-capture-0.2.0/audience.png",
+        "sha256": "70ea3d57cb165a8b794c7c2bab6a4fb0f2d8014315f972748475402fa1442c73",
+        "sizeBytes": 643321
+      },
+      "presenter.png": {
+        "path": "provenance/runtime-capture-0.2.0/presenter.png",
+        "sha256": "9b12280658d1ebd47ceac396042e75e15ad23515b363b19c9590d79966dbf473",
+        "sizeBytes": 675524
+      },
+      "diagonal-overview.png": {
+        "path": "provenance/runtime-capture-0.2.0/diagonal-overview.png",
+        "sha256": "d035e40869415c6311fafd7f8361281a46d90762564d1787ab5eee0a8cfeb846",
+        "sizeBytes": 759834
+      },
+      "scene-debug.json": {
+        "path": "provenance/runtime-capture-0.2.0/scene-debug.json",
+        "sha256": "a1ea0856fdf2bb769b3c4a281c44cfafec2ae10fb79098aed967ab3f65ef6984",
+        "sizeBytes": 5723
+      },
+      "capture-settings.json": {
+        "path": "provenance/runtime-capture-0.2.0/capture-settings.json",
+        "sha256": "a4f53bb32e605d7ccce2178c26a99badb5d0eb39623cf99144d202ec4d61ad60",
+        "sizeBytes": 54
+      },
+      "preview.webp": {
+        "path": "provenance/runtime-capture-0.2.0/preview.webp",
+        "sha256": "22fc9f09b10913e54c3378be3d8be0dcde80340ad4bafdedf5f4c684f09aa720",
+        "sizeBytes": 269892
+      },
+      "capture-binding.json": {
+        "path": "provenance/runtime-capture-0.2.0/capture-binding.json",
+        "sha256": "ef376ab7204265c90bedf855f0d779b4e9dcb8ef2f7f1b7be79dd7415c9d4f42",
+        "sizeBytes": 2839
+      }
+    },
+    "normalization": {
+      "policy": "repository-relative-local-capture-urls",
+      "bundleUrl": "local-capture/scene.json",
+      "assetUrl": "local-capture/scene.glb",
+      "machineLocalUrlsRemoved": true
+    },
+    "captureSettings": {
+      "environmentIntensity": 0.35,
+      "exposure": 1.2
+    },
+    "localCaptureAttestation": {
+      "path": "provenance/runtime-capture-0.2.0/capture-binding.json",
+      "sha256": "ef376ab7204265c90bedf855f0d779b4e9dcb8ef2f7f1b7be79dd7415c9d4f42",
+      "sizeBytes": 2839,
+      "attestationType": "local-capture-attestation",
+      "humanAcceptanceRecorded": false
+    }
+  },
+  "release": {
+    "path": "assets/scenes/presentation-room-v1/0.2.0",
+    "files": {
+      "LICENSES.md": {
+        "sha256": "42a4d1ca687ca375f38db222e4fe7c3ed99af9dca4730f288cc910daf3df9d1b",
+        "sizeBytes": 836
+      },
+      "preview.webp": {
+        "sha256": "22fc9f09b10913e54c3378be3d8be0dcde80340ad4bafdedf5f4c684f09aa720",
+        "sizeBytes": 269892
+      },
+      "scene.glb": {
+        "sha256": "25dc4d0dad2039b7c533448c163490760ec8378187d82ed0b7a98214fc6acaec",
+        "sizeBytes": 11990268
+      },
+      "scene.json": {
+        "sha256": "366c03557d69162ecb92a64fd8834434d7175d5248be46488d890dd62189cb9a",
+        "sizeBytes": 5020
+      }
+    },
+    "stats": {
+      "triangles": 32060,
+      "objects": 210,
+      "meshes": 193,
+      "primitives": 193,
+      "materials": 10,
+      "textures": 1,
+      "animations": 0
+    }
+  },
+  "reproducibility": {
+    "scope": "same-host-same-saved-blend-same-accepted-atlas-same-blender-binary-two-run",
+    "runs": 2,
+    "result": "byte-identical-glb",
+    "sha256": "25dc4d0dad2039b7c533448c163490760ec8378187d82ed0b7a98214fc6acaec",
+    "lightmapSha256": "cdeb7e52d539c17408acf6eaf39ac3a598ee06e731283f4d5b867ad45eb5fb66"
+  },
+  "localRuntime": {
+    "status": "passed",
+    "state": "loaded",
+    "failureReason": null,
+    "missingAssets": [],
+    "loadMs": 764,
+    "renderProfileApplyMs": 109,
+    "renderProfile": "baked-pbr-v1",
+    "lightMappedMaterialCount": 10,
+    "materialCount": 10,
+    "triangleEstimate": 32060,
+    "darkPixelRatio": 0.046,
+    "assetBytesLoaded": 11990268,
+    "spawnApplied": true
+  },
+  "visualParity": {
+    "status": "passed",
+    "metricTool": "ImageMagick compare",
+    "metricToolVersion": "Version: ImageMagick 6.9.12-98 Q16 x86_64 18038 https://legacy.imagemagick.org",
+    "metricTolerance": {
+      "perViewPhashAbsolute": 0.001,
+      "perViewNccAbsolute": 0.000001,
+      "aggregatePhashAbsolute": 0.004,
+      "aggregateNccAbsolute": 0.000001
+    },
+    "views": [
+      {
+        "id": "entry",
+        "phash": 85.5476,
+        "ncc": 0.349165,
+        "threshold": {
+          "phashMax": 95,
+          "nccMin": 0.3
+        },
+        "status": "passed"
+      },
+      {
+        "id": "audience",
+        "phash": 57.2046,
+        "ncc": 0.343791,
+        "threshold": {
+          "phashMax": 66,
+          "nccMin": 0.29
+        },
+        "status": "passed"
+      },
+      {
+        "id": "presenter",
+        "phash": 162.272,
+        "ncc": 0.406459,
+        "threshold": {
+          "phashMax": 175,
+          "nccMin": 0.35
+        },
+        "status": "passed"
+      },
+      {
+        "id": "diagonal-overview",
+        "phash": 94.7163,
+        "ncc": 0.299311,
+        "threshold": {
+          "phashMax": 105,
+          "nccMin": 0.25
+        },
+        "status": "passed"
+      }
+    ],
+    "thresholdState": "final-technical-regression",
+    "finalThresholdsDefined": true,
+    "aggregateThresholds": {
+      "phashTotalMax": 430,
+      "nccMeanMin": 0.31
+    },
+    "phashTotal": 399.7405,
+    "nccMean": 0.3496815,
+    "result": "passed",
+    "humanAcceptanceRecorded": false
+  }
+}

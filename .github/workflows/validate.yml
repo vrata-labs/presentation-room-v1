@@ -1,7 +1,6 @@
 name: Validate scene
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
@@ -16,6 +15,8 @@ jobs:
     steps:
       - name: Checkout scene
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -28,8 +29,47 @@ jobs:
           node-version: 22
           cache: pnpm
 
+      - name: Install ImageMagick and pinned Blender
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes imagemagick xz-utils
+          archive="$RUNNER_TEMP/blender-4.5.12-linux-x64.tar.xz"
+          curl --fail --location --retry 3 --output "$archive" https://download.blender.org/release/Blender4.5/blender-4.5.12-linux-x64.tar.xz
+          echo "95e3a2dfedba3bd32ca54fc355eac6b15a11986954ccb02815a07535d0120a25  $archive" | sha256sum --check
+          tar --extract --xz --file "$archive" --directory "$RUNNER_TEMP"
+          blender="$RUNNER_TEMP/blender-4.5.12-linux-x64/blender"
+          echo "33ac108ebce3c271f5357e5c664d0488717263bcf2145c80300edd0b12c31880  $blender" | sha256sum --check
+          echo "BLENDER_BIN=$blender" >> "$GITHUB_ENV"
+
       - name: Install scene dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Reject changes to immutable versioned artifacts
+        shell: bash
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if [[ -z "$BASE_SHA" || "$BASE_SHA" =~ ^0+$ ]]; then
+            echo "immutable_baseline_missing" >&2
+            exit 1
+          fi
+          git fetch --no-tags --depth=1 origin "$BASE_SHA"
+          while IFS= read -r path; do
+            case "$path" in
+              assets/scenes/*/*/*) protected_path="$(cut -d/ -f1-4 <<< "$path")" ;;
+              provenance/runtime-capture-*/*) protected_path="$(cut -d/ -f1-2 <<< "$path")" ;;
+              provenance/baked-lightmap-*.json|source/baked-review-lightmap-*.png) protected_path="$path" ;;
+              *) continue ;;
+            esac
+            if git cat-file -e "$BASE_SHA:$protected_path" 2>/dev/null; then
+              echo "immutable_versioned_artifact_changed:$path" >&2
+              exit 1
+            fi
+          done < <(git diff --no-renames --name-only "$BASE_SHA" HEAD -- assets/scenes 'provenance/runtime-capture-*' 'provenance/baked-lightmap-*.json' 'source/baked-review-lightmap-*.png')
+
+      - name: Validate committed visual evidence
+        run: pnpm validate:visual
 
       - name: Run scene unit tests
         run: pnpm test
@@ -39,6 +79,9 @@ jobs:
 
       - name: Inspect GLB release
         run: pnpm inspect
+
+      - name: Verify actual two-run Blender reproducibility
+        run: pnpm verify:reproducibility
 
       - name: Read platform validator lock
         id: platform-ref
