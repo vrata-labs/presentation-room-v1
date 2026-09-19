@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, isAbsolute, relative, resolve } from "node:path";
 
-import { assert } from "./lib.mjs";
+import { assert, assertScratchOutput } from "./lib.mjs";
 import { measureVisualParity } from "./review-evidence.mjs";
 import { reviewRelease } from "./review-release-config.mjs";
 
@@ -10,6 +10,7 @@ const evidenceInput = process.env.SCENE_VISUAL_OUTPUT_DIR ?? reviewRelease.runti
 const evidencePath = isAbsolute(evidenceInput) ? evidenceInput : resolve(root, evidenceInput);
 const reportInput = process.env.SCENE_VISUAL_REPORT_PATH ?? "build/visual-parity-0.2.0.json";
 const reportPath = isAbsolute(reportInput) ? reportInput : resolve(root, reportInput);
+await assertScratchOutput(root, reportPath);
 const parity = reviewRelease.visualParity;
 
 assert(parity.finalThresholdsDefined === true, "visual_parity_final_thresholds_missing");

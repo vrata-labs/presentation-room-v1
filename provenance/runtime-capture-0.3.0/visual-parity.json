@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.3.0",
+  "status": "review",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "pending-human-rights-approval",
+  "rightsApproved": false,
+  "isCurrent": false,
+  "publicationReady": false,
+  "capturePlan": {
+    "path": "source/releases/0.3.0/runtime-capture-plan.json",
+    "sha256": "b805bbdf34d0c6586be292e02ab872cdf8a4d528a4fe98a9362d242823f071bb",
+    "sizeBytes": 5769
+  },
+  "platformRuntimeCommit": "c54edb2239d225a71e9b934316f70792b3faafb6",
+  "runtimeBuildModified": false,
+  "capturedOn": "2026-09-05",
+  "canonicalRunId": "run-1",
+  "runs": [
+    {
+      "id": "run-1",
+      "viewIds": [
+        "entry",
+        "audience",
+        "presenter",
+        "diagonal-overview",
+        "screen-detail",
+        "aisle-seat-detail",
+        "lighting-detail"
+      ],
+      "result": "passed"
+    },
+    {
+      "id": "run-2",
+      "viewIds": [
+        "entry",
+        "audience",
+        "presenter",
+        "diagonal-overview",
+        "screen-detail",
+        "aisle-seat-detail",
+        "lighting-detail"
+      ],
+      "result": "passed"
+    },
+    {
+      "id": "run-3",
+      "viewIds": [
+        "entry",
+        "audience",
+        "presenter",
+        "diagonal-overview",
+        "screen-detail",
+        "aisle-seat-detail",
+        "lighting-detail"
+      ],
+      "result": "passed"
+    }
+  ],
+  "normalization": {
+    "localUrls": true,
+    "hudHidden": true,
+    "mediaSurfacesHidden": true,
+    "avatarFallbackCapsulesEnabled": false,
+    "avatarSeatsEnabled": false
+  },
+  "diagnostics": {
+    "run-1": {
+      "status": "passed",
+      "state": "loaded",
+      "failureReason": null,
+      "missingAssets": [],
+      "loadMs": 1406,
+      "renderProfileApplyMs": 175,
+      "renderProfile": "baked-pbr-v1",
+      "meshCount": 193,
+      "materialCount": 10,
+      "lightMappedMaterialCount": 10,
+      "triangleEstimate": 32060,
+      "textureCount": 17,
+      "assetBytesLoaded": 13333276,
+      "spawnApplied": true,
+      "darkPixelRatio": 0.279
+    },
+    "run-2": {
+      "status": "passed",
+      "state": "loaded",
+      "failureReason": null,
+      "missingAssets": [],
+      "loadMs": 2648,
+      "renderProfileApplyMs": 269,
+      "renderProfile": "baked-pbr-v1",
+      "meshCount": 193,
+      "materialCount": 10,
+      "lightMappedMaterialCount": 10,
+      "triangleEstimate": 32060,
+      "textureCount": 17,
+      "assetBytesLoaded": 13333276,
+      "spawnApplied": true,
+      "darkPixelRatio": 0.279
+    },
+    "run-3": {
+      "status": "passed",
+      "state": "loaded",
+      "failureReason": null,
+      "missingAssets": [],
+      "loadMs": 1863,
+      "renderProfileApplyMs": 224,
+      "renderProfile": "baked-pbr-v1",
+      "meshCount": 193,
+      "materialCount": 10,
+      "lightMappedMaterialCount": 10,
+      "triangleEstimate": 32060,
+      "textureCount": 17,
+      "assetBytesLoaded": 13333276,
+      "spawnApplied": true,
+      "darkPixelRatio": 0.279
+    }
+  },
+  "stability": {
+    "path": "provenance/runtime-capture-0.3.0/stability.json",
+    "sha256": "2cf9570b003600bc105ab218c8243b51a78224abf72029bfedbf27e2c745527c",
+    "sizeBytes": 15109,
+    "result": "byte-identical-images-across-three-full-view-runs"
+  },
+  "metricTool": "ImageMagick compare",
+  "metricToolVersion": "Version: ImageMagick 6.9.12-98 Q16 x86_64 18038 https://legacy.imagemagick.org",
+  "metricTolerance": {
+    "perViewPhashAbsolute": 0.001,
+    "perViewNccAbsolute": 0.000001,
+    "aggregatePhashAbsolute": 0.007,
+    "aggregateNccAbsolute": 0.000001
+  },
+  "thresholdState": "candidate-calibrated-technical-regression-from-three-repeatable-full-view-runs",
+  "views": [
+    {
+      "id": "entry",
+      "reference": {
+        "path": "source/releases/0.3.0/review/entry.webp",
+        "sha256": "22463ea1360e42638a6482515347e67c8cf32a0fd985671f11fae3083d0ac78e",
+        "sizeBytes": 48764
+      },
+      "capture": {
+        "path": "provenance/runtime-capture-0.3.0/runs/run-1/entry.png",
+        "sha256": "f11df1de16b2f69e59dfeb95d6edbea91e8dd813ab5672ebb1d35b21741cc7c4",
+        "sizeBytes": 391131
+      },
+      "metrics": {
+        "format": "png",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.27592056,
+        "darkPixelRatioBelow10Percent": 0.05126736
+      },
+      "phash": 49.6596,
+      "ncc": 0.824123,
+      "threshold": {
+        "phashMax": 60,
+        "nccMin": 0.79
+      },
+      "status": "passed"
+    },
+    {
+      "id": "audience",
+      "reference": {
+        "path": "source/releases/0.3.0/review/audience.webp",
+        "sha256": "70507cda9cf2dd7274ad9a79097775379271f924b900251a810b7e3bf8dbce97",
+        "sizeBytes": 43296
+      },
+      "capture": {
+        "path": "provenance/runtime-capture-0.3.0/runs/run-1/audience.png",
+        "sha256": "330f924b8066be59944c7828a713df233e98abb255afebab01f952b0228652b0",
+        "sizeBytes": 344333
+      },
+      "metrics": {
+        "format": "png",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.2746452,
+        "darkPixelRatioBelow10Percent": 0.08445409
+      },
+      "phash": 85.5924,
+      "ncc": 0.711385,
+      "threshold": {
+        "phashMax": 100,
+        "nccMin": 0.68
+      },
+      "status": "passed"
+    },
+    {
+      "id": "presenter",
+      "reference": {
+        "path": "source/releases/0.3.0/review/presenter.webp",
+        "sha256": "aee060fb0ae5c1238911ed3b52461c4d74fb869d4f294f78200d20227ff1fd58",
+        "sizeBytes": 51078
+      },
+      "capture": {
+        "path": "provenance/runtime-capture-0.3.0/runs/run-1/presenter.png",
+        "sha256": "e077c172cbda06d33247e8a1211cea3d1ed6f8ce32213afbb9c6e2bf56cd9c20",
+        "sizeBytes": 403575
+      },
+      "metrics": {
+        "format": "png",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.32878288,
+        "darkPixelRatioBelow10Percent": 0.06065008
+      },
+      "phash": 156.689,
+      "ncc": 0.464465,
+      "threshold": {
+        "phashMax": 170,
+        "nccMin": 0.43
+      },
+      "status": "passed"
+    },
+    {
+      "id": "diagonal-overview",
+      "reference": {
+        "path": "source/releases/0.3.0/review/diagonal-overview.webp",
+        "sha256": "0293506bafcdd960b3d761f242d4e75df08529283f6d79da00e86d87057680f2",
+        "sizeBytes": 70610
+      },
+      "capture": {
+        "path": "provenance/runtime-capture-0.3.0/runs/run-1/diagonal-overview.png",
+        "sha256": "4f9066f0b64f352edea1946300690e9c2cfa6fb99f5647fa3c4c02e2c03d1a81",
+        "sizeBytes": 462027
+      },
+      "metrics": {
+        "format": "png",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.29359285,
+        "darkPixelRatioBelow10Percent": 0.0482716
+      },
+      "phash": 64.7774,
+      "ncc": 0.334613,
+      "threshold": {
+        "phashMax": 75,
+        "nccMin": 0.3
+      },
+      "status": "passed"
+    },
+    {
+      "id": "screen-detail",
+      "reference": {
+        "path": "source/releases/0.3.0/review/screen-detail.webp",
+        "sha256": "3fedb2a07a3d058b82e1981747e8296564a3f95909a5ed7b8cf9823eace13562",
+        "sizeBytes": 33028
+      },
+      "capture": {
+        "path": "provenance/runtime-capture-0.3.0/runs/run-1/screen-detail.png",
+        "sha256": "4dc9d5285965cf8b89cb867d53f53ea21a4bd5c66dbadc656ff81584084d4dbc",
+        "sizeBytes": 227224
+      },
+      "metrics": {
+        "format": "png",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.22606895,
+        "darkPixelRatioBelow10Percent": 0.09405093
+      },
+      "phash": 50.8499,
+      "ncc": 0.558892,
+      "threshold": {
+        "phashMax": 65,
+        "nccMin": 0.52
+      },
+      "status": "passed"
+    },
+    {
+      "id": "aisle-seat-detail",
+      "reference": {
+        "path": "source/releases/0.3.0/review/aisle-seat-detail.webp",
+        "sha256": "4081d40d526da23381f968e5b9409833670fddcd49bfd110fa131e474f014fcb",
+        "sizeBytes": 45718
+      },
+      "capture": {
+        "path": "provenance/runtime-capture-0.3.0/runs/run-1/aisle-seat-detail.png",
+        "sha256": "526ed8cfe87c885e8661375674e7f006c397dd8a00dc875de26cedbe441484ac",
+        "sizeBytes": 342041
+      },
+      "metrics": {
+        "format": "png",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.26545167,
+        "darkPixelRatioBelow10Percent": 0.01143519
+      },
+      "phash": 16.6553,
+      "ncc": 0.680038,
+      "threshold": {
+        "phashMax": 30,
+        "nccMin": 0.65
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lighting-detail",
+      "reference": {
+        "path": "source/releases/0.3.0/review/lighting-detail.webp",
+        "sha256": "267886ad6efe24a2b8711f509040a57a5b45153d8836f347b880631d15191caa",
+        "sizeBytes": 50354
+      },
+      "capture": {
+        "path": "provenance/runtime-capture-0.3.0/runs/run-1/lighting-detail.png",
+        "sha256": "b2d7239bdcfb073ff29deb7979e479ad5e70e62e3013a59ebf760b130ac7f242",
+        "sizeBytes": 343924
+      },
+      "metrics": {
+        "format": "png",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.20567712,
+        "darkPixelRatioBelow10Percent": 0.28009452
+      },
+      "phash": 98.5723,
+      "ncc": 0.284182,
+      "threshold": {
+        "phashMax": 110,
+        "nccMin": 0.25
+      },
+      "status": "passed"
+    }
+  ],
+  "aggregateThreshold": {
+    "phashTotalMax": 580,
+    "nccMeanMin": 0.51
+  },
+  "aggregate": {
+    "phashTotal": 522.7959000000001,
+    "nccMean": 0.5510997142857144
+  },
+  "result": "passed",
+  "technicalResult": "passed",
+  "humanAcceptanceRecorded": false
+}

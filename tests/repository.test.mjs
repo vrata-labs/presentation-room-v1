@@ -27,32 +27,33 @@ const historicalEvidenceRecords = {
   "provenance/asset-ledger.json": { sha256: "73db387dc2c90d3b109230adccac64b639ac810aa3be4b72022c520ed6d33ab0", sizeBytes: 5799 },
   "provenance/generation-ledger.json": { sha256: "d0ac8195d521007c385abbdcf5bedefe849afab035bfb859228a6c0c2ce1f36d", sizeBytes: 3418 }
 };
+const historicalMetadataLockRecord = { sha256: "b80eab78d8269355720f4c0973e6a683f8ba74d0780b873e7abe011e9b64c48f", sizeBytes: 7464 };
 
-test("repository points to 0.1.1 while both review releases remain non-current", async () => {
+test("repository points to 0.3.0 while all review releases remain non-current", async () => {
   const config = await readJson(join(root, "scene-repository.json"));
   const packageJson = await readJson(join(root, "package.json"));
   const manifest = await readJson(join(root, "manifest.json"));
   const lock = (await readFile(join(root, "platform-validator.lock"), "utf8")).trim();
   assert.equal(config.sceneId, "presentation-room-v1");
   assert.equal(config.oneSceneOnly, true);
-  assert.equal(config.releaseVersion, "0.1.1");
-  assert.equal(packageJson.version, "0.1.1");
+  assert.equal(config.releaseVersion, "0.3.0");
+  assert.equal(packageJson.version, "0.3.0");
   assert.equal(config.status, "review");
   assert.equal(config.humanAcceptance, "pending-human-acceptance");
-  assert.equal(config.rightsStatus, approvedRightsStatus);
-  assert.equal(config.rightsApproved, true);
-  assert.equal(config.rightsApprovalDate, rightsApprovalDate);
-  assert.equal(config.licenseRef, licenseRef);
-  assert.equal(config.platformValidatorCommit, metadataValidatorCommit);
-  assert.equal(lock, metadataValidatorCommit);
-  assert.equal(manifest.platformValidatorCommit, metadataValidatorCommit);
-  assert.deepEqual(manifest.releases.map(({ version }) => version), ["0.1.0", "0.1.1"]);
+  assert.equal(config.rightsStatus, "pending-human-rights-approval");
+  assert.equal(config.rightsApproved, false);
+  assert.equal(config.rightsApprovalDate, null);
+  assert.equal(config.licenseRef, null);
+  assert.equal(config.platformValidatorCommit, "c54edb2239d225a71e9b934316f70792b3faafb6");
+  assert.equal(lock, "c54edb2239d225a71e9b934316f70792b3faafb6");
+  assert.equal(manifest.platformValidatorCommit, "c54edb2239d225a71e9b934316f70792b3faafb6");
+  assert.deepEqual(manifest.releases.map(({ version }) => version), ["0.1.0", "0.1.1", "0.2.0", "0.3.0"]);
   assert.ok(manifest.releases.every(({ status, humanAcceptance, isCurrent, publicationReady }) =>
     status === "review" && humanAcceptance === "pending-human-acceptance" && isCurrent === false && publicationReady === false));
   assert.equal(manifest.releases[0].platformValidatorCommit, historicalValidatorCommit);
   assert.equal(manifest.releases[1].platformValidatorCommit, metadataValidatorCommit);
   assert.deepEqual(await readdir(join(root, "assets/scenes")), ["presentation-room-v1"]);
-  assert.deepEqual((await readdir(join(root, "assets/scenes/presentation-room-v1"))).sort(), ["0.1.0", "0.1.1"]);
+  assert.deepEqual((await readdir(join(root, "assets/scenes/presentation-room-v1"))).sort(), ["0.1.0", "0.1.1", "0.2.0", "0.3.0"]);
 });
 
 test("0.1.0 remains the byte-exact historical authoring release", async () => {
@@ -130,11 +131,11 @@ test("0.1.1 preserves rights and all three unchanged payload hashes", async () =
   assert.match(currentLicense, /production\s+activation/);
 });
 
-test("both releases contain the same measured GLB within product budgets", async () => {
+test("the two historical base releases contain the same measured GLB within product budgets", async () => {
   const contract = await readJson(join(root, "source/scene-contract.json"));
   const manifest = await readJson(join(root, "manifest.json"));
   const inspections = [];
-  for (const release of manifest.releases) {
+  for (const release of manifest.releases.slice(0, 2)) {
     const releasePath = join(root, release.releasePath);
     const inspection = await glbInspection(join(releasePath, "scene.glb"));
     const preview = await sharp(join(releasePath, "preview.webp")).metadata();
@@ -203,9 +204,7 @@ test("source, tooling, provenance, and output records cover both releases withou
     assets.records.filter(({ kind }) => kind === "repository-tooling").map(({ repositoryPath, sha256, sizeBytes }) => ({ repositoryPath, sha256, sizeBytes })),
     sourceLock.tooling
   );
-  for (const record of metadataLock.tooling) {
-    assert.deepEqual(await fileRecord(join(root, record.repositoryPath)), { sha256: record.sha256, sizeBytes: record.sizeBytes });
-  }
+  assert.deepEqual(await fileRecord(join(root, "source/metadata-release-lock.json")), historicalMetadataLockRecord);
   assert.deepEqual(metadataLock.historicalEvidence.map(({ repositoryPath }) => repositoryPath), Object.keys(historicalEvidenceRecords));
   for (const record of metadataLock.historicalEvidence) {
     assert.deepEqual({ sha256: record.sha256, sizeBytes: record.sizeBytes }, historicalEvidenceRecords[record.repositoryPath]);
@@ -214,10 +213,10 @@ test("source, tooling, provenance, and output records cover both releases withou
     sha256: metadataLock.releaseContract.sha256,
     sizeBytes: metadataLock.releaseContract.sizeBytes
   });
-  for (const output of generations.outputs) {
+  for (const output of generations.outputs.filter(({ repositoryPath }) => repositoryPath !== "manifest.json")) {
     assert.deepEqual(await fileRecord(join(root, output.repositoryPath)), { sha256: output.sha256, sizeBytes: output.sizeBytes });
   }
-  for (const output of metadataLock.outputs) {
+  for (const output of metadataLock.outputs.filter(({ repositoryPath }) => repositoryPath !== "manifest.json")) {
     assert.deepEqual(await fileRecord(join(root, output.repositoryPath)), { sha256: output.sha256, sizeBytes: output.sizeBytes });
   }
   assert.ok(requiredReleaseFiles.every((name) => generations.outputs.some(({ repositoryPath }) => repositoryPath === `assets/scenes/presentation-room-v1/0.1.0/${name}`)));

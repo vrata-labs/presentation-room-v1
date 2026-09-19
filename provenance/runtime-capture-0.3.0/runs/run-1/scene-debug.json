@@ -1,0 +1,298 @@
+{
+  "bundleUrl": "local-capture/run-1/scene.json",
+  "state": "loaded",
+  "failureReason": null,
+  "loadStage": "loaded",
+  "assetBytesLoaded": 13333276,
+  "assetBytesExpected": 13333276,
+  "label": "Presentation Room",
+  "source": "source/releases/0.3.0/accepted-scene.blend",
+  "renderProfile": "baked-pbr-v1",
+  "assetUrl": "local-capture/run-1/scene.glb",
+  "assetType": "glb",
+  "spawnPointId": "main",
+  "spawnYaw": 3.141592653589793,
+  "spawnApplied": true,
+  "loadMs": 1406,
+  "renderProfileApplyMs": 175,
+  "objectCount": 212,
+  "meshCount": 193,
+  "materialCount": 10,
+  "texturedMaterialCount": 193,
+  "lightMappedMaterialCount": 10,
+  "geometryCount": 193,
+  "triangleEstimate": 32060,
+  "textureCount": 17,
+  "missingAssets": [],
+  "materialSamples": [
+    {
+      "name": "material.warm-ash-wood",
+      "meshCount": 56,
+      "hasMap": true,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "roughness": 0.6,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.deep-desaturated-blue",
+      "meshCount": 40,
+      "hasMap": true,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "roughness": 0.74,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.dark-bronze-metal",
+      "meshCount": 39,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "roughness": 0.3,
+      "metalness": 0.76,
+      "color": {
+        "r": 0.082,
+        "g": 0.061,
+        "b": 0.047
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.warm-practical-glow",
+      "meshCount": 21,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "roughness": 0.34,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 0.745,
+        "b": 0.479
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.restrained-rust",
+      "meshCount": 16,
+      "hasMap": true,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "roughness": 0.74,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.charcoal-ceiling",
+      "meshCount": 11,
+      "hasMap": true,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "roughness": 0.78,
+      "metalness": 0.02,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.mineral-shell",
+      "meshCount": 6,
+      "hasMap": true,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "roughness": 0.8,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.audience-carpet",
+      "meshCount": 2,
+      "hasMap": true,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "roughness": 0.94,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.screen-neutral",
+      "meshCount": 1,
+      "hasMap": true,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "roughness": 0.92,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.presenter-control",
+      "meshCount": 1,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "roughness": 0.27,
+      "metalness": 0.12,
+      "color": {
+        "r": 0.009,
+        "g": 0.024,
+        "b": 0.036
+      },
+      "mapSource": null
+    }
+  ],
+  "boundingBox": {
+    "min": {
+      "x": -5.5,
+      "y": -0.18,
+      "z": -6
+    },
+    "max": {
+      "x": 5.5,
+      "y": 4.44,
+      "z": 6
+    },
+    "size": {
+      "x": 11,
+      "y": 4.62,
+      "z": 12
+    },
+    "center": {
+      "x": 0,
+      "y": 2.13,
+      "z": 0
+    }
+  },
+  "camera": {
+    "world": {
+      "x": -4.546,
+      "y": 1.091,
+      "z": -1.824
+    },
+    "forward": {
+      "x": 0.766,
+      "y": 0.494,
+      "z": 0.412
+    }
+  },
+  "screenshot": {
+    "width": 320,
+    "height": 180,
+    "centerPixel": {
+      "r": 247,
+      "g": 242,
+      "b": 235,
+      "a": 255
+    },
+    "averageColor": {
+      "r": 54,
+      "g": 52,
+      "b": 50,
+      "a": 255
+    },
+    "darkPixelRatio": 0.279,
+    "pixelSamples": [
+      {
+        "x": 160,
+        "y": 90,
+        "r": 247,
+        "g": 242,
+        "b": 235,
+        "a": 255
+      },
+      {
+        "x": 32,
+        "y": 18,
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      {
+        "x": 287,
+        "y": 18,
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      {
+        "x": 32,
+        "y": 161,
+        "r": 71,
+        "g": 69,
+        "b": 64,
+        "a": 255
+      },
+      {
+        "x": 287,
+        "y": 161,
+        "r": 31,
+        "g": 38,
+        "b": 41,
+        "a": 255
+      },
+      {
+        "x": 160,
+        "y": 36,
+        "r": 53,
+        "g": 56,
+        "b": 55,
+        "a": 255
+      },
+      {
+        "x": 160,
+        "y": 143,
+        "r": 75,
+        "g": 73,
+        "b": 70,
+        "a": 255
+      }
+    ]
+  }
+}

@@ -6,6 +6,7 @@ import {
   assert,
   fileRecord,
   glbInspection,
+  pathTrackedInGit,
   readJson,
   resolveBlenderExecutable,
   run,
@@ -59,14 +60,10 @@ async function pathExists(path) {
   }
 }
 
-function trackedAtHead(repositoryPath) {
-  return spawnSync("git", ["cat-file", "-e", `HEAD:${repositoryPath}`], { cwd: root }).status === 0;
-}
-
 async function validateMaterializationPath(path, repositoryPath) {
+  assert(!pathTrackedInGit(root, repositoryPath), `tracked_immutable_materialization_forbidden:${repositoryPath}`);
   if (!await pathExists(path)) return;
   assert(replaceMaterialized, `immutable_materialization_path_exists:${repositoryPath}`);
-  assert(!trackedAtHead(repositoryPath), `tracked_immutable_materialization_forbidden:${repositoryPath}`);
 }
 
 async function installStagedMaterialization(replacements, backupPath, stagingPath) {

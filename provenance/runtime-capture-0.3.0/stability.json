@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.3.0",
+  "status": "review",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "pending-human-rights-approval",
+  "rightsApproved": false,
+  "isCurrent": false,
+  "publicationReady": false,
+  "platformRuntimeCommit": "c54edb2239d225a71e9b934316f70792b3faafb6",
+  "runtimeBuildModified": false,
+  "capturedOn": "2026-09-05",
+  "runs": [
+    {
+      "id": "run-1",
+      "viewIds": [
+        "entry",
+        "audience",
+        "presenter",
+        "diagonal-overview",
+        "screen-detail",
+        "aisle-seat-detail",
+        "lighting-detail"
+      ],
+      "result": "passed",
+      "diagnostics": {
+        "status": "passed",
+        "state": "loaded",
+        "failureReason": null,
+        "missingAssets": [],
+        "loadMs": 1406,
+        "renderProfileApplyMs": 175,
+        "renderProfile": "baked-pbr-v1",
+        "meshCount": 193,
+        "materialCount": 10,
+        "lightMappedMaterialCount": 10,
+        "triangleEstimate": 32060,
+        "textureCount": 17,
+        "assetBytesLoaded": 13333276,
+        "spawnApplied": true,
+        "darkPixelRatio": 0.279
+      },
+      "files": {
+        "entry.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/entry.png",
+          "sha256": "f11df1de16b2f69e59dfeb95d6edbea91e8dd813ab5672ebb1d35b21741cc7c4",
+          "sizeBytes": 391131
+        },
+        "audience.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/audience.png",
+          "sha256": "330f924b8066be59944c7828a713df233e98abb255afebab01f952b0228652b0",
+          "sizeBytes": 344333
+        },
+        "presenter.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/presenter.png",
+          "sha256": "e077c172cbda06d33247e8a1211cea3d1ed6f8ce32213afbb9c6e2bf56cd9c20",
+          "sizeBytes": 403575
+        },
+        "diagonal-overview.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/diagonal-overview.png",
+          "sha256": "4f9066f0b64f352edea1946300690e9c2cfa6fb99f5647fa3c4c02e2c03d1a81",
+          "sizeBytes": 462027
+        },
+        "screen-detail.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/screen-detail.png",
+          "sha256": "4dc9d5285965cf8b89cb867d53f53ea21a4bd5c66dbadc656ff81584084d4dbc",
+          "sizeBytes": 227224
+        },
+        "aisle-seat-detail.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/aisle-seat-detail.png",
+          "sha256": "526ed8cfe87c885e8661375674e7f006c397dd8a00dc875de26cedbe441484ac",
+          "sizeBytes": 342041
+        },
+        "lighting-detail.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/lighting-detail.png",
+          "sha256": "b2d7239bdcfb073ff29deb7979e479ad5e70e62e3013a59ebf760b130ac7f242",
+          "sizeBytes": 343924
+        },
+        "scene-debug.json": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/scene-debug.json",
+          "sha256": "cb88e27e5a8bfebd582b57e6ce4166265a68063877cc70315f962a1d1e3c7533",
+          "sizeBytes": 5666
+        },
+        "capture-settings.json": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/capture-settings.json",
+          "sha256": "a4f53bb32e605d7ccce2178c26a99badb5d0eb39623cf99144d202ec4d61ad60",
+          "sizeBytes": 54
+        }
+      }
+    },
+    {
+      "id": "run-2",
+      "viewIds": [
+        "entry",
+        "audience",
+        "presenter",
+        "diagonal-overview",
+        "screen-detail",
+        "aisle-seat-detail",
+        "lighting-detail"
+      ],
+      "result": "passed",
+      "diagnostics": {
+        "status": "passed",
+        "state": "loaded",
+        "failureReason": null,
+        "missingAssets": [],
+        "loadMs": 2648,
+        "renderProfileApplyMs": 269,
+        "renderProfile": "baked-pbr-v1",
+        "meshCount": 193,
+        "materialCount": 10,
+        "lightMappedMaterialCount": 10,
+        "triangleEstimate": 32060,
+        "textureCount": 17,
+        "assetBytesLoaded": 13333276,
+        "spawnApplied": true,
+        "darkPixelRatio": 0.279
+      },
+      "files": {
+        "entry.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/entry.png",
+          "sha256": "f11df1de16b2f69e59dfeb95d6edbea91e8dd813ab5672ebb1d35b21741cc7c4",
+          "sizeBytes": 391131
+        },
+        "audience.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/audience.png",
+          "sha256": "330f924b8066be59944c7828a713df233e98abb255afebab01f952b0228652b0",
+          "sizeBytes": 344333
+        },
+        "presenter.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/presenter.png",
+          "sha256": "e077c172cbda06d33247e8a1211cea3d1ed6f8ce32213afbb9c6e2bf56cd9c20",
+          "sizeBytes": 403575
+        },
+        "diagonal-overview.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/diagonal-overview.png",
+          "sha256": "4f9066f0b64f352edea1946300690e9c2cfa6fb99f5647fa3c4c02e2c03d1a81",
+          "sizeBytes": 462027
+        },
+        "screen-detail.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/screen-detail.png",
+          "sha256": "4dc9d5285965cf8b89cb867d53f53ea21a4bd5c66dbadc656ff81584084d4dbc",
+          "sizeBytes": 227224
+        },
+        "aisle-seat-detail.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/aisle-seat-detail.png",
+          "sha256": "526ed8cfe87c885e8661375674e7f006c397dd8a00dc875de26cedbe441484ac",
+          "sizeBytes": 342041
+        },
+        "lighting-detail.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/lighting-detail.png",
+          "sha256": "b2d7239bdcfb073ff29deb7979e479ad5e70e62e3013a59ebf760b130ac7f242",
+          "sizeBytes": 343924
+        },
+        "scene-debug.json": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/scene-debug.json",
+          "sha256": "06536fdc25d6c330210df2a3cd02dccd40dc2869d7b8a8466fb6d0b2a384bcf1",
+          "sizeBytes": 5666
+        },
+        "capture-settings.json": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/capture-settings.json",
+          "sha256": "a4f53bb32e605d7ccce2178c26a99badb5d0eb39623cf99144d202ec4d61ad60",
+          "sizeBytes": 54
+        }
+      }
+    },
+    {
+      "id": "run-3",
+      "viewIds": [
+        "entry",
+        "audience",
+        "presenter",
+        "diagonal-overview",
+        "screen-detail",
+        "aisle-seat-detail",
+        "lighting-detail"
+      ],
+      "result": "passed",
+      "diagnostics": {
+        "status": "passed",
+        "state": "loaded",
+        "failureReason": null,
+        "missingAssets": [],
+        "loadMs": 1863,
+        "renderProfileApplyMs": 224,
+        "renderProfile": "baked-pbr-v1",
+        "meshCount": 193,
+        "materialCount": 10,
+        "lightMappedMaterialCount": 10,
+        "triangleEstimate": 32060,
+        "textureCount": 17,
+        "assetBytesLoaded": 13333276,
+        "spawnApplied": true,
+        "darkPixelRatio": 0.279
+      },
+      "files": {
+        "entry.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/entry.png",
+          "sha256": "f11df1de16b2f69e59dfeb95d6edbea91e8dd813ab5672ebb1d35b21741cc7c4",
+          "sizeBytes": 391131
+        },
+        "audience.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/audience.png",
+          "sha256": "330f924b8066be59944c7828a713df233e98abb255afebab01f952b0228652b0",
+          "sizeBytes": 344333
+        },
+        "presenter.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/presenter.png",
+          "sha256": "e077c172cbda06d33247e8a1211cea3d1ed6f8ce32213afbb9c6e2bf56cd9c20",
+          "sizeBytes": 403575
+        },
+        "diagonal-overview.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/diagonal-overview.png",
+          "sha256": "4f9066f0b64f352edea1946300690e9c2cfa6fb99f5647fa3c4c02e2c03d1a81",
+          "sizeBytes": 462027
+        },
+        "screen-detail.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/screen-detail.png",
+          "sha256": "4dc9d5285965cf8b89cb867d53f53ea21a4bd5c66dbadc656ff81584084d4dbc",
+          "sizeBytes": 227224
+        },
+        "aisle-seat-detail.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/aisle-seat-detail.png",
+          "sha256": "526ed8cfe87c885e8661375674e7f006c397dd8a00dc875de26cedbe441484ac",
+          "sizeBytes": 342041
+        },
+        "lighting-detail.png": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/lighting-detail.png",
+          "sha256": "b2d7239bdcfb073ff29deb7979e479ad5e70e62e3013a59ebf760b130ac7f242",
+          "sizeBytes": 343924
+        },
+        "scene-debug.json": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/scene-debug.json",
+          "sha256": "815949650d3fccb95a95097762cd24c9768cbad488420fddf482118f50539a11",
+          "sizeBytes": 5666
+        },
+        "capture-settings.json": {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/capture-settings.json",
+          "sha256": "a4f53bb32e605d7ccce2178c26a99badb5d0eb39623cf99144d202ec4d61ad60",
+          "sizeBytes": 54
+        }
+      }
+    }
+  ],
+  "requiredRuns": 3,
+  "completedRuns": 3,
+  "fullViewIds": [
+    "entry",
+    "audience",
+    "presenter",
+    "diagonal-overview",
+    "screen-detail",
+    "aisle-seat-detail",
+    "lighting-detail"
+  ],
+  "allRunsComplete": true,
+  "imageComparison": "sha256-exact-byte",
+  "perView": [
+    {
+      "id": "entry",
+      "imageComparison": "sha256-exact-byte",
+      "uniqueSha256": [
+        "f11df1de16b2f69e59dfeb95d6edbea91e8dd813ab5672ebb1d35b21741cc7c4"
+      ],
+      "uniqueImageCount": 1,
+      "byteIdentical": true,
+      "observed": {
+        "meanLuminanceMin": 0.27592056,
+        "meanLuminanceMax": 0.27592056,
+        "darkPixelRatioMin": 0.05126736,
+        "darkPixelRatioMax": 0.05126736
+      }
+    },
+    {
+      "id": "audience",
+      "imageComparison": "sha256-exact-byte",
+      "uniqueSha256": [
+        "330f924b8066be59944c7828a713df233e98abb255afebab01f952b0228652b0"
+      ],
+      "uniqueImageCount": 1,
+      "byteIdentical": true,
+      "observed": {
+        "meanLuminanceMin": 0.2746452,
+        "meanLuminanceMax": 0.2746452,
+        "darkPixelRatioMin": 0.08445409,
+        "darkPixelRatioMax": 0.08445409
+      }
+    },
+    {
+      "id": "presenter",
+      "imageComparison": "sha256-exact-byte",
+      "uniqueSha256": [
+        "e077c172cbda06d33247e8a1211cea3d1ed6f8ce32213afbb9c6e2bf56cd9c20"
+      ],
+      "uniqueImageCount": 1,
+      "byteIdentical": true,
+      "observed": {
+        "meanLuminanceMin": 0.32878288,
+        "meanLuminanceMax": 0.32878288,
+        "darkPixelRatioMin": 0.06065008,
+        "darkPixelRatioMax": 0.06065008
+      }
+    },
+    {
+      "id": "diagonal-overview",
+      "imageComparison": "sha256-exact-byte",
+      "uniqueSha256": [
+        "4f9066f0b64f352edea1946300690e9c2cfa6fb99f5647fa3c4c02e2c03d1a81"
+      ],
+      "uniqueImageCount": 1,
+      "byteIdentical": true,
+      "observed": {
+        "meanLuminanceMin": 0.29359285,
+        "meanLuminanceMax": 0.29359285,
+        "darkPixelRatioMin": 0.0482716,
+        "darkPixelRatioMax": 0.0482716
+      }
+    },
+    {
+      "id": "screen-detail",
+      "imageComparison": "sha256-exact-byte",
+      "uniqueSha256": [
+        "4dc9d5285965cf8b89cb867d53f53ea21a4bd5c66dbadc656ff81584084d4dbc"
+      ],
+      "uniqueImageCount": 1,
+      "byteIdentical": true,
+      "observed": {
+        "meanLuminanceMin": 0.22606895,
+        "meanLuminanceMax": 0.22606895,
+        "darkPixelRatioMin": 0.09405093,
+        "darkPixelRatioMax": 0.09405093
+      }
+    },
+    {
+      "id": "aisle-seat-detail",
+      "imageComparison": "sha256-exact-byte",
+      "uniqueSha256": [
+        "526ed8cfe87c885e8661375674e7f006c397dd8a00dc875de26cedbe441484ac"
+      ],
+      "uniqueImageCount": 1,
+      "byteIdentical": true,
+      "observed": {
+        "meanLuminanceMin": 0.26545167,
+        "meanLuminanceMax": 0.26545167,
+        "darkPixelRatioMin": 0.01143519,
+        "darkPixelRatioMax": 0.01143519
+      }
+    },
+    {
+      "id": "lighting-detail",
+      "imageComparison": "sha256-exact-byte",
+      "uniqueSha256": [
+        "b2d7239bdcfb073ff29deb7979e479ad5e70e62e3013a59ebf760b130ac7f242"
+      ],
+      "uniqueImageCount": 1,
+      "byteIdentical": true,
+      "observed": {
+        "meanLuminanceMin": 0.20567712,
+        "meanLuminanceMax": 0.20567712,
+        "darkPixelRatioMin": 0.28009452,
+        "darkPixelRatioMax": 0.28009452
+      }
+    }
+  ],
+  "diagnosticsDarkPixelRatio": {
+    "min": 0.279,
+    "max": 0.279
+  },
+  "thresholdDerivation": {
+    "basis": "worst-observed-across-three-byte-identical-full-view-runs",
+    "runsMeasured": 3,
+    "margins": {
+      "basis": "worst-observed-across-three-byte-identical-full-view-runs",
+      "perViewPhashAbsoluteMargin": 10,
+      "perViewPhashRoundUpTo": 5,
+      "perViewNccAbsoluteMargin": 0.03,
+      "perViewNccRoundDownTo": 0.01,
+      "aggregatePhashAbsoluteMargin": 50,
+      "aggregatePhashRoundUpTo": 10,
+      "aggregateNccAbsoluteMargin": 0.04,
+      "aggregateNccRoundDownTo": 0.01
+    },
+    "observed": {
+      "perView": {
+        "entry": {
+          "phashMaxObserved": 49.6596,
+          "nccMinObserved": 0.824123
+        },
+        "audience": {
+          "phashMaxObserved": 85.5924,
+          "nccMinObserved": 0.711385
+        },
+        "presenter": {
+          "phashMaxObserved": 156.689,
+          "nccMinObserved": 0.464465
+        },
+        "diagonal-overview": {
+          "phashMaxObserved": 64.7774,
+          "nccMinObserved": 0.334613
+        },
+        "screen-detail": {
+          "phashMaxObserved": 50.8499,
+          "nccMinObserved": 0.558892
+        },
+        "aisle-seat-detail": {
+          "phashMaxObserved": 16.6553,
+          "nccMinObserved": 0.680038
+        },
+        "lighting-detail": {
+          "phashMaxObserved": 98.5723,
+          "nccMinObserved": 0.284182
+        }
+      },
+      "aggregate": {
+        "phashTotalMaxObserved": 522.7959000000001,
+        "nccMeanMinObserved": 0.5510997142857144
+      }
+    },
+    "thresholds": {
+      "perView": {
+        "entry": {
+          "phashMax": 60,
+          "nccMin": 0.79
+        },
+        "audience": {
+          "phashMax": 100,
+          "nccMin": 0.68
+        },
+        "presenter": {
+          "phashMax": 170,
+          "nccMin": 0.43
+        },
+        "diagonal-overview": {
+          "phashMax": 75,
+          "nccMin": 0.3
+        },
+        "screen-detail": {
+          "phashMax": 65,
+          "nccMin": 0.52
+        },
+        "aisle-seat-detail": {
+          "phashMax": 30,
+          "nccMin": 0.65
+        },
+        "lighting-detail": {
+          "phashMax": 110,
+          "nccMin": 0.25
+        }
+      },
+      "aggregate": {
+        "phashTotalMax": 580,
+        "nccMeanMin": 0.51
+      }
+    }
+  },
+  "result": "byte-identical-images-across-three-full-view-runs"
+}

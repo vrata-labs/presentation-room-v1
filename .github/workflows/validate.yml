@@ -55,18 +55,34 @@ jobs:
             exit 1
           fi
           git fetch --no-tags --depth=1 origin "$BASE_SHA"
+          changed_paths="$RUNNER_TEMP/scene-changed-paths.txt"
+          if ! git diff --no-renames --name-only "$BASE_SHA" HEAD -- assets/scenes provenance source 'source/baked-review-lightmap-*.png' > "$changed_paths"; then
+            echo "immutable_diff_failed" >&2
+            exit 1
+          fi
           while IFS= read -r path; do
             case "$path" in
               assets/scenes/*/*/*) protected_path="$(cut -d/ -f1-4 <<< "$path")" ;;
+              source/releases/*/*) protected_path="$(cut -d/ -f1-3 <<< "$path")" ;;
+              provenance/releases/*/*) protected_path="$(cut -d/ -f1-3 <<< "$path")" ;;
               provenance/runtime-capture-*/*) protected_path="$(cut -d/ -f1-2 <<< "$path")" ;;
               provenance/baked-lightmap-*.json|source/baked-review-lightmap-*.png) protected_path="$path" ;;
+              source/review/*) protected_path="source/review" ;;
+              source/review-candidate-lock.json|source/metadata-release-lock.json) protected_path="$path" ;;
+              source/release-acceptance-index.json) continue ;;
+              source/*|provenance/*) protected_path="$path" ;;
               *) continue ;;
             esac
-            if git cat-file -e "$BASE_SHA:$protected_path" 2>/dev/null; then
+            if ! baseline_path="$(git ls-tree --name-only "$BASE_SHA" -- "$protected_path")"; then
+              echo "immutable_baseline_query_failed:$path" >&2
+              exit 1
+            fi
+            if [[ -n "$baseline_path" ]]; then
               echo "immutable_versioned_artifact_changed:$path" >&2
               exit 1
             fi
-          done < <(git diff --no-renames --name-only "$BASE_SHA" HEAD -- assets/scenes 'provenance/runtime-capture-*' 'provenance/baked-lightmap-*.json' 'source/baked-review-lightmap-*.png')
+          done < "$changed_paths"
+          BASE="$BASE_SHA" node scripts/validate-acceptance-index-prefix.mjs
 
       - name: Validate committed visual evidence
         run: pnpm validate:visual
@@ -101,6 +117,20 @@ jobs:
           repository: vrata-labs/platform
           ref: ${{ steps.platform-ref.outputs.sha }}
           path: .platform
+
+      - name: Verify bound runtime capture harness patch
+        working-directory: .platform
+        shell: bash
+        run: |
+          patch="../source/releases/0.3.0/capture-harness.patch"
+          harness="tests/e2e/scene-visual.spec.ts"
+          echo "73b3aa74ad47b18265056e6451b8d0ac4aa536748153827b2cfa669e37aef5ce  $patch" | sha256sum --check
+          echo "245fc21b8c82a904db9eb5f037235fcabda7eb7bd7022b8d386c1b1b3b9e4b78  $harness" | sha256sum --check
+          git apply --check "$patch"
+          git apply "$patch"
+          echo "ee0196ac3acb9ec01c828d9a9fd6a2e3a3cb34db681550571dd6e2a985f6473a  $harness" | sha256sum --check
+          git apply --reverse "$patch"
+          git diff --exit-code -- "$harness"
 
       - name: Install and build pinned platform validator
         run: |

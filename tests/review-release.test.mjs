@@ -27,21 +27,22 @@ const historicalFileRecords = {
   "scene.json": { sha256: "0bf3f15a068a1edf735f48d05c2bec17d1b1878aa75b2dd0e2847065857e0115", sizeBytes: 4947 }
 };
 const historicalRightsStatusRecord = { sha256: "837a3509afaaf1e95e3c80f3060a48362664cd9be6f11bd207ad6bf7bb444b43", sizeBytes: 1047 };
+const historicalMetadataLockRecord = { sha256: "b80eab78d8269355720f4c0973e6a683f8ba74d0780b873e7abe011e9b64c48f", sizeBytes: 7464 };
 
 function glbJson(bytes) {
   const jsonLength = bytes.readUInt32LE(12);
   return JSON.parse(bytes.subarray(20, 20 + jsonLength).toString("utf8").replace(/\0+$/, ""));
 }
 
-test("materialized 0.2.0 remains review-only and non-current", async () => {
+test("historical materialized 0.2.0 remains review-only and non-current", async () => {
   const config = await readJson(join(root, "scene-repository.json"));
   const packageJson = await readJson(join(root, "package.json"));
   const manifest = await readJson(join(root, "manifest.json"));
-  assert.equal(packageJson.version, "0.2.0");
-  assert.equal(packageJson.scripts.test, "node --test tests/review-release.test.mjs");
-  assert.equal(config.releaseVersion, "0.2.0");
+  assert.equal(packageJson.version, "0.3.0");
+  assert.equal(packageJson.scripts.test, "node --test tests/*.test.mjs");
+  assert.equal(config.releaseVersion, "0.3.0");
   assert.equal(config.releaseMaterialized, true);
-  assert.deepEqual(manifest.releases.map(({ version }) => version), ["0.1.0", "0.1.1", "0.2.0"]);
+  assert.deepEqual(manifest.releases.map(({ version }) => version), ["0.1.0", "0.1.1", "0.2.0", "0.3.0"]);
   assert.equal(config.status, "review");
   assert.equal(config.humanAcceptance, "pending-human-acceptance");
   assert.equal(config.isCurrent, false);
@@ -104,9 +105,7 @@ test("historical 0.1.0 and metadata-only 0.1.1 bytes and validator pins remain i
   }
   assert.ok(manifest.releases.every(({ status, humanAcceptance, isCurrent, publicationReady }) =>
     status === "review" && humanAcceptance === "pending-human-acceptance" && isCurrent === false && publicationReady === false));
-  for (const record of metadataLock.tooling) {
-    assert.deepEqual(await fileRecord(join(root, record.repositoryPath)), { sha256: record.sha256, sizeBytes: record.sizeBytes });
-  }
+  assert.deepEqual(await fileRecord(join(root, "source/metadata-release-lock.json")), historicalMetadataLockRecord);
   for (const [path, record] of [
     ["source/review-candidate.blend", sourceLock.source.blend],
     ["source/author_scene.py", sourceLock.source.authorScript],
@@ -126,19 +125,21 @@ test("historical 0.1.0 and metadata-only 0.1.1 bytes and validator pins remain i
   }
 });
 
-test("rights remain consistent across repository, manifest, releases, scenes, and provenance", async () => {
+test("historical rights stay approved while current root and 0.3.0 remain exact-byte pending", async () => {
   const config = await readJson(join(root, "scene-repository.json"));
   const manifest = await readJson(join(root, "manifest.json"));
   const rightsStatus = await readJson(join(root, "provenance/rights-status.json"));
   const bakedEvidence = await readJson(join(root, reviewRelease.provenancePath));
   const assetLedger = await readJson(join(root, "provenance/asset-ledger.json"));
   const expected = {
-    rightsStatus: config.rightsStatus,
-    rightsApproved: config.rightsApproved,
-    rightsApprovalDate: config.rightsApprovalDate,
-    licenseRef: config.licenseRef
+    rightsStatus: canonicalRightsScope.status,
+    rightsApproved: canonicalRightsScope.rightsApproved,
+    rightsApprovalDate: canonicalRightsScope.rightsApprovalDate,
+    licenseRef: canonicalRightsScope.licenseRef
   };
-  assert.deepEqual({ rightsStatus: manifest.rightsStatus, rightsApproved: manifest.rightsApproved, rightsApprovalDate: manifest.rightsApprovalDate, licenseRef: manifest.licenseRef }, expected);
+  const pending = { rightsStatus: "pending-human-rights-approval", rightsApproved: false, rightsApprovalDate: null, licenseRef: null };
+  assert.deepEqual({ rightsStatus: config.rightsStatus, rightsApproved: config.rightsApproved, rightsApprovalDate: config.rightsApprovalDate, licenseRef: config.licenseRef }, pending);
+  assert.deepEqual({ rightsStatus: manifest.rightsStatus, rightsApproved: manifest.rightsApproved, rightsApprovalDate: manifest.rightsApprovalDate, licenseRef: manifest.licenseRef }, pending);
   assert.equal(rightsStatus.status, expected.rightsStatus);
   assert.equal(rightsStatus.rightsOwnerVerdict.receivedOn, expected.rightsApprovalDate);
   assert.deepEqual({
@@ -176,7 +177,7 @@ test("rights remain consistent across repository, manifest, releases, scenes, an
   });
   const rightsLedgerRecord = assetLedger.records.find(({ repositoryPath }) => repositoryPath === "provenance/rights-status.json");
   assert.deepEqual({ sha256: rightsLedgerRecord.sha256, sizeBytes: rightsLedgerRecord.sizeBytes }, historicalRightsStatusRecord);
-  for (const release of manifest.releases) {
+  for (const release of manifest.releases.filter(({ version }) => version !== "0.3.0")) {
     assert.deepEqual({ rightsStatus: release.rightsStatus, rightsApproved: release.rightsApproved, rightsApprovalDate: release.rightsApprovalDate, licenseRef: release.licenseRef }, expected);
     const scene = await readJson(join(root, release.releasePath, "scene.json"));
     assert.equal(scene.rights.status, expected.rightsStatus);
@@ -190,6 +191,12 @@ test("rights remain consistent across repository, manifest, releases, scenes, an
     assert.equal(scene.rights.licenseRef, expected.licenseRef);
     assert.equal(scene.publicationReady, false);
   }
+  const candidate = manifest.releases.find(({ version }) => version === "0.3.0");
+  const candidateScene = await readJson(join(root, candidate.releasePath, "scene.json"));
+  assert.deepEqual({ rightsStatus: candidate.rightsStatus, rightsApproved: candidate.rightsApproved, rightsApprovalDate: candidate.rightsApprovalDate, licenseRef: candidate.licenseRef }, pending);
+  assert.equal(candidateScene.rights.status, pending.rightsStatus);
+  assert.equal(candidateScene.rights.rightsApproved, false);
+  assert.deepEqual(candidateScene.rights.clearedFor, []);
   assert.deepEqual(bakedEvidence.rights, {
     status: canonicalRightsScope.status,
     rightsApproved: canonicalRightsScope.rightsApproved,
@@ -311,7 +318,7 @@ test("0.2.0 GLB has exactly ten TEXCOORD_1 lightmapped materials and no cameras 
 
 test("baked release provenance records passed technical runtime and visual evidence without human acceptance", async () => {
   const manifest = await readJson(join(root, "manifest.json"));
-  const release = manifest.releases.at(-1);
+  const release = manifest.releases.find(({ version }) => version === reviewRelease.version);
   const evidence = await readJson(join(root, reviewRelease.provenancePath));
   const runtimeEvidence = await readRuntimeEvidence(root, reviewRelease);
   const visualMeasurement = await measureVisualParity(root, reviewRelease);
@@ -369,12 +376,18 @@ test("workflow installs pinned tools, performs actual rebuilds, and protects ver
   assert.ok(workflow.includes(reviewRelease.blender.binarySha256));
   assert.ok(workflow.includes("pnpm validate:visual"));
   assert.ok(workflow.includes("pnpm verify:reproducibility"));
-  assert.ok(workflow.includes('git cat-file -e "$BASE_SHA:$protected_path"'));
+  assert.ok(workflow.includes('git ls-tree --name-only "$BASE_SHA" -- "$protected_path"'));
   assert.doesNotMatch(workflow, /workflow_dispatch|git rev-parse HEAD\^/);
   assert.ok(workflow.includes("fetch-depth: 1"));
   assert.ok(workflow.includes("immutable_baseline_missing"));
   assert.match(workflow, /if \[\[ -z "\$BASE_SHA" \|\| "\$BASE_SHA" =~ \^0\+\$ \]\]; then\s+echo "immutable_baseline_missing" >&2\s+exit 1/);
   assert.ok(workflow.includes("immutable_versioned_artifact_changed:$path"));
+  assert.ok(workflow.includes("immutable_diff_failed"));
+  assert.ok(workflow.includes('done < "$changed_paths"'));
+  assert.doesNotMatch(workflow, /done < <\(git diff/);
+  assert.ok(workflow.includes("source/review/*"));
+  assert.ok(workflow.includes("source/review-candidate-lock.json"));
+  assert.ok(workflow.includes("validate-acceptance-index-prefix.mjs"));
   assert.ok(workflow.includes("provenance/runtime-capture-*"));
   assert.ok(workflow.includes("source/baked-review-lightmap-*.png"));
 });

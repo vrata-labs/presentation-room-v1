@@ -1,0 +1,578 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.3.0",
+  "status": "review",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "pending-human-rights-approval",
+  "rightsApproved": false,
+  "method": "Project-authored Blender material and lighting pass over immutable project-authored geometry, followed by a fresh CUDA irradiance bake.",
+  "externalAssetsUsed": false,
+  "toolchain": {
+    "blender": {
+      "version": "4.5.12 LTS",
+      "buildHash": "84afd5f785f7",
+      "archiveUrl": "https://download.blender.org/release/Blender4.5/blender-4.5.12-linux-x64.tar.xz",
+      "archiveSha256": "95e3a2dfedba3bd32ca54fc355eac6b15a11986954ccb02815a07535d0120a25",
+      "binarySha256": "33ac108ebce3c271f5357e5c664d0488717263bcf2145c80300edd0b12c31880"
+    },
+    "cwebp": "cwebp 1.6.0",
+    "imageMetricTool": "Version: ImageMagick 6.9.12-98 Q16 x86_64 18038 https://legacy.imagemagick.org",
+    "node": "Node.js >=22",
+    "packageManager": "pnpm@10.34.1"
+  },
+  "tooling": [
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "72ec0eb917bd3eec445dc0fad2db3710f21a642c026dc020a9d55635f3138fb4",
+      "sizeBytes": 5881
+    },
+    {
+      "path": "package.json",
+      "sha256": "12884c09f9fd0aee85708cab6df0fd5d9e0d3004685aece1f5fd88c326129875",
+      "sizeBytes": 1494
+    },
+    {
+      "path": "platform-validator.lock",
+      "sha256": "a21ab732ebb29e0e6eab29fe810800bc127ad85eb442c4c06f5baf387a9fab81",
+      "sizeBytes": 41
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "3fa802ad2f142fd3a3db8b46b7f233e48775beb0cab7684a2e8bd6a52f9999cb",
+      "sizeBytes": 72789
+    },
+    {
+      "path": "scripts/build-baked-review.mjs",
+      "sha256": "22d669a62f976d9527e4f39928df779a76dfde0851bfc3f6c85182f0b80be25e",
+      "sizeBytes": 18236
+    },
+    {
+      "path": "scripts/build-release.mjs",
+      "sha256": "bcac4761d69ff97158482218fb18d04fd02430da80a2782674d96734c26b3568",
+      "sizeBytes": 9129
+    },
+    {
+      "path": "scripts/build-review-candidate.mjs",
+      "sha256": "b88057a30c83b824cd3ca0f887f99302af26e71d357f0dd33fe1bdd6a7a6676f",
+      "sizeBytes": 9589
+    },
+    {
+      "path": "scripts/inspect-release.mjs",
+      "sha256": "58326d676ffaebe06c05a53ea3fea8a9cae9e928adb922fba84d788b15a4ad7e",
+      "sizeBytes": 2072
+    },
+    {
+      "path": "scripts/lib.mjs",
+      "sha256": "207a8a3e3c1b6ed9192f6880863232d92b7deaddac7d7768164a5d20b813fbe8",
+      "sizeBytes": 9093
+    },
+    {
+      "path": "scripts/materialize-release-0.3.mjs",
+      "sha256": "b0e437caa9b4b3491237213ec1603386c6b00697c57a3921920b2691723a4159",
+      "sizeBytes": 38362
+    },
+    {
+      "path": "scripts/release-0.3-config.mjs",
+      "sha256": "32089ada6fd5ed3ac37459c82e6cd723bc12f13b756ef13e2080ee2780609208",
+      "sizeBytes": 7135
+    },
+    {
+      "path": "scripts/release-0.3-lib.mjs",
+      "sha256": "7d5386b5771d125f3e6aae2d092289d30f97974a8ec3e6491242568656a94f4e",
+      "sizeBytes": 29961
+    },
+    {
+      "path": "scripts/review-evidence.mjs",
+      "sha256": "84f5e85952e4bb35c508a34dee5d975af8eea0444c46b5de1a24710d18a4209a",
+      "sizeBytes": 7214
+    },
+    {
+      "path": "scripts/review-release-config.mjs",
+      "sha256": "7b676a3520e970b2c22294af8e7bf5e63ac72325cfdb68c75f9fc040583f9850",
+      "sizeBytes": 3121
+    },
+    {
+      "path": "scripts/validate-acceptance-index-prefix.mjs",
+      "sha256": "04e9c21fbeb85e98a69336def4cdd1cf5edc43082a8a29d30da123cac420dc81",
+      "sizeBytes": 1252
+    },
+    {
+      "path": "scripts/validate-release-0.3.mjs",
+      "sha256": "d2722384d7de8f4b2ba2b5aa2be8988ad3126a77daef2b3f32d3880aa32fbbff",
+      "sizeBytes": 40140
+    },
+    {
+      "path": "scripts/validate-repository.mjs",
+      "sha256": "f5adfa6e7a96607332fae029c62cf3df7fce365d06e4cde4e1f381a5ada4fdf1",
+      "sizeBytes": 34256
+    },
+    {
+      "path": "scripts/validate-review-repository.mjs",
+      "sha256": "07eb60da3ea51864a6a8f1d387e2be0ad06de3024fb772308589614c1beb5b58",
+      "sizeBytes": 35440
+    },
+    {
+      "path": "scripts/validate-visual-parity.mjs",
+      "sha256": "eb3c356cf18bef4ebcd80eae572b66f3e55fefa79b9e9265d13e7785ab640f32",
+      "sizeBytes": 2577
+    },
+    {
+      "path": "scripts/verify-release-0.3-reproducibility.mjs",
+      "sha256": "39e6cbccd11c31fd8bf0d49df7382ca8c7367c4d4be9f09bdbc6255a4587e401",
+      "sizeBytes": 1606
+    },
+    {
+      "path": "scripts/verify-reproducibility.mjs",
+      "sha256": "e91d476804db4cf6c2337b013db98629e29eb3c64ad385150c88585995585282",
+      "sizeBytes": 3880
+    },
+    {
+      "path": "scripts/verify-review-reproducibility.mjs",
+      "sha256": "175a2e68e5a21f1c70b113d91b99a50b50e8904190e6765220d4f42002b62422",
+      "sizeBytes": 3754
+    },
+    {
+      "path": "source/author_scene.py",
+      "sha256": "005a8e9018f36acecbe434972dcbf3dcd5cfb385b981843c5b09c834ecaec069",
+      "sizeBytes": 20879
+    },
+    {
+      "path": "source/export_baked_review.py",
+      "sha256": "c000d9d0e3e5c64b0a8853f6fbdd18d053f1247e83c25d82190f62a1a470dde7",
+      "sizeBytes": 8912
+    },
+    {
+      "path": "source/export_scene.py",
+      "sha256": "4c5a51bd138cfb2dae03ba9ac5a55efc7b580c8488a9dd49d7cafde6b8357d9d",
+      "sizeBytes": 797
+    },
+    {
+      "path": "source/releases/0.3.0/author-release.py",
+      "sha256": "52649e14c4fbed497c5ba9bb72edd3ee8c005a3e08a85ca52a9562309e282d0b",
+      "sizeBytes": 23411
+    },
+    {
+      "path": "source/releases/0.3.0/export-release.py",
+      "sha256": "eb769140c5a44aec54625e0e642321df8578d0208f756b5c15ef7832f6cbafc5",
+      "sizeBytes": 16986
+    },
+    {
+      "path": "source/render_review.py",
+      "sha256": "a069758fe18fedb851ca2ac30171acd892af8c7ddbc060d0a322f81ed9e9eb64",
+      "sizeBytes": 1241
+    },
+    {
+      "path": "source/write_safety.py",
+      "sha256": "bd7370cd51909c5c7d68f7dafbfa0f016e61845f679a6714b64adde930ac70aa",
+      "sizeBytes": 1493
+    },
+    {
+      "path": "tests/immutability-workflow.test.mjs",
+      "sha256": "f722cd2b8d92a2e96d7a7d738a7115988af7ba8a94ce828faaae4bb38db04af0",
+      "sizeBytes": 2795
+    },
+    {
+      "path": "tests/release-0.3.test.mjs",
+      "sha256": "96a83275c522470168c91ceeff17a75ae4986509a1c5dfbd2fe12ad39c061275",
+      "sizeBytes": 14635
+    },
+    {
+      "path": "tests/repository.test.mjs",
+      "sha256": "63e95aaaeedb3b111c26ef67a213ab1b5db11d7b50b3d9a67f3a0ba650e7a765",
+      "sizeBytes": 15555
+    },
+    {
+      "path": "tests/review-release.test.mjs",
+      "sha256": "719c76a299166d542eae1ced936dfa4bde003677ec94a08490be9622bc251360",
+      "sizeBytes": 24481
+    },
+    {
+      "path": "tests/write-safety.test.mjs",
+      "sha256": "ada22ff843dad1478d3c39c64b1c857dc1f58ee368d27845313fe01474bb4c7d",
+      "sizeBytes": 3758
+    }
+  ],
+  "steps": [
+    {
+      "id": "author-versioned-source",
+      "input": {
+        "path": "source/review-candidate.blend",
+        "sha256": "12afe2c438266db169922326f589a2e81478c9ef15111bbdb06a49ce71d7a89f",
+        "sizeBytes": 3100004
+      },
+      "script": {
+        "path": "source/releases/0.3.0/author-release.py",
+        "sha256": "52649e14c4fbed497c5ba9bb72edd3ee8c005a3e08a85ca52a9562309e282d0b",
+        "sizeBytes": 23411
+      },
+      "outputs": [
+        {
+          "path": "source/releases/0.3.0/accepted-scene.blend",
+          "sha256": "d573807e6ede9ad58f6afc3e3db32395aaf3adb3be9e87132861f1775e5e5afb",
+          "sizeBytes": 3634999
+        },
+        {
+          "path": "source/releases/0.3.0/scene-reality.json",
+          "sha256": "1c4794a5ba2d1bf9d18f17366c04a3e5deb117f7235212b9df2d68487e1272fe",
+          "sizeBytes": 75740
+        },
+        {
+          "path": "source/releases/0.3.0/review/entry.webp",
+          "sha256": "22463ea1360e42638a6482515347e67c8cf32a0fd985671f11fae3083d0ac78e",
+          "sizeBytes": 48764
+        },
+        {
+          "path": "source/releases/0.3.0/review/audience.webp",
+          "sha256": "70507cda9cf2dd7274ad9a79097775379271f924b900251a810b7e3bf8dbce97",
+          "sizeBytes": 43296
+        },
+        {
+          "path": "source/releases/0.3.0/review/presenter.webp",
+          "sha256": "aee060fb0ae5c1238911ed3b52461c4d74fb869d4f294f78200d20227ff1fd58",
+          "sizeBytes": 51078
+        },
+        {
+          "path": "source/releases/0.3.0/review/diagonal-overview.webp",
+          "sha256": "0293506bafcdd960b3d761f242d4e75df08529283f6d79da00e86d87057680f2",
+          "sizeBytes": 70610
+        },
+        {
+          "path": "source/releases/0.3.0/review/screen-detail.webp",
+          "sha256": "3fedb2a07a3d058b82e1981747e8296564a3f95909a5ed7b8cf9823eace13562",
+          "sizeBytes": 33028
+        },
+        {
+          "path": "source/releases/0.3.0/review/aisle-seat-detail.webp",
+          "sha256": "4081d40d526da23381f968e5b9409833670fddcd49bfd110fa131e474f014fcb",
+          "sizeBytes": 45718
+        },
+        {
+          "path": "source/releases/0.3.0/review/lighting-detail.webp",
+          "sha256": "267886ad6efe24a2b8711f509040a57a5b45153d8836f347b880631d15191caa",
+          "sizeBytes": 50354
+        }
+      ]
+    },
+    {
+      "id": "bake-fresh-lightmap",
+      "input": {
+        "path": "source/releases/0.3.0/accepted-scene.blend",
+        "sha256": "d573807e6ede9ad58f6afc3e3db32395aaf3adb3be9e87132861f1775e5e5afb",
+        "sizeBytes": 3634999
+      },
+      "script": {
+        "path": "source/releases/0.3.0/export-release.py",
+        "sha256": "eb769140c5a44aec54625e0e642321df8578d0208f756b5c15ef7832f6cbafc5",
+        "sizeBytes": 16986
+      },
+      "settings": {
+        "resolution": 2048,
+        "samples": 128,
+        "scale": 0.25,
+        "device": "CUDA",
+        "lightMapIntensity": 5.2,
+        "linearMaxBeforeScale": 39.2507438659668,
+        "linearMeanBeforeScale": 0.9581694006919861,
+        "transport": "emissiveTexture TEXCOORD_1 with baked-pbr-v1 metadata"
+      },
+      "evidence": {
+        "cudaDevices": [
+          "NVIDIA GeForce GTX 1060 6GB"
+        ],
+        "linearMaxBeforeScale": 39.2507438659668,
+        "linearMeanBeforeScale": 0.9581694006919861,
+        "oldLightmapReused": false
+      },
+      "output": {
+        "path": "source/releases/0.3.0/accepted-lightmap.png",
+        "sha256": "ea3864fe09b111827563329e7c543459bc4508701060d67ca4a27ccfc7ffad0a",
+        "sizeBytes": 10177525
+      }
+    },
+    {
+      "id": "export-byte-identical-glb",
+      "input": {
+        "sourceBlend": {
+          "path": "source/releases/0.3.0/accepted-scene.blend",
+          "sha256": "d573807e6ede9ad58f6afc3e3db32395aaf3adb3be9e87132861f1775e5e5afb",
+          "sizeBytes": 3634999
+        },
+        "lightmap": {
+          "path": "source/releases/0.3.0/accepted-lightmap.png",
+          "sha256": "ea3864fe09b111827563329e7c543459bc4508701060d67ca4a27ccfc7ffad0a",
+          "sizeBytes": 10177525
+        }
+      },
+      "script": {
+        "path": "source/releases/0.3.0/export-release.py",
+        "sha256": "eb769140c5a44aec54625e0e642321df8578d0208f756b5c15ef7832f6cbafc5",
+        "sizeBytes": 16986
+      },
+      "reproducibility": {
+        "scope": "same-host-same-saved-blend-same-accepted-atlas-same-blender-binary-two-run",
+        "runs": 2,
+        "result": "byte-identical-glb",
+        "sha256": "56078fd9cf298424ef5f219abd19e5a5fa8e1c5e0cd96224eddfe8e5bd937b30",
+        "lightmapSha256": "ea3864fe09b111827563329e7c543459bc4508701060d67ca4a27ccfc7ffad0a"
+      },
+      "output": {
+        "path": "assets/scenes/presentation-room-v1/0.3.0/scene.glb",
+        "sha256": "56078fd9cf298424ef5f219abd19e5a5fa8e1c5e0cd96224eddfe8e5bd937b30",
+        "sizeBytes": 13333276
+      }
+    },
+    {
+      "id": "materialize-four-file-bundle",
+      "files": [
+        {
+          "path": "assets/scenes/presentation-room-v1/0.3.0/LICENSES.md",
+          "sha256": "102bd89beea0f9c977be7960edd39f66583520ba9984bbc9f5d959b572be26f1",
+          "sizeBytes": 540
+        },
+        {
+          "path": "assets/scenes/presentation-room-v1/0.3.0/preview.webp",
+          "sha256": "22463ea1360e42638a6482515347e67c8cf32a0fd985671f11fae3083d0ac78e",
+          "sizeBytes": 48764
+        },
+        {
+          "path": "assets/scenes/presentation-room-v1/0.3.0/scene.glb",
+          "sha256": "56078fd9cf298424ef5f219abd19e5a5fa8e1c5e0cd96224eddfe8e5bd937b30",
+          "sizeBytes": 13333276
+        },
+        {
+          "path": "assets/scenes/presentation-room-v1/0.3.0/scene.json",
+          "sha256": "6ad08fb2a5d2559adb060ffb295e773ece643533a906cba6dfe519e0781310d8",
+          "sizeBytes": 5036
+        }
+      ],
+      "exactFileCount": 4
+    },
+    {
+      "id": "record-candidate-local-runtime-capture",
+      "platformCommit": "c54edb2239d225a71e9b934316f70792b3faafb6",
+      "runtimeBuildModified": false,
+      "provenanceScope": {
+        "candidateCiReplaysCapture": false,
+        "candidateCiValidatesCommittedArtifacts": true,
+        "independentVerification": "required-on-exact-merge-sha-staging"
+      },
+      "capturePlan": {
+        "path": "source/releases/0.3.0/runtime-capture-plan.json",
+        "sha256": "b805bbdf34d0c6586be292e02ab872cdf8a4d528a4fe98a9362d242823f071bb",
+        "sizeBytes": 5769
+      },
+      "captureHarnessPatch": {
+        "path": "source/releases/0.3.0/capture-harness.patch",
+        "sha256": "73b3aa74ad47b18265056e6451b8d0ac4aa536748153827b2cfa669e37aef5ce",
+        "sizeBytes": 3672
+      },
+      "runs": [
+        {
+          "id": "run-1",
+          "viewIds": [
+            "entry",
+            "audience",
+            "presenter",
+            "diagonal-overview",
+            "screen-detail",
+            "aisle-seat-detail",
+            "lighting-detail"
+          ],
+          "result": "passed"
+        },
+        {
+          "id": "run-2",
+          "viewIds": [
+            "entry",
+            "audience",
+            "presenter",
+            "diagonal-overview",
+            "screen-detail",
+            "aisle-seat-detail",
+            "lighting-detail"
+          ],
+          "result": "passed"
+        },
+        {
+          "id": "run-3",
+          "viewIds": [
+            "entry",
+            "audience",
+            "presenter",
+            "diagonal-overview",
+            "screen-detail",
+            "aisle-seat-detail",
+            "lighting-detail"
+          ],
+          "result": "passed"
+        }
+      ],
+      "stability": {
+        "path": "provenance/runtime-capture-0.3.0/stability.json",
+        "sha256": "2cf9570b003600bc105ab218c8243b51a78224abf72029bfedbf27e2c745527c",
+        "sizeBytes": 15109,
+        "result": "byte-identical-images-across-three-full-view-runs"
+      },
+      "normalization": {
+        "localUrls": true,
+        "hudHidden": true,
+        "mediaSurfacesHidden": true,
+        "avatarFallbackCapsulesEnabled": false,
+        "avatarSeatsEnabled": false
+      },
+      "outputs": [
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/entry.png",
+          "sha256": "f11df1de16b2f69e59dfeb95d6edbea91e8dd813ab5672ebb1d35b21741cc7c4",
+          "sizeBytes": 391131
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/audience.png",
+          "sha256": "330f924b8066be59944c7828a713df233e98abb255afebab01f952b0228652b0",
+          "sizeBytes": 344333
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/presenter.png",
+          "sha256": "e077c172cbda06d33247e8a1211cea3d1ed6f8ce32213afbb9c6e2bf56cd9c20",
+          "sizeBytes": 403575
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/diagonal-overview.png",
+          "sha256": "4f9066f0b64f352edea1946300690e9c2cfa6fb99f5647fa3c4c02e2c03d1a81",
+          "sizeBytes": 462027
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/screen-detail.png",
+          "sha256": "4dc9d5285965cf8b89cb867d53f53ea21a4bd5c66dbadc656ff81584084d4dbc",
+          "sizeBytes": 227224
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/aisle-seat-detail.png",
+          "sha256": "526ed8cfe87c885e8661375674e7f006c397dd8a00dc875de26cedbe441484ac",
+          "sizeBytes": 342041
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/lighting-detail.png",
+          "sha256": "b2d7239bdcfb073ff29deb7979e479ad5e70e62e3013a59ebf760b130ac7f242",
+          "sizeBytes": 343924
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/scene-debug.json",
+          "sha256": "cb88e27e5a8bfebd582b57e6ce4166265a68063877cc70315f962a1d1e3c7533",
+          "sizeBytes": 5666
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-1/capture-settings.json",
+          "sha256": "a4f53bb32e605d7ccce2178c26a99badb5d0eb39623cf99144d202ec4d61ad60",
+          "sizeBytes": 54
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/entry.png",
+          "sha256": "f11df1de16b2f69e59dfeb95d6edbea91e8dd813ab5672ebb1d35b21741cc7c4",
+          "sizeBytes": 391131
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/audience.png",
+          "sha256": "330f924b8066be59944c7828a713df233e98abb255afebab01f952b0228652b0",
+          "sizeBytes": 344333
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/presenter.png",
+          "sha256": "e077c172cbda06d33247e8a1211cea3d1ed6f8ce32213afbb9c6e2bf56cd9c20",
+          "sizeBytes": 403575
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/diagonal-overview.png",
+          "sha256": "4f9066f0b64f352edea1946300690e9c2cfa6fb99f5647fa3c4c02e2c03d1a81",
+          "sizeBytes": 462027
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/screen-detail.png",
+          "sha256": "4dc9d5285965cf8b89cb867d53f53ea21a4bd5c66dbadc656ff81584084d4dbc",
+          "sizeBytes": 227224
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/aisle-seat-detail.png",
+          "sha256": "526ed8cfe87c885e8661375674e7f006c397dd8a00dc875de26cedbe441484ac",
+          "sizeBytes": 342041
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/lighting-detail.png",
+          "sha256": "b2d7239bdcfb073ff29deb7979e479ad5e70e62e3013a59ebf760b130ac7f242",
+          "sizeBytes": 343924
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/scene-debug.json",
+          "sha256": "06536fdc25d6c330210df2a3cd02dccd40dc2869d7b8a8466fb6d0b2a384bcf1",
+          "sizeBytes": 5666
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-2/capture-settings.json",
+          "sha256": "a4f53bb32e605d7ccce2178c26a99badb5d0eb39623cf99144d202ec4d61ad60",
+          "sizeBytes": 54
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/entry.png",
+          "sha256": "f11df1de16b2f69e59dfeb95d6edbea91e8dd813ab5672ebb1d35b21741cc7c4",
+          "sizeBytes": 391131
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/audience.png",
+          "sha256": "330f924b8066be59944c7828a713df233e98abb255afebab01f952b0228652b0",
+          "sizeBytes": 344333
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/presenter.png",
+          "sha256": "e077c172cbda06d33247e8a1211cea3d1ed6f8ce32213afbb9c6e2bf56cd9c20",
+          "sizeBytes": 403575
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/diagonal-overview.png",
+          "sha256": "4f9066f0b64f352edea1946300690e9c2cfa6fb99f5647fa3c4c02e2c03d1a81",
+          "sizeBytes": 462027
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/screen-detail.png",
+          "sha256": "4dc9d5285965cf8b89cb867d53f53ea21a4bd5c66dbadc656ff81584084d4dbc",
+          "sizeBytes": 227224
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/aisle-seat-detail.png",
+          "sha256": "526ed8cfe87c885e8661375674e7f006c397dd8a00dc875de26cedbe441484ac",
+          "sizeBytes": 342041
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/lighting-detail.png",
+          "sha256": "b2d7239bdcfb073ff29deb7979e479ad5e70e62e3013a59ebf760b130ac7f242",
+          "sizeBytes": 343924
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/scene-debug.json",
+          "sha256": "815949650d3fccb95a95097762cd24c9768cbad488420fddf482118f50539a11",
+          "sizeBytes": 5666
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/runs/run-3/capture-settings.json",
+          "sha256": "a4f53bb32e605d7ccce2178c26a99badb5d0eb39623cf99144d202ec4d61ad60",
+          "sizeBytes": 54
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/stability.json",
+          "sha256": "2cf9570b003600bc105ab218c8243b51a78224abf72029bfedbf27e2c745527c",
+          "sizeBytes": 15109
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/visual-parity.json",
+          "sha256": "5a7ca9c09e7f66b524646e10d70d56cde86c34e9563dd5d3e9ac03e9b0157e9f",
+          "sizeBytes": 9632
+        },
+        {
+          "path": "provenance/runtime-capture-0.3.0/capture-binding.json",
+          "sha256": "2b56f631a3c38823fb24728a4273e7753728528282b7e65582bd27653f403917",
+          "sizeBytes": 11592
+        }
+      ]
+    }
+  ]
+}

@@ -1,24 +1,27 @@
 {
   "name": "@vrata/presentation-room-v1",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
   "packageManager": "pnpm@10.34.1",
   "engines": {
     "node": ">=22"
   },
   "scripts": {
-    "build": "node scripts/build-baked-review.mjs",
-    "build:release": "node scripts/build-baked-review.mjs",
-    "bake:review": "node scripts/build-baked-review.mjs --bake",
-    "materialize:release": "node scripts/build-baked-review.mjs --materialize",
-    "rematerialize:release": "node scripts/build-baked-review.mjs --materialize --replace-materialized",
-    "validate:visual": "node scripts/validate-visual-parity.mjs",
-    "test": "node --test tests/review-release.test.mjs",
-    "validate": "node scripts/validate-review-repository.mjs",
+    "build": "node scripts/build-release.mjs",
+    "build:release": "node scripts/build-release.mjs",
+    "author:release": "node scripts/build-release.mjs --author",
+    "reauthor:release": "node scripts/build-release.mjs --author --replace-untracked",
+    "bake:review": "node scripts/build-release.mjs --bake",
+    "rebake:review": "node scripts/build-release.mjs --bake --replace-untracked",
+    "materialize:release": "node scripts/materialize-release-0.3.mjs",
+    "rematerialize:release": "node scripts/materialize-release-0.3.mjs --replace-untracked",
+    "validate:visual": "node scripts/validate-release-0.3.mjs --visual-only",
+    "test": "node --test tests/*.test.mjs",
+    "validate": "node scripts/validate-release-0.3.mjs",
     "inspect": "node scripts/inspect-release.mjs",
-    "verify:reproducibility": "node scripts/verify-review-reproducibility.mjs",
-    "verify:baked-blender": "node scripts/build-baked-review.mjs --twice",
+    "verify:reproducibility": "node scripts/verify-release-0.3-reproducibility.mjs",
+    "verify:baked-blender": "node scripts/build-release.mjs --twice",
     "verify:historical-blender": "node scripts/verify-reproducibility.mjs"
   },
   "devDependencies": {

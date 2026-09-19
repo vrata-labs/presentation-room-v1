@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releases": [
+    {
+      "version": "0.3.0",
+      "lockPath": "source/releases/0.3.0/accepted-source-lock.json",
+      "lockSha256": "3779ddf207e5a35f3aca6d06b30e39ff7e62949f10221224594733966d4a3237",
+      "visualParityConfigPath": "source/releases/0.3.0/visual-parity-config.json",
+      "visualParityConfigSha256": "7dfb37ad4809c291a7a3370c44c7813af9aab9d7f7764c9c1ffb4c6938cdeb59"
+    }
+  ]
+}
