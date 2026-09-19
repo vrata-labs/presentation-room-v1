@@ -1,5 +1,19 @@
 # Presentation Room v1
 
+## Shared-quality re-audit required
+
+The 2026-09-19 feedback applies across scene types. Review candidate 0.3.0 at
+`3e46cb2a0cd3745cd679dd951695910458d99ddc` has not received human visual acceptance
+and must complete the [shared quality contract](https://github.com/vrata-labs/platform/blob/8ba49739d44518a3e877bc93432be591ce2e72da/docs/scene-quality-contract.md)
+and [task packet](https://github.com/vrata-labs/platform/blob/8ba49739d44518a3e877bc93432be591ce2e72da/docs/scene-authoring-task-template.md)
+before another finished handoff. The workflow outcome is REWORK_REQUIRED while
+the object-use, construction, physical and material/visual evidence is incomplete.
+
+This is an inherited quality obligation, not a claim that the user's Personal
+example inspected every Presentation object. Green technical capture results do
+not close this audit. Published source/release/evidence bytes remain immutable;
+scene corrections require a new version.
+
 Local review candidate for the Vrata product scene `presentation-room-v1`.
 It is an original contemporary presentation salon with a raised focal zone,
 architectural 16:9 screen surround, eight audience seats in two staggered
