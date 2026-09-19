@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.3.0",
+  "actorProfiles": [
+    {
+      "id": "presentation-participant",
+      "label": "Presentation participant",
+      "standingEyeHeightM": 1.65,
+      "seatedEyeHeightM": 1.2,
+      "shoulderWidthM": 0.5
+    }
+  ],
+  "routes": [
+    {
+      "id": "presenter-route",
+      "label": "Entry to presentation stage",
+      "minimumWidthM": 1.45,
+      "points": [
+        { "x": 0, "y": 0, "z": -4.95 },
+        { "x": 0, "y": 0, "z": -3.6 },
+        { "x": 0, "y": 0, "z": 0 },
+        { "x": 0, "y": 0, "z": 2.8 },
+        { "x": -3.35, "y": 0.24, "z": 4.15 }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "enter-and-reach-stage",
+      "label": "Enter and reach the stage",
+      "purpose": "Confirm clear circulation from the main spawn to the presentation zone.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["room-shell", "audience-circulation", "presentation-stage"],
+      "runtimeBindingIds": ["main"],
+      "implementationRequired": true,
+      "steps": [
+        { "action": "spawn", "target": "main", "expectedResult": "The participant starts outside both audience rows." },
+        { "action": "follow-route", "target": "presenter-route", "expectedResult": "The participant reaches the presentation zone through the center aisle." }
+      ],
+      "acceptanceCriteria": [
+        { "id": "route-width", "measure": "minimum-clear-width", "operator": "greater-than-or-equal", "value": 1.45, "unit": "meter" },
+        { "id": "route-clear", "measure": "route-obstructed", "operator": "equals", "value": false, "unit": "boolean" }
+      ]
+    },
+    {
+      "id": "seat-01-approach-sit-stand",
+      "label": "Use seat 01",
+      "purpose": "Confirm approach, sitting and standing at seat 01.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["chair-seat-01", "audience-circulation"],
+      "runtimeBindingIds": ["seat-01"],
+      "implementationRequired": true,
+      "steps": [{ "action": "approach-sit-stand", "target": "seat-01", "expectedResult": "The participant completes the seat interaction cycle." }],
+      "acceptanceCriteria": [{ "id": "seat-01-cycle", "measure": "seat-cycle-complete", "operator": "equals", "value": true, "unit": "boolean" }]
+    },
+    {
+      "id": "seat-02-approach-sit-stand",
+      "label": "Use seat 02",
+      "purpose": "Confirm approach, sitting and standing at seat 02.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["chair-seat-02", "audience-circulation"],
+      "runtimeBindingIds": ["seat-02"],
+      "implementationRequired": true,
+      "steps": [{ "action": "approach-sit-stand", "target": "seat-02", "expectedResult": "The participant completes the seat interaction cycle." }],
+      "acceptanceCriteria": [{ "id": "seat-02-cycle", "measure": "seat-cycle-complete", "operator": "equals", "value": true, "unit": "boolean" }]
+    },
+    {
+      "id": "seat-03-approach-sit-stand",
+      "label": "Use seat 03",
+      "purpose": "Confirm approach, sitting and standing at seat 03.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["chair-seat-03", "audience-circulation"],
+      "runtimeBindingIds": ["seat-03"],
+      "implementationRequired": true,
+      "steps": [{ "action": "approach-sit-stand", "target": "seat-03", "expectedResult": "The participant completes the seat interaction cycle." }],
+      "acceptanceCriteria": [{ "id": "seat-03-cycle", "measure": "seat-cycle-complete", "operator": "equals", "value": true, "unit": "boolean" }]
+    },
+    {
+      "id": "seat-04-approach-sit-stand",
+      "label": "Use seat 04",
+      "purpose": "Confirm approach, sitting and standing at seat 04.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["chair-seat-04", "audience-circulation"],
+      "runtimeBindingIds": ["seat-04"],
+      "implementationRequired": true,
+      "steps": [{ "action": "approach-sit-stand", "target": "seat-04", "expectedResult": "The participant completes the seat interaction cycle." }],
+      "acceptanceCriteria": [{ "id": "seat-04-cycle", "measure": "seat-cycle-complete", "operator": "equals", "value": true, "unit": "boolean" }]
+    },
+    {
+      "id": "seat-05-approach-sit-stand",
+      "label": "Use seat 05",
+      "purpose": "Confirm approach, sitting and standing at seat 05.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["chair-seat-05", "audience-circulation"],
+      "runtimeBindingIds": ["seat-05"],
+      "implementationRequired": true,
+      "steps": [{ "action": "approach-sit-stand", "target": "seat-05", "expectedResult": "The participant completes the seat interaction cycle." }],
+      "acceptanceCriteria": [{ "id": "seat-05-cycle", "measure": "seat-cycle-complete", "operator": "equals", "value": true, "unit": "boolean" }]
+    },
+    {
+      "id": "seat-06-approach-sit-stand",
+      "label": "Use seat 06",
+      "purpose": "Confirm approach, sitting and standing at seat 06.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["chair-seat-06", "audience-circulation"],
+      "runtimeBindingIds": ["seat-06"],
+      "implementationRequired": true,
+      "steps": [{ "action": "approach-sit-stand", "target": "seat-06", "expectedResult": "The participant completes the seat interaction cycle." }],
+      "acceptanceCriteria": [{ "id": "seat-06-cycle", "measure": "seat-cycle-complete", "operator": "equals", "value": true, "unit": "boolean" }]
+    },
+    {
+      "id": "seat-07-approach-sit-stand",
+      "label": "Use seat 07",
+      "purpose": "Confirm approach, sitting and standing at seat 07.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["chair-seat-07", "audience-circulation"],
+      "runtimeBindingIds": ["seat-07"],
+      "implementationRequired": true,
+      "steps": [{ "action": "approach-sit-stand", "target": "seat-07", "expectedResult": "The participant completes the seat interaction cycle." }],
+      "acceptanceCriteria": [{ "id": "seat-07-cycle", "measure": "seat-cycle-complete", "operator": "equals", "value": true, "unit": "boolean" }]
+    },
+    {
+      "id": "seat-08-approach-sit-stand",
+      "label": "Use seat 08",
+      "purpose": "Confirm approach, sitting and standing at seat 08.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["chair-seat-08", "audience-circulation"],
+      "runtimeBindingIds": ["seat-08"],
+      "implementationRequired": true,
+      "steps": [{ "action": "approach-sit-stand", "target": "seat-08", "expectedResult": "The participant completes the seat interaction cycle." }],
+      "acceptanceCriteria": [{ "id": "seat-08-cycle", "measure": "seat-cycle-complete", "operator": "equals", "value": true, "unit": "boolean" }]
+    },
+    {
+      "id": "screen-visible-from-all-seats",
+      "label": "Screen visibility from every seat",
+      "purpose": "Confirm the complete 16:9 media surface is visible from each seated viewpoint.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["presentation-screen", "chair-seat-01", "chair-seat-02", "chair-seat-03", "chair-seat-04", "chair-seat-05", "chair-seat-06", "chair-seat-07", "chair-seat-08"],
+      "runtimeBindingIds": ["debug-main", "seat-01", "seat-02", "seat-03", "seat-04", "seat-05", "seat-06", "seat-07", "seat-08"],
+      "implementationRequired": true,
+      "steps": [{ "action": "inspect-from-all-seats", "target": "debug-main", "expectedResult": "The screen remains visible from all eight seat anchors at seated eye height." }],
+      "acceptanceCriteria": [
+        { "id": "seated-eye-height", "measure": "eye-height", "operator": "equals", "value": 1.2, "unit": "meter" },
+        { "id": "seat-coverage", "measure": "visible-seat-count", "operator": "equals", "value": 8, "unit": "count" }
+      ]
+    },
+    {
+      "id": "pdf-and-screen-share",
+      "label": "Use the presentation surface",
+      "purpose": "Confirm the single media binding supports PDF and screen-share presentation flows.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["presentation-screen"],
+      "runtimeBindingIds": ["debug-main"],
+      "implementationRequired": true,
+      "steps": [{ "action": "publish-media", "target": "debug-main", "expectedResult": "Runtime media occupies the complete 16:9 surface." }],
+      "acceptanceCriteria": [
+        { "id": "surface-binding", "measure": "media-surface-binding", "operator": "equals", "value": "debug-main", "unit": "identifier" },
+        { "id": "surface-aspect", "measure": "aspect-ratio", "operator": "equals", "value": "16:9", "unit": "ratio" }
+      ]
+    },
+    {
+      "id": "presenter-route-clear",
+      "label": "Presenter circulation",
+      "purpose": "Confirm that the presenter can move between entry, aisle, stage and lectern.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["audience-circulation", "presentation-stage", "presenter-lectern"],
+      "runtimeBindingIds": ["main"],
+      "implementationRequired": true,
+      "steps": [{ "action": "follow-route", "target": "presenter-route", "expectedResult": "The presenter reaches the lectern without intersecting seating." }],
+      "acceptanceCriteria": [{ "id": "presenter-route-width", "measure": "minimum-clear-width", "operator": "greater-than-or-equal", "value": 1.45, "unit": "meter" }]
+    },
+    {
+      "id": "presenter-controls-deferred",
+      "label": "Presenter controls deferred",
+      "purpose": "Describe future lectern and AV credenza interaction without claiming runtime implementation.",
+      "actorProfileId": "presentation-participant",
+      "objectIds": ["presenter-lectern", "stage-av-credenza", "rear-consoles"],
+      "runtimeBindingIds": [],
+      "implementationRequired": false,
+      "steps": [{ "action": "hypothetically-operate", "target": "presenter-lectern", "expectedResult": "A future interaction may control presentation media." }],
+      "acceptanceCriteria": [{ "id": "runtime-not-required", "measure": "runtime-implementation-required", "operator": "equals", "value": false, "unit": "boolean" }]
+    }
+  ],
+  "unknownObjectPolicy": {
+    "policy": "reject",
+    "expectedLogicalObjects": 18,
+    "expectedMeshParts": 193
+  }
+}

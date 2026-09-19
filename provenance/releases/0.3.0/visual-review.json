@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.3.0",
+  "status": "review",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "pending-human-rights-approval",
+  "rightsApproved": false,
+  "sourceReview": {
+    "status": "passed-technical-source-review",
+    "imageConverter": "cwebp 1.6.0",
+    "metricImplementation": "sharp 0.34.3 raw sRGB luminance",
+    "dimensions": {
+      "width": 960,
+      "height": 540
+    },
+    "views": [
+      {
+        "id": "entry",
+        "path": "source/releases/0.3.0/review/entry.webp",
+        "sha256": "22463ea1360e42638a6482515347e67c8cf32a0fd985671f11fae3083d0ac78e",
+        "sizeBytes": 48764,
+        "format": "webp",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.29841949,
+        "darkPixelRatioBelow10Percent": 0.27841435
+      },
+      {
+        "id": "audience",
+        "path": "source/releases/0.3.0/review/audience.webp",
+        "sha256": "70507cda9cf2dd7274ad9a79097775379271f924b900251a810b7e3bf8dbce97",
+        "sizeBytes": 43296,
+        "format": "webp",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.28569627,
+        "darkPixelRatioBelow10Percent": 0.29602045
+      },
+      {
+        "id": "presenter",
+        "path": "source/releases/0.3.0/review/presenter.webp",
+        "sha256": "aee060fb0ae5c1238911ed3b52461c4d74fb869d4f294f78200d20227ff1fd58",
+        "sizeBytes": 51078,
+        "format": "webp",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.38072794,
+        "darkPixelRatioBelow10Percent": 0.12327546
+      },
+      {
+        "id": "diagonal-overview",
+        "path": "source/releases/0.3.0/review/diagonal-overview.webp",
+        "sha256": "0293506bafcdd960b3d761f242d4e75df08529283f6d79da00e86d87057680f2",
+        "sizeBytes": 70610,
+        "format": "webp",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.30975365,
+        "darkPixelRatioBelow10Percent": 0.21632716
+      },
+      {
+        "id": "screen-detail",
+        "path": "source/releases/0.3.0/review/screen-detail.webp",
+        "sha256": "3fedb2a07a3d058b82e1981747e8296564a3f95909a5ed7b8cf9823eace13562",
+        "sizeBytes": 33028,
+        "format": "webp",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.20885002,
+        "darkPixelRatioBelow10Percent": 0.44050926
+      },
+      {
+        "id": "aisle-seat-detail",
+        "path": "source/releases/0.3.0/review/aisle-seat-detail.webp",
+        "sha256": "4081d40d526da23381f968e5b9409833670fddcd49bfd110fa131e474f014fcb",
+        "sizeBytes": 45718,
+        "format": "webp",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.31964633,
+        "darkPixelRatioBelow10Percent": 0.26263889
+      },
+      {
+        "id": "lighting-detail",
+        "path": "source/releases/0.3.0/review/lighting-detail.webp",
+        "sha256": "267886ad6efe24a2b8711f509040a57a5b45153d8836f347b880631d15191caa",
+        "sizeBytes": 50354,
+        "format": "webp",
+        "width": 960,
+        "height": 540,
+        "meanLuminance": 0.23375431,
+        "darkPixelRatioBelow10Percent": 0.42697917
+      }
+    ]
+  },
+  "runtimeParity": {
+    "status": "passed-repeatable-technical-local-capture",
+    "bindingPath": "provenance/runtime-capture-0.3.0/capture-binding.json",
+    "bindingSha256": "2b56f631a3c38823fb24728a4273e7753728528282b7e65582bd27653f403917",
+    "diagnosticsPaths": [
+      "provenance/runtime-capture-0.3.0/runs/run-1/scene-debug.json",
+      "provenance/runtime-capture-0.3.0/runs/run-2/scene-debug.json",
+      "provenance/runtime-capture-0.3.0/runs/run-3/scene-debug.json"
+    ],
+    "stabilityPath": "provenance/runtime-capture-0.3.0/stability.json",
+    "stabilitySha256": "2cf9570b003600bc105ab218c8243b51a78224abf72029bfedbf27e2c745527c",
+    "stabilityResult": "byte-identical-images-across-three-full-view-runs",
+    "platformCommit": "c54edb2239d225a71e9b934316f70792b3faafb6",
+    "runtimeBuildModified": false,
+    "thresholdsDefined": true,
+    "thresholdState": "candidate-calibrated-technical-regression-from-three-repeatable-full-view-runs",
+    "phash": {
+      "total": 522.7959000000001,
+      "maximum": 580
+    },
+    "ncc": {
+      "mean": 0.5510997142857144,
+      "minimum": 0.51
+    },
+    "normalization": {
+      "localUrls": true,
+      "hudHidden": true,
+      "mediaSurfacesHidden": true,
+      "avatarFallbackCapsulesEnabled": false,
+      "avatarSeatsEnabled": false
+    },
+    "result": "passed",
+    "thresholdDerivation": {
+      "basis": "worst-observed-across-three-byte-identical-full-view-runs",
+      "runsMeasured": 3,
+      "margins": {
+        "basis": "worst-observed-across-three-byte-identical-full-view-runs",
+        "perViewPhashAbsoluteMargin": 10,
+        "perViewPhashRoundUpTo": 5,
+        "perViewNccAbsoluteMargin": 0.03,
+        "perViewNccRoundDownTo": 0.01,
+        "aggregatePhashAbsoluteMargin": 50,
+        "aggregatePhashRoundUpTo": 10,
+        "aggregateNccAbsoluteMargin": 0.04,
+        "aggregateNccRoundDownTo": 0.01
+      },
+      "observed": {
+        "perView": {
+          "entry": {
+            "phashMaxObserved": 49.6596,
+            "nccMinObserved": 0.824123
+          },
+          "audience": {
+            "phashMaxObserved": 85.5924,
+            "nccMinObserved": 0.711385
+          },
+          "presenter": {
+            "phashMaxObserved": 156.689,
+            "nccMinObserved": 0.464465
+          },
+          "diagonal-overview": {
+            "phashMaxObserved": 64.7774,
+            "nccMinObserved": 0.334613
+          },
+          "screen-detail": {
+            "phashMaxObserved": 50.8499,
+            "nccMinObserved": 0.558892
+          },
+          "aisle-seat-detail": {
+            "phashMaxObserved": 16.6553,
+            "nccMinObserved": 0.680038
+          },
+          "lighting-detail": {
+            "phashMaxObserved": 98.5723,
+            "nccMinObserved": 0.284182
+          }
+        },
+        "aggregate": {
+          "phashTotalMaxObserved": 522.7959000000001,
+          "nccMeanMinObserved": 0.5510997142857144
+        }
+      },
+      "thresholds": {
+        "perView": {
+          "entry": {
+            "phashMax": 60,
+            "nccMin": 0.79
+          },
+          "audience": {
+            "phashMax": 100,
+            "nccMin": 0.68
+          },
+          "presenter": {
+            "phashMax": 170,
+            "nccMin": 0.43
+          },
+          "diagonal-overview": {
+            "phashMax": 75,
+            "nccMin": 0.3
+          },
+          "screen-detail": {
+            "phashMax": 65,
+            "nccMin": 0.52
+          },
+          "aisle-seat-detail": {
+            "phashMax": 30,
+            "nccMin": 0.65
+          },
+          "lighting-detail": {
+            "phashMax": 110,
+            "nccMin": 0.25
+          }
+        },
+        "aggregate": {
+          "phashTotalMax": 580,
+          "nccMeanMin": 0.51
+        }
+      }
+    },
+    "rationale": "Three byte-identical full-view runs define technical regression bounds from their worst observed metrics plus explicit margins; human acceptance remains pending."
+  },
+  "visualAccepted": false,
+  "publicationReady": false
+}

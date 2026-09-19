@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.3.0",
+  "status": "passed",
+  "transform": "x=x,y=y,z=-z",
+  "authoringSpace": "semantic right-handed Y-up meters",
+  "runtimeSpace": "glTF right-handed Y-up meters",
+  "source": {
+    "path": "source/releases/0.3.0/scene-reality.json",
+    "sha256": "1c4794a5ba2d1bf9d18f17366c04a3e5deb117f7235212b9df2d68487e1272fe",
+    "sizeBytes": 75740
+  },
+  "checks": {
+    "spawnPoints": 1,
+    "seatAnchors": 8,
+    "mediaSurfaces": 1,
+    "sceneManifestSpawnBindingsMatch": true,
+    "sceneManifestSeatBindingsMatch": true,
+    "sceneManifestMediaBindingsMatch": true
+  },
+  "runtimeBindings": {
+    "spawnPoints": [
+      {
+        "id": "main",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": -4.95
+        },
+        "yaw": 3.141592653589793,
+        "openRadiusM": 1.1
+      }
+    ],
+    "seatAnchors": [
+      {
+        "id": "seat-01",
+        "objectId": "chair-seat-01",
+        "row": 1,
+        "position": {
+          "x": -2.65,
+          "y": 0,
+          "z": -0.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-02",
+        "objectId": "chair-seat-02",
+        "row": 1,
+        "position": {
+          "x": -1.55,
+          "y": 0,
+          "z": -0.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-03",
+        "objectId": "chair-seat-03",
+        "row": 1,
+        "position": {
+          "x": 1.55,
+          "y": 0,
+          "z": -0.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-04",
+        "objectId": "chair-seat-04",
+        "row": 1,
+        "position": {
+          "x": 2.65,
+          "y": 0,
+          "z": -0.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-05",
+        "objectId": "chair-seat-05",
+        "row": 2,
+        "position": {
+          "x": -2.9,
+          "y": 0,
+          "z": -2.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-06",
+        "objectId": "chair-seat-06",
+        "row": 2,
+        "position": {
+          "x": -1.8,
+          "y": 0,
+          "z": -2.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-07",
+        "objectId": "chair-seat-07",
+        "row": 2,
+        "position": {
+          "x": 1.8,
+          "y": 0,
+          "z": -2.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-08",
+        "objectId": "chair-seat-08",
+        "row": 2,
+        "position": {
+          "x": 2.9,
+          "y": 0,
+          "z": -2.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      }
+    ],
+    "mediaSurfaces": [
+      {
+        "surfaceId": "debug-main",
+        "objectId": "presentation-screen",
+        "partId": "media-debug-main",
+        "purpose": "pdf-and-screen-share",
+        "widthM": 5.12,
+        "heightM": 2.88,
+        "aspectRatio": "16:9",
+        "visible": true,
+        "transform": {
+          "x": 0,
+          "y": 2.48,
+          "z": 5.33,
+          "yaw": 0
+        }
+      }
+    ]
+  }
+}

@@ -3,10 +3,10 @@
   "sceneId": "presentation-room-v1",
   "status": "review",
   "humanAcceptance": "pending-human-acceptance",
-  "rightsStatus": "approved-for-public-staging-review",
-  "rightsApproved": true,
-  "rightsApprovalDate": "2026-08-29",
-  "licenseRef": "LicenseRef-Vrata-Public-Staging-Review-2026-08-29",
+  "rightsStatus": "pending-human-rights-approval",
+  "rightsApproved": false,
+  "rightsApprovalDate": null,
+  "licenseRef": null,
   "publicationReady": false,
   "platformValidatorCommit": "c54edb2239d225a71e9b934316f70792b3faafb6",
   "releases": [
@@ -164,6 +164,59 @@
         "result": "byte-identical-glb",
         "sha256": "25dc4d0dad2039b7c533448c163490760ec8378187d82ed0b7a98214fc6acaec",
         "lightmapSha256": "cdeb7e52d539c17408acf6eaf39ac3a598ee06e731283f4d5b867ad45eb5fb66"
+      }
+    },
+    {
+      "sceneId": "presentation-room-v1",
+      "version": "0.3.0",
+      "baseVersion": "0.2.0",
+      "releaseKind": "warm-modern-visual-review",
+      "status": "review",
+      "humanAcceptance": "pending-human-acceptance",
+      "rightsStatus": "pending-human-rights-approval",
+      "rightsApproved": false,
+      "rightsApprovalDate": null,
+      "licenseRef": null,
+      "isCurrent": false,
+      "publicationReady": false,
+      "renderMode": "clean",
+      "renderProfile": "baked-pbr-v1",
+      "platformValidatorCommit": "c54edb2239d225a71e9b934316f70792b3faafb6",
+      "releasePath": "assets/scenes/presentation-room-v1/0.3.0",
+      "provenancePath": "provenance/releases/0.3.0/release-provenance.json",
+      "files": {
+        "LICENSES.md": {
+          "sha256": "102bd89beea0f9c977be7960edd39f66583520ba9984bbc9f5d959b572be26f1",
+          "sizeBytes": 540
+        },
+        "preview.webp": {
+          "sha256": "22463ea1360e42638a6482515347e67c8cf32a0fd985671f11fae3083d0ac78e",
+          "sizeBytes": 48764
+        },
+        "scene.glb": {
+          "sha256": "56078fd9cf298424ef5f219abd19e5a5fa8e1c5e0cd96224eddfe8e5bd937b30",
+          "sizeBytes": 13333276
+        },
+        "scene.json": {
+          "sha256": "6ad08fb2a5d2559adb060ffb295e773ece643533a906cba6dfe519e0781310d8",
+          "sizeBytes": 5036
+        }
+      },
+      "stats": {
+        "triangles": 32060,
+        "objects": 210,
+        "meshes": 193,
+        "primitives": 193,
+        "materials": 10,
+        "textures": 8,
+        "animations": 0
+      },
+      "reproducibility": {
+        "scope": "same-host-same-saved-blend-same-accepted-atlas-same-blender-binary-two-run",
+        "runs": 2,
+        "result": "byte-identical-glb",
+        "sha256": "56078fd9cf298424ef5f219abd19e5a5fa8e1c5e0cd96224eddfe8e5bd937b30",
+        "lightmapSha256": "ea3864fe09b111827563329e7c543459bc4508701060d67ca4a27ccfc7ffad0a"
       }
     }
   ]

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.3.0",
+  "status": "passed",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "pending-human-rights-approval",
+  "rightsApproved": false,
+  "contract": {
+    "path": "source/releases/0.3.0/scene-reality.json",
+    "sha256": "1c4794a5ba2d1bf9d18f17366c04a3e5deb117f7235212b9df2d68487e1272fe",
+    "sizeBytes": 75740
+  },
+  "userScenarios": {
+    "path": "source/releases/0.3.0/user-scenarios.json",
+    "sha256": "e87181dbb8a87b4f092b9c3a091bcbd94077699361e53e4e4eb4f4feaf21c61c",
+    "sizeBytes": 10296
+  },
+  "releaseGlb": {
+    "path": "assets/scenes/presentation-room-v1/0.3.0/scene.glb",
+    "sha256": "56078fd9cf298424ef5f219abd19e5a5fa8e1c5e0cd96224eddfe8e5bd937b30",
+    "sizeBytes": 13333276
+  },
+  "expectedCounts": {
+    "logicalObjects": 18,
+    "meshParts": 193,
+    "materials": 10,
+    "seatAnchors": 8,
+    "mediaSurfaces": 1,
+    "reviewViews": 7
+  },
+  "measuredStats": {
+    "triangles": 32060,
+    "objects": 210,
+    "meshes": 193,
+    "primitives": 193,
+    "materials": 10,
+    "textures": 8,
+    "animations": 0
+  },
+  "interactionMeshStatuses": {
+    "passive": 90,
+    "deferred": 14,
+    "interactive": 89
+  },
+  "scenarioCoverage": {
+    "scenarios": 13,
+    "actorProfiles": 1,
+    "routes": 1
+  },
+  "geometry": {
+    "baseVersion": "0.2.0",
+    "meshNodes": 193,
+    "sha256": "5e8ee9dc8a11563453f3bec6d7ff54da28364256cba6e620f88524aead277b09",
+    "unchanged": true
+  },
+  "gltfInventory": {
+    "nodes": 210,
+    "meshNodes": 193,
+    "materials": 10,
+    "textureObjects": 17,
+    "imagePayloads": 8,
+    "cameras": 0,
+    "animations": 0
+  },
+  "meshTags": {
+    "coverage": "all-visible-mesh-parts",
+    "validatedParts": 193,
+    "required": [
+      "vrataObjectId",
+      "vrataPartId",
+      "vrataInteractionStatus",
+      "vrataBakePolicy",
+      "vrataAssetOrigin",
+      "vrataAuthoringRelease"
+    ]
+  },
+  "khronos": {
+    "validator": "gltf-validator 2.0.0-dev.3.10",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 61,
+    "hints": 0
+  },
+  "designConstraints": {
+    "existingWindowCount": 0,
+    "artificialWindowOpeningAdded": false,
+    "panoramaSphereAdded": false,
+    "externalAssetsUsed": false,
+    "brandingUsed": false
+  },
+  "result": "passed"
+}

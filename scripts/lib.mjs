@@ -1,13 +1,101 @@
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { copyFile, mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
-import { join } from "node:path";
+import { copyFile, lstat, mkdir, readFile, readdir, rm, stat, writeFile } from "node:fs/promises";
+import { isAbsolute, join, relative, resolve, sep } from "node:path";
 
 import { NodeIO } from "@gltf-transform/core";
 import { ALL_EXTENSIONS } from "@gltf-transform/extensions";
 
 export function assert(condition, code) {
   if (!condition) throw new Error(code);
+}
+
+export function pathTrackedInGit(root, repositoryPath) {
+  assert(typeof repositoryPath === "string" && repositoryPath.length > 0
+    && !repositoryPath.startsWith("/") && !repositoryPath.includes("..") && !repositoryPath.includes("\\"), "invalid_git_repository_path");
+  const head = spawnSync("git", ["ls-tree", "--name-only", "HEAD", "--", repositoryPath], { cwd: root, encoding: "utf8" });
+  if (head.error || head.status !== 0) throw new Error(`git_head_path_query_failed:${head.error?.message ?? head.status}`);
+  const index = spawnSync("git", ["ls-files", "--error-unmatch", "--", repositoryPath], { cwd: root, encoding: "utf8" });
+  if (index.error || ![0, 1].includes(index.status)) throw new Error(`git_index_path_query_failed:${index.error?.message ?? index.status}`);
+  return head.stdout.trim().length > 0 || index.status === 0;
+}
+
+export async function assertUntrackedOutput(root, path) {
+  const repositoryPath = relative(root, resolve(root, path));
+  assert(repositoryPath && !isAbsolute(repositoryPath) && !repositoryPath.split(sep).includes("..")
+    && repositoryPath.split(sep)[0] !== ".git", "invalid_output_path");
+  let current = root;
+  for (const part of repositoryPath.split(sep)) {
+    current = join(current, part);
+    const entry = await lstat(current).catch((error) => {
+      if (error.code === "ENOENT") return null;
+      throw error;
+    });
+    assert(!entry?.isSymbolicLink(), "output_symlink_forbidden");
+  }
+  assert(!pathTrackedInGit(root, repositoryPath.split(sep).join("/")), `tracked_output_forbidden:${repositoryPath}`);
+}
+
+export async function assertScratchOutput(root, path) {
+  const repositoryPath = relative(root, resolve(root, path));
+  assert(repositoryPath.startsWith(`build${sep}`), "report_output_must_be_under_build");
+  await assertUntrackedOutput(root, path);
+}
+
+export function acceptanceIndexEntryRecord(index, version) {
+  const records = index.releases.filter((record) => record.version === version);
+  assert(records.length === 1, `acceptance_index_entry_missing_or_duplicate:${version}`);
+  return { version, entrySha256: sha256(JSON.stringify(records[0])) };
+}
+
+export function assertGitAcceptanceIndexPrefix(root, repositoryPath, current) {
+  for (const revision of ["HEAD", "index"]) {
+    const listing = spawnSync("git", revision === "HEAD"
+      ? ["ls-tree", "--name-only", "HEAD", "--", repositoryPath]
+      : ["ls-files", "--", repositoryPath], { cwd: root, encoding: "utf8" });
+    if (listing.error || listing.status !== 0) throw new Error(`acceptance_index_git_query_failed:${revision}`);
+    if (!listing.stdout.trim()) continue;
+    const base = spawnSync("git", ["show", `${revision === "HEAD" ? "HEAD" : ""}:${repositoryPath}`], { cwd: root, encoding: "utf8" });
+    if (base.error || base.status !== 0) throw new Error(`acceptance_index_git_read_failed:${revision}`);
+    assertAcceptanceIndexPrefix(JSON.parse(base.stdout), current);
+  }
+}
+
+async function pythonToolingPaths(directory, prefix) {
+  const paths = [];
+  for (const entry of await readdir(directory, { withFileTypes: true })) {
+    if (entry.name === "__pycache__") continue;
+    const repositoryPath = `${prefix}/${entry.name}`;
+    if (entry.isDirectory()) paths.push(...await pythonToolingPaths(join(directory, entry.name), repositoryPath));
+    else if (entry.isFile() && entry.name.endsWith(".py")) paths.push(repositoryPath);
+  }
+  return paths;
+}
+
+export async function repositoryToolingPaths(root) {
+  const [scripts, tests, sourcePython] = await Promise.all([
+    readdir(join(root, "scripts"), { withFileTypes: true }),
+    readdir(join(root, "tests"), { withFileTypes: true }),
+    pythonToolingPaths(join(root, "source"), "source")
+  ]);
+  return [
+    ".github/workflows/validate.yml",
+    "package.json",
+    "platform-validator.lock",
+    "pnpm-lock.yaml",
+    ...scripts.filter((entry) => entry.isFile() && entry.name.endsWith(".mjs")).map((entry) => `scripts/${entry.name}`),
+    ...tests.filter((entry) => entry.isFile() && entry.name.endsWith(".test.mjs")).map((entry) => `tests/${entry.name}`),
+    ...sourcePython
+  ].sort();
+}
+
+export function assertAcceptanceIndexPrefix(base, current) {
+  assert(base?.schemaVersion === current?.schemaVersion && base?.sceneId === current?.sceneId
+    && Array.isArray(base?.releases) && Array.isArray(current?.releases), "acceptance_index_identity_changed");
+  assert(current.releases.length >= base.releases.length, "acceptance_index_history_deleted");
+  for (let index = 0; index < base.releases.length; index += 1) {
+    assert(JSON.stringify(current.releases[index]) === JSON.stringify(base.releases[index]), `acceptance_index_history_changed:${index}`);
+  }
 }
 
 export function sha256(bytes) {

@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.3.0",
+  "status": "review",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "pending-human-rights-approval",
+  "rightsApproved": false,
+  "isCurrent": false,
+  "publicationReady": false,
+  "releaseGlb": {
+    "path": "assets/scenes/presentation-room-v1/0.3.0/scene.glb",
+    "sha256": "56078fd9cf298424ef5f219abd19e5a5fa8e1c5e0cd96224eddfe8e5bd937b30",
+    "sizeBytes": 13333276
+  },
+  "capture": {
+    "status": "pending-platform-dependent-local-capture",
+    "platformCommit": "c54edb2239d225a71e9b934316f70792b3faafb6",
+    "requiredState": "loaded",
+    "requiredFailureReason": null,
+    "requireNoMissingAssets": true,
+    "requiredRenderProfile": "baked-pbr-v1",
+    "expectedRuntime": {
+      "meshCount": 193,
+      "materialCount": 10,
+      "triangleEstimate": 32060
+    },
+    "renderSettings": {
+      "environmentIntensity": 0.35,
+      "exposure": 1.2
+    },
+    "bindingFile": null,
+    "diagnosticsFile": null,
+    "evidencePath": null
+  },
+  "reviewViews": [
+    {
+      "id": "entry",
+      "position": {
+        "x": 0,
+        "y": 1.62,
+        "z": -5.15
+      },
+      "target": {
+        "x": 0,
+        "y": 1.72,
+        "z": 3.9
+      },
+      "fovDegrees": 59
+    },
+    {
+      "id": "audience",
+      "position": {
+        "x": -0.2,
+        "y": 1.48,
+        "z": -2.9
+      },
+      "target": {
+        "x": 0,
+        "y": 2.08,
+        "z": 5.18
+      },
+      "fovDegrees": 57
+    },
+    {
+      "id": "presenter",
+      "position": {
+        "x": 3.78,
+        "y": 1.58,
+        "z": 3.72
+      },
+      "target": {
+        "x": 0,
+        "y": 1,
+        "z": -1.45
+      },
+      "fovDegrees": 63
+    },
+    {
+      "id": "diagonal-overview",
+      "position": {
+        "x": -4.55,
+        "y": 3.12,
+        "z": -4.62
+      },
+      "target": {
+        "x": 0,
+        "y": 1.35,
+        "z": 1.15
+      },
+      "fovDegrees": 67
+    },
+    {
+      "id": "screen-detail",
+      "position": {
+        "x": 2.7,
+        "y": 1.72,
+        "z": 1.95
+      },
+      "target": {
+        "x": 0,
+        "y": 2.35,
+        "z": 5.34
+      },
+      "fovDegrees": 50
+    },
+    {
+      "id": "aisle-seat-detail",
+      "position": {
+        "x": -0.35,
+        "y": 1.18,
+        "z": -4
+      },
+      "target": {
+        "x": -2.05,
+        "y": 0.7,
+        "z": -1
+      },
+      "fovDegrees": 54
+    },
+    {
+      "id": "lighting-detail",
+      "position": {
+        "x": -3.85,
+        "y": 1.3,
+        "z": -1.45
+      },
+      "target": {
+        "x": 0.15,
+        "y": 3.88,
+        "z": 0.7
+      },
+      "fovDegrees": 61
+    }
+  ],
+  "views": [
+    {
+      "id": "entry",
+      "referencePath": "source/releases/0.3.0/review/entry.webp",
+      "referenceSha256": "22463ea1360e42638a6482515347e67c8cf32a0fd985671f11fae3083d0ac78e",
+      "referenceSizeBytes": 48764,
+      "meanLuminance": 0.29841949,
+      "darkPixelRatioBelow10Percent": 0.27841435,
+      "captureFile": null,
+      "phashMax": null,
+      "nccMin": null
+    },
+    {
+      "id": "audience",
+      "referencePath": "source/releases/0.3.0/review/audience.webp",
+      "referenceSha256": "70507cda9cf2dd7274ad9a79097775379271f924b900251a810b7e3bf8dbce97",
+      "referenceSizeBytes": 43296,
+      "meanLuminance": 0.28569627,
+      "darkPixelRatioBelow10Percent": 0.29602045,
+      "captureFile": null,
+      "phashMax": null,
+      "nccMin": null
+    },
+    {
+      "id": "presenter",
+      "referencePath": "source/releases/0.3.0/review/presenter.webp",
+      "referenceSha256": "aee060fb0ae5c1238911ed3b52461c4d74fb869d4f294f78200d20227ff1fd58",
+      "referenceSizeBytes": 51078,
+      "meanLuminance": 0.38072794,
+      "darkPixelRatioBelow10Percent": 0.12327546,
+      "captureFile": null,
+      "phashMax": null,
+      "nccMin": null
+    },
+    {
+      "id": "diagonal-overview",
+      "referencePath": "source/releases/0.3.0/review/diagonal-overview.webp",
+      "referenceSha256": "0293506bafcdd960b3d761f242d4e75df08529283f6d79da00e86d87057680f2",
+      "referenceSizeBytes": 70610,
+      "meanLuminance": 0.30975365,
+      "darkPixelRatioBelow10Percent": 0.21632716,
+      "captureFile": null,
+      "phashMax": null,
+      "nccMin": null
+    },
+    {
+      "id": "screen-detail",
+      "referencePath": "source/releases/0.3.0/review/screen-detail.webp",
+      "referenceSha256": "3fedb2a07a3d058b82e1981747e8296564a3f95909a5ed7b8cf9823eace13562",
+      "referenceSizeBytes": 33028,
+      "meanLuminance": 0.20885002,
+      "darkPixelRatioBelow10Percent": 0.44050926,
+      "captureFile": null,
+      "phashMax": null,
+      "nccMin": null
+    },
+    {
+      "id": "aisle-seat-detail",
+      "referencePath": "source/releases/0.3.0/review/aisle-seat-detail.webp",
+      "referenceSha256": "4081d40d526da23381f968e5b9409833670fddcd49bfd110fa131e474f014fcb",
+      "referenceSizeBytes": 45718,
+      "meanLuminance": 0.31964633,
+      "darkPixelRatioBelow10Percent": 0.26263889,
+      "captureFile": null,
+      "phashMax": null,
+      "nccMin": null
+    },
+    {
+      "id": "lighting-detail",
+      "referencePath": "source/releases/0.3.0/review/lighting-detail.webp",
+      "referenceSha256": "267886ad6efe24a2b8711f509040a57a5b45153d8836f347b880631d15191caa",
+      "referenceSizeBytes": 50354,
+      "meanLuminance": 0.23375431,
+      "darkPixelRatioBelow10Percent": 0.42697917,
+      "captureFile": null,
+      "phashMax": null,
+      "nccMin": null
+    }
+  ],
+  "thresholds": {
+    "state": "undefined-no-runtime-baseline",
+    "finalThresholdsDefined": false,
+    "perView": null,
+    "aggregate": null,
+    "rationale": "No runtime capture is bound to this release. Thresholds must not be derived from source renders alone."
+  }
+}

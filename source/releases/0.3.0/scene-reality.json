@@ -1,0 +1,2722 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.3.0",
+  "status": "review",
+  "coordinateSystem": {
+    "authoring": "semantic right-handed Y-up meters",
+    "blender": "right-handed Z-up meters",
+    "runtime": "glTF right-handed Y-up meters",
+    "authoringToRuntime": "x=x,y=y,z=-z"
+  },
+  "changeScope": {
+    "baseRelease": "0.2.0",
+    "geometryChanged": false,
+    "materialsChanged": true,
+    "lightingChanged": true,
+    "oldLightmapReused": false,
+    "rebakeRequired": true,
+    "reason": "Changed lighting alters baked irradiance even though mesh geometry is preserved."
+  },
+  "designConstraints": {
+    "existingWindowCount": 0,
+    "artificialWindowOpeningAdded": false,
+    "panoramaSphereAdded": false,
+    "externalAssetsUsed": false,
+    "brandingUsed": false
+  },
+  "room": {
+    "widthM": 10.8,
+    "heightM": 4.4,
+    "depthM": 11.8
+  },
+  "expectedCounts": {
+    "logicalObjects": 18,
+    "meshParts": 193,
+    "materials": 10,
+    "seatAnchors": 8,
+    "mediaSurfaces": 1,
+    "reviewViews": 7
+  },
+  "runtimeBindings": {
+    "spawnPoints": [
+      {
+        "id": "main",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": -4.95
+        },
+        "yaw": 3.141592653589793,
+        "openRadiusM": 1.1
+      }
+    ],
+    "seatAnchors": [
+      {
+        "id": "seat-01",
+        "objectId": "chair-seat-01",
+        "row": 1,
+        "position": {
+          "x": -2.65,
+          "y": 0,
+          "z": -0.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-02",
+        "objectId": "chair-seat-02",
+        "row": 1,
+        "position": {
+          "x": -1.55,
+          "y": 0,
+          "z": -0.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-03",
+        "objectId": "chair-seat-03",
+        "row": 1,
+        "position": {
+          "x": 1.55,
+          "y": 0,
+          "z": -0.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-04",
+        "objectId": "chair-seat-04",
+        "row": 1,
+        "position": {
+          "x": 2.65,
+          "y": 0,
+          "z": -0.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-05",
+        "objectId": "chair-seat-05",
+        "row": 2,
+        "position": {
+          "x": -2.9,
+          "y": 0,
+          "z": -2.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-06",
+        "objectId": "chair-seat-06",
+        "row": 2,
+        "position": {
+          "x": -1.8,
+          "y": 0,
+          "z": -2.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-07",
+        "objectId": "chair-seat-07",
+        "row": 2,
+        "position": {
+          "x": 1.8,
+          "y": 0,
+          "z": -2.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      },
+      {
+        "id": "seat-08",
+        "objectId": "chair-seat-08",
+        "row": 2,
+        "position": {
+          "x": 2.9,
+          "y": 0,
+          "z": -2.35
+        },
+        "yaw": 0,
+        "seatHeight": 0.47,
+        "radius": 0.42,
+        "visible": true,
+        "aimTargetSurfaceId": "debug-main"
+      }
+    ],
+    "mediaSurfaces": [
+      {
+        "surfaceId": "debug-main",
+        "objectId": "presentation-screen",
+        "partId": "media-debug-main",
+        "purpose": "pdf-and-screen-share",
+        "widthM": 5.12,
+        "heightM": 2.88,
+        "aspectRatio": "16:9",
+        "visible": true,
+        "transform": {
+          "x": 0,
+          "y": 2.48,
+          "z": 5.33,
+          "yaw": 0
+        }
+      }
+    ]
+  },
+  "presenterRoute": {
+    "minimumWidthM": 1.45,
+    "points": [
+      {
+        "x": 0,
+        "y": 0,
+        "z": -4.95
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": -3.6
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 2.8
+      },
+      {
+        "x": -3.35,
+        "y": 0.24,
+        "z": 4.15
+      }
+    ]
+  },
+  "reviewViews": [
+    {
+      "id": "entry",
+      "authoringPosition": {
+        "x": 0.0,
+        "y": 1.62,
+        "z": 5.15
+      },
+      "authoringTarget": {
+        "x": 0.0,
+        "y": 1.72,
+        "z": -3.9
+      },
+      "fovDegrees": 59
+    },
+    {
+      "id": "audience",
+      "authoringPosition": {
+        "x": -0.2,
+        "y": 1.48,
+        "z": 2.9
+      },
+      "authoringTarget": {
+        "x": 0.0,
+        "y": 2.08,
+        "z": -5.18
+      },
+      "fovDegrees": 57
+    },
+    {
+      "id": "presenter",
+      "authoringPosition": {
+        "x": 3.78,
+        "y": 1.58,
+        "z": -3.72
+      },
+      "authoringTarget": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 1.45
+      },
+      "fovDegrees": 63
+    },
+    {
+      "id": "diagonal-overview",
+      "authoringPosition": {
+        "x": -4.55,
+        "y": 3.12,
+        "z": 4.62
+      },
+      "authoringTarget": {
+        "x": 0.0,
+        "y": 1.35,
+        "z": -1.15
+      },
+      "fovDegrees": 67
+    },
+    {
+      "id": "screen-detail",
+      "authoringPosition": {
+        "x": 2.7,
+        "y": 1.72,
+        "z": -1.95
+      },
+      "authoringTarget": {
+        "x": 0.0,
+        "y": 2.35,
+        "z": -5.34
+      },
+      "fovDegrees": 50
+    },
+    {
+      "id": "aisle-seat-detail",
+      "authoringPosition": {
+        "x": -0.35,
+        "y": 1.18,
+        "z": 4.0
+      },
+      "authoringTarget": {
+        "x": -2.05,
+        "y": 0.7,
+        "z": 1.0
+      },
+      "fovDegrees": 54
+    },
+    {
+      "id": "lighting-detail",
+      "authoringPosition": {
+        "x": -3.85,
+        "y": 1.3,
+        "z": 1.45
+      },
+      "authoringTarget": {
+        "x": 0.15,
+        "y": 3.88,
+        "z": -0.7
+      },
+      "fovDegrees": 61
+    }
+  ],
+  "materials": [
+    {
+      "name": "material.mineral-shell",
+      "baseColorSrgb": "#BEB7AA",
+      "roughness": 0.8,
+      "metallic": 0.0,
+      "texture": "plaster"
+    },
+    {
+      "name": "material.charcoal-ceiling",
+      "baseColorSrgb": "#73787A",
+      "roughness": 0.78,
+      "metallic": 0.02,
+      "texture": "ceiling"
+    },
+    {
+      "name": "material.warm-ash-wood",
+      "baseColorSrgb": "#725744",
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "texture": "wood",
+      "coat": 0.035
+    },
+    {
+      "name": "material.deep-desaturated-blue",
+      "baseColorSrgb": "#355566",
+      "roughness": 0.74,
+      "metallic": 0.0,
+      "texture": "fabric"
+    },
+    {
+      "name": "material.restrained-rust",
+      "baseColorSrgb": "#7F5548",
+      "roughness": 0.74,
+      "metallic": 0.0,
+      "texture": "leather",
+      "coat": 0.02
+    },
+    {
+      "name": "material.dark-bronze-metal",
+      "baseColorSrgb": "#51463D",
+      "roughness": 0.3,
+      "metallic": 0.76,
+      "texture": null
+    },
+    {
+      "name": "material.audience-carpet",
+      "baseColorSrgb": "#5A5E5E",
+      "roughness": 0.94,
+      "metallic": 0.0,
+      "texture": "carpet"
+    },
+    {
+      "name": "material.screen-neutral",
+      "baseColorSrgb": "#171A1C",
+      "roughness": 0.92,
+      "metallic": 0.0,
+      "texture": "screen",
+      "specularIorLevel": 0.08,
+      "emissionSrgb": "#343A3E",
+      "emissionStrength": 0.35
+    },
+    {
+      "name": "material.warm-practical-glow",
+      "baseColorSrgb": "#FFE0B8",
+      "roughness": 0.34,
+      "metallic": 0.0,
+      "texture": null,
+      "emissionSrgb": "#FFD6AC",
+      "emissionStrength": 4.8
+    },
+    {
+      "name": "material.presenter-control",
+      "baseColorSrgb": "#172B35",
+      "roughness": 0.27,
+      "metallic": 0.12,
+      "texture": null,
+      "emissionSrgb": "#235C70",
+      "emissionStrength": 0.55
+    }
+  ],
+  "lighting": [
+    {
+      "id": "stage-key",
+      "position": [
+        0.0,
+        3.72,
+        -2.72
+      ],
+      "target": [
+        0.0,
+        1.72,
+        -5.15
+      ],
+      "energy": 1500,
+      "size": [
+        6.0,
+        2.2
+      ],
+      "colorSrgb": "#FFE5C8",
+      "shadow": true
+    },
+    {
+      "id": "audience-main",
+      "position": [
+        0.0,
+        4.02,
+        0.8
+      ],
+      "target": [
+        0.0,
+        0.72,
+        1.0
+      ],
+      "energy": 1580,
+      "size": [
+        6.8,
+        4.2
+      ],
+      "colorSrgb": "#FFE8D0",
+      "shadow": true
+    },
+    {
+      "id": "entry-fill",
+      "position": [
+        0.0,
+        3.74,
+        4.65
+      ],
+      "target": [
+        0.0,
+        0.9,
+        2.55
+      ],
+      "energy": 760,
+      "size": [
+        3.5,
+        2.0
+      ],
+      "colorSrgb": "#FFDFC1"
+    },
+    {
+      "id": "screen-balance",
+      "position": [
+        0.0,
+        3.48,
+        -4.82
+      ],
+      "target": [
+        0.0,
+        2.0,
+        -3.15
+      ],
+      "energy": 360,
+      "size": [
+        4.8,
+        1.1
+      ],
+      "colorSrgb": "#CAD8F2"
+    },
+    {
+      "id": "wall-wash-left",
+      "position": [
+        -4.76,
+        3.4,
+        -0.45
+      ],
+      "target": [
+        -5.15,
+        1.75,
+        -0.45
+      ],
+      "energy": 460,
+      "size": [
+        1.25,
+        3.1
+      ],
+      "colorSrgb": "#FFD6B5"
+    },
+    {
+      "id": "wall-wash-right",
+      "position": [
+        4.76,
+        3.4,
+        -0.45
+      ],
+      "target": [
+        5.15,
+        1.75,
+        -0.45
+      ],
+      "energy": 460,
+      "size": [
+        1.25,
+        3.1
+      ],
+      "colorSrgb": "#FFD6B5"
+    },
+    {
+      "id": "ceiling-lift-front",
+      "position": [
+        0.0,
+        3.42,
+        -2.15
+      ],
+      "target": [
+        0.0,
+        4.26,
+        -2.15
+      ],
+      "energy": 440,
+      "size": [
+        5.8,
+        2.0
+      ],
+      "colorSrgb": "#E7E3D9"
+    },
+    {
+      "id": "ceiling-lift-rear",
+      "position": [
+        0.0,
+        3.42,
+        2.25
+      ],
+      "target": [
+        0.0,
+        4.26,
+        2.25
+      ],
+      "energy": 440,
+      "size": [
+        5.8,
+        2.0
+      ],
+      "colorSrgb": "#E7E3D9"
+    },
+    {
+      "id": "ceiling-practical-01",
+      "position": [
+        0.0,
+        4.02,
+        -3.8
+      ],
+      "target": [
+        0.0,
+        0.55,
+        -3.8
+      ],
+      "energy": 285,
+      "size": [
+        5.25,
+        0.42
+      ],
+      "colorSrgb": "#FFE2C5",
+      "shadow": true
+    },
+    {
+      "id": "ceiling-practical-02",
+      "position": [
+        0.0,
+        4.02,
+        -2.25
+      ],
+      "target": [
+        0.0,
+        0.55,
+        -2.25
+      ],
+      "energy": 285,
+      "size": [
+        5.25,
+        0.42
+      ],
+      "colorSrgb": "#FFE2C5",
+      "shadow": true
+    },
+    {
+      "id": "ceiling-practical-03",
+      "position": [
+        0.0,
+        4.02,
+        -0.7
+      ],
+      "target": [
+        0.0,
+        0.55,
+        -0.7
+      ],
+      "energy": 285,
+      "size": [
+        5.25,
+        0.42
+      ],
+      "colorSrgb": "#FFE2C5",
+      "shadow": true
+    },
+    {
+      "id": "ceiling-practical-04",
+      "position": [
+        0.0,
+        4.02,
+        0.85
+      ],
+      "target": [
+        0.0,
+        0.55,
+        0.85
+      ],
+      "energy": 285,
+      "size": [
+        5.25,
+        0.42
+      ],
+      "colorSrgb": "#FFE2C5",
+      "shadow": true
+    },
+    {
+      "id": "ceiling-practical-05",
+      "position": [
+        0.0,
+        4.02,
+        2.4
+      ],
+      "target": [
+        0.0,
+        0.55,
+        2.4
+      ],
+      "energy": 285,
+      "size": [
+        5.25,
+        0.42
+      ],
+      "colorSrgb": "#FFE2C5",
+      "shadow": true
+    },
+    {
+      "id": "ceiling-practical-06",
+      "position": [
+        0.0,
+        4.02,
+        3.95
+      ],
+      "target": [
+        0.0,
+        0.55,
+        3.95
+      ],
+      "energy": 285,
+      "size": [
+        5.25,
+        0.42
+      ],
+      "colorSrgb": "#FFE2C5",
+      "shadow": true
+    }
+  ],
+  "objects": [
+    {
+      "id": "acoustic-treatment",
+      "interactionStatus": "passive",
+      "parts": [
+        {
+          "nodeName": "acoustic.backing.left",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-backing-left",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.charcoal-ceiling"
+          ]
+        },
+        {
+          "nodeName": "acoustic.backing.right",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-backing-right",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.charcoal-ceiling"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.left.01",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-left-01",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.left.02",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-left-02",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.left.03",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-left-03",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.left.04",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-left-04",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.left.05",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-left-05",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.left.06",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-left-06",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.left.07",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-left-07",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.left.08",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-left-08",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.left.09",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-left-09",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.left.10",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-left-10",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.left.11",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-left-11",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.right.01",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-right-01",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.right.02",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-right-02",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.right.03",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-right-03",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.right.04",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-right-04",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.right.05",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-right-05",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.right.06",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-right-06",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.right.07",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-right-07",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.right.08",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-right-08",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.right.09",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-right-09",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.right.10",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-right-10",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.fin.right.11",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-fin-right-11",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.panel.left.01",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-panel-left-01",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "acoustic.panel.left.02",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-panel-left-02",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "acoustic.panel.left.03",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-panel-left-03",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "acoustic.panel.right.01",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-panel-right-01",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "acoustic.panel.right.02",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-panel-right-02",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "acoustic.panel.right.03",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-panel-right-03",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "acoustic.rail.left.lower",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-rail-left-lower",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "acoustic.rail.left.upper",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-rail-left-upper",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "acoustic.rail.right.lower",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-rail-right-lower",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "acoustic.rail.right.upper",
+          "objectId": "acoustic-treatment",
+          "partId": "acoustic-rail-right-upper",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audience-circulation",
+      "interactionStatus": "passive",
+      "parts": [
+        {
+          "nodeName": "functional.aisle-marker.01.left",
+          "objectId": "audience-circulation",
+          "partId": "functional-aisle-marker-01-left",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "functional.aisle-marker.01.right",
+          "objectId": "audience-circulation",
+          "partId": "functional-aisle-marker-01-right",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "functional.aisle-marker.02.left",
+          "objectId": "audience-circulation",
+          "partId": "functional-aisle-marker-02-left",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "functional.aisle-marker.02.right",
+          "objectId": "audience-circulation",
+          "partId": "functional-aisle-marker-02-right",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "functional.aisle-marker.03.left",
+          "objectId": "audience-circulation",
+          "partId": "functional-aisle-marker-03-left",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "functional.aisle-marker.03.right",
+          "objectId": "audience-circulation",
+          "partId": "functional-aisle-marker-03-right",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "functional.aisle-marker.04.left",
+          "objectId": "audience-circulation",
+          "partId": "functional-aisle-marker-04-left",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "functional.aisle-marker.04.right",
+          "objectId": "audience-circulation",
+          "partId": "functional-aisle-marker-04-right",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ceiling-system",
+      "interactionStatus": "passive",
+      "parts": [
+        {
+          "nodeName": "ceiling.light.01",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-light-01",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "ceiling.light.02",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-light-02",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "ceiling.light.03",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-light-03",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "ceiling.light.04",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-light-04",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "ceiling.light.05",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-light-05",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "ceiling.light.06",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-light-06",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "ceiling.perimeter.left",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-perimeter-left",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.charcoal-ceiling"
+          ]
+        },
+        {
+          "nodeName": "ceiling.perimeter.right",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-perimeter-right",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.charcoal-ceiling"
+          ]
+        },
+        {
+          "nodeName": "ceiling.raft-trim.01",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-raft-trim-01",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "ceiling.raft-trim.02",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-raft-trim-02",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "ceiling.raft-trim.03",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-raft-trim-03",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "ceiling.raft-trim.04",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-raft-trim-04",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "ceiling.raft-trim.05",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-raft-trim-05",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "ceiling.raft-trim.06",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-raft-trim-06",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "ceiling.raft.01",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-raft-01",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.charcoal-ceiling"
+          ]
+        },
+        {
+          "nodeName": "ceiling.raft.02",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-raft-02",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.charcoal-ceiling"
+          ]
+        },
+        {
+          "nodeName": "ceiling.raft.03",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-raft-03",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.charcoal-ceiling"
+          ]
+        },
+        {
+          "nodeName": "ceiling.raft.04",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-raft-04",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.charcoal-ceiling"
+          ]
+        },
+        {
+          "nodeName": "ceiling.raft.05",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-raft-05",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.charcoal-ceiling"
+          ]
+        },
+        {
+          "nodeName": "ceiling.raft.06",
+          "objectId": "ceiling-system",
+          "partId": "ceiling-raft-06",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.charcoal-ceiling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chair-seat-01",
+      "interactionStatus": "interactive",
+      "parts": [
+        {
+          "nodeName": "chair.seat-01.arm-left",
+          "objectId": "chair-seat-01",
+          "partId": "chair-seat-01-arm-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-01.arm-pad-left",
+          "objectId": "chair-seat-01",
+          "partId": "chair-seat-01-arm-pad-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-01.arm-pad-right",
+          "objectId": "chair-seat-01",
+          "partId": "chair-seat-01-arm-pad-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-01.arm-right",
+          "objectId": "chair-seat-01",
+          "partId": "chair-seat-01-arm-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-01.back-cushion",
+          "objectId": "chair-seat-01",
+          "partId": "chair-seat-01-back-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-01.back-shell",
+          "objectId": "chair-seat-01",
+          "partId": "chair-seat-01-back-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-01.seat-cushion",
+          "objectId": "chair-seat-01",
+          "partId": "chair-seat-01-seat-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-01.seat-shell",
+          "objectId": "chair-seat-01",
+          "partId": "chair-seat-01-seat-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-01.sled-left",
+          "objectId": "chair-seat-01",
+          "partId": "chair-seat-01-sled-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-01.sled-right",
+          "objectId": "chair-seat-01",
+          "partId": "chair-seat-01-sled-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chair-seat-02",
+      "interactionStatus": "interactive",
+      "parts": [
+        {
+          "nodeName": "chair.seat-02.arm-left",
+          "objectId": "chair-seat-02",
+          "partId": "chair-seat-02-arm-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-02.arm-pad-left",
+          "objectId": "chair-seat-02",
+          "partId": "chair-seat-02-arm-pad-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-02.arm-pad-right",
+          "objectId": "chair-seat-02",
+          "partId": "chair-seat-02-arm-pad-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-02.arm-right",
+          "objectId": "chair-seat-02",
+          "partId": "chair-seat-02-arm-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-02.back-cushion",
+          "objectId": "chair-seat-02",
+          "partId": "chair-seat-02-back-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-02.back-shell",
+          "objectId": "chair-seat-02",
+          "partId": "chair-seat-02-back-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-02.seat-cushion",
+          "objectId": "chair-seat-02",
+          "partId": "chair-seat-02-seat-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-02.seat-shell",
+          "objectId": "chair-seat-02",
+          "partId": "chair-seat-02-seat-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-02.sled-left",
+          "objectId": "chair-seat-02",
+          "partId": "chair-seat-02-sled-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-02.sled-right",
+          "objectId": "chair-seat-02",
+          "partId": "chair-seat-02-sled-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chair-seat-03",
+      "interactionStatus": "interactive",
+      "parts": [
+        {
+          "nodeName": "chair.seat-03.arm-left",
+          "objectId": "chair-seat-03",
+          "partId": "chair-seat-03-arm-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-03.arm-pad-left",
+          "objectId": "chair-seat-03",
+          "partId": "chair-seat-03-arm-pad-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-03.arm-pad-right",
+          "objectId": "chair-seat-03",
+          "partId": "chair-seat-03-arm-pad-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-03.arm-right",
+          "objectId": "chair-seat-03",
+          "partId": "chair-seat-03-arm-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-03.back-cushion",
+          "objectId": "chair-seat-03",
+          "partId": "chair-seat-03-back-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-03.back-shell",
+          "objectId": "chair-seat-03",
+          "partId": "chair-seat-03-back-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-03.seat-cushion",
+          "objectId": "chair-seat-03",
+          "partId": "chair-seat-03-seat-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-03.seat-shell",
+          "objectId": "chair-seat-03",
+          "partId": "chair-seat-03-seat-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-03.sled-left",
+          "objectId": "chair-seat-03",
+          "partId": "chair-seat-03-sled-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-03.sled-right",
+          "objectId": "chair-seat-03",
+          "partId": "chair-seat-03-sled-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chair-seat-04",
+      "interactionStatus": "interactive",
+      "parts": [
+        {
+          "nodeName": "chair.seat-04.arm-left",
+          "objectId": "chair-seat-04",
+          "partId": "chair-seat-04-arm-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-04.arm-pad-left",
+          "objectId": "chair-seat-04",
+          "partId": "chair-seat-04-arm-pad-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-04.arm-pad-right",
+          "objectId": "chair-seat-04",
+          "partId": "chair-seat-04-arm-pad-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-04.arm-right",
+          "objectId": "chair-seat-04",
+          "partId": "chair-seat-04-arm-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-04.back-cushion",
+          "objectId": "chair-seat-04",
+          "partId": "chair-seat-04-back-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-04.back-shell",
+          "objectId": "chair-seat-04",
+          "partId": "chair-seat-04-back-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-04.seat-cushion",
+          "objectId": "chair-seat-04",
+          "partId": "chair-seat-04-seat-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-04.seat-shell",
+          "objectId": "chair-seat-04",
+          "partId": "chair-seat-04-seat-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-04.sled-left",
+          "objectId": "chair-seat-04",
+          "partId": "chair-seat-04-sled-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-04.sled-right",
+          "objectId": "chair-seat-04",
+          "partId": "chair-seat-04-sled-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chair-seat-05",
+      "interactionStatus": "interactive",
+      "parts": [
+        {
+          "nodeName": "chair.seat-05.arm-left",
+          "objectId": "chair-seat-05",
+          "partId": "chair-seat-05-arm-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-05.arm-pad-left",
+          "objectId": "chair-seat-05",
+          "partId": "chair-seat-05-arm-pad-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-05.arm-pad-right",
+          "objectId": "chair-seat-05",
+          "partId": "chair-seat-05-arm-pad-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-05.arm-right",
+          "objectId": "chair-seat-05",
+          "partId": "chair-seat-05-arm-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-05.back-cushion",
+          "objectId": "chair-seat-05",
+          "partId": "chair-seat-05-back-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-05.back-shell",
+          "objectId": "chair-seat-05",
+          "partId": "chair-seat-05-back-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-05.seat-cushion",
+          "objectId": "chair-seat-05",
+          "partId": "chair-seat-05-seat-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-05.seat-shell",
+          "objectId": "chair-seat-05",
+          "partId": "chair-seat-05-seat-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-05.sled-left",
+          "objectId": "chair-seat-05",
+          "partId": "chair-seat-05-sled-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-05.sled-right",
+          "objectId": "chair-seat-05",
+          "partId": "chair-seat-05-sled-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chair-seat-06",
+      "interactionStatus": "interactive",
+      "parts": [
+        {
+          "nodeName": "chair.seat-06.arm-left",
+          "objectId": "chair-seat-06",
+          "partId": "chair-seat-06-arm-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-06.arm-pad-left",
+          "objectId": "chair-seat-06",
+          "partId": "chair-seat-06-arm-pad-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-06.arm-pad-right",
+          "objectId": "chair-seat-06",
+          "partId": "chair-seat-06-arm-pad-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-06.arm-right",
+          "objectId": "chair-seat-06",
+          "partId": "chair-seat-06-arm-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-06.back-cushion",
+          "objectId": "chair-seat-06",
+          "partId": "chair-seat-06-back-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-06.back-shell",
+          "objectId": "chair-seat-06",
+          "partId": "chair-seat-06-back-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-06.seat-cushion",
+          "objectId": "chair-seat-06",
+          "partId": "chair-seat-06-seat-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-06.seat-shell",
+          "objectId": "chair-seat-06",
+          "partId": "chair-seat-06-seat-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-06.sled-left",
+          "objectId": "chair-seat-06",
+          "partId": "chair-seat-06-sled-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-06.sled-right",
+          "objectId": "chair-seat-06",
+          "partId": "chair-seat-06-sled-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chair-seat-07",
+      "interactionStatus": "interactive",
+      "parts": [
+        {
+          "nodeName": "chair.seat-07.arm-left",
+          "objectId": "chair-seat-07",
+          "partId": "chair-seat-07-arm-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-07.arm-pad-left",
+          "objectId": "chair-seat-07",
+          "partId": "chair-seat-07-arm-pad-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-07.arm-pad-right",
+          "objectId": "chair-seat-07",
+          "partId": "chair-seat-07-arm-pad-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-07.arm-right",
+          "objectId": "chair-seat-07",
+          "partId": "chair-seat-07-arm-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-07.back-cushion",
+          "objectId": "chair-seat-07",
+          "partId": "chair-seat-07-back-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-07.back-shell",
+          "objectId": "chair-seat-07",
+          "partId": "chair-seat-07-back-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-07.seat-cushion",
+          "objectId": "chair-seat-07",
+          "partId": "chair-seat-07-seat-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-07.seat-shell",
+          "objectId": "chair-seat-07",
+          "partId": "chair-seat-07-seat-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-07.sled-left",
+          "objectId": "chair-seat-07",
+          "partId": "chair-seat-07-sled-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-07.sled-right",
+          "objectId": "chair-seat-07",
+          "partId": "chair-seat-07-sled-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chair-seat-08",
+      "interactionStatus": "interactive",
+      "parts": [
+        {
+          "nodeName": "chair.seat-08.arm-left",
+          "objectId": "chair-seat-08",
+          "partId": "chair-seat-08-arm-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-08.arm-pad-left",
+          "objectId": "chair-seat-08",
+          "partId": "chair-seat-08-arm-pad-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-08.arm-pad-right",
+          "objectId": "chair-seat-08",
+          "partId": "chair-seat-08-arm-pad-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-08.arm-right",
+          "objectId": "chair-seat-08",
+          "partId": "chair-seat-08-arm-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-08.back-cushion",
+          "objectId": "chair-seat-08",
+          "partId": "chair-seat-08-back-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-08.back-shell",
+          "objectId": "chair-seat-08",
+          "partId": "chair-seat-08-back-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-08.seat-cushion",
+          "objectId": "chair-seat-08",
+          "partId": "chair-seat-08-seat-cushion",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-08.seat-shell",
+          "objectId": "chair-seat-08",
+          "partId": "chair-seat-08-seat-shell",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-08.sled-left",
+          "objectId": "chair-seat-08",
+          "partId": "chair-seat-08-sled-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "chair.seat-08.sled-right",
+          "objectId": "chair-seat-08",
+          "partId": "chair-seat-08-sled-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "presentation-screen",
+      "interactionStatus": "interactive",
+      "parts": [
+        {
+          "nodeName": "media.debug-main",
+          "objectId": "presentation-screen",
+          "partId": "media-debug-main",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.screen-neutral"
+          ]
+        },
+        {
+          "nodeName": "screen-surround.backdrop",
+          "objectId": "presentation-screen",
+          "partId": "screen-surround-backdrop",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "screen-surround.header",
+          "objectId": "presentation-screen",
+          "partId": "screen-surround-header",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "screen-surround.left-pier",
+          "objectId": "presentation-screen",
+          "partId": "screen-surround-left-pier",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "screen-surround.light-slot",
+          "objectId": "presentation-screen",
+          "partId": "screen-surround-light-slot",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "screen-surround.right-pier",
+          "objectId": "presentation-screen",
+          "partId": "screen-surround-right-pier",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "screen-surround.rust-reveal.left",
+          "objectId": "presentation-screen",
+          "partId": "screen-surround-rust-reveal-left",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "screen-surround.rust-reveal.right",
+          "objectId": "presentation-screen",
+          "partId": "screen-surround-rust-reveal-right",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "screen-surround.sill",
+          "objectId": "presentation-screen",
+          "partId": "screen-surround-sill",
+          "interactionStatus": "interactive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "presentation-stage",
+      "interactionStatus": "passive",
+      "parts": [
+        {
+          "nodeName": "architecture.stage",
+          "objectId": "presentation-stage",
+          "partId": "architecture-stage",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "architecture.stage-apron",
+          "objectId": "presentation-stage",
+          "partId": "architecture-stage-apron",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "architecture.stage-rust-line",
+          "objectId": "presentation-stage",
+          "partId": "architecture-stage-rust-line",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "architecture.stage-step",
+          "objectId": "presentation-stage",
+          "partId": "architecture-stage-step",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "presenter-lectern",
+      "interactionStatus": "deferred",
+      "parts": [
+        {
+          "nodeName": "functional.presenter-control",
+          "objectId": "presenter-lectern",
+          "partId": "functional-presenter-control",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "functional.presenter-monitor",
+          "objectId": "presenter-lectern",
+          "partId": "functional-presenter-monitor",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.presenter-control"
+          ]
+        },
+        {
+          "nodeName": "furniture.lectern.accent",
+          "objectId": "presenter-lectern",
+          "partId": "furniture-lectern-accent",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "furniture.lectern.base",
+          "objectId": "presenter-lectern",
+          "partId": "furniture-lectern-base",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "furniture.lectern.stem",
+          "objectId": "presenter-lectern",
+          "partId": "furniture-lectern-stem",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "furniture.lectern.top",
+          "objectId": "presenter-lectern",
+          "partId": "furniture-lectern-top",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rear-consoles",
+      "interactionStatus": "deferred",
+      "parts": [
+        {
+          "nodeName": "rear.console.left",
+          "objectId": "rear-consoles",
+          "partId": "rear-console-left",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "rear.console.right",
+          "objectId": "rear-consoles",
+          "partId": "rear-console-right",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "rear.console.top.left",
+          "objectId": "rear-consoles",
+          "partId": "rear-console-top-left",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "rear.console.top.right",
+          "objectId": "rear-consoles",
+          "partId": "rear-console-top-right",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "room-shell",
+      "interactionStatus": "passive",
+      "parts": [
+        {
+          "nodeName": "architecture.audience-carpet.left",
+          "objectId": "room-shell",
+          "partId": "architecture-audience-carpet-left",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.audience-carpet"
+          ]
+        },
+        {
+          "nodeName": "architecture.audience-carpet.right",
+          "objectId": "room-shell",
+          "partId": "architecture-audience-carpet-right",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.audience-carpet"
+          ]
+        },
+        {
+          "nodeName": "architecture.center-aisle-edge.left",
+          "objectId": "room-shell",
+          "partId": "architecture-center-aisle-edge-left",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "architecture.center-aisle-edge.right",
+          "objectId": "room-shell",
+          "partId": "architecture-center-aisle-edge-right",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "architecture.center-aisle-inlay",
+          "objectId": "room-shell",
+          "partId": "architecture-center-aisle-inlay",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.charcoal-ceiling"
+          ]
+        },
+        {
+          "nodeName": "architecture.entry-header",
+          "objectId": "room-shell",
+          "partId": "architecture-entry-header",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.mineral-shell"
+          ]
+        },
+        {
+          "nodeName": "architecture.floor",
+          "objectId": "room-shell",
+          "partId": "architecture-floor",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        },
+        {
+          "nodeName": "architecture.wall.focal",
+          "objectId": "room-shell",
+          "partId": "architecture-wall-focal",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.mineral-shell"
+          ]
+        },
+        {
+          "nodeName": "architecture.wall.left",
+          "objectId": "room-shell",
+          "partId": "architecture-wall-left",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.mineral-shell"
+          ]
+        },
+        {
+          "nodeName": "architecture.wall.rear-left",
+          "objectId": "room-shell",
+          "partId": "architecture-wall-rear-left",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.mineral-shell"
+          ]
+        },
+        {
+          "nodeName": "architecture.wall.rear-right",
+          "objectId": "room-shell",
+          "partId": "architecture-wall-rear-right",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.mineral-shell"
+          ]
+        },
+        {
+          "nodeName": "architecture.wall.right",
+          "objectId": "room-shell",
+          "partId": "architecture-wall-right",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.mineral-shell"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage-av-credenza",
+      "interactionStatus": "deferred",
+      "parts": [
+        {
+          "nodeName": "functional.stage-av-credenza",
+          "objectId": "stage-av-credenza",
+          "partId": "functional-stage-av-credenza",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.deep-desaturated-blue"
+          ]
+        },
+        {
+          "nodeName": "functional.stage-av-credenza.pull.left",
+          "objectId": "stage-av-credenza",
+          "partId": "functional-stage-av-credenza-pull-left",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "functional.stage-av-credenza.pull.right",
+          "objectId": "stage-av-credenza",
+          "partId": "functional-stage-av-credenza-pull-right",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.restrained-rust"
+          ]
+        },
+        {
+          "nodeName": "functional.stage-av-credenza.top",
+          "objectId": "stage-av-credenza",
+          "partId": "functional-stage-av-credenza-top",
+          "interactionStatus": "deferred",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-ash-wood"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall-practicals",
+      "interactionStatus": "passive",
+      "parts": [
+        {
+          "nodeName": "practical.sconce.left.01.backplate",
+          "objectId": "wall-practicals",
+          "partId": "practical-sconce-left-01-backplate",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "practical.sconce.left.01.glow",
+          "objectId": "wall-practicals",
+          "partId": "practical-sconce-left-01-glow",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "practical.sconce.left.02.backplate",
+          "objectId": "wall-practicals",
+          "partId": "practical-sconce-left-02-backplate",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "practical.sconce.left.02.glow",
+          "objectId": "wall-practicals",
+          "partId": "practical-sconce-left-02-glow",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "practical.sconce.left.03.backplate",
+          "objectId": "wall-practicals",
+          "partId": "practical-sconce-left-03-backplate",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "practical.sconce.left.03.glow",
+          "objectId": "wall-practicals",
+          "partId": "practical-sconce-left-03-glow",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "practical.sconce.right.01.backplate",
+          "objectId": "wall-practicals",
+          "partId": "practical-sconce-right-01-backplate",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "practical.sconce.right.01.glow",
+          "objectId": "wall-practicals",
+          "partId": "practical-sconce-right-01-glow",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "practical.sconce.right.02.backplate",
+          "objectId": "wall-practicals",
+          "partId": "practical-sconce-right-02-backplate",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "practical.sconce.right.02.glow",
+          "objectId": "wall-practicals",
+          "partId": "practical-sconce-right-02-glow",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        },
+        {
+          "nodeName": "practical.sconce.right.03.backplate",
+          "objectId": "wall-practicals",
+          "partId": "practical-sconce-right-03-backplate",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.dark-bronze-metal"
+          ]
+        },
+        {
+          "nodeName": "practical.sconce.right.03.glow",
+          "objectId": "wall-practicals",
+          "partId": "practical-sconce-right-03-glow",
+          "interactionStatus": "passive",
+          "bakePolicy": "include",
+          "materials": [
+            "material.warm-practical-glow"
+          ]
+        }
+      ]
+    }
+  ]
+}
