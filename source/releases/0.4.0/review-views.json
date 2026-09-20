@@ -1,0 +1,210 @@
+{
+  "seat-01-display": {
+    "position": [
+      -3.85,
+      1.0350000000000001,
+      1.2
+    ],
+    "target": [
+      0,
+      -3.82,
+      2.12
+    ],
+    "horizontalFovDegrees": 77
+  },
+  "seat-02-display": {
+    "position": [
+      -2.85,
+      0.935,
+      1.2
+    ],
+    "target": [
+      0,
+      -3.82,
+      2.12
+    ],
+    "horizontalFovDegrees": 77
+  },
+  "seat-03-display": {
+    "position": [
+      -1.85,
+      0.8350000000000001,
+      1.2
+    ],
+    "target": [
+      0,
+      -3.82,
+      2.12
+    ],
+    "horizontalFovDegrees": 77
+  },
+  "seat-04-display": {
+    "position": [
+      -0.85,
+      0.735,
+      1.2
+    ],
+    "target": [
+      0,
+      -3.82,
+      2.12
+    ],
+    "horizontalFovDegrees": 77
+  },
+  "seat-05-display": {
+    "position": [
+      0.85,
+      0.735,
+      1.2
+    ],
+    "target": [
+      0,
+      -3.82,
+      2.12
+    ],
+    "horizontalFovDegrees": 77
+  },
+  "seat-06-display": {
+    "position": [
+      1.85,
+      0.8350000000000001,
+      1.2
+    ],
+    "target": [
+      0,
+      -3.82,
+      2.12
+    ],
+    "horizontalFovDegrees": 77
+  },
+  "seat-07-display": {
+    "position": [
+      2.85,
+      0.935,
+      1.2
+    ],
+    "target": [
+      0,
+      -3.82,
+      2.12
+    ],
+    "horizontalFovDegrees": 77
+  },
+  "seat-08-display": {
+    "position": [
+      3.85,
+      1.0350000000000001,
+      1.2
+    ],
+    "target": [
+      0,
+      -3.82,
+      2.12
+    ],
+    "horizontalFovDegrees": 77
+  },
+  "entry": {
+    "position": [
+      0,
+      3.55,
+      1.62
+    ],
+    "target": [
+      0,
+      -2.8,
+      1.65
+    ],
+    "horizontalFovDegrees": 77
+  },
+  "diagonal-overview": {
+    "position": [
+      4.14,
+      3.05,
+      1.64
+    ],
+    "target": [
+      -0.8,
+      -1.4,
+      1.5
+    ],
+    "horizontalFovDegrees": 73
+  },
+  "presenter": {
+    "position": [
+      -3.18,
+      -3.3,
+      1.65
+    ],
+    "target": [
+      0.3,
+      1.1,
+      1.12
+    ],
+    "horizontalFovDegrees": 76
+  },
+  "chair-detail": {
+    "position": [
+      0.2,
+      -0.04,
+      1.28
+    ],
+    "target": [
+      1.0,
+      0.8,
+      0.65
+    ],
+    "horizontalFovDegrees": 53
+  },
+  "chair-underneath": {
+    "position": [
+      0.15,
+      0.18,
+      0.28
+    ],
+    "target": [
+      1.0,
+      0.75,
+      0.35
+    ],
+    "horizontalFovDegrees": 64
+  },
+  "lectern-detail": {
+    "position": [
+      -1.95,
+      -1.56,
+      1.56
+    ],
+    "target": [
+      -3.18,
+      -2.73,
+      0.92
+    ],
+    "horizontalFovDegrees": 50
+  },
+  "acoustic-detail": {
+    "position": [
+      2.65,
+      -0.35,
+      1.7
+    ],
+    "target": [
+      4.52,
+      0.72,
+      1.55
+    ],
+    "horizontalFovDegrees": 62
+  },
+  "door-detail": {
+    "position": [
+      1.9,
+      2.7,
+      1.6
+    ],
+    "target": [
+      0,
+      4.0,
+      1.2
+    ],
+    "horizontalFovDegrees": 61
+  }
+}

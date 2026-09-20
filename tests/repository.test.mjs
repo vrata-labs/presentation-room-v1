@@ -29,31 +29,31 @@ const historicalEvidenceRecords = {
 };
 const historicalMetadataLockRecord = { sha256: "b80eab78d8269355720f4c0973e6a683f8ba74d0780b873e7abe011e9b64c48f", sizeBytes: 7464 };
 
-test("repository points to 0.3.0 while all review releases remain non-current", async () => {
+test("repository points to 0.4.0 while all review releases remain non-current", async () => {
   const config = await readJson(join(root, "scene-repository.json"));
   const packageJson = await readJson(join(root, "package.json"));
   const manifest = await readJson(join(root, "manifest.json"));
   const lock = (await readFile(join(root, "platform-validator.lock"), "utf8")).trim();
   assert.equal(config.sceneId, "presentation-room-v1");
   assert.equal(config.oneSceneOnly, true);
-  assert.equal(config.releaseVersion, "0.3.0");
-  assert.equal(packageJson.version, "0.3.0");
+  assert.equal(config.releaseVersion, "0.4.0");
+  assert.equal(packageJson.version, "0.4.0");
   assert.equal(config.status, "review");
   assert.equal(config.humanAcceptance, "pending-human-acceptance");
   assert.equal(config.rightsStatus, "pending-human-rights-approval");
   assert.equal(config.rightsApproved, false);
   assert.equal(config.rightsApprovalDate, null);
   assert.equal(config.licenseRef, null);
-  assert.equal(config.platformValidatorCommit, "c54edb2239d225a71e9b934316f70792b3faafb6");
-  assert.equal(lock, "c54edb2239d225a71e9b934316f70792b3faafb6");
-  assert.equal(manifest.platformValidatorCommit, "c54edb2239d225a71e9b934316f70792b3faafb6");
-  assert.deepEqual(manifest.releases.map(({ version }) => version), ["0.1.0", "0.1.1", "0.2.0", "0.3.0"]);
+  assert.equal(config.platformValidatorCommit, "c6343de81b038b7937addac44c24fa7c46adf341");
+  assert.equal(lock, "c6343de81b038b7937addac44c24fa7c46adf341");
+  assert.equal(manifest.platformValidatorCommit, "c6343de81b038b7937addac44c24fa7c46adf341");
+  assert.deepEqual(manifest.releases.map(({ version }) => version), ["0.1.0", "0.1.1", "0.2.0", "0.3.0", "0.4.0"]);
   assert.ok(manifest.releases.every(({ status, humanAcceptance, isCurrent, publicationReady }) =>
     status === "review" && humanAcceptance === "pending-human-acceptance" && isCurrent === false && publicationReady === false));
   assert.equal(manifest.releases[0].platformValidatorCommit, historicalValidatorCommit);
   assert.equal(manifest.releases[1].platformValidatorCommit, metadataValidatorCommit);
   assert.deepEqual(await readdir(join(root, "assets/scenes")), ["presentation-room-v1"]);
-  assert.deepEqual((await readdir(join(root, "assets/scenes/presentation-room-v1"))).sort(), ["0.1.0", "0.1.1", "0.2.0", "0.3.0"]);
+  assert.deepEqual((await readdir(join(root, "assets/scenes/presentation-room-v1"))).sort(), ["0.1.0", "0.1.1", "0.2.0", "0.3.0", "0.4.0"]);
 });
 
 test("0.1.0 remains the byte-exact historical authoring release", async () => {

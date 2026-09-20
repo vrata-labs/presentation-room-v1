@@ -1,0 +1,390 @@
+{
+  "bundleUrl": "candidate-local-capture/scene.json",
+  "state": "loaded",
+  "failureReason": null,
+  "loadStage": "loaded",
+  "assetBytesLoaded": 5087708,
+  "assetBytesExpected": 5087708,
+  "label": "Presentation Room",
+  "source": "Vrata authored assemblies with documented Poly Haven CC0 material inputs",
+  "renderProfile": "baked-pbr-v1",
+  "assetUrl": "candidate-local-capture/scene.glb",
+  "assetType": "glb",
+  "spawnPointId": "main",
+  "spawnYaw": 3.141592653589793,
+  "spawnApplied": true,
+  "loadMs": 793,
+  "renderProfileApplyMs": 80,
+  "objectCount": 227,
+  "meshCount": 225,
+  "materialCount": 14,
+  "texturedMaterialCount": 225,
+  "lightMappedMaterialCount": 14,
+  "geometryCount": 225,
+  "triangleEstimate": 117619,
+  "textureCount": 25,
+  "missingAssets": [],
+  "materialSamples": [
+    {
+      "name": "material.wood",
+      "meshCount": 74,
+      "hasMap": true,
+      "hasNormalMap": true,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 1,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.metal",
+      "meshCount": 47,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.44,
+      "metalness": 0,
+      "color": {
+        "r": 0.021,
+        "g": 0.024,
+        "b": 0.023
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.steel",
+      "meshCount": 35,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.27,
+      "metalness": 0.9,
+      "color": {
+        "r": 0.371,
+        "g": 0.392,
+        "b": 0.402
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.dark",
+      "meshCount": 27,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.68,
+      "metalness": 0,
+      "color": {
+        "r": 0.018,
+        "g": 0.02,
+        "b": 0.019
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.acoustic",
+      "meshCount": 8,
+      "hasMap": true,
+      "hasNormalMap": true,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 1,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.fabric",
+      "meshCount": 8,
+      "hasMap": true,
+      "hasNormalMap": true,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 1,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.rubber",
+      "meshCount": 8,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.86,
+      "metalness": 0,
+      "color": {
+        "r": 0.013,
+        "g": 0.014,
+        "b": 0.012
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.plaster",
+      "meshCount": 7,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.88,
+      "metalness": 0,
+      "color": {
+        "r": 0.604,
+        "g": 0.571,
+        "b": 0.497
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.glow",
+      "meshCount": 5,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.5,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 0.871,
+        "b": 0.701
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.paint",
+      "meshCount": 2,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.69,
+      "metalness": 0,
+      "color": {
+        "r": 0.723,
+        "g": 0.694,
+        "b": 0.61
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.floor",
+      "meshCount": 1,
+      "hasMap": true,
+      "hasNormalMap": true,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 1,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.carpet",
+      "meshCount": 1,
+      "hasMap": true,
+      "hasNormalMap": true,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 1,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.screen",
+      "meshCount": 1,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.4,
+      "metalness": 0,
+      "color": {
+        "r": 0.036,
+        "g": 0.045,
+        "b": 0.045
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.paper",
+      "meshCount": 1,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.505,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.86,
+      "metalness": 0,
+      "color": {
+        "r": 0.784,
+        "g": 0.738,
+        "b": 0.624
+      },
+      "mapSource": null
+    }
+  ],
+  "boundingBox": {
+    "min": {
+      "x": -4.88,
+      "y": -0.14,
+      "z": -4.18
+    },
+    "max": {
+      "x": 4.88,
+      "y": 3.74,
+      "z": 4.18
+    },
+    "size": {
+      "x": 9.76,
+      "y": 3.88,
+      "z": 8.36
+    },
+    "center": {
+      "x": 0,
+      "y": 1.8,
+      "z": 0
+    }
+  },
+  "camera": {
+    "world": {
+      "x": 1.9,
+      "y": 1.6,
+      "z": -2.7
+    },
+    "forward": {
+      "x": -0.813,
+      "y": -0.171,
+      "z": -0.556
+    }
+  },
+  "screenshot": {
+    "width": 320,
+    "height": 180,
+    "centerPixel": {
+      "r": 54,
+      "g": 27,
+      "b": 18,
+      "a": 255
+    },
+    "averageColor": {
+      "r": 174,
+      "g": 144,
+      "b": 127,
+      "a": 255
+    },
+    "darkPixelRatio": 0.0003,
+    "pixelSamples": [
+      {
+        "x": 160,
+        "y": 90,
+        "r": 54,
+        "g": 27,
+        "b": 18,
+        "a": 255
+      },
+      {
+        "x": 32,
+        "y": 18,
+        "r": 200,
+        "g": 188,
+        "b": 173,
+        "a": 255
+      },
+      {
+        "x": 287,
+        "y": 18,
+        "r": 238,
+        "g": 232,
+        "b": 226,
+        "a": 255
+      },
+      {
+        "x": 32,
+        "y": 161,
+        "r": 211,
+        "g": 179,
+        "b": 150,
+        "a": 255
+      },
+      {
+        "x": 287,
+        "y": 161,
+        "r": 233,
+        "g": 226,
+        "b": 218,
+        "a": 255
+      },
+      {
+        "x": 160,
+        "y": 36,
+        "r": 54,
+        "g": 27,
+        "b": 20,
+        "a": 255
+      },
+      {
+        "x": 160,
+        "y": 143,
+        "r": 43,
+        "g": 22,
+        "b": 17,
+        "a": 255
+      }
+    ]
+  }
+}

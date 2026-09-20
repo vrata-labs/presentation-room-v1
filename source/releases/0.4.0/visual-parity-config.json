@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.4.0",
+  "status": "review",
+  "qualityOutcome": "REWORK_REQUIRED",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "pending-human-rights-approval",
+  "rightsApproved": false,
+  "isCurrent": false,
+  "publicationReady": false,
+  "sourceReviewPath": "source/releases/0.4.0/review",
+  "reviewViews": [
+    "seat-01-display",
+    "seat-02-display",
+    "seat-03-display",
+    "seat-04-display",
+    "seat-05-display",
+    "seat-06-display",
+    "seat-07-display",
+    "seat-08-display",
+    "entry",
+    "diagonal-overview",
+    "presenter",
+    "chair-detail",
+    "chair-underneath",
+    "lectern-detail",
+    "acoustic-detail",
+    "door-detail"
+  ],
+  "cleanRuntimeEvidence": {
+    "path": "provenance/runtime-capture-0.4.0/clean",
+    "binding": {
+      "path": "provenance/runtime-capture-0.4.0/capture-binding.json",
+      "sha256": "f02865fbab6bcebe525d6796eb103880d1abce89429cba2efd331f4c0a7430b8",
+      "sizeBytes": 8576
+    },
+    "technicalStatus": "passed-single-capture"
+  },
+  "normalProductEvidence": {
+    "path": "provenance/runtime-capture-0.4.0/normal-product",
+    "functionalStatus": "passed",
+    "renderedMediaFrame": "pending-not-evidenced"
+  },
+  "thresholds": {
+    "state": "undefined-no-repeatable-regression-baseline",
+    "finalThresholdsDefined": false,
+    "perView": null,
+    "aggregate": null
+  },
+  "sourceToRuntimeFidelity": {
+    "status": "failed-visible-material-regression",
+    "affectedViews": [
+      "chair-detail",
+      "chair-underneath",
+      "presenter",
+      "diagonal-overview"
+    ],
+    "defects": [
+      "chair fabric weave and wood response differ visibly between source and runtime",
+      "chair cushion corners remain visibly faceted",
+      "wall and ceiling join seams are more pronounced in runtime than in the paired source views"
+    ]
+  },
+  "qualityAssessment": {
+    "inheritedBenchmarkCommit": "5580a7b080cf6195e28ebc77b654fd71111b0cd1",
+    "sharedContractCommit": "8ba49739d44518a3e877bc93432be591ce2e72da",
+    "outcome": "REWORK_REQUIRED",
+    "unresolvedDefects": [
+      "chair fabric weave and wood response differ visibly between source and runtime",
+      "chair cushion corners remain visibly faceted",
+      "wall and ceiling join seams are more pronounced in runtime than in the paired source views",
+      "rendered screen-share media frames are not evidenced",
+      "triangle budget is exceeded: 117619 actual versus 90000 maximum"
+    ]
+  }
+}
