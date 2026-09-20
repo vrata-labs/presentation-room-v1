@@ -1,0 +1,470 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.4.0",
+  "status": "review",
+  "qualityOutcome": "REWORK_REQUIRED",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "pending-human-rights-approval",
+  "rightsApproved": false,
+  "externalAssetsUsed": true,
+  "externalAssetLicense": "CC0-1.0",
+  "sourceLedger": "source/releases/0.4.0/textures/source-ledger.json",
+  "records": [
+    {
+      "path": "source/releases/0.4.0/accepted-baked-source.blend",
+      "sha256": "4961d87b1ec254f5e07835c13b9b6e81fe42ac9a767101376a6f2f5cc7740965",
+      "sizeBytes": 28377420
+    },
+    {
+      "path": "source/releases/0.4.0/accepted-export.raw.glb",
+      "sha256": "54478ecd3caee0e1c470ec7849e873f0c48f923ab99b919abc20a6efd631356c",
+      "sizeBytes": 9657740
+    },
+    {
+      "path": "source/releases/0.4.0/accepted-lightmap-raw.stats.json",
+      "sha256": "80d9ed9f165fe532cfa6bfb54fa317c254dd4b1e3d5b7b65723da903eeba3aa8",
+      "sizeBytes": 168
+    },
+    {
+      "path": "source/releases/0.4.0/accepted-scene.blend",
+      "sha256": "aea9f7c159bea1b5de9634885918c5240b7786a3cdab9b90fd3830a3c2668a90",
+      "sizeBytes": 23055915
+    },
+    {
+      "path": "source/releases/0.4.0/accepted-scene.json",
+      "sha256": "434cb300a90bc8dce025eaed1becc161bec4bc1292e4d14e1cf721259782ca98",
+      "sizeBytes": 6587
+    },
+    {
+      "path": "source/releases/0.4.0/author-scene.py",
+      "sha256": "31d9456397f52bc15ee3dea4d77c06772aeb7a36d16855270976a49e9af1de3a",
+      "sizeBytes": 26678
+    },
+    {
+      "path": "source/releases/0.4.0/authoring-task.md",
+      "sha256": "3d541d06b044a8147c87475b9fddcb7d2bc9c7897ed6ce09aea408bfe56011a9",
+      "sizeBytes": 11355
+    },
+    {
+      "path": "source/releases/0.4.0/capture-config.json",
+      "sha256": "acba6a525974914f2ff76e6b9c8f819c2c4e301f6ccc100b530bf51494e37e9f",
+      "sizeBytes": 4028
+    },
+    {
+      "path": "source/releases/0.4.0/capture-harness.spec.ts",
+      "sha256": "9c8be84d37b692edfa766d4edc945c662c816ee1c6e3f83a46e7f9cc235428c5",
+      "sizeBytes": 18827
+    },
+    {
+      "path": "source/releases/0.4.0/capture-playwright.config.ts",
+      "sha256": "36582c2c228194cadaedd4d504cee297989fa130a25270e231a0887af8545476",
+      "sizeBytes": 2849
+    },
+    {
+      "path": "source/releases/0.4.0/declared-supports.json",
+      "sha256": "5d0b72796331ba629a80160984ccb10f17a4febb2fe4b8e3069e7e985534b403",
+      "sizeBytes": 195998
+    },
+    {
+      "path": "source/releases/0.4.0/denoise-atlas.py",
+      "sha256": "f9d3bd216e40bac032fa85ea58b811064e3e91451b40351824c798fd6e55bab6",
+      "sizeBytes": 2297
+    },
+    {
+      "path": "source/releases/0.4.0/export-scene.py",
+      "sha256": "1de3c70f8ab45c78ba4f1a008d335f9841611a6b7fe86a34c8cb2755d6cd887e",
+      "sizeBytes": 9129
+    },
+    {
+      "path": "source/releases/0.4.0/finalize-glb.mjs",
+      "sha256": "3ff62c529b1dad0c52bd9e4e69425e9580410caa98657fd2ad3186104a371288",
+      "sizeBytes": 2815
+    },
+    {
+      "path": "source/releases/0.4.0/geometry-measurements.json",
+      "sha256": "3501736ae3463f81e19655f7abea5d88d2557598f861f700eb0b235b061922b2",
+      "sizeBytes": 19362
+    },
+    {
+      "path": "source/releases/0.4.0/lightmap-0.4.0-median5.png",
+      "sha256": "1d88c89cae8a841caa1413a314d928f402b2e7cb5f66be0341a3e2c303138ff3",
+      "sizeBytes": 1914828
+    },
+    {
+      "path": "source/releases/0.4.0/lightmap-0.4.0-pipeline-median5.png",
+      "sha256": "1d88c89cae8a841caa1413a314d928f402b2e7cb5f66be0341a3e2c303138ff3",
+      "sizeBytes": 1914828
+    },
+    {
+      "path": "source/releases/0.4.0/measure-geometry.py",
+      "sha256": "3ea12f4eca970749de8a156fbd9ab86f52fc05e6a1e826843f66814e697ceffc",
+      "sizeBytes": 7024
+    },
+    {
+      "path": "source/releases/0.4.0/measure-support-contacts.py",
+      "sha256": "258fb1126e5874c709053f1bb53c255745d22e9b1fb55bd0799da35d699bb4c6",
+      "sizeBytes": 6647
+    },
+    {
+      "path": "source/releases/0.4.0/object-registry.json",
+      "sha256": "fa77cea7413cc4b1986b1cf69599bde793b6e26ff9140b9c8d63746081f23bc1",
+      "sizeBytes": 255259
+    },
+    {
+      "path": "source/releases/0.4.0/render-review.py",
+      "sha256": "aa38d64986000f95b6006216e29a98d4cb684dfb262a74c5d28cc71a3ad748ea",
+      "sizeBytes": 2273
+    },
+    {
+      "path": "source/releases/0.4.0/review-views.json",
+      "sha256": "0695ca7e9db86e7ec0956b0b218ce428480e03f2955ec276de673c955dd43a40",
+      "sizeBytes": 2839
+    },
+    {
+      "path": "source/releases/0.4.0/review/acoustic-detail.png",
+      "sha256": "dd6496e2474a712a32ef4d9b4ef6f4027fdf545afc578a4fb0f57c941b496d10",
+      "sizeBytes": 973487
+    },
+    {
+      "path": "source/releases/0.4.0/review/chair-detail.png",
+      "sha256": "9a2e45e8ff5d0de061f0b816806171ebcf27d006f2f362a581c9fd50f07d1b3c",
+      "sizeBytes": 1213581
+    },
+    {
+      "path": "source/releases/0.4.0/review/chair-underneath.png",
+      "sha256": "3fa21e4fe1d30bd16cf119de69c898d279d20e4217cc8d783897d707d5b23b68",
+      "sizeBytes": 1112910
+    },
+    {
+      "path": "source/releases/0.4.0/review/diagonal-overview.png",
+      "sha256": "8f47bddeb2109bb7d75d0bb47e811ef47073f3460d62d417910a0ac2277de3c1",
+      "sizeBytes": 1085932
+    },
+    {
+      "path": "source/releases/0.4.0/review/door-detail.png",
+      "sha256": "0231d07e12207f0f3f5a9e0acf75e0c8aa308a4a3adc862a7c5a62740c3a4e71",
+      "sizeBytes": 1089293
+    },
+    {
+      "path": "source/releases/0.4.0/review/entry.png",
+      "sha256": "b5a05f32ef3ffbc4be721f01fae3f55b862a487ca250e26618864b3645a9e429",
+      "sizeBytes": 1051049
+    },
+    {
+      "path": "source/releases/0.4.0/review/lectern-detail.png",
+      "sha256": "7f0c4406eec5370d82025255141d98ce02bf1245eecc0b7c5d9173522735fac1",
+      "sizeBytes": 1073171
+    },
+    {
+      "path": "source/releases/0.4.0/review/presenter.png",
+      "sha256": "8d419a11a89444d3bc8595b629ce3bd4e5e6a44460a45f0bdb42f33353d16ad4",
+      "sizeBytes": 1135881
+    },
+    {
+      "path": "source/releases/0.4.0/review/seat-01-display.png",
+      "sha256": "8ad16605f576ba52454ff44d53e74f25762427eaa9a9821abe690381252adb2d",
+      "sizeBytes": 996310
+    },
+    {
+      "path": "source/releases/0.4.0/review/seat-02-display.png",
+      "sha256": "907ebc6180f37fd27c5d833ffda3ed3a8b8d954a5d875336b89b9ffdaac00a2b",
+      "sizeBytes": 984684
+    },
+    {
+      "path": "source/releases/0.4.0/review/seat-03-display.png",
+      "sha256": "3e48d8846f100017fd14bbfe5c14d59689aa613371a18e5dcf1000079ab2ed97",
+      "sizeBytes": 949616
+    },
+    {
+      "path": "source/releases/0.4.0/review/seat-04-display.png",
+      "sha256": "40824d54ed584b6ce76c5678ae9d03441b91ffa4a24f6a9b641798761c020a31",
+      "sizeBytes": 914283
+    },
+    {
+      "path": "source/releases/0.4.0/review/seat-05-display.png",
+      "sha256": "ca0684abf017e7b25c98be7a8867e6acebbca827910065c227b4b84cfd575188",
+      "sizeBytes": 917380
+    },
+    {
+      "path": "source/releases/0.4.0/review/seat-06-display.png",
+      "sha256": "11ae37d054bd3064866a6f2b3d90fcfe0283df592333dbcf2baf4b693ce4c21b",
+      "sizeBytes": 958393
+    },
+    {
+      "path": "source/releases/0.4.0/review/seat-07-display.png",
+      "sha256": "af8febfc6bba6e5e09cd58aaca7f2e2f60a5f524e16f2d2bb68f186f04449714",
+      "sizeBytes": 983687
+    },
+    {
+      "path": "source/releases/0.4.0/review/seat-08-display.png",
+      "sha256": "a558036b212ca0c30dfa0aabc592254ad9dd86fc05d956480fe04684bfcefaef",
+      "sizeBytes": 1001578
+    },
+    {
+      "path": "source/releases/0.4.0/review/source-render-settings.json",
+      "sha256": "1abe23649a1b6ee7bffc043244f0f73d769afd446abe085a6720706780cc933d",
+      "sizeBytes": 6518
+    },
+    {
+      "path": "source/releases/0.4.0/support_graph.py",
+      "sha256": "60be74d69ce30d93e3076a57e6126776d90ad9f21fc84840a4b834dcc13f20d4",
+      "sizeBytes": 8952
+    },
+    {
+      "path": "source/releases/0.4.0/textures/fabric_pattern_05-diff.jpg",
+      "sha256": "b9ece89a45044945ce4d1402672cfd605f1f074b313cb3cc12b7b2ea66fad7fe",
+      "sizeBytes": 797220
+    },
+    {
+      "path": "source/releases/0.4.0/textures/fabric_pattern_05-info.json",
+      "sha256": "f9bbb8d51202b3bf66f53c526de007b2ad5834873ee73e4542c42efdfdf13997",
+      "sizeBytes": 922
+    },
+    {
+      "path": "source/releases/0.4.0/textures/fabric_pattern_05-nor_gl.jpg",
+      "sha256": "caa5a948c768c7173b1d8647aa2618d39b4ec5ba4575820e02fb500dac54596d",
+      "sizeBytes": 903085
+    },
+    {
+      "path": "source/releases/0.4.0/textures/fabric_pattern_05-rough.jpg",
+      "sha256": "e48d14e87a5493bc4ef9bea61e85b4397ec41f93d1c3fd1ac17494475781610e",
+      "sizeBytes": 438194
+    },
+    {
+      "path": "source/releases/0.4.0/textures/polyhaven-license.html",
+      "sha256": "f530abb18e6317a9b0f2a128b94150e372c8456d7491a14e4860c4ed5f5fe69a",
+      "sizeBytes": 72336
+    },
+    {
+      "path": "source/releases/0.4.0/textures/source-ledger.json",
+      "sha256": "084495e9020d0eb2bad896f9645a45db92e5e112489f876bdb966dac30921bfc",
+      "sizeBytes": 7288
+    },
+    {
+      "path": "source/releases/0.4.0/textures/wood_floor-diff.jpg",
+      "sha256": "2a1c07687b6dbb214c4b9213739c6d92d425f1f0fc8ab3ac157f105d78240789",
+      "sizeBytes": 734493
+    },
+    {
+      "path": "source/releases/0.4.0/textures/wood_floor-info.json",
+      "sha256": "78827d2c554f82ddd63dd170761a4e58f4489220ed29f91caed25364d5831dac",
+      "sizeBytes": 915
+    },
+    {
+      "path": "source/releases/0.4.0/textures/wood_floor-nor_gl.jpg",
+      "sha256": "452247f0d0d1b7fc7f8324ff3b6ed60bcc6de1405f4284eeb8d9bce90d4939c2",
+      "sizeBytes": 423303
+    },
+    {
+      "path": "source/releases/0.4.0/textures/wood_floor-rough.jpg",
+      "sha256": "061f1e1293251b2d28c76e3fac1ea9452b0e8648bb8f9b3728e09db386166e5c",
+      "sizeBytes": 527754
+    },
+    {
+      "path": "source/releases/0.4.0/textures/wood_table_001-diff.jpg",
+      "sha256": "460dd08d240f4a1f02982415048c3c5c200f385db212da18dc7e2df68bf4d0be",
+      "sizeBytes": 215573
+    },
+    {
+      "path": "source/releases/0.4.0/textures/wood_table_001-info.json",
+      "sha256": "2c62703118781c5c8b06d53f541912ea7ab9f544b525afaf26eddb0171b524ed",
+      "sizeBytes": 901
+    },
+    {
+      "path": "source/releases/0.4.0/textures/wood_table_001-nor_gl.jpg",
+      "sha256": "9bf7ddf5721e225c20290f1772ae37f9bdfd49658f6d458259eb794e2149d3cf",
+      "sizeBytes": 51927
+    },
+    {
+      "path": "source/releases/0.4.0/textures/wood_table_001-rough.jpg",
+      "sha256": "a2ca9ae89dfe7b8e2e5e92f0aa43467845417de8a50205b5852ef0d57c7624f9",
+      "sizeBytes": 237261
+    },
+    {
+      "path": "source/releases/0.4.0/visual-parity-config.json",
+      "sha256": "061b3b3e2b6e41c155c088247b5c10c88d4065599ec5706ce56aafbe864b9fcb",
+      "sizeBytes": 2531
+    },
+    {
+      "path": "source/releases/0.4.0/accepted-source-lock.json",
+      "sha256": "e8d28e78c04d58f3302ece89814e85177db2368ca883b6b261b167f44161aad7",
+      "sizeBytes": 21679
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/seat-01-display.png",
+      "sha256": "0a89e38c67c8893d3a88196c8d70a0e3634e6f5ecfae4bfe240aed2e353acdcf",
+      "sizeBytes": 438161
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/seat-02-display.png",
+      "sha256": "7a442cf4dd870a9d2451888302ff35e7a8fa06ccd0626be7e34b3abc6b6bef2e",
+      "sizeBytes": 418741
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/seat-03-display.png",
+      "sha256": "e0403da927f557f63595bc4bc07a5f08f849871636788e1bc86db8408ff21d93",
+      "sizeBytes": 366257
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/seat-04-display.png",
+      "sha256": "37d1697de444dd6d673c8f6df268363aa1d0661290b5c9be8e6066852d293c9d",
+      "sizeBytes": 322279
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/seat-05-display.png",
+      "sha256": "30b7d81a1c7b1cfe551ff074177667d24877df0994f871df8a1846837dbdf39a",
+      "sizeBytes": 316801
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/seat-06-display.png",
+      "sha256": "390fe913a1a4b4b1ce1be392ba238c98a4f654966b948a095e014ea7767a92cc",
+      "sizeBytes": 385825
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/seat-07-display.png",
+      "sha256": "3fe8e570301609e36be62f8ae3df062bc394fe5f7f953db006f07fea21ee0a45",
+      "sizeBytes": 451475
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/seat-08-display.png",
+      "sha256": "c7eff1a0b6c6e24f4994bc85437ea020cccc105c506a5057bd0eaf2197c0b1d1",
+      "sizeBytes": 494255
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/entry.png",
+      "sha256": "0d773e5a2d7dd720307aeded8f0e127731c367ab1d9015362a7c25a2318042ec",
+      "sizeBytes": 553279
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/diagonal-overview.png",
+      "sha256": "d9774cf15514e48ae409772e5c3dc2678089c788924f160f3936ef048c3109f0",
+      "sizeBytes": 606409
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/presenter.png",
+      "sha256": "cf361798b6ffe998a7e51697bfaf991d6dfb011fe8db0068c5e41158c64058e9",
+      "sizeBytes": 729088
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/chair-detail.png",
+      "sha256": "7529bf31359b49b6e9d7fdecdf141c50594654d3672b2d2260c9f046b90475c0",
+      "sizeBytes": 942809
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/chair-underneath.png",
+      "sha256": "93e60d44c9e83f6438e3056cbd0e4a34669736b77faa308074409bf160fd33ce",
+      "sizeBytes": 640993
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/lectern-detail.png",
+      "sha256": "382eac8ad944c3b1c6af7a7d9a405301fe54202749f084db4c9cef629c9a917d",
+      "sizeBytes": 531791
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/acoustic-detail.png",
+      "sha256": "a5e96cb05e90a855b9b623cae068b4c4845f03d7c175277e029de45831b42f1e",
+      "sizeBytes": 616033
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/door-detail.png",
+      "sha256": "9f928245863e789d2dfb2d47cf2cf98d3ba2bb5d5e6aea7e4ffef22fa1a5bb64",
+      "sizeBytes": 779401
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/clean-spawn.png",
+      "sha256": "bb57aaa476a619bc66553301ca0dd3ed574cd30db14b735f1784476680aceb57",
+      "sizeBytes": 579077
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/capture-settings.json",
+      "sha256": "d0ea0cbe5755e34e358da83821d2eb0ad8c4aab7e7bb52c47369b7ffd59c7ee0",
+      "sizeBytes": 15105
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/clean/scene-debug.json",
+      "sha256": "1a581be10bf9015bb4087b3fbb0dbffda7e37180ab4742ba98559eeaae42c9c1",
+      "sizeBytes": 8072
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/normal-product/normal-spawn.png",
+      "sha256": "4a9e7d067ac4fd83cd77dbb209d7c8c428dc810e6c53399150847956acfe496f",
+      "sizeBytes": 546180
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/normal-product/normal-seat-01.png",
+      "sha256": "158ac8757cc06f9a16ee3ac82362830d2a2695c395ff5ad19be9731e80aa43f0",
+      "sizeBytes": 531394
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/normal-product/normal-seat-02.png",
+      "sha256": "c428b3a75fce60f34dc8c0887b903882e422fb9f421388fe3a987dce34aebce8",
+      "sizeBytes": 507283
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/normal-product/normal-seat-03.png",
+      "sha256": "5b7652a04bf53204048c9fdd9c6308444a8c122befa48dcccf7e24d1ebd19e14",
+      "sizeBytes": 487426
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/normal-product/normal-seat-04.png",
+      "sha256": "2ac42118073e6496e3ff4a3e647e252cb61c6a8bd307122eb6aae65bf1b05ab5",
+      "sizeBytes": 467952
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/normal-product/normal-seat-05.png",
+      "sha256": "f3ee2d89b02ab2435783cf0976821b52e843c1ca0902bffbbe469a233706b0a5",
+      "sizeBytes": 496092
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/normal-product/normal-seat-06.png",
+      "sha256": "0985add2d3bb8f2d647e53f6da512089cb1e598734879b6b571833b8f7c0ce54",
+      "sizeBytes": 524371
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/normal-product/normal-seat-07.png",
+      "sha256": "a1d4e2d6aeff6736d319319ee39932188df378c598c6826e1a743ff68f7082c0",
+      "sizeBytes": 547431
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/normal-product/normal-seat-08.png",
+      "sha256": "44713a9a1281a6fe97900de841fb2f7c1f7f2aad87d8450b0a90a212a626c605",
+      "sizeBytes": 562663
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/normal-product/normal-media.png",
+      "sha256": "349f595ef6b3a0ef442cdd894fae1210b1cbaf02ce5776fa8c44a2160bd616a2",
+      "sizeBytes": 571164
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/normal-product/normal-product-evidence.json",
+      "sha256": "1f4bba17806eff16c94b43438d88841638032c9779913dc377ab88e10d243a72",
+      "sizeBytes": 15415
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.0/capture-binding.json",
+      "sha256": "f02865fbab6bcebe525d6796eb103880d1abce89429cba2efd331f4c0a7430b8",
+      "sizeBytes": 8576
+    },
+    {
+      "path": "assets/scenes/presentation-room-v1/0.4.0/LICENSES.md",
+      "sha256": "527e4b15c3c8db54ba44119a5917145c2bb214d761e79be340473e4a7adf8712",
+      "sizeBytes": 2254
+    },
+    {
+      "path": "assets/scenes/presentation-room-v1/0.4.0/preview.webp",
+      "sha256": "3edc4aa3292681f69df22452b48a92c033da604f8012fc2e76c5e6a5ce7606f4",
+      "sizeBytes": 22106
+    },
+    {
+      "path": "assets/scenes/presentation-room-v1/0.4.0/scene.glb",
+      "sha256": "5ee399fb07864ea84f1003c6ec87b9f06cfeaf6553b2312085f09e5f385c4eb6",
+      "sizeBytes": 5087708
+    },
+    {
+      "path": "assets/scenes/presentation-room-v1/0.4.0/scene.json",
+      "sha256": "434cb300a90bc8dce025eaed1becc161bec4bc1292e4d14e1cf721259782ca98",
+      "sizeBytes": 6587
+    }
+  ]
+}

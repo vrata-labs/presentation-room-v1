@@ -118,8 +118,15 @@ jobs:
           ref: ${{ steps.platform-ref.outputs.sha }}
           path: .platform
 
-      - name: Verify bound runtime capture harness patch
-        working-directory: .platform
+      - name: Checkout historical 0.3 capture base
+        uses: actions/checkout@v4
+        with:
+          repository: vrata-labs/platform
+          ref: c54edb2239d225a71e9b934316f70792b3faafb6
+          path: .platform-0.3
+
+      - name: Verify historical 0.3 runtime capture harness patch
+        working-directory: .platform-0.3
         shell: bash
         run: |
           patch="../source/releases/0.3.0/capture-harness.patch"
@@ -131,6 +138,11 @@ jobs:
           echo "ee0196ac3acb9ec01c828d9a9fd6a2e3a3cb34db681550571dd6e2a985f6473a  $harness" | sha256sum --check
           git apply --reverse "$patch"
           git diff --exit-code -- "$harness"
+
+      - name: Verify bound 0.4 capture harness and runner config
+        run: |
+          echo "9c8be84d37b692edfa766d4edc945c662c816ee1c6e3f83a46e7f9cc235428c5  source/releases/0.4.0/capture-harness.spec.ts" | sha256sum --check
+          echo "36582c2c228194cadaedd4d504cee297989fa130a25270e231a0887af8545476  source/releases/0.4.0/capture-playwright.config.ts" | sha256sum --check
 
       - name: Install and build pinned platform validator
         run: |

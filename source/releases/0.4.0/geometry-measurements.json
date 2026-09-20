@@ -1,0 +1,840 @@
+{
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.4.0",
+  "shippingMeshParts": 225,
+  "physicalConstituentParts": 385,
+  "xrMeshBudget": {
+    "maximum": 300,
+    "actual": 225,
+    "passed": true
+  },
+  "screenVisibility": {
+    "method": "evaluated-scene ray cast from each seated eye to five inset display points",
+    "allClear": true,
+    "rays": [
+      {
+        "seat": "seat-01",
+        "sample": [
+          -0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.1053
+      },
+      {
+        "seat": "seat-01",
+        "sample": [
+          -0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.5527
+      },
+      {
+        "seat": "seat-01",
+        "sample": [
+          0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 7.8451
+      },
+      {
+        "seat": "seat-01",
+        "sample": [
+          0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 8.1434
+      },
+      {
+        "seat": "seat-01",
+        "sample": [
+          0,
+          0
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 6.2611
+      },
+      {
+        "seat": "seat-02",
+        "sample": [
+          -0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 4.797
+      },
+      {
+        "seat": "seat-02",
+        "sample": [
+          -0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.2707
+      },
+      {
+        "seat": "seat-02",
+        "sample": [
+          0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 7.0198
+      },
+      {
+        "seat": "seat-02",
+        "sample": [
+          0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 7.3516
+      },
+      {
+        "seat": "seat-02",
+        "sample": [
+          0,
+          0
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.6161
+      },
+      {
+        "seat": "seat-03",
+        "sample": [
+          -0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 4.6882
+      },
+      {
+        "seat": "seat-03",
+        "sample": [
+          -0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.1719
+      },
+      {
+        "seat": "seat-03",
+        "sample": [
+          0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 6.2473
+      },
+      {
+        "seat": "seat-03",
+        "sample": [
+          0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 6.618
+      },
+      {
+        "seat": "seat-03",
+        "sample": [
+          0,
+          0
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.0893
+      },
+      {
+        "seat": "seat-04",
+        "sample": [
+          -0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 4.7924
+      },
+      {
+        "seat": "seat-04",
+        "sample": [
+          -0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.2665
+      },
+      {
+        "seat": "seat-04",
+        "sample": [
+          0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.5498
+      },
+      {
+        "seat": "seat-04",
+        "sample": [
+          0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.9641
+      },
+      {
+        "seat": "seat-04",
+        "sample": [
+          0,
+          0
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 4.7202
+      },
+      {
+        "seat": "seat-05",
+        "sample": [
+          -0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.5498
+      },
+      {
+        "seat": "seat-05",
+        "sample": [
+          -0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.9641
+      },
+      {
+        "seat": "seat-05",
+        "sample": [
+          0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 4.7924
+      },
+      {
+        "seat": "seat-05",
+        "sample": [
+          0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.2665
+      },
+      {
+        "seat": "seat-05",
+        "sample": [
+          0,
+          0
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 4.7202
+      },
+      {
+        "seat": "seat-06",
+        "sample": [
+          -0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 6.2473
+      },
+      {
+        "seat": "seat-06",
+        "sample": [
+          -0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 6.618
+      },
+      {
+        "seat": "seat-06",
+        "sample": [
+          0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 4.6882
+      },
+      {
+        "seat": "seat-06",
+        "sample": [
+          0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.1719
+      },
+      {
+        "seat": "seat-06",
+        "sample": [
+          0,
+          0
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.0893
+      },
+      {
+        "seat": "seat-07",
+        "sample": [
+          -0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 7.0198
+      },
+      {
+        "seat": "seat-07",
+        "sample": [
+          -0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 7.3516
+      },
+      {
+        "seat": "seat-07",
+        "sample": [
+          0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 4.797
+      },
+      {
+        "seat": "seat-07",
+        "sample": [
+          0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.2707
+      },
+      {
+        "seat": "seat-07",
+        "sample": [
+          0,
+          0
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.6161
+      },
+      {
+        "seat": "seat-08",
+        "sample": [
+          -0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 7.8451
+      },
+      {
+        "seat": "seat-08",
+        "sample": [
+          -0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 8.1434
+      },
+      {
+        "seat": "seat-08",
+        "sample": [
+          0.48,
+          -0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.1053
+      },
+      {
+        "seat": "seat-08",
+        "sample": [
+          0.48,
+          0.48
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 5.5527
+      },
+      {
+        "seat": "seat-08",
+        "sample": [
+          0,
+          0
+        ],
+        "clear": true,
+        "obstruction": null,
+        "distanceM": 6.2611
+      }
+    ]
+  },
+  "userClearances": {
+    "routes": [
+      {
+        "id": "entry-to-seat-01-front-stand",
+        "actorRadiusM": 0.3,
+        "points": [
+          [
+            0,
+            3.35
+          ],
+          [
+            0,
+            -0.25
+          ],
+          [
+            -3.402632704432842,
+            -0.25
+          ],
+          [
+            -3.402632704432842,
+            0.47085241039518133
+          ]
+        ],
+        "minimumClearanceM": 0.3918,
+        "nearestPart": "chair-seat-02.arm-pad-1",
+        "clear": true
+      },
+      {
+        "id": "entry-to-seat-02-front-stand",
+        "actorRadiusM": 0.3,
+        "points": [
+          [
+            0,
+            3.35
+          ],
+          [
+            0,
+            -0.25
+          ],
+          [
+            -2.479849590100661,
+            -0.25
+          ],
+          [
+            -2.479849590100661,
+            0.317433263483734
+          ]
+        ],
+        "minimumClearanceM": 0.4672,
+        "nearestPart": "chair-seat-03.arm-pad-1",
+        "clear": true
+      },
+      {
+        "id": "entry-to-seat-03-front-stand",
+        "actorRadiusM": 0.3,
+        "points": [
+          [
+            0,
+            3.35
+          ],
+          [
+            0,
+            -0.25
+          ],
+          [
+            -1.5840863103200684,
+            -0.25
+          ],
+          [
+            -1.5840863103200684,
+            0.16590366191346928
+          ]
+        ],
+        "minimumClearanceM": 0.49,
+        "nearestPart": "chair-seat-03.seat-cushion",
+        "clear": true
+      },
+      {
+        "id": "entry-to-seat-04-front-stand",
+        "actorRadiusM": 0.3,
+        "points": [
+          [
+            0,
+            3.35
+          ],
+          [
+            0,
+            -0.25
+          ],
+          [
+            -0.7179221197689566,
+            -0.25
+          ],
+          [
+            -0.7179221197689566,
+            0.027217947703055856
+          ]
+        ],
+        "minimumClearanceM": 0.49,
+        "nearestPart": "chair-seat-04.seat-cushion",
+        "clear": true
+      },
+      {
+        "id": "entry-to-seat-05-front-stand",
+        "actorRadiusM": 0.3,
+        "points": [
+          [
+            0,
+            3.35
+          ],
+          [
+            0,
+            -0.25
+          ],
+          [
+            0.7179221197689566,
+            -0.25
+          ],
+          [
+            0.7179221197689566,
+            0.027217947703055856
+          ]
+        ],
+        "minimumClearanceM": 0.49,
+        "nearestPart": "chair-seat-05.seat-cushion",
+        "clear": true
+      },
+      {
+        "id": "entry-to-seat-06-front-stand",
+        "actorRadiusM": 0.3,
+        "points": [
+          [
+            0,
+            3.35
+          ],
+          [
+            0,
+            -0.25
+          ],
+          [
+            1.5840863103200684,
+            -0.25
+          ],
+          [
+            1.5840863103200684,
+            0.16590366191346928
+          ]
+        ],
+        "minimumClearanceM": 0.49,
+        "nearestPart": "chair-seat-06.seat-cushion",
+        "clear": true
+      },
+      {
+        "id": "entry-to-seat-07-front-stand",
+        "actorRadiusM": 0.3,
+        "points": [
+          [
+            0,
+            3.35
+          ],
+          [
+            0,
+            -0.25
+          ],
+          [
+            2.479849590100661,
+            -0.25
+          ],
+          [
+            2.479849590100661,
+            0.317433263483734
+          ]
+        ],
+        "minimumClearanceM": 0.4672,
+        "nearestPart": "chair-seat-06.arm-pad--1",
+        "clear": true
+      },
+      {
+        "id": "entry-to-seat-08-front-stand",
+        "actorRadiusM": 0.3,
+        "points": [
+          [
+            0,
+            3.35
+          ],
+          [
+            0,
+            -0.25
+          ],
+          [
+            3.402632704432842,
+            -0.25
+          ],
+          [
+            3.402632704432842,
+            0.47085241039518133
+          ]
+        ],
+        "minimumClearanceM": 0.3918,
+        "nearestPart": "chair-seat-07.arm-pad--1",
+        "clear": true
+      },
+      {
+        "id": "entry-to-presenter",
+        "actorRadiusM": 0.3,
+        "points": [
+          [
+            0,
+            3.35
+          ],
+          [
+            0,
+            -1.85
+          ],
+          [
+            -2.35,
+            -2.2
+          ]
+        ],
+        "minimumClearanceM": 0.506,
+        "nearestPart": "chair-seat-04.arm-pad--1",
+        "clear": true
+      }
+    ],
+    "allRoutesClear": true,
+    "sitStandSweeps": [
+      {
+        "seat": "seat-01",
+        "method": "front stand point to seated center vertical-capsule sweep against world-triangle geometry; intended seat/back contact surfaces are listed, while arms/frame and every other chair remain obstacles",
+        "allowedDestinationContacts": [
+          "chair-seat-01.back-cushion",
+          "chair-seat-01.back-shell",
+          "chair-seat-01.seat-cushion",
+          "chair-seat-01.seat-shell"
+        ],
+        "bodyRadiusM": 0.2,
+        "frontStandPoint": [
+          -3.402632704432842,
+          0.47085241039518133
+        ],
+        "seatedCenter": [
+          -3.85,
+          1.0350000000000001
+        ],
+        "minimumClearanceM": 0.2363,
+        "nearestPart": "chair-seat-01.arm-post--1",
+        "clear": true
+      },
+      {
+        "seat": "seat-02",
+        "method": "front stand point to seated center vertical-capsule sweep against world-triangle geometry; intended seat/back contact surfaces are listed, while arms/frame and every other chair remain obstacles",
+        "allowedDestinationContacts": [
+          "chair-seat-02.back-cushion",
+          "chair-seat-02.back-shell",
+          "chair-seat-02.seat-cushion",
+          "chair-seat-02.seat-shell"
+        ],
+        "bodyRadiusM": 0.2,
+        "frontStandPoint": [
+          -2.479849590100661,
+          0.317433263483734
+        ],
+        "seatedCenter": [
+          -2.85,
+          0.935
+        ],
+        "minimumClearanceM": 0.2363,
+        "nearestPart": "chair-seat-02.arm-post--1",
+        "clear": true
+      },
+      {
+        "seat": "seat-03",
+        "method": "front stand point to seated center vertical-capsule sweep against world-triangle geometry; intended seat/back contact surfaces are listed, while arms/frame and every other chair remain obstacles",
+        "allowedDestinationContacts": [
+          "chair-seat-03.back-cushion",
+          "chair-seat-03.back-shell",
+          "chair-seat-03.seat-cushion",
+          "chair-seat-03.seat-shell"
+        ],
+        "bodyRadiusM": 0.2,
+        "frontStandPoint": [
+          -1.5840863103200684,
+          0.16590366191346928
+        ],
+        "seatedCenter": [
+          -1.85,
+          0.8350000000000001
+        ],
+        "minimumClearanceM": 0.2363,
+        "nearestPart": "chair-seat-03.arm-post--1",
+        "clear": true
+      },
+      {
+        "seat": "seat-04",
+        "method": "front stand point to seated center vertical-capsule sweep against world-triangle geometry; intended seat/back contact surfaces are listed, while arms/frame and every other chair remain obstacles",
+        "allowedDestinationContacts": [
+          "chair-seat-04.back-cushion",
+          "chair-seat-04.back-shell",
+          "chair-seat-04.seat-cushion",
+          "chair-seat-04.seat-shell"
+        ],
+        "bodyRadiusM": 0.2,
+        "frontStandPoint": [
+          -0.7179221197689566,
+          0.027217947703055856
+        ],
+        "seatedCenter": [
+          -0.85,
+          0.735
+        ],
+        "minimumClearanceM": 0.2363,
+        "nearestPart": "chair-seat-04.arm-post--1",
+        "clear": true
+      },
+      {
+        "seat": "seat-05",
+        "method": "front stand point to seated center vertical-capsule sweep against world-triangle geometry; intended seat/back contact surfaces are listed, while arms/frame and every other chair remain obstacles",
+        "allowedDestinationContacts": [
+          "chair-seat-05.back-cushion",
+          "chair-seat-05.back-shell",
+          "chair-seat-05.seat-cushion",
+          "chair-seat-05.seat-shell"
+        ],
+        "bodyRadiusM": 0.2,
+        "frontStandPoint": [
+          0.7179221197689566,
+          0.027217947703055856
+        ],
+        "seatedCenter": [
+          0.85,
+          0.735
+        ],
+        "minimumClearanceM": 0.2363,
+        "nearestPart": "chair-seat-05.arm-post--1",
+        "clear": true
+      },
+      {
+        "seat": "seat-06",
+        "method": "front stand point to seated center vertical-capsule sweep against world-triangle geometry; intended seat/back contact surfaces are listed, while arms/frame and every other chair remain obstacles",
+        "allowedDestinationContacts": [
+          "chair-seat-06.back-cushion",
+          "chair-seat-06.back-shell",
+          "chair-seat-06.seat-cushion",
+          "chair-seat-06.seat-shell"
+        ],
+        "bodyRadiusM": 0.2,
+        "frontStandPoint": [
+          1.5840863103200684,
+          0.16590366191346928
+        ],
+        "seatedCenter": [
+          1.85,
+          0.8350000000000001
+        ],
+        "minimumClearanceM": 0.2363,
+        "nearestPart": "chair-seat-06.arm-post-1",
+        "clear": true
+      },
+      {
+        "seat": "seat-07",
+        "method": "front stand point to seated center vertical-capsule sweep against world-triangle geometry; intended seat/back contact surfaces are listed, while arms/frame and every other chair remain obstacles",
+        "allowedDestinationContacts": [
+          "chair-seat-07.back-cushion",
+          "chair-seat-07.back-shell",
+          "chair-seat-07.seat-cushion",
+          "chair-seat-07.seat-shell"
+        ],
+        "bodyRadiusM": 0.2,
+        "frontStandPoint": [
+          2.479849590100661,
+          0.317433263483734
+        ],
+        "seatedCenter": [
+          2.85,
+          0.935
+        ],
+        "minimumClearanceM": 0.2363,
+        "nearestPart": "chair-seat-07.arm-post-1",
+        "clear": true
+      },
+      {
+        "seat": "seat-08",
+        "method": "front stand point to seated center vertical-capsule sweep against world-triangle geometry; intended seat/back contact surfaces are listed, while arms/frame and every other chair remain obstacles",
+        "allowedDestinationContacts": [
+          "chair-seat-08.back-cushion",
+          "chair-seat-08.back-shell",
+          "chair-seat-08.seat-cushion",
+          "chair-seat-08.seat-shell"
+        ],
+        "bodyRadiusM": 0.2,
+        "frontStandPoint": [
+          3.402632704432842,
+          0.47085241039518133
+        ],
+        "seatedCenter": [
+          3.85,
+          1.0350000000000001
+        ],
+        "minimumClearanceM": 0.2363,
+        "nearestPart": "chair-seat-08.arm-post-1",
+        "clear": true
+      }
+    ],
+    "allSitStandSweepsClear": true
+  },
+  "surface": {
+    "center": [
+      0,
+      -3.816,
+      2.12
+    ],
+    "width": 4.8,
+    "height": 2.7,
+    "normal": [
+      0,
+      1,
+      0
+    ]
+  },
+  "limits": "Approach routes include destination-chair frame geometry. Sit/stand sweeps permit only explicitly listed cushion/shell contact surfaces and retain destination arms/frame as obstacles. AABB/capsule screening does not establish subjective comfort.",
+  "sourceBlendSha256": "aea9f7c159bea1b5de9634885918c5240b7786a3cdab9b90fd3830a3c2668a90",
+  "measurementScriptSha256": "3ea12f4eca970749de8a156fbd9ab86f52fc05e6a1e826843f66814e697ceffc",
+  "registrySha256": "fa77cea7413cc4b1986b1cf69599bde793b6e26ff9140b9c8d63746081f23bc1"
+}

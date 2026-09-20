@@ -1,18 +1,22 @@
 # Presentation Room v1
 
-## Shared-quality re-audit required
+## 0.4.0 shared-quality review state
 
-The 2026-09-19 feedback applies across scene types. Review candidate 0.3.0 at
-`3e46cb2a0cd3745cd679dd951695910458d99ddc` has not received human visual acceptance
-and must complete the [shared quality contract](https://github.com/vrata-labs/platform/blob/8ba49739d44518a3e877bc93432be591ce2e72da/docs/scene-quality-contract.md)
+The 2026-09-19 feedback applies across scene types. Version `0.4.0` packages the
+resulting source, geometry/support measurements, exact runtime captures, and
+normal-product functional evidence under the [shared quality contract](https://github.com/vrata-labs/platform/blob/8ba49739d44518a3e877bc93432be591ce2e72da/docs/scene-quality-contract.md)
 and [task packet](https://github.com/vrata-labs/platform/blob/8ba49739d44518a3e877bc93432be591ce2e72da/docs/scene-authoring-task-template.md)
-before another finished handoff. The workflow outcome is REWORK_REQUIRED while
-the object-use, construction, physical and material/visual evidence is incomplete.
+without promoting the scene. The workflow outcome is `REWORK_REQUIRED`: chair
+fabric/wood response still differs between source and runtime, cushion corners
+remain visibly faceted, wall and ceiling join seams are more pronounced in the
+runtime captures, the 117,619-triangle GLB exceeds the 90,000-triangle budget,
+and no rendered screen-share frame is evidenced.
 
-This is an inherited quality obligation, not a claim that the user's Personal
-example inspected every Presentation object. Green technical capture results do
-not close this audit. Published source/release/evidence bytes remain immutable;
-scene corrections require a new version.
+The clean evidence is one exact technical capture, not a three-run repeatability
+claim or human quality verdict. Normal-product evidence verifies all eight
+authoritative seat claim/release paths, movement locking, floor return, standing
+movement, and screen-share object creation. It proves no displayed media frame.
+Human visual acceptance and exact-byte rights approval remain pending.
 
 Local review candidate for the Vrata product scene `presentation-room-v1`.
 It is an original contemporary presentation salon with a raised focal zone,
@@ -24,8 +28,8 @@ This repository is intentionally not a visually accepted, current, or
 publication-ready source. Human visual acceptance remains
 `pending-human-acceptance`. Historical releases retain the public staging review
 rights approval recorded on 2026-08-29. Human rights approval for the exact
-`0.3.0` bytes is separately pending and no staging, runtime, redistribution, or
-production permission is inferred from the historical verdict.
+`0.3.0` and `0.4.0` bytes is separately pending and no staging, runtime,
+redistribution, or production permission is inferred from the historical verdict.
 
 All bundles use `renderMode: clean`, so runtime fallback floor, grid, room box,
 and fog do not contaminate the authored composition. The metadata-only
@@ -74,8 +78,15 @@ publication readiness, and production activation remain false.
    technical runtime evidence, and records exact-byte rights and human visual
    acceptance as pending.
 10. A later human gate may accept visual quality. The immutable versioned paths
-   do not record visual acceptance, immutable acceptance, production
-   activation, or staging deployment.
+    do not record visual acceptance, immutable acceptance, production
+    activation, or staging deployment.
+11. `source/releases/0.4.0` freezes the authored and baked Blend files, filtered
+    atlas, raw GLB, exact capture harness/config, object registry, 225-mesh/385-part
+    measurements, sixteen source views, and the truthful visual gate state.
+12. `scripts/materialize-release-0.4.mjs` writes the exact four-file `0.4.0`
+    bundle and keeps clean visual evidence separate from normal-product evidence.
+    Its validators require the unresolved triangle, media-frame, visual, rights,
+    and human gates to remain explicit.
 
 ## Commands
 
@@ -96,13 +107,11 @@ BLENDER_BIN=/path/to/blender pnpm build
 BLENDER_BIN=/path/to/blender pnpm verify:baked-blender
 ```
 
-The separate `pnpm verify:historical-blender` command retains the original
-Blender 4.5.12 LTS byte-for-byte verification for `0.1.0`. The default
-reproducibility command verifies historical evidence, rebuilds metadata-only
-`0.1.1` twice, exports `0.2.0` twice from the accepted atlas, and compares both
-outputs with immutable `0.2.0` bytes. It also exports `0.3.0` twice from its
-fresh accepted atlas and compares both outputs with the materialized `0.3.0`
-bytes. It requires the pinned Blender binary SHA
+The default reproducibility command exports `0.4.0` twice from the accepted
+baked source and filtered atlas, applies the pinned tangent/Meshopt finalization,
+and compares both raw and final outputs with the materialized bytes. Historical
+rebuilds remain available through `pnpm verify:historical-0.3` and
+`pnpm verify:historical-blender`. Reproducibility requires the pinned Blender binary SHA
 `33ac108ebce3c271f5357e5c664d0488717263bcf2145c80300edd0b12c31880`.
 
 Each accepted atlas is recorded authoring evidence with the pinned CUDA bake
@@ -185,6 +194,10 @@ assets/scenes/presentation-room-v1/0.3.0/scene.json
 assets/scenes/presentation-room-v1/0.3.0/scene.glb
 assets/scenes/presentation-room-v1/0.3.0/preview.webp
 assets/scenes/presentation-room-v1/0.3.0/LICENSES.md
+assets/scenes/presentation-room-v1/0.4.0/scene.json
+assets/scenes/presentation-room-v1/0.4.0/scene.glb
+assets/scenes/presentation-room-v1/0.4.0/preview.webp
+assets/scenes/presentation-room-v1/0.4.0/LICENSES.md
 ```
 
 Historical previews remain byte-exact. The `0.2.0` preview is the final runtime

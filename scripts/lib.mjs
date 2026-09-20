@@ -5,6 +5,7 @@ import { isAbsolute, join, relative, resolve, sep } from "node:path";
 
 import { NodeIO } from "@gltf-transform/core";
 import { ALL_EXTENSIONS } from "@gltf-transform/extensions";
+import { MeshoptDecoder } from "meshoptimizer";
 
 export function assert(condition, code) {
   if (!condition) throw new Error(code);
@@ -154,7 +155,10 @@ function primitiveTriangles(primitive) {
 }
 
 export async function glbInspection(path) {
-  const document = await new NodeIO().registerExtensions(ALL_EXTENSIONS).read(path);
+  const document = await new NodeIO()
+    .registerExtensions(ALL_EXTENSIONS)
+    .registerDependencies({ "meshopt.decoder": MeshoptDecoder })
+    .read(path);
   const root = document.getRoot();
   const meshes = root.listMeshes();
   const nodes = root.listNodes();

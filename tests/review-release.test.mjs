@@ -19,6 +19,7 @@ const root = resolve(import.meta.dirname, "..");
 const historicalValidatorCommit = "9153bb9818a2907fb33ba96375f7b31c1641f12f";
 const metadataValidatorCommit = "61736f6289f941e290f4fe156f17efdd64ef876b";
 const reviewValidatorCommit = "c54edb2239d225a71e9b934316f70792b3faafb6";
+const currentValidatorCommit = "c6343de81b038b7937addac44c24fa7c46adf341";
 const requiredReleaseFiles = ["LICENSES.md", "preview.webp", "scene.glb", "scene.json"];
 const historicalFileRecords = {
   "LICENSES.md": { sha256: "42a4d1ca687ca375f38db222e4fe7c3ed99af9dca4730f288cc910daf3df9d1b", sizeBytes: 836 },
@@ -38,17 +39,17 @@ test("historical materialized 0.2.0 remains review-only and non-current", async 
   const config = await readJson(join(root, "scene-repository.json"));
   const packageJson = await readJson(join(root, "package.json"));
   const manifest = await readJson(join(root, "manifest.json"));
-  assert.equal(packageJson.version, "0.3.0");
+  assert.equal(packageJson.version, "0.4.0");
   assert.equal(packageJson.scripts.test, "node --test tests/*.test.mjs");
-  assert.equal(config.releaseVersion, "0.3.0");
+  assert.equal(config.releaseVersion, "0.4.0");
   assert.equal(config.releaseMaterialized, true);
-  assert.deepEqual(manifest.releases.map(({ version }) => version), ["0.1.0", "0.1.1", "0.2.0", "0.3.0"]);
+  assert.deepEqual(manifest.releases.map(({ version }) => version), ["0.1.0", "0.1.1", "0.2.0", "0.3.0", "0.4.0"]);
   assert.equal(config.status, "review");
   assert.equal(config.humanAcceptance, "pending-human-acceptance");
   assert.equal(config.isCurrent, false);
   assert.equal(config.publicationReady, false);
-  assert.equal(config.platformValidatorCommit, reviewValidatorCommit);
-  assert.equal((await readFile(join(root, "platform-validator.lock"), "utf8")).trim(), reviewValidatorCommit);
+  assert.equal(config.platformValidatorCommit, currentValidatorCommit);
+  assert.equal((await readFile(join(root, "platform-validator.lock"), "utf8")).trim(), currentValidatorCommit);
   assert.deepEqual({
     status: reviewRelease.status,
     humanAcceptance: reviewRelease.humanAcceptance,
@@ -177,7 +178,7 @@ test("historical rights stay approved while current root and 0.3.0 remain exact-
   });
   const rightsLedgerRecord = assetLedger.records.find(({ repositoryPath }) => repositoryPath === "provenance/rights-status.json");
   assert.deepEqual({ sha256: rightsLedgerRecord.sha256, sizeBytes: rightsLedgerRecord.sizeBytes }, historicalRightsStatusRecord);
-  for (const release of manifest.releases.filter(({ version }) => version !== "0.3.0")) {
+  for (const release of manifest.releases.filter(({ version }) => ["0.1.0", "0.1.1", "0.2.0"].includes(version))) {
     assert.deepEqual({ rightsStatus: release.rightsStatus, rightsApproved: release.rightsApproved, rightsApprovalDate: release.rightsApprovalDate, licenseRef: release.licenseRef }, expected);
     const scene = await readJson(join(root, release.releasePath, "scene.json"));
     assert.equal(scene.rights.status, expected.rightsStatus);

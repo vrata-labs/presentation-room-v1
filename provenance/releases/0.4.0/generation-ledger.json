@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.4.0",
+  "status": "review",
+  "qualityOutcome": "REWORK_REQUIRED",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "pending-human-rights-approval",
+  "rightsApproved": false,
+  "toolchain": {
+    "blender": {
+      "version": "4.5.12 LTS",
+      "buildHash": "84afd5f785f7",
+      "archiveUrl": "https://download.blender.org/release/Blender4.5/blender-4.5.12-linux-x64.tar.xz",
+      "archiveSha256": "95e3a2dfedba3bd32ca54fc355eac6b15a11986954ccb02815a07535d0120a25",
+      "binarySha256": "33ac108ebce3c271f5357e5c664d0488717263bcf2145c80300edd0b12c31880"
+    },
+    "meshoptimizer": "1.0.1",
+    "gltfTransform": "4.4.2",
+    "gltfValidator": "2.0.0-dev.3.10",
+    "imageMagick": "6.9.12-98 Q16",
+    "platformRuntimeCommit": "c6343de81b038b7937addac44c24fa7c46adf341",
+    "captureHarnessSha256": "9c8be84d37b692edfa766d4edc945c662c816ee1c6e3f83a46e7f9cc235428c5",
+    "captureRunnerConfigSha256": "36582c2c228194cadaedd4d504cee297989fa130a25270e231a0887af8545476"
+  },
+  "tooling": [
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "a5385011d8cdbdd5dc996a21523839f2b186a2a6d57219226ea68e61a7392873",
+      "sizeBytes": 6506
+    },
+    {
+      "path": "package.json",
+      "sha256": "6269362343d1ef0c432dad6e8be1362d153b349999fd5d83bc50873aa166aeaf",
+      "sizeBytes": 1616
+    },
+    {
+      "path": "platform-validator.lock",
+      "sha256": "65c3d61c390eaab10a12188ec28083a38f78ce5978f5f5406adfaffbb9798714",
+      "sizeBytes": 41
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "90a0671f62709f081319807cca44790e2c417c570573b084f10d257b3c10308c",
+      "sizeBytes": 72858
+    },
+    {
+      "path": "scripts/build-baked-review.mjs",
+      "sha256": "22d669a62f976d9527e4f39928df779a76dfde0851bfc3f6c85182f0b80be25e",
+      "sizeBytes": 18236
+    },
+    {
+      "path": "scripts/build-release-0.4.mjs",
+      "sha256": "411d9c68fae2ce5cc76605ebf92d71ea9371f2f38eda848a2ad9772e1ca65b9d",
+      "sizeBytes": 2220
+    },
+    {
+      "path": "scripts/build-release.mjs",
+      "sha256": "bcac4761d69ff97158482218fb18d04fd02430da80a2782674d96734c26b3568",
+      "sizeBytes": 9129
+    },
+    {
+      "path": "scripts/build-review-candidate.mjs",
+      "sha256": "b88057a30c83b824cd3ca0f887f99302af26e71d357f0dd33fe1bdd6a7a6676f",
+      "sizeBytes": 9589
+    },
+    {
+      "path": "scripts/inspect-release.mjs",
+      "sha256": "58326d676ffaebe06c05a53ea3fea8a9cae9e928adb922fba84d788b15a4ad7e",
+      "sizeBytes": 2072
+    },
+    {
+      "path": "scripts/lib.mjs",
+      "sha256": "0580847f8e7952283386ae221963a73daea8a4fa4c246d27ea3ade9f62ce2db7",
+      "sizeBytes": 9216
+    },
+    {
+      "path": "scripts/materialize-release-0.3.mjs",
+      "sha256": "b0e437caa9b4b3491237213ec1603386c6b00697c57a3921920b2691723a4159",
+      "sizeBytes": 38362
+    },
+    {
+      "path": "scripts/materialize-release-0.4.mjs",
+      "sha256": "a5f4bf7437287c004e7a7dcab3e2ff194ecf7d4c8264ce2d65deffbea291750c",
+      "sizeBytes": 23500
+    },
+    {
+      "path": "scripts/release-0.3-config.mjs",
+      "sha256": "32089ada6fd5ed3ac37459c82e6cd723bc12f13b756ef13e2080ee2780609208",
+      "sizeBytes": 7135
+    },
+    {
+      "path": "scripts/release-0.3-lib.mjs",
+      "sha256": "7d5386b5771d125f3e6aae2d092289d30f97974a8ec3e6491242568656a94f4e",
+      "sizeBytes": 29961
+    },
+    {
+      "path": "scripts/release-0.4-config.mjs",
+      "sha256": "9084a4493f1457425883ff8ed5b4b407e2eef321558f1ff44ca50ffe0aa962cd",
+      "sizeBytes": 6453
+    },
+    {
+      "path": "scripts/release-0.4-lib.mjs",
+      "sha256": "fe877171a2476f684e653adfb43821a3373eba4333f78aa9406641d22a2e3e93",
+      "sizeBytes": 13290
+    },
+    {
+      "path": "scripts/review-evidence.mjs",
+      "sha256": "84f5e85952e4bb35c508a34dee5d975af8eea0444c46b5de1a24710d18a4209a",
+      "sizeBytes": 7214
+    },
+    {
+      "path": "scripts/review-release-config.mjs",
+      "sha256": "7b676a3520e970b2c22294af8e7bf5e63ac72325cfdb68c75f9fc040583f9850",
+      "sizeBytes": 3121
+    },
+    {
+      "path": "scripts/validate-acceptance-index-prefix.mjs",
+      "sha256": "04e9c21fbeb85e98a69336def4cdd1cf5edc43082a8a29d30da123cac420dc81",
+      "sizeBytes": 1252
+    },
+    {
+      "path": "scripts/validate-release-0.3.mjs",
+      "sha256": "d2722384d7de8f4b2ba2b5aa2be8988ad3126a77daef2b3f32d3880aa32fbbff",
+      "sizeBytes": 40140
+    },
+    {
+      "path": "scripts/validate-release-0.4.mjs",
+      "sha256": "d819c054f29112a52ec11d1837b4b07bd30b070df3b7a0afad8efd5a48f204fc",
+      "sizeBytes": 17333
+    },
+    {
+      "path": "scripts/validate-repository.mjs",
+      "sha256": "f5adfa6e7a96607332fae029c62cf3df7fce365d06e4cde4e1f381a5ada4fdf1",
+      "sizeBytes": 34256
+    },
+    {
+      "path": "scripts/validate-review-repository.mjs",
+      "sha256": "07eb60da3ea51864a6a8f1d387e2be0ad06de3024fb772308589614c1beb5b58",
+      "sizeBytes": 35440
+    },
+    {
+      "path": "scripts/validate-visual-parity.mjs",
+      "sha256": "eb3c356cf18bef4ebcd80eae572b66f3e55fefa79b9e9265d13e7785ab640f32",
+      "sizeBytes": 2577
+    },
+    {
+      "path": "scripts/verify-release-0.3-reproducibility.mjs",
+      "sha256": "39e6cbccd11c31fd8bf0d49df7382ca8c7367c4d4be9f09bdbc6255a4587e401",
+      "sizeBytes": 1606
+    },
+    {
+      "path": "scripts/verify-release-0.4-reproducibility.mjs",
+      "sha256": "e0effb4e05bb7495565b637c86fa7599b1d267c63cb15e9dfc95f183e9407e9c",
+      "sizeBytes": 1196
+    },
+    {
+      "path": "scripts/verify-reproducibility.mjs",
+      "sha256": "e91d476804db4cf6c2337b013db98629e29eb3c64ad385150c88585995585282",
+      "sizeBytes": 3880
+    },
+    {
+      "path": "scripts/verify-review-reproducibility.mjs",
+      "sha256": "175a2e68e5a21f1c70b113d91b99a50b50e8904190e6765220d4f42002b62422",
+      "sizeBytes": 3754
+    },
+    {
+      "path": "source/author_scene.py",
+      "sha256": "005a8e9018f36acecbe434972dcbf3dcd5cfb385b981843c5b09c834ecaec069",
+      "sizeBytes": 20879
+    },
+    {
+      "path": "source/export_baked_review.py",
+      "sha256": "c000d9d0e3e5c64b0a8853f6fbdd18d053f1247e83c25d82190f62a1a470dde7",
+      "sizeBytes": 8912
+    },
+    {
+      "path": "source/export_scene.py",
+      "sha256": "4c5a51bd138cfb2dae03ba9ac5a55efc7b580c8488a9dd49d7cafde6b8357d9d",
+      "sizeBytes": 797
+    },
+    {
+      "path": "source/releases/0.3.0/author-release.py",
+      "sha256": "52649e14c4fbed497c5ba9bb72edd3ee8c005a3e08a85ca52a9562309e282d0b",
+      "sizeBytes": 23411
+    },
+    {
+      "path": "source/releases/0.3.0/export-release.py",
+      "sha256": "eb769140c5a44aec54625e0e642321df8578d0208f756b5c15ef7832f6cbafc5",
+      "sizeBytes": 16986
+    },
+    {
+      "path": "source/releases/0.4.0/author-scene.py",
+      "sha256": "31d9456397f52bc15ee3dea4d77c06772aeb7a36d16855270976a49e9af1de3a",
+      "sizeBytes": 26678
+    },
+    {
+      "path": "source/releases/0.4.0/denoise-atlas.py",
+      "sha256": "f9d3bd216e40bac032fa85ea58b811064e3e91451b40351824c798fd6e55bab6",
+      "sizeBytes": 2297
+    },
+    {
+      "path": "source/releases/0.4.0/export-scene.py",
+      "sha256": "1de3c70f8ab45c78ba4f1a008d335f9841611a6b7fe86a34c8cb2755d6cd887e",
+      "sizeBytes": 9129
+    },
+    {
+      "path": "source/releases/0.4.0/measure-geometry.py",
+      "sha256": "3ea12f4eca970749de8a156fbd9ab86f52fc05e6a1e826843f66814e697ceffc",
+      "sizeBytes": 7024
+    },
+    {
+      "path": "source/releases/0.4.0/measure-support-contacts.py",
+      "sha256": "258fb1126e5874c709053f1bb53c255745d22e9b1fb55bd0799da35d699bb4c6",
+      "sizeBytes": 6647
+    },
+    {
+      "path": "source/releases/0.4.0/render-review.py",
+      "sha256": "aa38d64986000f95b6006216e29a98d4cb684dfb262a74c5d28cc71a3ad748ea",
+      "sizeBytes": 2273
+    },
+    {
+      "path": "source/releases/0.4.0/support_graph.py",
+      "sha256": "60be74d69ce30d93e3076a57e6126776d90ad9f21fc84840a4b834dcc13f20d4",
+      "sizeBytes": 8952
+    },
+    {
+      "path": "source/render_review.py",
+      "sha256": "a069758fe18fedb851ca2ac30171acd892af8c7ddbc060d0a322f81ed9e9eb64",
+      "sizeBytes": 1241
+    },
+    {
+      "path": "source/write_safety.py",
+      "sha256": "bd7370cd51909c5c7d68f7dafbfa0f016e61845f679a6714b64adde930ac70aa",
+      "sizeBytes": 1493
+    },
+    {
+      "path": "tests/immutability-workflow.test.mjs",
+      "sha256": "f722cd2b8d92a2e96d7a7d738a7115988af7ba8a94ce828faaae4bb38db04af0",
+      "sizeBytes": 2795
+    },
+    {
+      "path": "tests/release-0.3.test.mjs",
+      "sha256": "e05f643328ea260020d4beb56d24c276584680d12a8e692a8e6e84975728bd9c",
+      "sizeBytes": 14660
+    },
+    {
+      "path": "tests/release-0.4.test.mjs",
+      "sha256": "4b1aa9cb1e0d52411625d3669ff6de269886dd811197ebbd73bd380773da8d32",
+      "sizeBytes": 5522
+    },
+    {
+      "path": "tests/repository.test.mjs",
+      "sha256": "81a15c658a663ba6c426d4332e0cc63fe2e288bea4d9cd96b8aca7be26276e2d",
+      "sizeBytes": 15573
+    },
+    {
+      "path": "tests/review-release.test.mjs",
+      "sha256": "5590ed81253a9d40fc3cc9fa8e1ca576d3b53962b9c9a81ff3da9dd78ccb18b5",
+      "sizeBytes": 24593
+    },
+    {
+      "path": "tests/write-safety.test.mjs",
+      "sha256": "ada22ff843dad1478d3c39c64b1c857dc1f58ee368d27845313fe01474bb4c7d",
+      "sizeBytes": 3758
+    }
+  ],
+  "steps": [
+    {
+      "id": "author-project-geometry",
+      "output": {
+        "path": "source/releases/0.4.0/accepted-scene.blend",
+        "sha256": "aea9f7c159bea1b5de9634885918c5240b7786a3cdab9b90fd3830a3c2668a90",
+        "sizeBytes": 23055915
+      }
+    },
+    {
+      "id": "bake-irradiance",
+      "settings": {
+        "resolution": 2048,
+        "samples": 96,
+        "device": "CUDA",
+        "encodingScale": 0.12820254356586316,
+        "lightMapIntensity": 24.504916721685962,
+        "medianFilter": "deterministic 5x5 median",
+        "imageMagickVersion": "6.9.12-98 Q16"
+      },
+      "output": {
+        "path": "source/releases/0.4.0/lightmap-0.4.0-median5.png",
+        "sha256": "1d88c89cae8a841caa1413a314d928f402b2e7cb5f66be0341a3e2c303138ff3",
+        "sizeBytes": 1914828
+      }
+    },
+    {
+      "id": "export-byte-identical-raw-glb",
+      "reproducibility": {
+        "scope": "same-host-same-saved-baked-source-same-filtered-atlas-same-pinned-blender-raw-export-recheck",
+        "runs": 2,
+        "result": "byte-identical-raw-glb",
+        "rawGlbSha256": "54478ecd3caee0e1c470ec7849e873f0c48f923ab99b919abc20a6efd631356c",
+        "finalization": {
+          "method": "pinned glTF Transform tangents plus Meshopt",
+          "releaseGlbSha256": "5ee399fb07864ea84f1003c6ec87b9f06cfeaf6553b2312085f09e5f385c4eb6"
+        }
+      },
+      "output": {
+        "path": "source/releases/0.4.0/accepted-export.raw.glb",
+        "sha256": "54478ecd3caee0e1c470ec7849e873f0c48f923ab99b919abc20a6efd631356c",
+        "sizeBytes": 9657740
+      }
+    },
+    {
+      "id": "finalize-meshopt-glb",
+      "output": {
+        "path": "assets/scenes/presentation-room-v1/0.4.0/scene.glb",
+        "sha256": "5ee399fb07864ea84f1003c6ec87b9f06cfeaf6553b2312085f09e5f385c4eb6",
+        "sizeBytes": 5087708
+      }
+    },
+    {
+      "id": "materialize-four-file-review-bundle",
+      "exactFileCount": 4,
+      "outputs": [
+        {
+          "path": "assets/scenes/presentation-room-v1/0.4.0/LICENSES.md",
+          "sha256": "527e4b15c3c8db54ba44119a5917145c2bb214d761e79be340473e4a7adf8712",
+          "sizeBytes": 2254
+        },
+        {
+          "path": "assets/scenes/presentation-room-v1/0.4.0/preview.webp",
+          "sha256": "3edc4aa3292681f69df22452b48a92c033da604f8012fc2e76c5e6a5ce7606f4",
+          "sizeBytes": 22106
+        },
+        {
+          "path": "assets/scenes/presentation-room-v1/0.4.0/scene.glb",
+          "sha256": "5ee399fb07864ea84f1003c6ec87b9f06cfeaf6553b2312085f09e5f385c4eb6",
+          "sizeBytes": 5087708
+        },
+        {
+          "path": "assets/scenes/presentation-room-v1/0.4.0/scene.json",
+          "sha256": "434cb300a90bc8dce025eaed1becc161bec4bc1292e4d14e1cf721259782ca98",
+          "sizeBytes": 6587
+        }
+      ]
+    },
+    {
+      "id": "record-single-clean-and-normal-product-captures",
+      "binding": {
+        "path": "provenance/runtime-capture-0.4.0/capture-binding.json",
+        "sha256": "f02865fbab6bcebe525d6796eb103880d1abce89429cba2efd331f4c0a7430b8",
+        "sizeBytes": 8576
+      },
+      "repeatabilityClaimed": false
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.4.0",
+  "status": "review",
+  "qualityOutcome": "REWORK_REQUIRED",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "pending-human-rights-approval",
+  "rightsApproved": false,
+  "isCurrent": false,
+  "publicationReady": false,
+  "sourceViews": {
+    "path": "source/releases/0.4.0/review",
+    "count": 16
+  },
+  "cleanRuntime": {
+    "path": "provenance/runtime-capture-0.4.0/clean",
+    "technicalStatus": "passed-single-capture",
+    "repeatabilityClaimed": false
+  },
+  "normalProduct": {
+    "path": "provenance/runtime-capture-0.4.0/normal-product",
+    "functionalStatus": "passed",
+    "renderedMediaFrame": "pending-not-evidenced"
+  },
+  "sourceToRuntimeFidelity": {
+    "status": "failed-visible-material-regression",
+    "affectedViews": [
+      "chair-detail",
+      "chair-underneath",
+      "presenter",
+      "diagonal-overview"
+    ],
+    "defects": [
+      "chair fabric weave and wood response differ visibly between source and runtime",
+      "chair cushion corners remain visibly faceted",
+      "wall and ceiling join seams are more pronounced in runtime than in the paired source views"
+    ]
+  },
+  "unresolvedDefects": [
+    "chair fabric weave and wood response differ visibly between source and runtime",
+    "chair cushion corners remain visibly faceted",
+    "wall and ceiling join seams are more pronounced in runtime than in the paired source views",
+    "rendered screen-share media frames are not evidenced",
+    "triangle budget is exceeded: 117619 actual versus 90000 maximum"
+  ],
+  "visualAccepted": false
+}

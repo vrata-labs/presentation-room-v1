@@ -8,7 +8,7 @@
   "rightsApprovalDate": null,
   "licenseRef": null,
   "publicationReady": false,
-  "platformValidatorCommit": "c54edb2239d225a71e9b934316f70792b3faafb6",
+  "platformValidatorCommit": "c6343de81b038b7937addac44c24fa7c46adf341",
   "releases": [
     {
       "sceneId": "presentation-room-v1",
@@ -217,6 +217,68 @@
         "result": "byte-identical-glb",
         "sha256": "56078fd9cf298424ef5f219abd19e5a5fa8e1c5e0cd96224eddfe8e5bd937b30",
         "lightmapSha256": "ea3864fe09b111827563329e7c543459bc4508701060d67ca4a27ccfc7ffad0a"
+      }
+    },
+    {
+      "sceneId": "presentation-room-v1",
+      "version": "0.4.0",
+      "baseVersion": "0.3.0",
+      "releaseKind": "shared-quality-rework-review",
+      "status": "review",
+      "qualityOutcome": "REWORK_REQUIRED",
+      "humanAcceptance": "pending-human-acceptance",
+      "rightsStatus": "pending-human-rights-approval",
+      "rightsApproved": false,
+      "rightsApprovalDate": null,
+      "licenseRef": null,
+      "isCurrent": false,
+      "publicationReady": false,
+      "renderMode": "clean",
+      "renderProfile": "baked-pbr-v1",
+      "platformValidatorCommit": "c6343de81b038b7937addac44c24fa7c46adf341",
+      "releasePath": "assets/scenes/presentation-room-v1/0.4.0",
+      "provenancePath": "provenance/releases/0.4.0/release-provenance.json",
+      "files": {
+        "LICENSES.md": {
+          "sha256": "527e4b15c3c8db54ba44119a5917145c2bb214d761e79be340473e4a7adf8712",
+          "sizeBytes": 2254
+        },
+        "preview.webp": {
+          "sha256": "3edc4aa3292681f69df22452b48a92c033da604f8012fc2e76c5e6a5ce7606f4",
+          "sizeBytes": 22106
+        },
+        "scene.glb": {
+          "sha256": "5ee399fb07864ea84f1003c6ec87b9f06cfeaf6553b2312085f09e5f385c4eb6",
+          "sizeBytes": 5087708
+        },
+        "scene.json": {
+          "sha256": "434cb300a90bc8dce025eaed1becc161bec4bc1292e4d14e1cf721259782ca98",
+          "sizeBytes": 6587
+        }
+      },
+      "stats": {
+        "triangles": 117619,
+        "objects": 225,
+        "meshes": 225,
+        "primitives": 225,
+        "materials": 14,
+        "textures": 12,
+        "animations": 0
+      },
+      "budgetAssessment": {
+        "trianglesMax": 90000,
+        "trianglesActual": 117619,
+        "status": "failed-unresolved-exception"
+      },
+      "reproducibility": {
+        "scope": "same-host-same-saved-baked-source-same-filtered-atlas-same-pinned-blender-raw-export-recheck",
+        "runs": 2,
+        "result": "byte-identical-raw-glb",
+        "rawGlbSha256": "54478ecd3caee0e1c470ec7849e873f0c48f923ab99b919abc20a6efd631356c",
+        "finalization": {
+          "method": "pinned glTF Transform tangents plus Meshopt",
+          "releaseGlbSha256": "5ee399fb07864ea84f1003c6ec87b9f06cfeaf6553b2312085f09e5f385c4eb6"
+        }
       }
     }
   ]

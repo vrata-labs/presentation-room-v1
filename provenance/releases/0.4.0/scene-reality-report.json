@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.4.0",
+  "status": "passed-technical-reality-checks",
+  "qualityOutcome": "REWORK_REQUIRED",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "pending-human-rights-approval",
+  "rightsApproved": false,
+  "releaseGlb": {
+    "path": "assets/scenes/presentation-room-v1/0.4.0/scene.glb",
+    "sha256": "5ee399fb07864ea84f1003c6ec87b9f06cfeaf6553b2312085f09e5f385c4eb6",
+    "sizeBytes": 5087708
+  },
+  "objectRegistry": {
+    "path": "source/releases/0.4.0/object-registry.json",
+    "sha256": "fa77cea7413cc4b1986b1cf69599bde793b6e26ff9140b9c8d63746081f23bc1",
+    "sizeBytes": 255259
+  },
+  "geometryMeasurements": {
+    "path": "source/releases/0.4.0/geometry-measurements.json",
+    "sha256": "3501736ae3463f81e19655f7abea5d88d2557598f861f700eb0b235b061922b2",
+    "sizeBytes": 19362
+  },
+  "supportMeasurements": {
+    "path": "source/releases/0.4.0/declared-supports.json",
+    "sha256": "5d0b72796331ba629a80160984ccb10f17a4febb2fe4b8e3069e7e985534b403",
+    "sizeBytes": 195998
+  },
+  "measuredStats": {
+    "triangles": 117619,
+    "objects": 225,
+    "meshes": 225,
+    "primitives": 225,
+    "materials": 14,
+    "textures": 12,
+    "animations": 0
+  },
+  "khronos": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 134,
+    "hints": 0
+  },
+  "screenVisibility": "passed-40-of-40-rays-clear",
+  "approachRoutes": "passed-9-of-9",
+  "sitStandSweeps": "passed-8-of-8",
+  "supportGraph": "passed-384-declared-constituent-parts-no-failures",
+  "budgetAssessment": {
+    "trianglesMax": 90000,
+    "trianglesActual": 117619,
+    "status": "failed-unresolved-exception"
+  },
+  "result": "technical-checks-passed-with-unresolved-triangle-budget-exception"
+}
