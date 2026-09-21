@@ -1,6 +1,6 @@
 # Presentation Room v1
 
-## 0.4.1 — ready for user review
+## 0.4.1 — visually accepted
 
 The current [0.4.1 review bundle](assets/scenes/presentation-room-v1/0.4.1/scene.json)
 has 85,843 triangles and 219 render primitives. Continuous upholstery lightmap
@@ -18,8 +18,13 @@ transport is checked separately on the published review room.
 [Published-scene evidence](docs/staging/0.4.1/verification.json) includes all eight
 seats and [moving frames through real transport](docs/staging/0.4.1/normal-media-frames.png).
 
-Public staging review is explicitly authorized. Human visual acceptance remains
-pending, isCurrent=false and publicationReady=false. The runtime/validator pin is
+The user explicitly accepted the delivered 0.4.1 scene on 2026-09-21:
+[human visual acceptance](docs/reviews/2026-09-21-0.4.1-visual-acceptance.md).
+Workflow outcome: **VISUALLY_ACCEPTED**. Frozen release/evidence pending fields
+record the pre-review state; the later human verdict is recorded separately.
+Public staging review is authorized. Current-release selection and publication
+readiness retain their separate gates (isCurrent=false, publicationReady=false).
+The runtime/validator pin is
 a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d. Historical checks execute their original
 0.4.0 tooling snapshot; the current checkout also verifies every historical byte
 and append-only record. Saved-source export repeatability is not a fresh bake proof.
@@ -48,9 +53,9 @@ architectural 16:9 screen surround, eight audience seats in a shallow fan-shaped
 row with two banks, center and side circulation, acoustic treatment, and warm
 practical lighting.
 
-This repository is intentionally not a visually accepted, current, or
-publication-ready source. Human visual acceptance remains
-`pending-human-acceptance`. Historical releases retain the public staging review
+Versions through 0.4.0 have no recorded human visual acceptance and remain
+non-current and not publication-ready. The explicit 0.4.1 acceptance is recorded
+above. Historical releases retain the public staging review
 rights approval recorded on 2026-08-29. Human rights approval for the exact
 `0.3.0` and `0.4.0` bytes is separately pending and no staging, runtime,
 redistribution, or production permission is inferred from the historical verdict.
@@ -63,8 +68,9 @@ release `0.2.0` uses its accepted baked atlas and `baked-pbr-v1`. Review release
 geometry. It uses a fresh versioned atlas and seven project-authored source
 views. Three complete seven-view local runtime runs (21 PNG captures) are bound to exact `0.3.0` bytes and passed
 their recorded PHASH/NCC technical regression thresholds. This result is not
-human visual acceptance. Human acceptance, current-release selection,
-publication readiness, and production activation remain false.
+human visual acceptance. For those historical releases, human acceptance,
+current-release selection, publication readiness and production activation
+remain false.
 
 ## Pipeline
 

@@ -1,6 +1,6 @@
 # Presentation Room 0.4.1 — quality rework
 
-Outcome: READY_FOR_USER_REVIEW; human acceptance pending. Base: 92a6b567aeefbaee9e49007125ff84ff9ea7cd44.
+Outcome: VISUALLY_ACCEPTED; explicit [human acceptance](reviews/2026-09-21-0.4.1-visual-acceptance.md) received on 2026-09-21. Base: 92a6b567aeefbaee9e49007125ff84ff9ea7cd44.
 Shared contract: platform c6343de81b038b7937addac44c24fa7c46adf341 plus
 2026-09-20 Q8 arrangement feedback published as platform
 73876058784c581605bf7047d8643864f6b45868 (PR #103).
@@ -48,8 +48,8 @@ and constituent construction evidence. Supply actual rendered media-frame proof.
 Inspect entry, all eight seated views, presenter, overview, chair/underside, lectern,
 acoustic and door close-ups. Repeat normal-product interactions, source/export
 reproducibility and exact-SHA staging QA. Visual, rights and promotion verdicts
-remain distinct; human acceptance is pending. The published-scene staging verdict
-is passed in the separate record linked below.
+remain distinct; human visual acceptance was subsequently received and is recorded
+separately above. The published-scene staging verdict is passed in the record below.
 
 ## Completion of local rework
 
