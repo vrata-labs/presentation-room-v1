@@ -1,0 +1,1400 @@
+{
+  "captureBinding": {
+    "glbSha256": "d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2",
+    "manifestSha256": "7e61e757dd67301de7cb7bf21349e5ede251f7acbb096b618856ce35e4c58d57",
+    "configSha256": "e6772dcbba307008149e078a7170905e749d392089cc13ff17c86bfe6179e5e8",
+    "baseSha256": "5ba1e6dcd535e707af76fe6c5fd708158e9c6c37cffe8e1e9e410cd0f236b2f1",
+    "runnerSha256": "42fa50156f89e62943147a756c3af88db8c000bee5035711fb1a2a6dd4ae826d",
+    "runtimePlatformCommit": "a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d"
+  },
+  "platformCommit": "a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d",
+  "publicRoomUrl": "https://158.160.10.234.sslip.io/rooms/review-presentation-room-041-b6e0bcb1",
+  "manifestSha256": "7e61e757dd67301de7cb7bf21349e5ede251f7acbb096b618856ce35e4c58d57",
+  "glbSha256": "d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2",
+  "syntheticReviewPoseUsed": false,
+  "seats": [
+    {
+      "seatId": "seat-01",
+      "authoritativeClaimAndRelease": true,
+      "seatedMovementLocked": true,
+      "localPose": {
+        "root": {
+          "x": -3.85,
+          "y": -0.398,
+          "z": -1.035,
+          "yaw": -2.471
+        },
+        "head": {
+          "x": -3.85,
+          "y": 1.203,
+          "z": -1.035,
+          "yaw": -2.471,
+          "pitch": 0
+        }
+      },
+      "actualCamera": {
+        "world": {
+          "x": -3.85,
+          "y": 1.202,
+          "z": -1.035
+        },
+        "forward": {
+          "x": 0.621,
+          "y": 0,
+          "z": 0.784
+        }
+      },
+      "eyeHeightAboveSeatM": 0.7195,
+      "afterRelease": {
+        "root": {
+          "x": 0,
+          "y": 0,
+          "z": -2.85,
+          "yaw": -2.471
+        },
+        "head": {
+          "x": 0,
+          "y": 1.6,
+          "z": -2.85,
+          "yaw": -2.471,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "seatId": "seat-02",
+      "authoritativeClaimAndRelease": true,
+      "seatedMovementLocked": true,
+      "localPose": {
+        "root": {
+          "x": -2.85,
+          "y": -0.398,
+          "z": -0.935,
+          "yaw": -2.602
+        },
+        "head": {
+          "x": -2.85,
+          "y": 1.203,
+          "z": -0.935,
+          "yaw": -2.602,
+          "pitch": 0
+        }
+      },
+      "actualCamera": {
+        "world": {
+          "x": -2.85,
+          "y": 1.202,
+          "z": -0.935
+        },
+        "forward": {
+          "x": 0.514,
+          "y": 0,
+          "z": 0.858
+        }
+      },
+      "eyeHeightAboveSeatM": 0.7195,
+      "afterRelease": {
+        "root": {
+          "x": 0,
+          "y": 0,
+          "z": -2.85,
+          "yaw": -2.602
+        },
+        "head": {
+          "x": 0,
+          "y": 1.6,
+          "z": -2.85,
+          "yaw": -2.602,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "seatId": "seat-03",
+      "authoritativeClaimAndRelease": true,
+      "seatedMovementLocked": true,
+      "localPose": {
+        "root": {
+          "x": -1.85,
+          "y": -0.398,
+          "z": -0.835,
+          "yaw": -2.763
+        },
+        "head": {
+          "x": -1.85,
+          "y": 1.203,
+          "z": -0.835,
+          "yaw": -2.763,
+          "pitch": 0
+        }
+      },
+      "actualCamera": {
+        "world": {
+          "x": -1.85,
+          "y": 1.202,
+          "z": -0.835
+        },
+        "forward": {
+          "x": 0.369,
+          "y": 0,
+          "z": 0.929
+        }
+      },
+      "eyeHeightAboveSeatM": 0.7195,
+      "afterRelease": {
+        "root": {
+          "x": 0,
+          "y": 0,
+          "z": -2.85,
+          "yaw": -2.763
+        },
+        "head": {
+          "x": 0,
+          "y": 1.6,
+          "z": -2.85,
+          "yaw": -2.763,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "seatId": "seat-04",
+      "authoritativeClaimAndRelease": true,
+      "seatedMovementLocked": true,
+      "localPose": {
+        "root": {
+          "x": -0.85,
+          "y": -0.398,
+          "z": -0.735,
+          "yaw": -2.957
+        },
+        "head": {
+          "x": -0.85,
+          "y": 1.203,
+          "z": -0.735,
+          "yaw": -2.957,
+          "pitch": 0
+        }
+      },
+      "actualCamera": {
+        "world": {
+          "x": -0.85,
+          "y": 1.202,
+          "z": -0.735
+        },
+        "forward": {
+          "x": 0.183,
+          "y": 0,
+          "z": 0.983
+        }
+      },
+      "eyeHeightAboveSeatM": 0.7195,
+      "afterRelease": {
+        "root": {
+          "x": 0,
+          "y": 0,
+          "z": -2.85,
+          "yaw": -2.957
+        },
+        "head": {
+          "x": 0,
+          "y": 1.6,
+          "z": -2.85,
+          "yaw": -2.957,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "seatId": "seat-05",
+      "authoritativeClaimAndRelease": true,
+      "seatedMovementLocked": true,
+      "localPose": {
+        "root": {
+          "x": 0.85,
+          "y": -0.398,
+          "z": -0.735,
+          "yaw": 2.957
+        },
+        "head": {
+          "x": 0.85,
+          "y": 1.203,
+          "z": -0.735,
+          "yaw": 2.957,
+          "pitch": 0
+        }
+      },
+      "actualCamera": {
+        "world": {
+          "x": 0.85,
+          "y": 1.202,
+          "z": -0.735
+        },
+        "forward": {
+          "x": -0.183,
+          "y": 0,
+          "z": 0.983
+        }
+      },
+      "eyeHeightAboveSeatM": 0.7195,
+      "afterRelease": {
+        "root": {
+          "x": 0,
+          "y": 0,
+          "z": -2.85,
+          "yaw": 2.957
+        },
+        "head": {
+          "x": 0,
+          "y": 1.6,
+          "z": -2.85,
+          "yaw": 2.957,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "seatId": "seat-06",
+      "authoritativeClaimAndRelease": true,
+      "seatedMovementLocked": true,
+      "localPose": {
+        "root": {
+          "x": 1.85,
+          "y": -0.398,
+          "z": -0.835,
+          "yaw": 2.763
+        },
+        "head": {
+          "x": 1.85,
+          "y": 1.203,
+          "z": -0.835,
+          "yaw": 2.763,
+          "pitch": 0
+        }
+      },
+      "actualCamera": {
+        "world": {
+          "x": 1.85,
+          "y": 1.202,
+          "z": -0.835
+        },
+        "forward": {
+          "x": -0.369,
+          "y": 0,
+          "z": 0.929
+        }
+      },
+      "eyeHeightAboveSeatM": 0.7195,
+      "afterRelease": {
+        "root": {
+          "x": 0,
+          "y": 0,
+          "z": -2.85,
+          "yaw": 2.763
+        },
+        "head": {
+          "x": 0,
+          "y": 1.6,
+          "z": -2.85,
+          "yaw": 2.763,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "seatId": "seat-07",
+      "authoritativeClaimAndRelease": true,
+      "seatedMovementLocked": true,
+      "localPose": {
+        "root": {
+          "x": 2.85,
+          "y": -0.398,
+          "z": -0.935,
+          "yaw": 2.602
+        },
+        "head": {
+          "x": 2.85,
+          "y": 1.203,
+          "z": -0.935,
+          "yaw": 2.602,
+          "pitch": 0
+        }
+      },
+      "actualCamera": {
+        "world": {
+          "x": 2.85,
+          "y": 1.202,
+          "z": -0.935
+        },
+        "forward": {
+          "x": -0.514,
+          "y": 0,
+          "z": 0.858
+        }
+      },
+      "eyeHeightAboveSeatM": 0.7195,
+      "afterRelease": {
+        "root": {
+          "x": 0,
+          "y": 0,
+          "z": -2.85,
+          "yaw": 2.602
+        },
+        "head": {
+          "x": 0,
+          "y": 1.6,
+          "z": -2.85,
+          "yaw": 2.602,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "seatId": "seat-08",
+      "authoritativeClaimAndRelease": true,
+      "seatedMovementLocked": true,
+      "localPose": {
+        "root": {
+          "x": 3.85,
+          "y": -0.398,
+          "z": -1.035,
+          "yaw": 2.471
+        },
+        "head": {
+          "x": 3.85,
+          "y": 1.203,
+          "z": -1.035,
+          "yaw": 2.471,
+          "pitch": 0
+        }
+      },
+      "actualCamera": {
+        "world": {
+          "x": 3.85,
+          "y": 1.202,
+          "z": -1.035
+        },
+        "forward": {
+          "x": -0.621,
+          "y": 0,
+          "z": 0.784
+        }
+      },
+      "eyeHeightAboveSeatM": 0.7195,
+      "afterRelease": {
+        "root": {
+          "x": 0,
+          "y": 0,
+          "z": -2.85,
+          "yaw": 2.471
+        },
+        "head": {
+          "x": 0,
+          "y": 1.6,
+          "z": -2.85,
+          "yaw": 2.471,
+          "pitch": 0
+        }
+      }
+    }
+  ],
+  "spawn": {
+    "participantId": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7",
+    "roomStateConnected": true,
+    "currentSeatId": null,
+    "pendingSeatId": null,
+    "seatOccupancy": {},
+    "featureFlags": {
+      "enterVr": true,
+      "audioJoin": true,
+      "screenShare": true,
+      "roomStateRealtime": true,
+      "remoteDiagnostics": true,
+      "sceneBundles": true,
+      "hostControlsEnabled": true,
+      "documentsEnabled": true,
+      "notesEnabled": true,
+      "personalRoomsEnabled": true,
+      "remoteBrowserEnabled": true,
+      "remoteBrowserExperimental": true,
+      "spatialAudio": true,
+      "avatarsEnabled": true,
+      "avatarPoseBinaryEnabled": true,
+      "avatarLipsyncEnabled": false,
+      "avatarLegIkEnabled": false,
+      "avatarSeatingEnabled": true,
+      "avatarCustomizationEnabled": false,
+      "avatarFallbackCapsulesEnabled": false
+    },
+    "localPose": {
+      "root": {
+        "x": 0,
+        "y": 0,
+        "z": -2.85,
+        "yaw": 3.142
+      },
+      "head": {
+        "x": 0,
+        "y": 1.6,
+        "z": -2.85,
+        "yaw": 3.142,
+        "pitch": 0
+      }
+    },
+    "sceneDebug": {
+      "state": "loaded",
+      "spawnApplied": true,
+      "spawnPointId": "main",
+      "camera": {
+        "world": {
+          "x": 0,
+          "y": 1.6,
+          "z": -2.85
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        }
+      }
+    },
+    "mediaObjects": {
+      "physicalSurfaceIdsWithoutLogicalState": [],
+      "blockedReason": null,
+      "surfaces": [
+        {
+          "surfaceId": "debug-main",
+          "label": "Main screen",
+          "allowedObjectTypes": [
+            "surface-test-card",
+            "screen-share",
+            "whiteboard",
+            "markdown-board",
+            "remote-browser",
+            "pdf-presentation",
+            "image-viewer",
+            "video-player",
+            "extension-test-card"
+          ],
+          "activeObjectId": null,
+          "activeObjectType": null,
+          "inputEnabled": true,
+          "maxDistanceM": 0.06,
+          "mediaAudioEnabled": false,
+          "lockedByParticipantId": null,
+          "visible": true,
+          "runtimeVisible": true,
+          "widthM": 4.8,
+          "heightM": 2.7,
+          "widthPx": 1920,
+          "heightPx": 1080,
+          "position": {
+            "x": 0,
+            "y": 2.12,
+            "z": 3.813
+          },
+          "yaw": 3.141592653589793,
+          "pitch": 0,
+          "roll": 0,
+          "manifestPosition": {
+            "x": 0,
+            "y": 2.12,
+            "z": 3.813
+          },
+          "manifestYaw": 3.141592653589793,
+          "manifestFormat": "legacy",
+          "worldPosition": {
+            "x": 0,
+            "y": 2.12,
+            "z": 3.813
+          },
+          "worldYaw": 3.142,
+          "textureId": null
+        }
+      ]
+    }
+  },
+  "beforeTeleport": {
+    "claimed": {
+      "participantId": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7",
+      "roomStateConnected": true,
+      "currentSeatId": "seat-08",
+      "pendingSeatId": null,
+      "seatOccupancy": {
+        "seat-08": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7"
+      },
+      "featureFlags": {
+        "enterVr": true,
+        "audioJoin": true,
+        "screenShare": true,
+        "roomStateRealtime": true,
+        "remoteDiagnostics": true,
+        "sceneBundles": true,
+        "hostControlsEnabled": true,
+        "documentsEnabled": true,
+        "notesEnabled": true,
+        "personalRoomsEnabled": true,
+        "remoteBrowserEnabled": true,
+        "remoteBrowserExperimental": true,
+        "spatialAudio": true,
+        "avatarsEnabled": true,
+        "avatarPoseBinaryEnabled": true,
+        "avatarLipsyncEnabled": false,
+        "avatarLegIkEnabled": false,
+        "avatarSeatingEnabled": true,
+        "avatarCustomizationEnabled": false,
+        "avatarFallbackCapsulesEnabled": false
+      },
+      "localPose": {
+        "root": {
+          "x": 3.85,
+          "y": -0.398,
+          "z": -1.035,
+          "yaw": 2.471
+        },
+        "head": {
+          "x": 3.85,
+          "y": 1.203,
+          "z": -1.035,
+          "yaw": 2.471,
+          "pitch": 0
+        }
+      },
+      "sceneDebug": {
+        "state": "loaded",
+        "spawnApplied": true,
+        "spawnPointId": "main",
+        "camera": {
+          "world": {
+            "x": 3.85,
+            "y": 1.202,
+            "z": -1.035
+          },
+          "forward": {
+            "x": -0.621,
+            "y": 0,
+            "z": 0.784
+          }
+        }
+      },
+      "mediaObjects": {
+        "physicalSurfaceIdsWithoutLogicalState": [],
+        "blockedReason": null,
+        "surfaces": [
+          {
+            "surfaceId": "debug-main",
+            "label": "Main screen",
+            "allowedObjectTypes": [
+              "surface-test-card",
+              "screen-share",
+              "whiteboard",
+              "markdown-board",
+              "remote-browser",
+              "pdf-presentation",
+              "image-viewer",
+              "video-player",
+              "extension-test-card"
+            ],
+            "activeObjectId": null,
+            "activeObjectType": null,
+            "inputEnabled": true,
+            "maxDistanceM": 0.06,
+            "mediaAudioEnabled": false,
+            "lockedByParticipantId": null,
+            "visible": true,
+            "runtimeVisible": true,
+            "widthM": 4.8,
+            "heightM": 2.7,
+            "widthPx": 1920,
+            "heightPx": 1080,
+            "position": {
+              "x": 0,
+              "y": 2.12,
+              "z": 3.813
+            },
+            "yaw": 3.141592653589793,
+            "pitch": 0,
+            "roll": 0,
+            "manifestPosition": {
+              "x": 0,
+              "y": 2.12,
+              "z": 3.813
+            },
+            "manifestYaw": 3.141592653589793,
+            "manifestFormat": "legacy",
+            "worldPosition": {
+              "x": 0,
+              "y": 2.12,
+              "z": 3.813
+            },
+            "worldYaw": 3.142,
+            "textureId": null
+          }
+        ]
+      }
+    },
+    "locked": {
+      "participantId": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7",
+      "roomStateConnected": true,
+      "currentSeatId": "seat-08",
+      "pendingSeatId": null,
+      "seatOccupancy": {
+        "seat-08": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7"
+      },
+      "featureFlags": {
+        "enterVr": true,
+        "audioJoin": true,
+        "screenShare": true,
+        "roomStateRealtime": true,
+        "remoteDiagnostics": true,
+        "sceneBundles": true,
+        "hostControlsEnabled": true,
+        "documentsEnabled": true,
+        "notesEnabled": true,
+        "personalRoomsEnabled": true,
+        "remoteBrowserEnabled": true,
+        "remoteBrowserExperimental": true,
+        "spatialAudio": true,
+        "avatarsEnabled": true,
+        "avatarPoseBinaryEnabled": true,
+        "avatarLipsyncEnabled": false,
+        "avatarLegIkEnabled": false,
+        "avatarSeatingEnabled": true,
+        "avatarCustomizationEnabled": false,
+        "avatarFallbackCapsulesEnabled": false
+      },
+      "localPose": {
+        "root": {
+          "x": 3.85,
+          "y": -0.398,
+          "z": -1.035,
+          "yaw": 2.471
+        },
+        "head": {
+          "x": 3.85,
+          "y": 1.203,
+          "z": -1.035,
+          "yaw": 2.471,
+          "pitch": 0
+        }
+      },
+      "sceneDebug": {
+        "state": "loaded",
+        "spawnApplied": true,
+        "spawnPointId": "main",
+        "camera": {
+          "world": {
+            "x": 3.85,
+            "y": 1.202,
+            "z": -1.035
+          },
+          "forward": {
+            "x": -0.621,
+            "y": 0,
+            "z": 0.784
+          }
+        }
+      },
+      "mediaObjects": {
+        "physicalSurfaceIdsWithoutLogicalState": [],
+        "blockedReason": null,
+        "surfaces": [
+          {
+            "surfaceId": "debug-main",
+            "label": "Main screen",
+            "allowedObjectTypes": [
+              "surface-test-card",
+              "screen-share",
+              "whiteboard",
+              "markdown-board",
+              "remote-browser",
+              "pdf-presentation",
+              "image-viewer",
+              "video-player",
+              "extension-test-card"
+            ],
+            "activeObjectId": null,
+            "activeObjectType": null,
+            "inputEnabled": true,
+            "maxDistanceM": 0.06,
+            "mediaAudioEnabled": false,
+            "lockedByParticipantId": null,
+            "visible": true,
+            "runtimeVisible": true,
+            "widthM": 4.8,
+            "heightM": 2.7,
+            "widthPx": 1920,
+            "heightPx": 1080,
+            "position": {
+              "x": 0,
+              "y": 2.12,
+              "z": 3.813
+            },
+            "yaw": 3.141592653589793,
+            "pitch": 0,
+            "roll": 0,
+            "manifestPosition": {
+              "x": 0,
+              "y": 2.12,
+              "z": 3.813
+            },
+            "manifestYaw": 3.141592653589793,
+            "manifestFormat": "legacy",
+            "worldPosition": {
+              "x": 0,
+              "y": 2.12,
+              "z": 3.813
+            },
+            "worldYaw": 3.142,
+            "textureId": null
+          }
+        ]
+      }
+    }
+  },
+  "standingMovement": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "z": -2.85,
+      "yaw": 2.471
+    },
+    "to": {
+      "x": -2.111,
+      "y": 0,
+      "z": -0.187,
+      "yaw": 2.471
+    }
+  },
+  "physicalSurfacesMissingLogicalState": [],
+  "mediaAfterCreate": {
+    "physicalSurfaceIdsWithoutLogicalState": [],
+    "blockedReason": null,
+    "surfaces": [
+      {
+        "surfaceId": "debug-main",
+        "label": "Main screen",
+        "allowedObjectTypes": [
+          "surface-test-card",
+          "screen-share",
+          "whiteboard",
+          "markdown-board",
+          "remote-browser",
+          "pdf-presentation",
+          "image-viewer",
+          "video-player",
+          "extension-test-card"
+        ],
+        "activeObjectId": "ddf73c74-2d19-4c4c-b534-e30e0430a0de",
+        "activeObjectType": "screen-share",
+        "inputEnabled": true,
+        "maxDistanceM": 0.06,
+        "mediaAudioEnabled": false,
+        "lockedByParticipantId": null,
+        "visible": true,
+        "runtimeVisible": true,
+        "widthM": 4.8,
+        "heightM": 2.7,
+        "widthPx": 1920,
+        "heightPx": 1080,
+        "position": {
+          "x": 0,
+          "y": 2.12,
+          "z": 3.813
+        },
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "roll": 0,
+        "manifestPosition": {
+          "x": 0,
+          "y": 2.12,
+          "z": 3.813
+        },
+        "manifestYaw": 3.141592653589793,
+        "manifestFormat": "legacy",
+        "worldPosition": {
+          "x": 0,
+          "y": 2.12,
+          "z": 3.813
+        },
+        "worldYaw": 3.142,
+        "textureId": null
+      }
+    ]
+  },
+  "observerFinalDebug": null,
+  "seatWire": {
+    "local": [
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_claim",
+        "seatId": "seat-01"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-01\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "seat_claim_result",
+        "result": {
+          "seatId": "seat-01",
+          "accepted": true,
+          "occupantId": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7",
+          "previousSeatId": null
+        }
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-01\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_release",
+        "seatId": "seat-01"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-01\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_claim",
+        "seatId": "seat-02"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-02\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "seat_claim_result",
+        "result": {
+          "seatId": "seat-02",
+          "accepted": true,
+          "occupantId": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7",
+          "previousSeatId": null
+        }
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-02\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_release",
+        "seatId": "seat-02"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-02\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_claim",
+        "seatId": "seat-03"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-03\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "seat_claim_result",
+        "result": {
+          "seatId": "seat-03",
+          "accepted": true,
+          "occupantId": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7",
+          "previousSeatId": null
+        }
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-03\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_release",
+        "seatId": "seat-03"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-03\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_claim",
+        "seatId": "seat-04"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-04\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "seat_claim_result",
+        "result": {
+          "seatId": "seat-04",
+          "accepted": true,
+          "occupantId": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7",
+          "previousSeatId": null
+        }
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-04\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_release",
+        "seatId": "seat-04"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-04\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_claim",
+        "seatId": "seat-05"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-05\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "seat_claim_result",
+        "result": {
+          "seatId": "seat-05",
+          "accepted": true,
+          "occupantId": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7",
+          "previousSeatId": null
+        }
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-05\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_release",
+        "seatId": "seat-05"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-05\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_claim",
+        "seatId": "seat-06"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-06\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "seat_claim_result",
+        "result": {
+          "seatId": "seat-06",
+          "accepted": true,
+          "occupantId": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7",
+          "previousSeatId": null
+        }
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-06\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_release",
+        "seatId": "seat-06"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-06\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_claim",
+        "seatId": "seat-07"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-07\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "seat_claim_result",
+        "result": {
+          "seatId": "seat-07",
+          "accepted": true,
+          "occupantId": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7",
+          "previousSeatId": null
+        }
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-07\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_release",
+        "seatId": "seat-07"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-07\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_claim",
+        "seatId": "seat-08"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-08\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "seat_claim_result",
+        "result": {
+          "seatId": "seat-08",
+          "accepted": true,
+          "occupantId": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7",
+          "previousSeatId": null
+        }
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-08\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framesent",
+        "type": "seat_release",
+        "seatId": "seat-08"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-08\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      }
+    ],
+    "observer": [
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-01\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-02\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-03\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-04\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-05\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-06\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-07\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{\"seat-08\":\"09d6940f-6050-4bc1-8e8d-1815cf88f2d7\"}"
+      },
+      {
+        "direction": "framereceived",
+        "type": "room_state",
+        "occupancy": "{}"
+      }
+    ]
+  },
+  "finalDebug": {
+    "participantId": "09d6940f-6050-4bc1-8e8d-1815cf88f2d7",
+    "roomStateConnected": true,
+    "currentSeatId": null,
+    "pendingSeatId": null,
+    "seatOccupancy": {},
+    "featureFlags": {
+      "enterVr": true,
+      "audioJoin": true,
+      "screenShare": true,
+      "roomStateRealtime": true,
+      "remoteDiagnostics": true,
+      "sceneBundles": true,
+      "hostControlsEnabled": true,
+      "documentsEnabled": true,
+      "notesEnabled": true,
+      "personalRoomsEnabled": true,
+      "remoteBrowserEnabled": true,
+      "remoteBrowserExperimental": true,
+      "spatialAudio": true,
+      "avatarsEnabled": true,
+      "avatarPoseBinaryEnabled": true,
+      "avatarLipsyncEnabled": false,
+      "avatarLegIkEnabled": false,
+      "avatarSeatingEnabled": true,
+      "avatarCustomizationEnabled": false,
+      "avatarFallbackCapsulesEnabled": false
+    },
+    "localPose": {
+      "root": {
+        "x": -2.111,
+        "y": 0,
+        "z": -0.187,
+        "yaw": 2.471
+      },
+      "head": {
+        "x": -2.111,
+        "y": 1.6,
+        "z": -0.187,
+        "yaw": 2.471,
+        "pitch": 0
+      }
+    },
+    "sceneDebug": {
+      "state": "loaded",
+      "spawnApplied": true,
+      "spawnPointId": "main",
+      "camera": {
+        "world": {
+          "x": -2.111,
+          "y": 1.6,
+          "z": -0.187
+        },
+        "forward": {
+          "x": -0.621,
+          "y": 0,
+          "z": 0.784
+        }
+      }
+    },
+    "mediaObjects": {
+      "physicalSurfaceIdsWithoutLogicalState": [],
+      "blockedReason": null,
+      "surfaces": [
+        {
+          "surfaceId": "debug-main",
+          "label": "Main screen",
+          "allowedObjectTypes": [
+            "surface-test-card",
+            "screen-share",
+            "whiteboard",
+            "markdown-board",
+            "remote-browser",
+            "pdf-presentation",
+            "image-viewer",
+            "video-player",
+            "extension-test-card"
+          ],
+          "activeObjectId": "ddf73c74-2d19-4c4c-b534-e30e0430a0de",
+          "activeObjectType": "screen-share",
+          "inputEnabled": true,
+          "maxDistanceM": 0.06,
+          "mediaAudioEnabled": false,
+          "lockedByParticipantId": null,
+          "visible": true,
+          "runtimeVisible": true,
+          "widthM": 4.8,
+          "heightM": 2.7,
+          "widthPx": 1920,
+          "heightPx": 1080,
+          "position": {
+            "x": 0,
+            "y": 2.12,
+            "z": 3.813
+          },
+          "yaw": 3.141592653589793,
+          "pitch": 0,
+          "roll": 0,
+          "manifestPosition": {
+            "x": 0,
+            "y": 2.12,
+            "z": 3.813
+          },
+          "manifestYaw": 3.141592653589793,
+          "manifestFormat": "legacy",
+          "worldPosition": {
+            "x": 0,
+            "y": 2.12,
+            "z": 3.813
+          },
+          "worldYaw": 3.142,
+          "textureId": null
+        }
+      ]
+    }
+  },
+  "verdict": "functional-checks-passed",
+  "scope": "Spawn, authoritative seat state, movement and media object lifecycle; rendered-content evidence is recorded separately."
+}

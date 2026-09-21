@@ -1,0 +1,70 @@
+{
+  "roomUrl": "https://158.160.10.234.sslip.io/rooms/review-presentation-room-041-b6e0bcb1",
+  "candidateCommit": "b6e0bcb1bb61136b5d7b4d6c05b4ea0032c7c787",
+  "platformCommit": "a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d",
+  "receivedGlbSha256": "d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2",
+  "syntheticReviewPoseUsed": true,
+  "scope": "Visual close-ups in the actual product manifest; functional seat evidence is recorded separately",
+  "cameras": [
+    {
+      "id": "chair-detail",
+      "requestedEye": {
+        "x": 0.20000000298023224,
+        "y": 1.2799999713897705,
+        "z": 0.03999999910593033
+      },
+      "camera": {
+        "world": {
+          "x": 0.2,
+          "y": 1.28,
+          "z": 0.04
+        },
+        "forward": {
+          "x": 0.606,
+          "y": -0.477,
+          "z": -0.636
+        }
+      }
+    },
+    {
+      "id": "diagonal-overview",
+      "requestedEye": {
+        "x": 4.139999866485596,
+        "y": 1.6399999856948853,
+        "z": -3.049999952316284
+      },
+      "camera": {
+        "world": {
+          "x": 4.14,
+          "y": 1.64,
+          "z": -3.05
+        },
+        "forward": {
+          "x": -0.743,
+          "y": -0.021,
+          "z": 0.669
+        }
+      }
+    },
+    {
+      "id": "lectern-detail",
+      "requestedEye": {
+        "x": -1.9500000476837158,
+        "y": 1.559999942779541,
+        "z": 1.559999942779541
+      },
+      "camera": {
+        "world": {
+          "x": -1.95,
+          "y": 1.56,
+          "z": 1.56
+        },
+        "forward": {
+          "x": -0.678,
+          "y": -0.353,
+          "z": 0.645
+        }
+      }
+    }
+  ]
+}
