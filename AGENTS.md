@@ -10,6 +10,8 @@
 
 ## Shared scene-quality workflow
 
+- Presentation Room 0.4.1 at `b6e0bcb1bb61136b5d7b4d6c05b4ea0032c7c787` was explicitly visually accepted by the user on 2026-09-21: `VISUALLY_ACCEPTED`. See `docs/reviews/2026-09-21-0.4.1-visual-acceptance.md`. Preserve this accepted quality in future revisions; immutable pre-review pending fields do not negate the later verdict. Rights and promotion remain separate gates.
+
 - Read the [shared quality contract](https://github.com/vrata-labs/platform/blob/a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d/docs/scene-quality-contract.md) and fill the [task packet](https://github.com/vrata-labs/platform/blob/a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d/docs/scene-authoring-task-template.md) before every new or resumed scene task; record the revision and later applicable user feedback.
 - Review every object/family and placement as User/Builder/Physics: real purpose/actions, approach, seated sightlines, assembly/joints, materials and actual support. Deferred/passive objects need plausible affordances, not mandatory runtime interaction.
 - Inspect real source/browser images against the accepted Warm Modern Meeting 0.3.3 quality level. Realistic material finish and photographic-quality visible distant surroundings are mandatory unless the user explicitly requests another style. Technical passes and own-capture thresholds cannot prove this quality.
