@@ -26,9 +26,21 @@ the same defect here. A prepared presentation space legitimately has matched cha
 and regular spacing. Check that orientation serves the screen, spacing serves
 people and aisles, notes are readable from the presenter side, and microphone and
 cables leave usable working/service space. Do not randomize chairs to fake realism.
-Record relevant real-use photo references and source/browser group views.
+At final public-stage review, inspected these additional real-use photographs:
 
-## Remaining blockers and completion record
+- https://commons.wikimedia.org/wiki/File:2007Computex_PressConference.jpg — occupied
+  audience rows face a common speaker zone; side access and equipment remain at the
+  perimeter. Our eight-person room uses a shallow single-row fan to avoid an
+  occupied front row blocking another row, with a separate central approach.
+- https://commons.wikimedia.org/wiki/File:Conference_Room_3.jpg — matching chairs
+  form an orderly prepared group, while shared equipment is placed against a wall.
+  Its discussion table is not copied: Presentation chairs face the display instead.
+
+References guide arrangement reasoning only; no image or branded asset was imported.
+Published normal-product and detail views record the actual chair group, lectern
+notes/microphone and AV cabinet/cable placement.
+
+## Inherited corrections and completion record
 
 Correct wood/fabric source-runtime mismatch, cushion facets and wall/ceiling seams.
 Reduce 117619 triangles to the existing 90000 budget while preserving silhouette
@@ -36,7 +48,8 @@ and constituent construction evidence. Supply actual rendered media-frame proof.
 Inspect entry, all eight seated views, presenter, overview, chair/underside, lectern,
 acoustic and door close-ups. Repeat normal-product interactions, source/export
 reproducibility and exact-SHA staging QA. Visual, rights and promotion verdicts
-remain distinct; human acceptance and the published-scene staging verdict are pending.
+remain distinct; human acceptance is pending. The published-scene staging verdict
+is passed in the separate record linked below.
 
 ## Completion of local rework
 
@@ -51,7 +64,10 @@ lightmap charts with rear seams rather than face-by-face lighting fragments.
 
 The common contract/runtime revision is now a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d,
 including acknowledged seat release after reconnect. This runtime passed staging;
-publication and real-transport QA of the exact scene commit remain separate.
+publication and real-transport QA of the exact scene commit are recorded separately
+in [the public-stage evidence](staging/0.4.1/verification.json). All eight authoritative
+seat flows, the moving display through real transport and the full 40-test staging
+suite passed. Existing room bindings were preserved; no production promotion occurred.
 
 ## Explicit review-publication authorization
 

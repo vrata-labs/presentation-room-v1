@@ -1,0 +1,637 @@
+{
+  "date": "2026-09-21",
+  "sceneId": "presentation-room-v1",
+  "commit": "b6e0bcb1bb61136b5d7b4d6c05b4ea0032c7c787",
+  "roomId": "review-presentation-room-041-b6e0bcb1",
+  "name": "Presentation Room 0.4.1 Review",
+  "templateId": "event-demo-basic",
+  "roomUrl": "https://158.160.10.234.sslip.io/rooms/review-presentation-room-041-b6e0bcb1",
+  "sceneBundleUrl": "https://raw.githubusercontent.com/vrata-labs/presentation-room-v1/b6e0bcb1bb61136b5d7b4d6c05b4ea0032c7c787/assets/scenes/presentation-room-v1/0.4.1/scene.json",
+  "files": [
+    {
+      "name": "normal-media-frames.png",
+      "sha256": "b711dc42580ea5f9da8f6d57964a5213ec7eeb40587dc63a2cb012d99a7e292e",
+      "sizeBytes": 547100
+    },
+    {
+      "name": "normal-media.png",
+      "sha256": "8a589b25bc8fbb907bb629508b55cc2070c808a9de4a66e140cca1d4ab53bbb1",
+      "sizeBytes": 506775
+    },
+    {
+      "name": "normal-product-evidence.json",
+      "sha256": "24dcd6ea21aa88dcf22b37933401264a9cddbc3d01dfb9dd4ff5a94301edb171",
+      "sizeBytes": 34869
+    },
+    {
+      "name": "normal-seat-01.png",
+      "sha256": "f6cd32bdaf4ae2a3073dcbfbec1b1dd25c1b44bd538d51bc80d51e5ab0871e26",
+      "sizeBytes": 538287
+    },
+    {
+      "name": "normal-seat-02.png",
+      "sha256": "c438f48e39326e3659728a6ef63b5801e1c27435fbef4247b2ecb80e4c7f4d05",
+      "sizeBytes": 514027
+    },
+    {
+      "name": "normal-seat-03.png",
+      "sha256": "5c227533b70b3e332d253f5deb6dd7db3b0032ca18aacb7ab6e4df9c74e1b5dd",
+      "sizeBytes": 494647
+    },
+    {
+      "name": "normal-seat-04.png",
+      "sha256": "6823bf7418d4d6b95c7b5f4224f82c9bc8d0e61bc205a054ced3637b2a832dee",
+      "sizeBytes": 475894
+    },
+    {
+      "name": "normal-seat-05.png",
+      "sha256": "1ba619aba5500879bf04f70e9db5291f6c8078ba2e61d9a273807f74bb4d331a",
+      "sizeBytes": 500888
+    },
+    {
+      "name": "normal-seat-06.png",
+      "sha256": "124448f39e197a5d848d264ebc6fd0bd9e82ea986a38a0b23ea115195bed2850",
+      "sizeBytes": 526170
+    },
+    {
+      "name": "normal-seat-07.png",
+      "sha256": "2a323933fdf2b7d6290f9a146a590aad2edc8a7642c41e2ac32a274812a02124",
+      "sizeBytes": 547239
+    },
+    {
+      "name": "normal-seat-08.png",
+      "sha256": "dd790ecc2e66500c10e621430f0098688be32fdded72e29501cfdc536dd28f51",
+      "sizeBytes": 562884
+    },
+    {
+      "name": "normal-spawn.png",
+      "sha256": "6f692f2acaf152bf51a220af5857740138a0eeb368ec1d97edbb75fe4afc958c",
+      "sizeBytes": 556812
+    },
+    {
+      "name": "rendered-media-frames.json",
+      "sha256": "51be08a9446330d75309e4660d07b9b8beec97b6bbd820f40ef73a28211943f9",
+      "sizeBytes": 2689
+    },
+    {
+      "name": "detail-chair-detail.png",
+      "sha256": "4f5811f9a8650c212b203622ecf8c99b712a1e5e6392d15f20663ab8cdd08e69",
+      "sizeBytes": 882611
+    },
+    {
+      "name": "detail-details.json",
+      "sha256": "2aa22a6a49153331a7bc2deec555ab6fcbef2923174a7763dae5d2fd6e283c31",
+      "sizeBytes": 1652
+    },
+    {
+      "name": "detail-diagonal-overview.png",
+      "sha256": "66fd29f60cb1f2f50259f0469a945288c36e984a0116f823eb5317d8681e92ec",
+      "sizeBytes": 574727
+    },
+    {
+      "name": "detail-lectern-detail.png",
+      "sha256": "b75beb80fadcd2ed7807e361bce2ba05215b56e8ccce3f025c61c5a6daa8fd0d",
+      "sizeBytes": 544150
+    }
+  ],
+  "platformCommit": "a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d",
+  "verdict": "public-staging-review-verified",
+  "humanAcceptance": "pending-human-acceptance",
+  "isCurrent": false,
+  "publicationReady": false,
+  "existingRoomBindingsUnchanged": true,
+  "sceneCiRun": 35635515951,
+  "platformCiRun": 35599484924,
+  "platformDockerRun": 35599484875,
+  "platformStagingDeployRun": 35599796711,
+  "focused": {
+    "name": "presentation-041-public-merge",
+    "rawReportSha256": "5a78c4a9b9941df87f2c540e2d7df6c195b7d24737ecfd05a865531a4a05b23d",
+    "stats": {
+      "startTime": "2026-09-21T18:10:22.492Z",
+      "duration": 293306.974,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "tests": [
+      {
+        "title": "@private-assets @scene-quality exact 0.4.1 source/runtime and published-room checks",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 291737,
+            "retry": 0
+          }
+        ],
+        "annotations": [
+          {
+            "type": "scene-capture-binding",
+            "description": "{\"glbSha256\":\"d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2\",\"manifestSha256\":\"7e61e757dd67301de7cb7bf21349e5ede251f7acbb096b618856ce35e4c58d57\",\"configSha256\":\"e6772dcbba307008149e078a7170905e749d392089cc13ff17c86bfe6179e5e8\",\"baseSha256\":\"5ba1e6dcd535e707af76fe6c5fd708158e9c6c37cffe8e1e9e410cd0f236b2f1\",\"runnerSha256\":\"42fa50156f89e62943147a756c3af88db8c000bee5035711fb1a2a6dd4ae826d\",\"runtimePlatformCommit\":\"a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d\"}"
+          }
+        ]
+      }
+    ]
+  },
+  "stagingGate": {
+    "name": "scene041-staging-gate-final",
+    "rawReportSha256": "b852a388e213503ca5be8aaabc3c8c04132d9c9f8a5a818b2652bb58a9ca490b",
+    "stats": {
+      "startTime": "2026-09-21T18:50:49.777Z",
+      "duration": 371289.19399999996,
+      "expected": 40,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "tests": [
+      {
+        "title": "@staging @private-assets remote browser default demo renders visible viewport and receives input",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 29306,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "@staging normal product seats and scene-owned media surfaces",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 14674,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "staging suite uses public HTTPS base URL",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 69,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "selector is visible for the configured staging room",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 3728,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "audio device controls are visible for the configured staging room",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 3125,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "PDF presentation renders, changes page, and restores current page for late join",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 12647,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "image and video surfaces render and restore synchronized playback",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 16725,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "public diagnostics page validates staging media connectivity",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 4101,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "voice diagnostics bind LiveKit audio to spatial sources on staging",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 18907,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "staging selector exposes canonical rooms with avatars enabled",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 215,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "selector switches to a freshly created staging target room",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 6191,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "selector survives chained scene transitions across canonical rooms",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 13448,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room loaded in current page: Hall",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 12373,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room loaded in current page: BlueOffice",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 10263,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room manifest and diagnostics only: LectureHall",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 3053,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room manifest and diagnostics only: Showroom",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 2828,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room manifest and diagnostics only: MeetingSmall",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 3796,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room manifest and diagnostics only: Cinema",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 8092,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room manifest and diagnostics only: Anastasia",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 5190,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room manifest and diagnostics only: NewGallery",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 3845,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room loaded in current page: ArtGallery",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 14432,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room manifest and diagnostics only: Standup",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 3601,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room manifest and diagnostics only: OporaRussia",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 3368,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room manifest and diagnostics only: SergOffice",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 3200,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "scene room manifest and diagnostics only: CinemaModeler",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 2735,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "avatar-enabled staging room syncs remote reliable state and pose frames",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 7465,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "demo-room keeps avatar sync working between two clients on staging",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 6450,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "staging bridges API fallback presence with realtime room-state clients",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 6926,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "staging keeps baseline avatar presence by default and isolates experimental leg IK behind query override",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 3734,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "staging mock VR keeps self avatar in hands-only mode without jittery fallback changes",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 4427,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "staging hall web drag-release does not trigger teleport click",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 3221,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "staging hall debug fit preserves spawn floor height",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 7423,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "staging canonical hall avatarvr seat and teleport exit flow works",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 18334,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "staging fresh hall mock VR can target and claim a seat through XR interaction path",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 11839,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "staging fresh BlueOffice mock VR writes XR telemetry history for ray and trigger actions",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 10304,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "staging desktop observer keeps remote mock VR hands visible",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 6810,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "staging synthetic XR harness can ray, turn and trigger-seat in BlueOffice",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 10551,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "hall keeps avatar sync working between two web clients on staging",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 31070,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "hall keeps avatar hands visible between two web clients on staging",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 33151,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "@staging seat release is acknowledged after reconnect with a retained participant session",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration": 6096,
+            "retry": 0
+          }
+        ],
+        "annotations": []
+      }
+    ]
+  },
+  "retryNotes": [
+    "Initial full staging run used a stale local expected SHA and failed Hall/BlueOffice URL equality. Repeated with independently confirmed deployed SHA; all 40 passed without retries."
+  ],
+  "rollback": "none",
+  "scope": "Desktop browser visual and functional review; synthetic detail cameras are identified separately; no physical headset or human visual acceptance claim"
+}

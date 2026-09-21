@@ -14,6 +14,10 @@ and [quality assessment](provenance/releases/0.4.1/quality-review.json).
 Local media evidence uses a generated stream with mock transport; public real
 transport is checked separately on the published review room.
 
+[Open the public review room](https://158.160.10.234.sslip.io/rooms/review-presentation-room-041-b6e0bcb1).
+[Published-scene evidence](docs/staging/0.4.1/verification.json) includes all eight
+seats and [moving frames through real transport](docs/staging/0.4.1/normal-media-frames.png).
+
 Public staging review is explicitly authorized. Human visual acceptance remains
 pending, isCurrent=false and publicationReady=false. The runtime/validator pin is
 a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d. Historical checks execute their original
