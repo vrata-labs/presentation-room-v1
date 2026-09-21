@@ -1,0 +1,17 @@
+{
+  "sourceParts": [
+    "room-shell.ceiling",
+    "room-shell.door-header",
+    "room-shell.front",
+    "room-shell.left",
+    "room-shell.rear-left",
+    "room-shell.rear-right",
+    "room-shell.right"
+  ],
+  "result": "room-shell.enclosure",
+  "worldGridM": 1e-05,
+  "expectedUnionVolumeM3": 33.113294602622595,
+  "actualVolumeM3": 33.11329460262258,
+  "nonmanifoldEdges": 0,
+  "constituentEvidenceRetained": true
+}

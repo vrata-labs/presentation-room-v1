@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "status": "review-source-lock",
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.4.1",
+  "qualityOutcome": "READY_FOR_USER_REVIEW",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "approved-for-public-staging-review",
+  "rightsApproved": true,
+  "isCurrent": false,
+  "publicationReady": false,
+  "platformValidatorCommit": "a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d",
+  "sharedQualityContractCommit": "a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d",
+  "baseSourceLock": {
+    "path": "source/releases/0.4.0/accepted-source-lock.json",
+    "sha256": "e8d28e78c04d58f3302ece89814e85177db2368ca883b6b261b167f44161aad7",
+    "sizeBytes": 21679
+  },
+  "sourceFiles": [
+    {
+      "path": "source/releases/0.4.1/acoustic-diff.png",
+      "sha256": "4bb60edd4f7d585a1f7200547fc431361631be683868bb1b6027b7fe4e71dd66",
+      "sizeBytes": 1199300
+    },
+    {
+      "path": "source/releases/0.4.1/atlas-quality.py",
+      "sha256": "7c9dd0dc3d5c2981c62f0748b72f28621ca2360dd39179df719e7e4ab295e8e5",
+      "sizeBytes": 2096
+    },
+    {
+      "path": "source/releases/0.4.1/author-scene.py",
+      "sha256": "ad796bc3be133100d28259571ee8df29f0a85267687b57e0aaa11daeb37dbd6b",
+      "sizeBytes": 9715
+    },
+    {
+      "path": "source/releases/0.4.1/baked-source.blend",
+      "sha256": "bd198f8d3ff0cb7436b23d6f3057318edac95effe6997629eab1a768a2ebd9fa",
+      "sizeBytes": 59753186
+    },
+    {
+      "path": "source/releases/0.4.1/capture-config.json",
+      "sha256": "e6772dcbba307008149e078a7170905e749d392089cc13ff17c86bfe6179e5e8",
+      "sizeBytes": 5358
+    },
+    {
+      "path": "source/releases/0.4.1/carpet-diff.png",
+      "sha256": "0beecca4d742d8f61b054dffded7913c91f97057c8bfa62ef98ead7795552e2e",
+      "sizeBytes": 1050293
+    },
+    {
+      "path": "source/releases/0.4.1/draft-scene.blend",
+      "sha256": "e061b4ebec2019aeae33f00dbd4e850b7135319804780fcba9245ee0eedc9597",
+      "sizeBytes": 20293847
+    },
+    {
+      "path": "source/releases/0.4.1/enclosure.py",
+      "sha256": "aad5701effc103e1b8ce17b9db117b243a796840274eb1b9810a1f6197c5437f",
+      "sizeBytes": 3533
+    },
+    {
+      "path": "source/releases/0.4.1/export-scene.py",
+      "sha256": "fb5a41dedb10c051b0ddbcf779007518a513659c512809e2e01caac73b3e5ae5",
+      "sizeBytes": 9122
+    },
+    {
+      "path": "source/releases/0.4.1/fabric-diff.png",
+      "sha256": "0b7c7c61962d3cd423a0ecfa08c01334caf54914690518d753d3d378bb9311a3",
+      "sizeBytes": 1005409
+    },
+    {
+      "path": "source/releases/0.4.1/finalize-glb.mjs",
+      "sha256": "999bb4dbd52a8f55cf50af78abb1665151aa2c5b876859884f57f50487cb9a07",
+      "sizeBytes": 2783
+    },
+    {
+      "path": "source/releases/0.4.1/lightmap-raw.enclosure.json",
+      "sha256": "4e96517d878eb12999d5d1361e60bb82df11d5e7cbbf5366d66ab1741b4885ce",
+      "sizeBytes": 419
+    },
+    {
+      "path": "source/releases/0.4.1/lightmap-raw.stats.json",
+      "sha256": "e9aa3d7fcadaaa26560801ef7e708311f80fc7c7a69b910704208cb0052c0e65",
+      "sizeBytes": 167
+    },
+    {
+      "path": "source/releases/0.4.1/lightmap-raw.uv.json",
+      "sha256": "86643813d1f966be08c0de7911ac643d9159045e6712c31f58588280c9de68ba",
+      "sizeBytes": 351
+    },
+    {
+      "path": "source/releases/0.4.1/lightmap.png",
+      "sha256": "10590eea9c0ab5e79cd1a61abd1c543b9079fe6e6a95c5e89bad4c1f5becb684",
+      "sizeBytes": 5586685
+    },
+    {
+      "path": "source/releases/0.4.1/matte-walnut-diff.png",
+      "sha256": "9fe41b8a8bd280d85117bd6abf41518d9ee0607286a1f26ca57c482d5266d6bd",
+      "sizeBytes": 1598229
+    },
+    {
+      "path": "source/releases/0.4.1/matte-walnut-rough.png",
+      "sha256": "6d625126f6e7191626d0fc53932a0efede28bf4f0fada7acfe4532aba4c84028",
+      "sizeBytes": 319751
+    },
+    {
+      "path": "source/releases/0.4.1/measure-export-geometry.py",
+      "sha256": "bcb5bb3e30c011cac6d09fecc2681006381b30f842a589c2c0d73ce5368a0cac",
+      "sizeBytes": 1541
+    },
+    {
+      "path": "source/releases/0.4.1/object-registry.json",
+      "sha256": "b42ed6950f03c683fcc42f2e13bc51c55076c4f9887ee95e5d0394431aaad48f",
+      "sizeBytes": 255310
+    },
+    {
+      "path": "source/releases/0.4.1/plain-weave-acoustic-Image-Texture.001.png",
+      "sha256": "a2851204d95c9c91f38e3413d47d6048ce2514b369be47cf3442132ae1ab9723",
+      "sizeBytes": 355738
+    },
+    {
+      "path": "source/releases/0.4.1/plain-weave-acoustic-Image-Texture.002.png",
+      "sha256": "cab4df5d499ff6a4270dd84240d3da0ac8c8eb263993a93b69f133383808ba40",
+      "sizeBytes": 707752
+    },
+    {
+      "path": "source/releases/0.4.1/plain-weave-acoustic-Image-Texture.png",
+      "sha256": "9be8ef2097b49ac2913109e5913d79acd54776a49242ee4270d2571d71703c8a",
+      "sizeBytes": 378824
+    },
+    {
+      "path": "source/releases/0.4.1/plain-weave-fabric-Image-Texture.001.png",
+      "sha256": "a2851204d95c9c91f38e3413d47d6048ce2514b369be47cf3442132ae1ab9723",
+      "sizeBytes": 355738
+    },
+    {
+      "path": "source/releases/0.4.1/plain-weave-fabric-Image-Texture.002.png",
+      "sha256": "cab4df5d499ff6a4270dd84240d3da0ac8c8eb263993a93b69f133383808ba40",
+      "sizeBytes": 707752
+    },
+    {
+      "path": "source/releases/0.4.1/plain-weave-fabric-Image-Texture.png",
+      "sha256": "fda37dca29ac8cb2924959f1b5a80fc7f11e48ad03a7797479ec736631d151fd",
+      "sizeBytes": 306735
+    },
+    {
+      "path": "source/releases/0.4.1/portable-source.py",
+      "sha256": "6879b8a10ca75108813f00225a041e071df59ca4e4ee63470c9d5b756d19c295",
+      "sizeBytes": 1343
+    },
+    {
+      "path": "source/releases/0.4.1/preview.webp",
+      "sha256": "9f03ebab1c4bb68b7f95aa3c1e4ff7b43aed6234ff06b3d42e8463eb4cbfaa12",
+      "sizeBytes": 23820
+    },
+    {
+      "path": "source/releases/0.4.1/release-LICENSES.md",
+      "sha256": "a3e73f51ff34b608197ee5a7d37358aa85b792503d3775f31b17364178555cbd",
+      "sizeBytes": 1384
+    },
+    {
+      "path": "source/releases/0.4.1/render-review.py",
+      "sha256": "cf0b2ca6486f42146cfc5fd170f5e3425f87837c8a15af0f363239b4fd3004d0",
+      "sizeBytes": 1331
+    },
+    {
+      "path": "source/releases/0.4.1/review/acoustic-detail.png",
+      "sha256": "e7aa36307321bec15ae83fbfe3bf746df23ddec8d8228c2d5c1496d0c10a70bc",
+      "sizeBytes": 1027449
+    },
+    {
+      "path": "source/releases/0.4.1/review/chair-detail.png",
+      "sha256": "f35f5038636dc312b78dde93406d9994f942cf5df248bf705d2649989e9ab13c",
+      "sizeBytes": 1231666
+    },
+    {
+      "path": "source/releases/0.4.1/review/chair-underneath.png",
+      "sha256": "63a90150aee83cfc19e6b0b7940e66292729ff744fe765f4c74aeae1eae1b625",
+      "sizeBytes": 1136495
+    },
+    {
+      "path": "source/releases/0.4.1/review/diagonal-overview.png",
+      "sha256": "ded22e7aee2a6e043a43b2a75d30fa043e9f8b0c1ebac520ffb0495fcf72b885",
+      "sizeBytes": 1102533
+    },
+    {
+      "path": "source/releases/0.4.1/review/door-detail.png",
+      "sha256": "6142a1153c9b0484f79dafcfcee9889ccbfd6fbb4488b80a371e5991bc9ce4f1",
+      "sizeBytes": 1171788
+    },
+    {
+      "path": "source/releases/0.4.1/review/entry.png",
+      "sha256": "1c429d4baf962a54d091c406f89b0ce0e5fdbdb7ae9b2c6573c35fffdef43200",
+      "sizeBytes": 1073132
+    },
+    {
+      "path": "source/releases/0.4.1/review/lectern-detail.png",
+      "sha256": "dfc9f855718461105489d115d3840759470f96ca5a022e3dd1708c253d2b4a93",
+      "sizeBytes": 1102250
+    },
+    {
+      "path": "source/releases/0.4.1/review/presenter.png",
+      "sha256": "312a08b09540275bc95d2a5828015bafacfcb8a2726ba7edc9472ae6e43f7681",
+      "sizeBytes": 1132760
+    },
+    {
+      "path": "source/releases/0.4.1/review/seat-01-display.png",
+      "sha256": "45d7c5ab09968dc73a74af8d211c6928ba3c935e002300a78a9a253a1a95ab80",
+      "sizeBytes": 995185
+    },
+    {
+      "path": "source/releases/0.4.1/review/seat-02-display.png",
+      "sha256": "1c3efa885e7191e6980c3953a1ccad35338defbe3903d8f79545f8b5438b6aa8",
+      "sizeBytes": 985782
+    },
+    {
+      "path": "source/releases/0.4.1/review/seat-03-display.png",
+      "sha256": "07b4c3796527c214cfce696687bb6e8e38118401a4e835fa3de0e28c62a3ddef",
+      "sizeBytes": 958124
+    },
+    {
+      "path": "source/releases/0.4.1/review/seat-04-display.png",
+      "sha256": "0184402d244e54e296ce7ca112b7d0d48399df1b374e2ba341ba7f59c296ed4b",
+      "sizeBytes": 931140
+    },
+    {
+      "path": "source/releases/0.4.1/review/seat-05-display.png",
+      "sha256": "dc0f56139e2a3ca9f7ca7fd115e06f7766f037dfa7c03fa9f5b7ab951c80338d",
+      "sizeBytes": 926523
+    },
+    {
+      "path": "source/releases/0.4.1/review/seat-06-display.png",
+      "sha256": "f9a1058e3ad0f5448cd4e6351a70f92dd6dc01b5055d00fb090fa706cdb2f9f4",
+      "sizeBytes": 965587
+    },
+    {
+      "path": "source/releases/0.4.1/review/seat-07-display.png",
+      "sha256": "39b89cd7c211c03be4c53b7b1620f3b52d644b220a821554357eb437ce14460c",
+      "sizeBytes": 996018
+    },
+    {
+      "path": "source/releases/0.4.1/review/seat-08-display.png",
+      "sha256": "ce40e2ab33cc0f40f8a6675a20caac4c627c51d3290fce2b30c7d560829589a8",
+      "sizeBytes": 1021026
+    },
+    {
+      "path": "source/releases/0.4.1/review/source-render-settings.json",
+      "sha256": "3e7964c029cbb6b4dc55368f606c61805af828058843293cc555caa15ed9e8bc",
+      "sizeBytes": 6692
+    },
+    {
+      "path": "source/releases/0.4.1/scene-manifest.json",
+      "sha256": "7e61e757dd67301de7cb7bf21349e5ede251f7acbb096b618856ce35e4c58d57",
+      "sizeBytes": 6789
+    },
+    {
+      "path": "source/releases/0.4.1/scene-quality-0.4.1-base.ts",
+      "sha256": "5ba1e6dcd535e707af76fe6c5fd708158e9c6c37cffe8e1e9e410cd0f236b2f1",
+      "sizeBytes": 24256
+    },
+    {
+      "path": "source/releases/0.4.1/scene-quality-0.4.1-local.spec.ts",
+      "sha256": "42fa50156f89e62943147a756c3af88db8c000bee5035711fb1a2a6dd4ae826d",
+      "sizeBytes": 7521
+    },
+    {
+      "path": "source/releases/0.4.1/scene.raw.glb",
+      "sha256": "aadfe563bf08c9f9efdbc299be8acfcfb10d27737ec95e0725ef77bb4f1bf57e",
+      "sizeBytes": 12861824
+    },
+    {
+      "path": "source/releases/0.4.1/snapshot-review.mjs",
+      "sha256": "75e8f8337abc4ae51a7a612071b51d8c69570769e979f220a43fe5c64f92f19f",
+      "sizeBytes": 16238
+    },
+    {
+      "path": "source/releases/0.4.1/validate-review.mjs",
+      "sha256": "76c8d827f40cef81bf4979af9cf6d39782fb5300d1359536c736ef53b3b994c9",
+      "sizeBytes": 18498
+    },
+    {
+      "path": "source/releases/0.4.1/verify-reproducibility.mjs",
+      "sha256": "d4eeef316914883c81285ec04d92c4624f8feaef3c6866185b6d7bbc1fa021d7",
+      "sizeBytes": 3155
+    },
+    {
+      "path": "source/releases/0.4.1/visual-parity-config.json",
+      "sha256": "5ec3b694d66a1fa6f4a70255783c356ca5b8c262be9e7c817da701d805e64c66",
+      "sizeBytes": 6247
+    },
+    {
+      "path": "source/releases/0.4.1/wood-diff.png",
+      "sha256": "55dea700bbc0c3c4011e2d599f2411b6c704c29c782a115816ee8811177ce100",
+      "sizeBytes": 1415543
+    },
+    {
+      "path": "source/releases/0.4.1/wood-rough.png",
+      "sha256": "9246cb59cd93d49ed00c738e23c65c902a4146d28cd5310dac56984dd05aceab",
+      "sizeBytes": 677554
+    }
+  ],
+  "toolchain": {
+    "blenderVersion": "4.5.12 LTS",
+    "blenderBuildHash": "84afd5f785f7",
+    "blenderBinarySha256": "33ac108ebce3c271f5357e5c664d0488717263bcf2145c80300edd0b12c31880",
+    "gltfTransform": "4.4.2",
+    "meshoptimizer": "1.0.1"
+  },
+  "reproducibilityScope": "Two byte-identical exports from the saved baked source; not a fresh-author or fresh-bake repeatability claim."
+}

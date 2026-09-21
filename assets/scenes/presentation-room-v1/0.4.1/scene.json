@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "version": "0.4.1",
+  "label": "Presentation Room",
+  "source": "Vrata authored assemblies with documented Poly Haven CC0 material inputs",
+  "status": "review",
+  "isCurrent": false,
+  "publicationReady": false,
+  "humanAcceptance": "pending-human-acceptance",
+  "preview": "preview.webp",
+  "glbPath": "scene.glb",
+  "glbSha256": "d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2",
+  "renderMode": "clean",
+  "renderProfile": "baked-pbr-v1",
+  "bounds": {
+    "width": 9.4,
+    "height": 3.6,
+    "depth": 8
+  },
+  "spawnPoints": [
+    {
+      "id": "main",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -2.85
+      },
+      "yaw": 3.141592653589793,
+      "openRadiusM": 0.8
+    }
+  ],
+  "anchors": {
+    "teleportFloorY": 0,
+    "seatAnchors": [
+      {
+        "id": "seat-01",
+        "position": {
+          "x": -3.85,
+          "y": 0,
+          "z": -1.0350000000000001
+        },
+        "yaw": -2.4711364992586744,
+        "seatHeight": 0.4825,
+        "radius": 0.35
+      },
+      {
+        "id": "seat-02",
+        "position": {
+          "x": -2.85,
+          "y": 0,
+          "z": -0.935
+        },
+        "yaw": -2.601637190408872,
+        "seatHeight": 0.4825,
+        "radius": 0.35
+      },
+      {
+        "id": "seat-03",
+        "position": {
+          "x": -1.85,
+          "y": 0,
+          "z": -0.8350000000000001
+        },
+        "yaw": -2.7633105545516345,
+        "seatHeight": 0.4825,
+        "radius": 0.35
+      },
+      {
+        "id": "seat-04",
+        "position": {
+          "x": -0.85,
+          "y": 0,
+          "z": -0.735
+        },
+        "yaw": -2.957106429484473,
+        "seatHeight": 0.4825,
+        "radius": 0.35
+      },
+      {
+        "id": "seat-05",
+        "position": {
+          "x": 0.85,
+          "y": 0,
+          "z": -0.735
+        },
+        "yaw": 2.957106429484473,
+        "seatHeight": 0.4825,
+        "radius": 0.35
+      },
+      {
+        "id": "seat-06",
+        "position": {
+          "x": 1.85,
+          "y": 0,
+          "z": -0.8350000000000001
+        },
+        "yaw": 2.7633105545516345,
+        "seatHeight": 0.4825,
+        "radius": 0.35
+      },
+      {
+        "id": "seat-07",
+        "position": {
+          "x": 2.85,
+          "y": 0,
+          "z": -0.935
+        },
+        "yaw": 2.601637190408872,
+        "seatHeight": 0.4825,
+        "radius": 0.35
+      },
+      {
+        "id": "seat-08",
+        "position": {
+          "x": 3.85,
+          "y": 0,
+          "z": -1.0350000000000001
+        },
+        "yaw": 2.4711364992586744,
+        "seatHeight": 0.4825,
+        "radius": 0.35
+      }
+    ]
+  },
+  "mediaSurfaces": [
+    {
+      "surfaceId": "debug-main",
+      "label": "Presentation display",
+      "kind": "wall",
+      "widthM": 4.8,
+      "heightM": 2.7,
+      "widthPx": 1920,
+      "heightPx": 1080,
+      "transform": {
+        "x": 0,
+        "y": 2.12,
+        "z": 3.813,
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "roll": 0
+      },
+      "visible": true,
+      "allowedObjectTypes": [
+        "pdf-presentation",
+        "screen-share",
+        "image-viewer",
+        "video-player"
+      ]
+    }
+  ],
+  "visual": {
+    "intentionalDark": false,
+    "reviewStage": "draft-quality-review"
+  },
+  "rights": {
+    "owner": "vrata",
+    "license": "Project-authored geometry and CC0-1.0 material inputs; see source ledger",
+    "approvalStatus": "approved-for-public-staging-review",
+    "clearedFor": [
+      "staging",
+      "public-web-runtime",
+      "screenshots",
+      "publicly-downloadable-scene-bundle-redistribution"
+    ],
+    "sourceAssets": [
+      {
+        "assetId": "wood_floor",
+        "file": "wood_floor-diff.jpg",
+        "sha256": "2a1c07687b6dbb214c4b9213739c6d92d425f1f0fc8ab3ac157f105d78240789",
+        "license": "CC0-1.0",
+        "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_diff_1k.jpg"
+      },
+      {
+        "assetId": "wood_floor",
+        "file": "wood_floor-nor_gl.jpg",
+        "sha256": "452247f0d0d1b7fc7f8324ff3b6ed60bcc6de1405f4284eeb8d9bce90d4939c2",
+        "license": "CC0-1.0",
+        "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_nor_gl_1k.jpg"
+      },
+      {
+        "assetId": "wood_floor",
+        "file": "wood_floor-rough.jpg",
+        "sha256": "061f1e1293251b2d28c76e3fac1ea9452b0e8648bb8f9b3728e09db386166e5c",
+        "license": "CC0-1.0",
+        "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_rough_1k.jpg"
+      },
+      {
+        "assetId": "wood_table_001",
+        "file": "wood_table_001-diff.jpg",
+        "sha256": "460dd08d240f4a1f02982415048c3c5c200f385db212da18dc7e2df68bf4d0be",
+        "license": "CC0-1.0",
+        "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table_001/wood_table_001_diff_1k.jpg"
+      },
+      {
+        "assetId": "wood_table_001",
+        "file": "wood_table_001-nor_gl.jpg",
+        "sha256": "9bf7ddf5721e225c20290f1772ae37f9bdfd49658f6d458259eb794e2149d3cf",
+        "license": "CC0-1.0",
+        "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table_001/wood_table_001_nor_gl_1k.jpg"
+      },
+      {
+        "assetId": "wood_table_001",
+        "file": "wood_table_001-rough.jpg",
+        "sha256": "a2ca9ae89dfe7b8e2e5e92f0aa43467845417de8a50205b5852ef0d57c7624f9",
+        "license": "CC0-1.0",
+        "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table_001/wood_table_001_rough_1k.jpg"
+      },
+      {
+        "assetId": "fabric_pattern_05",
+        "file": "fabric_pattern_05-diff.jpg",
+        "sha256": "b9ece89a45044945ce4d1402672cfd605f1f074b313cb3cc12b7b2ea66fad7fe",
+        "license": "CC0-1.0",
+        "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/fabric_pattern_05/fabric_pattern_05_col_01_1k.jpg"
+      },
+      {
+        "assetId": "fabric_pattern_05",
+        "file": "fabric_pattern_05-nor_gl.jpg",
+        "sha256": "caa5a948c768c7173b1d8647aa2618d39b4ec5ba4575820e02fb500dac54596d",
+        "license": "CC0-1.0",
+        "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/fabric_pattern_05/fabric_pattern_05_nor_gl_1k.jpg"
+      },
+      {
+        "assetId": "fabric_pattern_05",
+        "file": "fabric_pattern_05-rough.jpg",
+        "sha256": "e48d14e87a5493bc4ef9bea61e85b4397ec41f93d1c3fd1ac17494475781610e",
+        "license": "CC0-1.0",
+        "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/fabric_pattern_05/fabric_pattern_05_rough_1k.jpg"
+      }
+    ],
+    "rightsApproved": true,
+    "approvedBy": "human-rights-owner"
+  }
+}

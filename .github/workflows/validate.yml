@@ -84,6 +84,9 @@ jobs:
           done < "$changed_paths"
           BASE="$BASE_SHA" node scripts/validate-acceptance-index-prefix.mjs
 
+      - name: Fetch immutable 0.4.0 tooling snapshot
+        run: git fetch --no-tags --depth=1 origin 92a6b567aeefbaee9e49007125ff84ff9ea7cd44
+
       - name: Validate committed visual evidence
         run: pnpm validate:visual
 

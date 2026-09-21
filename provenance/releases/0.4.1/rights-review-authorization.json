@@ -1,0 +1,11 @@
+{
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.4.1",
+  "glbSha256": "d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2",
+  "approvalStatus": "approved-for-public-staging-review",
+  "userDecision": "Да, разрешаю review-публикацию",
+  "scope": "Existing documented Poly Haven CC0 inputs and project-authored corrected scenes in isolated public staging review rooms; current rooms stay unchanged pending evaluation.",
+  "humanAcceptance": "pending-human-acceptance",
+  "isCurrent": false,
+  "publicationReady": false
+}

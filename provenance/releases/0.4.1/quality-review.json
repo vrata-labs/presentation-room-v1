@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.4.1",
+  "qualityOutcome": "READY_FOR_USER_REVIEW",
+  "humanAcceptance": "pending-human-acceptance",
+  "reviewedOn": "2026-09-21",
+  "sharedQualityContractCommit": "a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d",
+  "benchmarkCommit": "5580a7b080cf6195e28ebc77b654fd71111b0cd1",
+  "sourceViews": "source/releases/0.4.1/review",
+  "browserViews": "provenance/runtime-capture-0.4.1/clean",
+  "inspectedPairs": ["entry", "seat-01-display", "seat-02-display", "seat-03-display", "seat-04-display", "seat-05-display", "seat-06-display", "seat-07-display", "seat-08-display", "presenter", "diagonal-overview", "chair-detail", "chair-underneath", "lectern-detail", "acoustic-detail", "door-detail"],
+  "verdicts": {
+    "inheritedQualityTarget": "passed-author-review",
+    "sourceToRuntimeFidelity": "passed-author-review-with-renderer-differences-described",
+    "functionalNormalProduct": "passed-local-authoritative-eight-seat-and-rendered-media-frame-checks",
+    "repeatability": "two-exports-from-saved-baked-source"
+  },
+  "requirements": {
+    "Q1": "All sixteen paired views inspected. Continuous upholstery lightmap charts preserve the cushion curves; the source fabric plaid is removed from the plain-weave upholstery/acoustic derivative. Masonry joins no longer draw false vertical cracks.",
+    "Q2": "Chair frame, glides, shells and upholstery keep constituent identity and construction evidence; lectern, microphone, notes, AV and lighting remain individually described.",
+    "Q3": "All 385 authored physical constituent parts pass declared support checks. The rear masonry corner has real overlap, the slab bears the wall footprint, and the shipping enclosure is a closed exact union with conserved volume.",
+    "Q4": "All eight actual seat claims/releases are observed by another participant, with movement lock and floor-pose checks. The normal product screen shows decoded moving frames bound to its surface, not just an empty media object.",
+    "Q5": "All seated display views and the unchanged occupied sightline, approach and stand-up geometry checks pass; the central circulation and presenter working area remain clear.",
+    "Q6": "Not applicable: the brief is an intentionally windowless controlled-light salon.",
+    "Q7": "The accepted Warm Modern Meeting quality floor and shared Personal feedback are applied without copying the meeting room layout.",
+    "Q8": "A prepared presentation explains matching chairs, a shallow fan toward the shared screen, clear aisles, notes retained on the sloped lectern, microphone position and serviced AV equipment. No arbitrary clutter or chair rotation is used as a realism substitute."
+  },
+  "corrections": [
+    "Reduced redundant bevel/cylinder tessellation while preserving dimensions and structural constituents; the shipping triangle count is below 90000.",
+    "Added continuous cover charts with rear seams marked after modifiers, selected all UVs before packing, and rejected overlapping chart samples before baking.",
+    "Derived plain weave from a documented part of the existing cleared photograph, retaining small-scale finish and proper mirrored normal channels.",
+    "Applied a lighter matte timber finish to both source and export.",
+    "Corrected rear-wall corner construction and generated a continuous masonry enclosure before baking.",
+    "Added real decoded-frame and surface-texture evidence to normal-product checks."
+  ],
+  "renderingDifferences": [
+    "The browser uses baked diffuse plus room-environment specular rather than the source's full area-light transport, so metal highlights and grazing reflections differ.",
+    "Minor low-frequency irradiance variation remains near some wall corners; it does not form the former false construction seams or change the material identity."
+  ],
+  "unresolvedQualityBlockers": [],
+  "limits": ["Local presentation frames use a generated stream with mock transport; public real-transport evidence is a separate staging check.", "No human visual acceptance or physical-headset comfort proof is claimed.", "Saved-source export repeatability is not a fresh-author/fresh-bake proof."]
+}
