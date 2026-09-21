@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.4.1",
+  "releasePath": "assets/scenes/presentation-room-v1/0.4.1",
+  "files": {
+    "LICENSES.md": {
+      "sha256": "a3e73f51ff34b608197ee5a7d37358aa85b792503d3775f31b17364178555cbd",
+      "sizeBytes": 1384
+    },
+    "preview.webp": {
+      "sha256": "9f03ebab1c4bb68b7f95aa3c1e4ff7b43aed6234ff06b3d42e8463eb4cbfaa12",
+      "sizeBytes": 23820
+    },
+    "scene.glb": {
+      "sha256": "d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2",
+      "sizeBytes": 12396712
+    },
+    "scene.json": {
+      "sha256": "7e61e757dd67301de7cb7bf21349e5ede251f7acbb096b618856ce35e4c58d57",
+      "sizeBytes": 6789
+    }
+  },
+  "stats": {
+    "triangles": 85843,
+    "objects": 219,
+    "meshes": 219,
+    "primitives": 219,
+    "materials": 14,
+    "textures": 16,
+    "animations": 0,
+    "scenes": 1
+  },
+  "sourceLock": {
+    "path": "source/releases/0.4.1/accepted-source-lock.json",
+    "sha256": "91b7ef54fefdd2c20e5aa884c5a78a4789c633646ccc9412088fd5e8a1b278ce",
+    "sizeBytes": 11503
+  },
+  "evidenceFiles": [
+    {
+      "path": "provenance/releases/0.4.1/export-geometry.json",
+      "sha256": "4da014bb70de5612597e776e25cd5c8ccbada9d54e0f3c04a01efdb7d4f82571",
+      "sizeBytes": 105621
+    },
+    {
+      "path": "provenance/releases/0.4.1/geometry-measurements.json",
+      "sha256": "62ecdb396deab85893e4754c372bcedd31672b62f571d01f801e2de73f719347",
+      "sizeBytes": 19361
+    },
+    {
+      "path": "provenance/releases/0.4.1/local-run-results.json",
+      "sha256": "1ef581f0188a9af2b613b8fbf7998c21acf29b519619478b571fdc34d1385625",
+      "sizeBytes": 1886
+    },
+    {
+      "path": "provenance/releases/0.4.1/quality-review.json",
+      "sha256": "2f5bb878763ef5f5a4643c03068f60de02c551bfdeb2cb078215fe609bd7a4e4",
+      "sizeBytes": 4200
+    },
+    {
+      "path": "provenance/releases/0.4.1/reproducibility.json",
+      "sha256": "f68405b9d7c0a3d9b3dce373fc144e63d4be99b97a90660d2f2549a8bcda926a",
+      "sizeBytes": 1592
+    },
+    {
+      "path": "provenance/releases/0.4.1/rights-review-authorization.json",
+      "sha256": "5f15b0c49ddead5b0905c782b8d75d0117fb6493bee6118c56a62205a303cb87",
+      "sizeBytes": 566
+    },
+    {
+      "path": "provenance/releases/0.4.1/support-measurements.json",
+      "sha256": "5d2c9bd935d91b6f998738216ca4bf513ac515076cebd3d074f2297b7180f504",
+      "sizeBytes": 195876
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/acoustic-detail.png",
+      "sha256": "7d416a9bb94762d870e4bfbcf8219f9a2fd75d97cd23e062d91e472ce47a68f6",
+      "sizeBytes": 602672
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/capture-settings.json",
+      "sha256": "660e6648ea49d5bc0cf20a73abef8111713b55d58b387fc55a04cb26bdf36c50",
+      "sizeBytes": 17654
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/chair-detail.png",
+      "sha256": "c2e983f4578605530e8fa02516c4a5f0618d59150fb7a34aa73d39ef0f857a0d",
+      "sizeBytes": 924118
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/chair-underneath.png",
+      "sha256": "cacfec13288c0afa9d82fae8d6041fa973d8cc5d651b0b8b8b10cec13c286bd4",
+      "sizeBytes": 639200
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/clean-spawn.png",
+      "sha256": "8f3b3166f31127ed22322790f7f315596e9b273171037d64c6cd8579153fa85c",
+      "sizeBytes": 592246
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/diagonal-overview.png",
+      "sha256": "e593a5b78c0f54a0ef1730878c8aef8a95cfcad80a6f8b511ddba1952590350d",
+      "sizeBytes": 621966
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/door-detail.png",
+      "sha256": "69d39d2d19288284adfeba669acdbf58197e17acba91ec54a9c5fd3a93cdb9a5",
+      "sizeBytes": 724236
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/entry.png",
+      "sha256": "66582237b9e576d5375e649b56a1c81c2da99fa6442a36f7ec97156a2f0ec73a",
+      "sizeBytes": 577047
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/lectern-detail.png",
+      "sha256": "f310e9adc95cc1825516e350250cb4f47a9c65ab1092c0b90d51927e287f9246",
+      "sizeBytes": 535508
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/presenter.png",
+      "sha256": "c436105e445df62aed5a08089cb89edf4a33f9f9a4a2baa6790022469ac2dbe1",
+      "sizeBytes": 706038
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/scene-debug.json",
+      "sha256": "829a54c29f2c0cb0cd493e0c63360df1875339fb449ce58a2114236ca5533bb6",
+      "sizeBytes": 8169
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/seat-01-display.png",
+      "sha256": "20e9584bced13387379cba985a9d972aee27c1416a17bb07b5f333ee3cf5d619",
+      "sizeBytes": 452504
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/seat-02-display.png",
+      "sha256": "ea26a97bfa7744f147d8f5ba29af91316ef17173083d8b6c04253c60bb84a4b4",
+      "sizeBytes": 431956
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/seat-03-display.png",
+      "sha256": "a1b900a6f24f30e76444c83173d8373d7221624dca8dac13493e4b0baca6a4c8",
+      "sizeBytes": 385460
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/seat-04-display.png",
+      "sha256": "ed7395335ac01b333cef0f324d34080d761d7abbdeaa469eb5897af507ea25cc",
+      "sizeBytes": 343815
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/seat-05-display.png",
+      "sha256": "bc59d00fa84e4deffbe16ecdbc82ec711b773b45e8c03b2146d6ae59c0b0bc10",
+      "sizeBytes": 333414
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/seat-06-display.png",
+      "sha256": "261a1090b04e9f54aa38b79a52ba9defbd15f9d03fe3e2b86d33a53f0d3f7fb1",
+      "sizeBytes": 398367
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/seat-07-display.png",
+      "sha256": "10a9d71ebf82c8632a738eb6bab8ec44c9358e8809ca4d02eb81aeed018eb120",
+      "sizeBytes": 459998
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/clean/seat-08-display.png",
+      "sha256": "766089edf699c3e920ab1de652a3ed0002161432ea21e7871ecf4afb3cbd6956",
+      "sizeBytes": 503710
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/normal-media-frames.png",
+      "sha256": "20b949b78bdb59e90e8bf38dfcb5af9d9d4327b30b264c77e16338ee13186aae",
+      "sizeBytes": 543990
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/normal-media.png",
+      "sha256": "28ce36d8271a10ace557ef032e841debd4367f56c170c67b5c2e8b96a518a592",
+      "sizeBytes": 533489
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/normal-product-evidence.json",
+      "sha256": "50b89f2ee3cbf2f6a58f7b5b59c7031430008d1fbf3bffc7aa2c16146a4b0351",
+      "sizeBytes": 34796
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/normal-seat-01.png",
+      "sha256": "3cff2a176fab13e8b802fa4f0d7ea146854f4a45d9ecff370f45375b1046bfe7",
+      "sizeBytes": 538879
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/normal-seat-02.png",
+      "sha256": "e198f1026e259b796f4151aabf248797d20f6d577232dae3f9139d475bc6476b",
+      "sizeBytes": 513920
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/normal-seat-03.png",
+      "sha256": "6f6b7441ace212ab8b663e5d26864fd82fbbd1c072701a3304b8966e17cf7f97",
+      "sizeBytes": 494890
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/normal-seat-04.png",
+      "sha256": "ad6a77f76474b56a9b6a1e22ddee3e68a5ee73aea4bc1d17a4300316e8d2ac9e",
+      "sizeBytes": 475828
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/normal-seat-05.png",
+      "sha256": "d6de59f770df1176bf6a4f6e37cd179e753c2110b36af3e41d982dea4fa8b4e1",
+      "sizeBytes": 501996
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/normal-seat-06.png",
+      "sha256": "f48127ba6de11d0eb10973bd4d8e61f632b0369f110f4e4991946812d0337a95",
+      "sizeBytes": 527017
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/normal-seat-07.png",
+      "sha256": "3b94f9a485131a8d353970be91a2268674e9d8df5e179c830f224d35b813602c",
+      "sizeBytes": 547739
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/normal-seat-08.png",
+      "sha256": "4b0aec840aac94d1cca122d0bfbd5f5997965e2b7d7f1b5eff4a1869f417d855",
+      "sizeBytes": 563829
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/normal-spawn.png",
+      "sha256": "8587db55bd74d35ea9181f22f8c0461d897bd4cbf06f640dc026fc1188ecc520",
+      "sizeBytes": 557474
+    },
+    {
+      "path": "provenance/runtime-capture-0.4.1/normal-product/rendered-media-frames.json",
+      "sha256": "5e4127ae6ae2960afb02cfbd4689d71a0b78ce5fca6ecc4a8008ba4d6fb0ef8a",
+      "sizeBytes": 2774
+    }
+  ],
+  "qualityOutcome": "READY_FOR_USER_REVIEW",
+  "humanAcceptance": "pending-human-acceptance",
+  "rightsStatus": "approved-for-public-staging-review",
+  "rightsApproved": true,
+  "isCurrent": false,
+  "publicationReady": false
+}

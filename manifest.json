@@ -3,12 +3,12 @@
   "sceneId": "presentation-room-v1",
   "status": "review",
   "humanAcceptance": "pending-human-acceptance",
-  "rightsStatus": "pending-human-rights-approval",
-  "rightsApproved": false,
+  "rightsStatus": "approved-for-public-staging-review",
+  "rightsApproved": true,
   "rightsApprovalDate": null,
-  "licenseRef": null,
+  "licenseRef": "LicenseRef-Project-Authored-Public-Staging-Review",
   "publicationReady": false,
-  "platformValidatorCommit": "c6343de81b038b7937addac44c24fa7c46adf341",
+  "platformValidatorCommit": "a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d",
   "releases": [
     {
       "sceneId": "presentation-room-v1",
@@ -280,6 +280,63 @@
           "releaseGlbSha256": "5ee399fb07864ea84f1003c6ec87b9f06cfeaf6553b2312085f09e5f385c4eb6"
         }
       }
+    },
+    {
+      "sceneId": "presentation-room-v1",
+      "version": "0.4.1",
+      "baseVersion": "0.4.0",
+      "releaseKind": "quality-rework-review",
+      "releasePath": "assets/scenes/presentation-room-v1/0.4.1",
+      "status": "review",
+      "humanAcceptance": "pending-human-acceptance",
+      "acceptanceStatus": "pending-human-acceptance",
+      "visualAcceptanceStatus": "pending-human-acceptance",
+      "qualityOutcome": "READY_FOR_USER_REVIEW",
+      "rightsStatus": "approved-for-public-staging-review",
+      "rightsApprovalStatus": "approved-for-public-staging-review",
+      "rightsApproved": true,
+      "isCurrent": false,
+      "publicationReady": false,
+      "platformValidatorCommit": "a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d",
+      "files": {
+        "LICENSES.md": {
+          "sha256": "a3e73f51ff34b608197ee5a7d37358aa85b792503d3775f31b17364178555cbd",
+          "sizeBytes": 1384
+        },
+        "preview.webp": {
+          "sha256": "9f03ebab1c4bb68b7f95aa3c1e4ff7b43aed6234ff06b3d42e8463eb4cbfaa12",
+          "sizeBytes": 23820
+        },
+        "scene.glb": {
+          "sha256": "d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2",
+          "sizeBytes": 12396712
+        },
+        "scene.json": {
+          "sha256": "7e61e757dd67301de7cb7bf21349e5ede251f7acbb096b618856ce35e4c58d57",
+          "sizeBytes": 6789
+        }
+      },
+      "stats": {
+        "triangles": 85843,
+        "objects": 219,
+        "meshes": 219,
+        "primitives": 219,
+        "materials": 14,
+        "textures": 16,
+        "animations": 0,
+        "scenes": 1
+      },
+      "sourceLockPath": "source/releases/0.4.1/accepted-source-lock.json",
+      "sourceLockSha256": "91b7ef54fefdd2c20e5aa884c5a78a4789c633646ccc9412088fd5e8a1b278ce",
+      "releaseLedgerPath": "provenance/releases/0.4.1/release-ledger.json",
+      "releaseLedgerSha256": "dff10b2e95d924de95ba562a79754d83e50a0f7b540aa7430e74cb12a34ac5b5",
+      "reproducibility": {
+        "result": "byte-identical-raw-and-final-glb",
+        "runs": 2,
+        "scope": "Two byte-identical exports from the saved baked source; not a fresh-author or fresh-bake repeatability claim."
+      }
     }
-  ]
+  ],
+  "qualityOutcome": "READY_FOR_USER_REVIEW",
+  "isCurrent": false
 }

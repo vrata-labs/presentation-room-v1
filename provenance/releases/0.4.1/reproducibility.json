@@ -1,0 +1,52 @@
+{
+  "sceneId": "presentation-room-v1",
+  "releaseVersion": "0.4.1",
+  "result": "passed",
+  "runs": [
+    {
+      "rawGlb": {
+        "sha256": "aadfe563bf08c9f9efdbc299be8acfcfb10d27737ec95e0725ef77bb4f1bf57e",
+        "sizeBytes": 12861824
+      },
+      "finalGlb": {
+        "sha256": "d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2",
+        "sizeBytes": 12396712
+      }
+    },
+    {
+      "rawGlb": {
+        "sha256": "aadfe563bf08c9f9efdbc299be8acfcfb10d27737ec95e0725ef77bb4f1bf57e",
+        "sizeBytes": 12861824
+      },
+      "finalGlb": {
+        "sha256": "d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2",
+        "sizeBytes": 12396712
+      }
+    }
+  ],
+  "source": {
+    "sha256": "bd198f8d3ff0cb7436b23d6f3057318edac95effe6997629eab1a768a2ebd9fa",
+    "sizeBytes": 59753186
+  },
+  "atlas": {
+    "sha256": "10590eea9c0ab5e79cd1a61abd1c543b9079fe6e6a95c5e89bad4c1f5becb684",
+    "sizeBytes": 5586685
+  },
+  "exporter": {
+    "sha256": "fb5a41dedb10c051b0ddbcf779007518a513659c512809e2e01caac73b3e5ae5",
+    "sizeBytes": 9122
+  },
+  "finalizer": {
+    "sha256": "999bb4dbd52a8f55cf50af78abb1665151aa2c5b876859884f57f50487cb9a07",
+    "sizeBytes": 2783
+  },
+  "blender": {
+    "sha256": "33ac108ebce3c271f5357e5c664d0488717263bcf2145c80300edd0b12c31880",
+    "sizeBytes": 163595448
+  },
+  "expected": {
+    "sha256": "d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2",
+    "sizeBytes": 12396712
+  },
+  "scope": "Two byte-identical exports from the saved baked source; not a fresh-author or fresh-bake repeatability claim."
+}

@@ -1,0 +1,391 @@
+{
+  "bundleUrl": "local-capture/scene.json",
+  "state": "loaded",
+  "failureReason": null,
+  "loadStage": "loaded",
+  "assetBytesLoaded": 12396712,
+  "assetBytesExpected": 12396712,
+  "label": "Presentation Room",
+  "source": "Vrata authored assemblies with documented Poly Haven CC0 material inputs",
+  "renderProfile": "baked-pbr-v1",
+  "assetUrl": "local-capture/scene.glb",
+  "assetType": "glb",
+  "spawnPointId": "main",
+  "spawnYaw": 3.141592653589793,
+  "spawnApplied": true,
+  "loadMs": 1776,
+  "renderProfileApplyMs": 126,
+  "objectCount": 221,
+  "meshCount": 219,
+  "materialCount": 14,
+  "texturedMaterialCount": 219,
+  "lightMappedMaterialCount": 14,
+  "geometryCount": 219,
+  "triangleEstimate": 85843,
+  "textureCount": 29,
+  "missingAssets": [],
+  "materialSamples": [
+    {
+      "name": "material.wood",
+      "meshCount": 74,
+      "hasMap": true,
+      "hasNormalMap": true,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 1,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.metal",
+      "meshCount": 47,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.44,
+      "metalness": 0,
+      "color": {
+        "r": 0.021,
+        "g": 0.024,
+        "b": 0.023
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.steel",
+      "meshCount": 35,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.27,
+      "metalness": 0.9,
+      "color": {
+        "r": 0.371,
+        "g": 0.392,
+        "b": 0.402
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.dark",
+      "meshCount": 27,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.68,
+      "metalness": 0,
+      "color": {
+        "r": 0.018,
+        "g": 0.02,
+        "b": 0.019
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.acoustic",
+      "meshCount": 8,
+      "hasMap": true,
+      "hasNormalMap": true,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 1,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.fabric",
+      "meshCount": 8,
+      "hasMap": true,
+      "hasNormalMap": true,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 1,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.rubber",
+      "meshCount": 8,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.86,
+      "metalness": 0,
+      "color": {
+        "r": 0.013,
+        "g": 0.014,
+        "b": 0.012
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.glow",
+      "meshCount": 5,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.5,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 0.871,
+        "b": 0.701
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.paint",
+      "meshCount": 2,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.69,
+      "metalness": 0,
+      "color": {
+        "r": 0.723,
+        "g": 0.694,
+        "b": 0.61
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.floor",
+      "meshCount": 1,
+      "hasMap": true,
+      "hasNormalMap": true,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 1,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.plaster",
+      "meshCount": 1,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.88,
+      "metalness": 0,
+      "color": {
+        "r": 0.604,
+        "g": 0.571,
+        "b": 0.497
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.carpet",
+      "meshCount": 1,
+      "hasMap": true,
+      "hasNormalMap": true,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 1,
+      "metalness": 0,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.screen",
+      "meshCount": 1,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.4,
+      "metalness": 0,
+      "color": {
+        "r": 0.036,
+        "g": 0.045,
+        "b": 0.045
+      },
+      "mapSource": null
+    },
+    {
+      "name": "material.paper",
+      "meshCount": 1,
+      "hasMap": false,
+      "hasNormalMap": false,
+      "hasAoMap": false,
+      "hasLightMap": true,
+      "lightMapIntensity": 24.188,
+      "bakedEnvironmentMode": "specular-only",
+      "roughness": 0.86,
+      "metalness": 0,
+      "color": {
+        "r": 0.784,
+        "g": 0.738,
+        "b": 0.624
+      },
+      "mapSource": null
+    }
+  ],
+  "boundingBox": {
+    "min": {
+      "x": -4.88,
+      "y": -0.14,
+      "z": -4.18
+    },
+    "max": {
+      "x": 4.88,
+      "y": 3.74,
+      "z": 4.18
+    },
+    "size": {
+      "x": 9.76,
+      "y": 3.88,
+      "z": 8.36
+    },
+    "center": {
+      "x": 0,
+      "y": 1.8,
+      "z": 0
+    }
+  },
+  "camera": {
+    "world": {
+      "x": 3.85,
+      "y": 1.2,
+      "z": -1.035
+    },
+    "forward": {
+      "x": -0.615,
+      "y": 0.147,
+      "z": 0.775
+    }
+  },
+  "screenshot": {
+    "width": 320,
+    "height": 180,
+    "centerPixel": {
+      "r": 145,
+      "g": 146,
+      "b": 137,
+      "a": 255
+    },
+    "averageColor": {
+      "r": 175,
+      "g": 157,
+      "b": 138,
+      "a": 255
+    },
+    "darkPixelRatio": 0.0003,
+    "pixelSamples": [
+      {
+        "x": 160,
+        "y": 90,
+        "r": 145,
+        "g": 146,
+        "b": 137,
+        "a": 255
+      },
+      {
+        "x": 32,
+        "y": 18,
+        "r": 164,
+        "g": 137,
+        "b": 111,
+        "a": 255
+      },
+      {
+        "x": 287,
+        "y": 18,
+        "r": 185,
+        "g": 159,
+        "b": 133,
+        "a": 255
+      },
+      {
+        "x": 32,
+        "y": 161,
+        "r": 169,
+        "g": 116,
+        "b": 79,
+        "a": 255
+      },
+      {
+        "x": 287,
+        "y": 161,
+        "r": 219,
+        "g": 190,
+        "b": 166,
+        "a": 255
+      },
+      {
+        "x": 160,
+        "y": 36,
+        "r": 177,
+        "g": 149,
+        "b": 124,
+        "a": 255
+      },
+      {
+        "x": 160,
+        "y": 143,
+        "r": 231,
+        "g": 223,
+        "b": 213,
+        "a": 255
+      }
+    ]
+  },
+  "captureLocationRedacted": "transient local server URLs; received GLB hash is verified separately"
+}

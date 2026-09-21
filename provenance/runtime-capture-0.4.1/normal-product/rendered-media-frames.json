@@ -1,0 +1,103 @@
+{
+  "captureBinding": {
+    "glbSha256": "d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2",
+    "manifestSha256": "7e61e757dd67301de7cb7bf21349e5ede251f7acbb096b618856ce35e4c58d57",
+    "configSha256": "e6772dcbba307008149e078a7170905e749d392089cc13ff17c86bfe6179e5e8",
+    "baseSha256": "5ba1e6dcd535e707af76fe6c5fd708158e9c6c37cffe8e1e9e410cd0f236b2f1",
+    "runnerSha256": "42fa50156f89e62943147a756c3af88db8c000bee5035711fb1a2a6dd4ae826d",
+    "runtimePlatformCommit": "a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d"
+  },
+  "mode": "local-generated-stream-mock-transport",
+  "before": [
+    {
+      "width": 640,
+      "height": 360,
+      "time": 2.697752
+    }
+  ],
+  "after": {
+    "share": {
+      "supported": true,
+      "active": true,
+      "localPublishing": true,
+      "selectedSurfaceId": "debug-main",
+      "publishedTrackSid": "mock-screen-share:33df5f8b-4dbd-439d-8329-aa4dbb3ec58d:16eab9ad-7309-4ec2-8721-5ede89061ba0:1790002449790",
+      "remoteSubscribedTrackCount": 0,
+      "mediaAudioEnabled": false,
+      "errorCode": null
+    },
+    "seatId": "seat-04",
+    "camera": {
+      "world": {
+        "x": -0.85,
+        "y": 1.202,
+        "z": -0.735
+      },
+      "forward": {
+        "x": 0.183,
+        "y": 0,
+        "z": 0.983
+      }
+    },
+    "surfaces": [
+      {
+        "surfaceId": "debug-main",
+        "label": "Main screen",
+        "allowedObjectTypes": [
+          "surface-test-card",
+          "screen-share",
+          "whiteboard",
+          "markdown-board",
+          "remote-browser",
+          "pdf-presentation",
+          "image-viewer",
+          "video-player",
+          "extension-test-card"
+        ],
+        "activeObjectId": "16eab9ad-7309-4ec2-8721-5ede89061ba0",
+        "activeObjectType": "screen-share",
+        "inputEnabled": true,
+        "maxDistanceM": 0.06,
+        "mediaAudioEnabled": false,
+        "lockedByParticipantId": null,
+        "visible": true,
+        "runtimeVisible": true,
+        "widthM": 4.8,
+        "heightM": 2.7,
+        "widthPx": 1920,
+        "heightPx": 1080,
+        "position": {
+          "x": 0,
+          "y": 2.12,
+          "z": 3.813
+        },
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "roll": 0,
+        "manifestPosition": {
+          "x": 0,
+          "y": 2.12,
+          "z": 3.813
+        },
+        "manifestYaw": 3.141592653589793,
+        "manifestFormat": "legacy",
+        "worldPosition": {
+          "x": 0,
+          "y": 2.12,
+          "z": 3.813
+        },
+        "worldYaw": 3.142,
+        "textureId": 1
+      }
+    ],
+    "videos": [
+      {
+        "width": 640,
+        "height": 360,
+        "time": 16.300911
+      }
+    ]
+  },
+  "screenshot": "normal-media-frames.png",
+  "humanVisualAcceptance": false
+}

@@ -1,6 +1,26 @@
 # Presentation Room v1
 
-## 0.4.0 shared-quality review state
+## 0.4.1 — ready for user review
+
+The current [0.4.1 review bundle](assets/scenes/presentation-room-v1/0.4.1/scene.json)
+has 85,843 triangles and 219 render primitives. Continuous upholstery lightmap
+charts preserve rounded cushions, plain-weave derivatives retain material detail,
+and a closed masonry enclosure removes false construction seams. All eight seats
+retain their measured sightlines and source-part construction evidence.
+
+See the [source views](source/releases/0.4.1/review), [browser views](provenance/runtime-capture-0.4.1/clean),
+[displayed moving frames](provenance/runtime-capture-0.4.1/normal-product/normal-media-frames.png)
+and [quality assessment](provenance/releases/0.4.1/quality-review.json).
+Local media evidence uses a generated stream with mock transport; public real
+transport is checked separately on the published review room.
+
+Public staging review is explicitly authorized. Human visual acceptance remains
+pending, isCurrent=false and publicationReady=false. The runtime/validator pin is
+a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d. Historical checks execute their original
+0.4.0 tooling snapshot; the current checkout also verifies every historical byte
+and append-only record. Saved-source export repeatability is not a fresh bake proof.
+
+## Historical 0.4.0 shared-quality review state
 
 The 2026-09-19 feedback applies across scene types. Version `0.4.0` packages the
 resulting source, geometry/support measurements, exact runtime captures, and
@@ -19,9 +39,9 @@ movement, and screen-share object creation. It proves no displayed media frame.
 Human visual acceptance and exact-byte rights approval remain pending.
 
 Local review candidate for the Vrata product scene `presentation-room-v1`.
-It is an original contemporary presentation salon with a raised focal zone,
-architectural 16:9 screen surround, eight audience seats in two staggered
-rows, generous center and side circulation, acoustic treatment, and warm
+It is an original contemporary presentation salon with a level focal zone,
+architectural 16:9 screen surround, eight audience seats in a shallow fan-shaped
+row with two banks, center and side circulation, acoustic treatment, and warm
 practical lighting.
 
 This repository is intentionally not a visually accepted, current, or

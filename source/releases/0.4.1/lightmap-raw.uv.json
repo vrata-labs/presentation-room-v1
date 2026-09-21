@@ -1,0 +1,9 @@
+{
+  "kind": "lightmap-triangle-centroid-overlap-screening",
+  "sampledTriangles": 85179,
+  "ignoredSubpixelOrDegenerateTriangles": 664,
+  "minimumDoubleArea": 1e-10,
+  "overlappingCentroids": 0,
+  "examples": [],
+  "limits": "Centroid screening rejects folding/overlapping charts; it is not exhaustive polygon-intersection or visual-quality proof."
+}
