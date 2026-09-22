@@ -1,10 +1,11 @@
 # Local Review Contract
 
 - This repository owns exactly one scene: `presentation-room-v1`.
+- On 2026-09-22 the owner explicitly approved production/product use and public GLB redistribution of the accepted scene and its documented CC0 inputs. Release 0.4.2 records that permission without changing the accepted 0.4.1 GLB/preview. See `provenance/releases/0.4.2/rights-approval.md`; physical-device acceptance and catalog activation remain distinct platform steps.
 - Prefer project-authored geometry and lighting. Cleared PBR/photographic inputs may be used with exact source/license/provenance and required rights approval; never import private or uncleared assets. Asset method does not lower the realistic quality target.
 - Blender authoring coordinates are semantic `(x,y,z)` and runtime positions are always `(x,y,-z)`.
 - Release status remains `review` and human visual acceptance remains pending until explicitly recorded by a human.
-- Rights are approved only for the public staging review scope recorded in `provenance/rights-status.json`; do not infer production activation or visual acceptance from that verdict.
+- Historical rights decisions retain their recorded scope. The explicit 2026-09-22 product-release permission is recorded for 0.4.2; rights approval alone does not activate a product template.
 - Never set release status `active`, visual acceptance, or `publicationReady=true` during local candidate work.
 - Run `pnpm test && pnpm validate && pnpm inspect && pnpm verify:reproducibility` before handing off for visual review.
 

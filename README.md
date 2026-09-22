@@ -1,5 +1,19 @@
 # Presentation Room v1
 
+## 0.4.2 — product rights metadata
+
+The owner explicitly authorized standard product use, production and public GLB
+redistribution on 2026-09-22. [Release 0.4.2](assets/scenes/presentation-room-v1/0.4.2/scene.json)
+changes only version/rights metadata and license text; the accepted 0.4.1 GLB and
+preview are byte-identical. The [rights record](provenance/releases/0.4.2/rights-approval.md)
+and [metadata lock](source/releases/0.4.2/release-lock.json) preserve the decision
+and exact base. Historical records remain unchanged. Physical device acceptance
+and product catalog activation remain pending in the platform plan.
+
+Use pnpm build for scratch materialization and pnpm validate for exact metadata,
+payload, history and source checks. The 0.4.1 checks run in their exact historical
+worktree; the current metadata validator independently verifies unchanged history.
+
 ## 0.4.1 — visually accepted
 
 The current [0.4.1 review bundle](assets/scenes/presentation-room-v1/0.4.1/scene.json)

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "presentation-room-v1",
+  "version": "0.4.2",
+  "baseVersion": "0.4.1",
+  "baseCommit": "22d6a0c5af22d794eb0fbd67d52b8fe46a6f40e2",
+  "visualAcceptancePath": "docs/reviews/2026-09-21-0.4.1-visual-acceptance.md",
+  "rightsDate": "2026-09-22",
+  "rightsQuestion": "Для Personal и Presentation ранее было отдельно разрешено только публичное staging-ревью. Подтверждаете использование тех же принятых сцен и задокументированных CC0-материалов как стандартных сцен продукта, включая production и распространение в публичных GLB?",
+  "rightsAnswer": "Да, разрешаю основной выпуск"
+}
