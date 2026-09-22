@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "sceneId": "presentation-room-v1",
   "status": "review",
-  "humanAcceptance": "pending-human-acceptance",
-  "rightsStatus": "approved-for-public-staging-review",
+  "humanAcceptance": "accepted",
+  "rightsStatus": "approved-for-product-release",
   "rightsApproved": true,
-  "rightsApprovalDate": null,
-  "licenseRef": "LicenseRef-Project-Authored-Public-Staging-Review",
+  "rightsApprovalDate": "2026-09-22",
+  "licenseRef": "LicenseRef-Vrata-Product-Release-2026-09-22",
   "publicationReady": false,
   "platformValidatorCommit": "a3a905ea3bcbe290e77fa4c7fc2dd92214097a4d",
   "releases": [
@@ -335,8 +335,53 @@
         "runs": 2,
         "scope": "Two byte-identical exports from the saved baked source; not a fresh-author or fresh-bake repeatability claim."
       }
+    },
+    {
+      "sceneId": "presentation-room-v1",
+      "version": "0.4.2",
+      "baseVersion": "0.4.1",
+      "releaseKind": "rights-metadata-only",
+      "releasePath": "assets/scenes/presentation-room-v1/0.4.2",
+      "status": "review",
+      "humanAcceptance": "accepted",
+      "qualityOutcome": "VISUALLY_ACCEPTED",
+      "rightsApproved": true,
+      "rightsApprovalStatus": "approved-for-product-release",
+      "isCurrent": false,
+      "publicationReady": false,
+      "files": {
+        "scene.json": {
+          "sha256": "5bdf5c2402ac1e6b4d0d5b24f1f2d4b3b8400069646aae27631abcf250882aeb",
+          "sizeBytes": 6848
+        },
+        "scene.glb": {
+          "sha256": "d51ec7deb341c7ba45c12dd0f7ffff1d45d784b7352bb8851fea792156f0f2e2",
+          "sizeBytes": 12396712
+        },
+        "preview.webp": {
+          "sha256": "9f03ebab1c4bb68b7f95aa3c1e4ff7b43aed6234ff06b3d42e8463eb4cbfaa12",
+          "sizeBytes": 23820
+        },
+        "LICENSES.md": {
+          "sha256": "6a988b9b04c2ebe76ab85c2602e569fbb5c47846cfa3c9119b92a39675444a2c",
+          "sizeBytes": 1128
+        }
+      },
+      "stats": {
+        "triangles": 85843,
+        "objects": 219,
+        "meshes": 219,
+        "primitives": 219,
+        "materials": 14,
+        "textures": 16,
+        "animations": 0,
+        "scenes": 1
+      }
     }
   ],
-  "qualityOutcome": "READY_FOR_USER_REVIEW",
-  "isCurrent": false
+  "qualityOutcome": "VISUALLY_ACCEPTED",
+  "isCurrent": false,
+  "acceptanceStatus": "accepted",
+  "visualAcceptanceStatus": "accepted",
+  "rightsApprovalStatus": "approved-for-product-release"
 }

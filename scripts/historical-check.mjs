@@ -5,8 +5,9 @@ import { join, resolve } from "node:path";
 import { assertScratchOutput } from "./lib.mjs";
 
 const root = resolve(import.meta.dirname, "..");
-const commit = "92a6b567aeefbaee9e49007125ff84ff9ea7cd44";
-const directory = join(root, "build", "historical-0.4.0-contract");
+const commit = "22d6a0c5af22d794eb0fbd67d52b8fe46a6f40e2";
+const ancestor = "92a6b567aeefbaee9e49007125ff84ff9ea7cd44";
+const directory = join(root, "build", "historical-0.4.1-contract");
 await assertScratchOutput(root, directory);
 const commands = process.argv.slice(2);
 assert(commands.length && commands.every(value => ["test", "validate", "validate:visual", "verify:reproducibility", "inspect"].includes(value)), "unsupported_historical_check");
@@ -15,7 +16,7 @@ function run(command, args, cwd = root, capture = false) {
   assert.equal(result.status, 0, result.error?.message ?? `${command}_failed`);
   return result.stdout;
 }
-if (spawnSync("git", ["cat-file", "-e", `${commit}^{commit}`], { cwd: root, stdio: "ignore" }).status !== 0) run("git", ["fetch", "--no-tags", "--depth=1", "origin", commit]);
+for (const ref of [ancestor, commit]) if (spawnSync("git", ["cat-file", "-e", `${ref}^{commit}`], { cwd: root, stdio: "ignore" }).status !== 0) run("git", ["fetch", "--no-tags", "--depth=1", "origin", ref]);
 if (!await access(join(directory, ".git")).then(() => true, () => false)) run("git", ["worktree", "add", "--detach", directory, commit]);
 assert.equal(run("git", ["rev-parse", "HEAD"], directory, true).trim(), commit);
 run("git", ["diff", "HEAD", "--exit-code"], directory);
